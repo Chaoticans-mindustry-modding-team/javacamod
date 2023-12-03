@@ -1,0 +1,25 @@
+#the mod name as displayed in-game
+displayName: "Javacamod"
+
+#the internal name of your mod
+name: "javacamod"
+
+#your name
+author: "The chaoticans"
+
+#the fully qualified main class of the mod
+main: "javacamod.JavacamodJavaMod"
+
+#the mod description as seen in the mod dialog
+description: "Java camod"
+
+#the mod version
+version: 1.0
+
+#the minimum game build required to run this mod
+minGameVersion: 145
+
+hidden: true,
+
+#this is a java mod
+java: true
