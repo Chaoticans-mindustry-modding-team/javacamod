@@ -23,7 +23,7 @@ import mindustry.world.blocks.storage.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
-public class JCamodBlocks{
+public class JavacamodBlocks{
     //anchor
     public static
     //walls
