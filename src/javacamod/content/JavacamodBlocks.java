@@ -27,7 +27,7 @@ public class JavacamodBlocks{
     //anchor
     public static
     //walls
-    redWall, largeRedWall,
+    redWall, largeRedWall, colossalRedWall,
 
 
     public static void load() {
