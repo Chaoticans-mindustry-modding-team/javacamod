@@ -42,9 +42,11 @@ import static mindustry.type.ItemStack.*;
 @SuppressWarnings("deprecation")
 public class JavacamodBlocks{
     //walls
-    public static block redWall, largeRedWall, colossalRedWall, ;
+    public static block redWall, largeRedWall, colossalRedWall 
 
 
+    ;
+    
     public static void load() {
         redWall = new Wall("Red Wall"){{
             health = 300;
