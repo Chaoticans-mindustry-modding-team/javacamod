@@ -36,14 +36,12 @@ public class JavacamodBlocks{
             requirements(Category.defense, with(Items.copper, 6));
         }};
   
-    public static void load() {
         largeRedWall = new Wall("Large Red Wall"){{
             health = 300;
             size = 2;
             requirements(Category.defense, with(Items.copper, 24));
         }};
 
-     public static void load() {
          colossalRedWall = new Wall("Colossal Red Wall"){{
              health = 300;
              size = 3;
