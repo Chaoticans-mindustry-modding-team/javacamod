@@ -38,7 +38,7 @@ public class JavacamodBlocks{
         redWall = new Wall("red-wall"){{
             requirements(Category.defense, with(Items.copper, 6));
             health = 80;
-            buildVisibility = true;
+            buildvisibility = true;
             researchCostMultiplier = 0.1f;
             envDisabled |= Env.scorching;
         }};
