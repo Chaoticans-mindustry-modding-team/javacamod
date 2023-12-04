@@ -38,7 +38,9 @@ public class JavacamodBlocks{
         redWall = new Wall("red-wall"){{
             requirements(Category.defense, with(Items.red, 6));
             health = 80;
+            buildVisibility = true;
             researchCostMultiplier = 0.1f;
+            envDisabled |= Env.scorching;
         }};
     
      
@@ -46,14 +48,18 @@ public class JavacamodBlocks{
             requirements(Category.defense, with(Items.red, 24));
             health = 80;
             size = 2;
+            buildVisibility = true;
             researchCostMultiplier = 0.1f;
+            envDisabled |= Env.scorching;
         }};
 
         colossalRedWall = new Wall("colossal-red-wall"){{
             requirements(Category.defense, with(Items.red, 54));
             health = 80;
             size = 3;
+            buildVisibility = true;
             researchCostMultiplier = 0.1f;
+            envDisabled |= Env.scorching;
         }};
 
     }
