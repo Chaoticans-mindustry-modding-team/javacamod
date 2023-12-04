@@ -33,7 +33,7 @@ public class JavacamodJavaMod extends Mod{
     @Override
     public void loadContent(){
         JavacamodBlocks.load();
-        JavacamodItems.load()
+        JavacamodItems.load();
         Log.info("Loadin");
     }
 
