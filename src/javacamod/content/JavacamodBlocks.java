@@ -4,7 +4,7 @@ import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.struct.*;
 import arc.util.*;
-import JavacamodItems
+import JavacamodItems;
 import mindustry.*;
 import mindustry.content.*;
 import mindustry.entities.effect.*;
