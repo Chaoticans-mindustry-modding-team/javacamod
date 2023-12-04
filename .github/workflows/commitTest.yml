@@ -15,6 +15,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 17
+    - name: Make gradler executable
+      run: chmod +x ./gradlew
     - name: Build mod jar
       run: ./gradlew deploy
     - name: Upload built jar file
@@ -22,5 +24,4 @@ jobs:
       with:
         name: ${{ github.event.repository.name }}
         path: build/libs/${{ github.event.repository.name }}.jar
-    - name: Make gradler executable
-      run: chmod +x ./gradlew
+
