@@ -22,5 +22,5 @@ jobs:
       with:
         name: ${{ github.event.repository.name }}
         path: build/libs/${{ github.event.repository.name }}.jar
-    -name: Make gradler executable
-     run: chmod +x ./gradlew
+    - name: Make gradler executable
+      run: chmod +x ./gradlew
