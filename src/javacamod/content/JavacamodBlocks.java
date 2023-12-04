@@ -38,7 +38,6 @@ public class JavacamodBlocks{
         redWall = new Wall("red-wall"){{
             requirements(Category.defense, with(Items.copper, 6));
             health = 80;
-            name = "Red Wall";
             envDisabled |= Env.scorching;
         }};
     
@@ -47,7 +46,6 @@ public class JavacamodBlocks{
             requirements(Category.defense, with(Items.copper, 24));
             health = 80;
             size = 2;
-            name = "Large Red Wall";
             envDisabled |= Env.scorching;
         }};
 
@@ -55,7 +53,6 @@ public class JavacamodBlocks{
             requirements(Category.defense, with(Items.copper, 54));
             health = 80;
             size = 3;
-            name = "Colossal Red Wall";
             envDisabled |= Env.scorching;
         }};
 
