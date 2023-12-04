@@ -48,23 +48,29 @@ public class JavacamodBlocks{
     ;
     
     public static void load() {
-        redWall = new Wall("Red Wall"){{
-            health = 300;
-            size = 1;
+        redWall = new Wall("red-wall"){{
             requirements(Category.defense, with(Items.copper, 6));
+            health = 80 * wallHealthMultiplier;
+            researchCostMultiplier = 0.1f;
+            envDisabled |= Env.scorching;
         }};
-  
-        largeRedWall = new Wall("Large Red Wall"){{
-            health = 300;
+    
+     
+        largeRedWall = new Wall("large-red-wall"){{
+            requirements(Category.defense, with(Items.copper, 6));
+            health = 80 * wallHealthMultiplier;
             size = 2;
-            requirements(Category.defense, with(Items.copper, 24));
+            researchCostMultiplier = 0.1f;
+            envDisabled |= Env.scorching;
         }};
 
-         colossalRedWall = new Wall("Colossal Red Wall"){{
-             health = 300;
-             size = 3;
-             requirements(Category.defense, with(Items.copper, 54));
-         }};
+        colossalRedWall = new Wall("colossal-red-wall"){{
+            requirements(Category.defense, with(Items.copper, 6));
+            health = 80 * wallHealthMultiplier;
+            size = 3;
+            researchCostMultiplier = 0.1f;
+            envDisabled |= Env.scorching;
+        }};
 
     }
 }
