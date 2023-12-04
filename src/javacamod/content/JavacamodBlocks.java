@@ -25,10 +25,8 @@ import mindustry.world.meta.*;
 
 @SuppressWarnings("deprecation")
 public class JavacamodBlocks{
-    //anchor
-    public static
     //walls
-    redWall, largeRedWall, colossalRedWall,
+    public static redWall, largeRedWall, colossalRedWall,
 
 
     public static void load() {
