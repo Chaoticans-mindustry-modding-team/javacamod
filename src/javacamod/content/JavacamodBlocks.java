@@ -44,6 +44,8 @@ public class JavacamodBlocks{
     //walls
     public static block redWall, largeRedWall, colossalRedWall,
 
+    ;
+
 
     public static void load() {
         redWall = new Wall("Red Wall"){{
