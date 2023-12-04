@@ -23,6 +23,7 @@ import mindustry.world.blocks.storage.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
+@SuppressWarnings("deprecation")
 public class JavacamodBlocks{
     //anchor
     public static
