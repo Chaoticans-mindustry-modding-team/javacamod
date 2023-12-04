@@ -18,7 +18,7 @@ public class JavacamodItems{
           alwaysUnlocked = true;
       }};
 
-      darkred = new Item("dark red", Color.valueOf("770000")){{
+      darkred = new Item("darkred", Color.valueOf("770000")){{
           hardness = 1;
           cost = 0.5f;
           alwaysUnlocked = true;
@@ -36,7 +36,7 @@ public class JavacamodItems{
           alwaysUnlocked = true;
       }};
 
-      darkgreen = new Item("dark green", Color.valueOf("007700")){{
+      darkgreen = new Item("darkgreen", Color.valueOf("007700")){{
           hardness = 1;
           cost = 0.5f;
           alwaysUnlocked = true;
@@ -54,7 +54,7 @@ public class JavacamodItems{
           alwaysUnlocked = true;
       }};
 
-      darkblue = new Item("dark blue", Color.valueOf("000077")){{
+      darkblue = new Item("darkblue", Color.valueOf("000077")){{
           hardness = 1;
           cost = 0.5f;
           alwaysUnlocked = true;
