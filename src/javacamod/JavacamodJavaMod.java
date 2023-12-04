@@ -9,7 +9,7 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-import javacamod.content;
+import javacamod.content.*;
 
 public class JavacamodJavaMod extends Mod{
 
