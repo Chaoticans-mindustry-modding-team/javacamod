@@ -1,2 +1,2 @@
-# Java-Ca-mod
-I am sorry all IOS players of QW and CA
+# JavaCamod
+Im going insane porting the original Camod over
