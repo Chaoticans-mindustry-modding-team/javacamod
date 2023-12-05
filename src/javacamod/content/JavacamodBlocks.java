@@ -135,7 +135,7 @@ public class JavacamodBlocks{
         }};
 
         colossalGrayWall = new Wall("colossal-gray-wall"){{
-            requirements(Category.defense, with(JavacamodItems.gray, 54));
+            requirements(Category.defense, with(JavacamodItems.lightgray, 54));
             health = 80;
             size = 3;
             envDisabled |= Env.scorching;
