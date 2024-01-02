@@ -120,21 +120,21 @@ public class JavacamodBlocks{
             envDisabled |= Env.scorching;
         }};
 
-        grayWall = new Wall("gray-wall"){{
+        grayWall = new Wall("blackishwhite-wall"){{
             requirements(Category.defense, with(JavacamodItems.gray, 6));
             health = 80;
             size = 1;
             envDisabled |= Env.scorching;
         }};
 
-        largeGrayWall = new Wall("large-gray-wall"){{
+        largeGrayWall = new Wall("large-blackishwhite-wall"){{
             requirements(Category.defense, with(JavacamodItems.gray, 24));
             health = 80;
             size = 2;
             envDisabled |= Env.scorching;
         }};
 
-        colossalGrayWall = new Wall("colossal-gray-wall"){{
+        colossalGrayWall = new Wall("colossal-blackishwhite-wall"){{
             requirements(Category.defense, with(JavacamodItems.lightgray, 54));
             health = 80;
             size = 3;
