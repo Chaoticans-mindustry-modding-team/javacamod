@@ -30,7 +30,7 @@ import static mindustry.type.ItemStack.*;
 public class JavacamodBlocks{
     //walls
     public static Block redWall, largeRedWall, colossalRedWall, blueWall, largeBlueWall, colossalBlueWall, whiteWall, largeWhiteWall, colossalWhiteWall,
-    lightgrayWall, largeLightgrayWall, colossalLightgrayWall, grayWall, largeGrayWall, colossalGrayWall, darkgrayWall, largeDarkgrayWall, colossalDarkgrayWall,
+    lightgrayWall, largeLightgrayWall, colossalLightgrayWall, blackishwhiteWall, largeBlackishwhiteWall, colossalBlackishwhiteWall, darkgrayWall, largeDarkgrayWall, colossalDarkgrayWall,
     blackWall, largeBlackWall, colossalBlackWall, orangeWall, largeOrangeWall, colossalOrangeWall
 
 
@@ -120,21 +120,21 @@ public class JavacamodBlocks{
             envDisabled |= Env.scorching;
         }};
 
-        grayWall = new Wall("blackishwhite-wall"){{
+        blackishwhiteWall = new Wall("blackishwhite-wall"){{
             requirements(Category.defense, with(JavacamodItems.gray, 6));
             health = 80;
             size = 1;
             envDisabled |= Env.scorching;
         }};
 
-        largeGrayWall = new Wall("large-blackishwhite-wall"){{
+        largeBlackishwhiteWall = new Wall("large-blackishwhite-wall"){{
             requirements(Category.defense, with(JavacamodItems.gray, 24));
             health = 80;
             size = 2;
             envDisabled |= Env.scorching;
         }};
 
-        colossalGrayWall = new Wall("colossal-blackishwhite-wall"){{
+        colossalBlackishwhiteWall = new Wall("colossal-blackishwhite-wall"){{
             requirements(Category.defense, with(JavacamodItems.lightgray, 54));
             health = 80;
             size = 3;
