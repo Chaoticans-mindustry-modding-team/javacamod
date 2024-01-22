@@ -6,9 +6,6 @@
 ##
 ##############################################################################
 
-#random piece of code to hopefully fix the mod
-chmod +x gradlew
-
 # Attempt to set APP_HOME
 # Resolve links: $0 may be a link
 PRG="$0"
