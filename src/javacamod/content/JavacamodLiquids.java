@@ -26,7 +26,7 @@ public class JavacamodLiquids{
           alwaysUnlocked = true;
       }};
 
-      darkgreen = new Liquid("liquid-darkgreen", Color.valueOf("007700")){{
+      liquidDarkgreen = new Liquid("liquid-darkgreen", Color.valueOf("007700")){{
           alwaysUnlocked = true;
       }};
 
