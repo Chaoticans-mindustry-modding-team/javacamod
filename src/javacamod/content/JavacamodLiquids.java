@@ -6,7 +6,7 @@ import mindustry.type.*;
 
 public class JavacamodLiquids{
     public static Liquid
-    liquidRed, liquidDarkred, blood, liquidGreen, liquidDarkgreen, liquidPoison, liquidBlue, liquidDarkblue, liquidNavy, liquidBlack, liquidWhite, liquidLightgray, liquidGray, liquidDarkgray, ectoplasm1, ectoplasm2, ectoplasm3, liquidClear, liquidYellow, liquidCyan, liquidPink, liquidOrange, liquidLime, liquidEmerald, liquidSapphire, liquidPurple, liquidHotpink, liquidFemboy, liquidCrab, liquidUrog, liquidCanblack, liquidCanred, liquidCanorange, liquidCanyellow, liquidCanblue, liquidCanteal, liquidCangreen, liquidCanwhite; 
+    liquidRed, liquidDarkred, blood, liquidGreen, liquidDarkgreen, liquidPoison, liquidBlue, liquidDarkblue, liquidNavy, liquidBlack, liquidWhite, liquidLightgray, liquidGray, liquidDarkgray, ectoplasm1, ectoplasm2, ectoplasm3, liquidClear, liquidYellow, liquidCyan, liquidPink, liquidOrange, liquidLime, liquidEmerald, liquidSapphire, venom, liquidHotpink, liquidFemboy, liquidCrab, liquidUrog, liquidCanblack, liquidCanred, liquidCanorange, liquidCanyellow, liquidCanblue, liquidCanteal, liquidCangreen, liquidCanwhite; 
 
 
     public static void load(){
