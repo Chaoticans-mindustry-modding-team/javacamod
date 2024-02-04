@@ -6,9 +6,7 @@ import mindustry.type.*;
 
 public class JavacamodItems{
     public static Item
-    red, darkred, crimson, green, darkgreen, poison, blue, darkblue, navy, black, white, lightgray, gray, darkgray, 
-    spectra1, spectra2, spectra3, clear, yellow, cyan, pink, orange, lime, emerald, sapphire, purple, hotpink, cortexian, 
-    crab, urog, canblack, canred, canorange, canyellow, canblue, canteal, cangreen, canwhite; 
+    red, darkred, crimson, green, darkgreen, poison, blue, darkblue, navy, black, white, lightgray, gray, darkgray, spectra1, spectra2, spectra3, clear, yellow, darkYellow, runic, cyan, darkCyan, deepOcean, pink, darkPink, deepPink, orange, darkOrange, burntOrange, lime, darkLime, fruit, emerald, darkEmerald, deepEmerald, sapphire, darkSapphire, deepSapphire, purple, darkPurple, violet, hotpink, darkHotpink, deepHotpink, cortexian, crab, urog, canblack, canred, canorange, canyellow, canblue, canteal, cangreen, canwhite; 
 
 
     public static void load(){
