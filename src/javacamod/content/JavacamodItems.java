@@ -126,7 +126,31 @@ public class JavacamodItems{
           alwaysUnlocked = true;
       }};
 
+      darkYellow = new Item("dark-yellow", Color.valueOf("777700")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      runic = new Item("runic", Color.valueOf("303000")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
       cyan = new Item("cyan", Color.valueOf("00ffff")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      darkCyan = new Item("dark-cyan", Color.valueOf("007777")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      deepOcean = new Item("deep-ocean", Color.valueOf("003030")){{
           hardness = 1;
           cost = 0.5f;
           alwaysUnlocked = true;
@@ -138,13 +162,49 @@ public class JavacamodItems{
           alwaysUnlocked = true;
       }};
 
+      darkPink = new Item("dark-pink", Color.valueOf("770077")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      deepPink = new Item("deep-pink", Color.valueOf("300030")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
       orange = new Item("orange", Color.valueOf("ff6600")){{
           hardness = 1;
           cost = 0.5f;
           alwaysUnlocked = true;
       }};
 
+      darkOrange = new Item("dark-orange", Color.valueOf("774400")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      burntOrange = new Item("burnt-orange", Color.valueOf("302200")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+      
       lime = new Item("lime", Color.valueOf("66ff00")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      darkLime = new Item("dark-lime", Color.valueOf("447700")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      fruit = new Item("fruit", Color.valueOf("223000")){{
           hardness = 1;
           cost = 0.5f;
           alwaysUnlocked = true;
@@ -156,7 +216,31 @@ public class JavacamodItems{
           alwaysUnlocked = true;
       }};
 
+      darkEmerald = new Item("dark-emerald", Color.valueOf("007744")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      deepEmerald = new Item("deep-emerald", Color.valueOf("003022")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
       sapphire = new Item("sapphire", Color.valueOf("0066ff")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      darkSapphire = new Item("dark-sapphire", Color.valueOf("004477")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      deepSapphire = new Item("deep-sapphire", Color.valueOf("002230")){{
           hardness = 1;
           cost = 0.5f;
           alwaysUnlocked = true;
@@ -168,7 +252,31 @@ public class JavacamodItems{
           alwaysUnlocked = true;
       }};
 
+      darkPurple = new Item("dark-purple", Color.valueOf("440077")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      violet = new Item("violet", Color.valueOf("220030")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
       hotpink = new Item("hot-pink", Color.valueOf("ff0066")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      darkHotpink = new Item("dark-hot-pink", Color.valueOf("770044")){{
+          hardness = 1;
+          cost = 0.5f;
+          alwaysUnlocked = true;
+      }};
+
+      deepHotpink = new Item("deep-hot-pink", Color.valueOf("300022")){{
           hardness = 1;
           cost = 0.5f;
           alwaysUnlocked = true;
