@@ -23,7 +23,7 @@ import mindustry.world.blocks.storage.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
-
+import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
 
 @SuppressWarnings("deprecation")
