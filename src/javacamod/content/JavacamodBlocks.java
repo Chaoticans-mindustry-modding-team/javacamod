@@ -952,7 +952,6 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 2;
-            invert = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -960,7 +959,6 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 3;
-            invert = true;
             envDisabled |= Env.scorching;
         }};
 
