@@ -973,6 +973,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
