@@ -935,16 +935,16 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
         largeInvertedSorter = new Sorter("large-sorter"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
-            size = 2;
             invert = true;
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
         colossalInvertedSorter = new Sorter("colossal-sorter"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
-            size = 3;
             invert = true;
+            size = 3;
             envDisabled |= Env.scorching;
         }};
 
