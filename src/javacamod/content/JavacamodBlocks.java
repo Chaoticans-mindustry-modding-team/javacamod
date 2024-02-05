@@ -919,21 +919,21 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
         }};
 
         largeSorter = new Sorter("large-sorter"){{
-            requirements(Category.distribution, with(Items.lead, 8, Items.copper, 8));
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 2;
             envDisabled |= Env.scorching;
         }};
 
         colossalSorter = new Sorter("colossal-sorter"){{
-            requirements(Category.distribution, with(Items.lead, 18, Items.copper, 18));
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 3;
             envDisabled |= Env.scorching;
         }};
 
         largeInvertedSorter = new Sorter("large-sorter"){{
-            requirements(Category.distribution, with(Items.lead, 8, Items.copper, 8));
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 2;
             invert = true;
@@ -941,7 +941,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
         }};
 
         colossalInvertedSorter = new Sorter("colossal-sorter"){{
-            requirements(Category.distribution, with(Items.lead, 18, Items.copper, 18));
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 3;
             invert = true;
@@ -965,7 +965,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
         }};
 
         borderlessSorter = new Sorter("borderless-sorter"){{
-            requirements(Category.distribution, with(Items.lead, 2, Items.copper, 2));
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
             envDisabled |= Env.scorching;
