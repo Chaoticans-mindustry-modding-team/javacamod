@@ -932,7 +932,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             envDisabled |= Env.scorching;
         }};
 
-        largeInvertedSorter = new Sorter("large-sorter"){{
+        largeInvertedSorter = new Sorter("large-inverted-sorter"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             invert = true;
@@ -940,7 +940,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             envDisabled |= Env.scorching;
         }};
 
-        colossalInvertedSorter = new Sorter("colossal-sorter"){{
+        colossalInvertedSorter = new Sorter("colossal-inverted-sorter"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             invert = true;
