@@ -241,7 +241,7 @@ public class JavacamodBlocks{
         colossalWhiteWall = new Wall("colossal-white-wall"){{
             requirements(Category.defense, with(JavacamodItems.white, 54));
             health = 80;
-            size = 1;
+            size = 3;
             envDisabled |= Env.scorching;
         }};
 
