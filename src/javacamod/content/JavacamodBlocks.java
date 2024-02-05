@@ -350,6 +350,48 @@ public class JavacamodBlocks{
             envDisabled |= Env.scorching;
         }};
 
+        darkYellowWall = new Wall("dark-yellow-wall"){{
+            requirements(Category.defense, with(JavacamodItems.yellow, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkYellowWall = new Wall("large-dark-yellow-wall"){{
+            requirements(Category.defense, with(JavacamodItems.yellow, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDarkYellowWall = new Wall("colossal-dark-yellow-wall"){{
+            requirements(Category.defense, with(JavacamodItems.yellow, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        runicWall = new Wall("runic-wall"){{
+            requirements(Category.defense, with(JavacamodItems.yellow, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeRunicWall = new Wall("large-runic-wall"){{
+            requirements(Category.defense, with(JavacamodItems.yellow, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalRunicWall = new Wall("colossal-runic-wall"){{
+            requirements(Category.defense, with(JavacamodItems.yellow, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
         cyanWall = new Wall("cyan-wall"){{
             requirements(Category.defense, with(JavacamodItems.cyan, 6));
             health = 80;
@@ -365,6 +407,48 @@ public class JavacamodBlocks{
         }};
 
         colossalCyanWall = new Wall("colossal-cyan-wall"){{
+            requirements(Category.defense, with(JavacamodItems.cyan, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkCyanWall = new Wall("dark-cyan-wall"){{
+            requirements(Category.defense, with(JavacamodItems.cyan, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkCyanWall = new Wall("large-dark-cyan-wall"){{
+            requirements(Category.defense, with(JavacamodItems.cyan, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDarkCyanWall = new Wall("colossal-dark-cyan-wall"){{
+            requirements(Category.defense, with(JavacamodItems.cyan, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        deepOceanWall = new Wall("deep-ocean-wall"){{
+            requirements(Category.defense, with(JavacamodItems.cyan, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+       largeDeepOceanWall = new Wall("large-deep-ocean-wall"){{
+            requirements(Category.defense, with(JavacamodItems.cyan, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDeepOceanWall = new Wall("colossal-deep-ocean-wall"){{
             requirements(Category.defense, with(JavacamodItems.cyan, 54));
             health = 80;
             size = 3;
@@ -392,6 +476,48 @@ public class JavacamodBlocks{
             envDisabled |= Env.scorching;
         }};
 
+        darkPinkWall = new Wall("dark-pink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.pink, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkPinkWall = new Wall("large-dark-pink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.pink, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDarkPinkWall = new Wall("colossal-dark-pink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.pink, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        deepPinkWall = new Wall("deep-pink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.pink, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDeepPinkWall = new Wall("large-deep-pink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.pink, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDeepPinkWall = new Wall("colossal-deep-pink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.pink, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
         orangeWall = new Wall("orange-wall"){{
             requirements(Category.defense, with(JavacamodItems.orange, 6));
             health = 80;
@@ -407,6 +533,48 @@ public class JavacamodBlocks{
         }};
 
         colossalOrangeWall = new Wall("colossal-orange-wall"){{
+            requirements(Category.defense, with(JavacamodItems.orange, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkOrangeWall = new Wall("dark-orange-wall"){{
+            requirements(Category.defense, with(JavacamodItems.orange, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkOrangeWall = new Wall("large-dark-orange-wall"){{
+            requirements(Category.defense, with(JavacamodItems.orange, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDarkOrangeWall = new Wall("colossal-dark-orange-wall"){{
+            requirements(Category.defense, with(JavacamodItems.orange, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        burntOrangeWall = new Wall("burnt-orange-wall"){{
+            requirements(Category.defense, with(JavacamodItems.orange, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeBurntOrangeWall = new Wall("large-burnt-orange-wall"){{
+            requirements(Category.defense, with(JavacamodItems.orange, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalBurntOrangeWall = new Wall("colossal-burnt-orange-wall"){{
             requirements(Category.defense, with(JavacamodItems.orange, 54));
             health = 80;
             size = 3;
@@ -434,6 +602,48 @@ public class JavacamodBlocks{
             envDisabled |= Env.scorching;
         }};
 
+        darkLimeWall = new Wall("dark-lime-wall"){{
+            requirements(Category.defense, with(JavacamodItems.lime, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkLimeWall = new Wall("large-dark-lime-wall"){{
+            requirements(Category.defense, with(JavacamodItems.lime, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+        
+        colossalDarkLimeWall = new Wall("colossal-dark-lime-wall"){{
+            requirements(Category.defense, with(JavacamodItems.lime, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        fruitWall = new Wall("fruit-wall"){{
+            requirements(Category.defense, with(JavacamodItems.lime, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeFruitWall = new Wall("large-fruit-wall"){{
+            requirements(Category.defense, with(JavacamodItems.lime, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalFruitWall = new Wall("colossal-fruit-wall"){{
+            requirements(Category.defense, with(JavacamodItems.lime, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
         emeraldWall = new Wall("emerald-wall"){{
             requirements(Category.defense, with(JavacamodItems.emerald, 6));
             health = 80;
@@ -455,6 +665,48 @@ public class JavacamodBlocks{
             envDisabled |= Env.scorching;
         }};
 
+        darkEmeraldWall = new Wall("dark-emerald-wall"){{
+            requirements(Category.defense, with(JavacamodItems.emerald, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkEmeraldWall = new Wall("large-dark-emerald-wall"){{
+            requirements(Category.defense, with(JavacamodItems.emerald, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDarkEmeraldWall = new Wall("colossal-dark-emerald-wall"){{
+            requirements(Category.defense, with(JavacamodItems.emerald, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        deepEmeraldWall = new Wall("deep-emerald-wall"){{
+            requirements(Category.defense, with(JavacamodItems.emerald, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDeepEmeraldWall = new Wall("large-deep-emerald-wall"){{
+            requirements(Category.defense, with(JavacamodItems.emerald, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDeepEmeraldWall = new Wall("colossal-deep-emerald-wall"){{
+            requirements(Category.defense, with(JavacamodItems.emerald, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+        
         sapphireWall = new Wall("sapphire-wall"){{
             requirements(Category.defense, with(JavacamodItems.sapphire, 6));
             health = 80;
@@ -470,6 +722,48 @@ public class JavacamodBlocks{
         }};
 
         colossalSapphireWall = new Wall("colossal-sapphire-wall"){{
+            requirements(Category.defense, with(JavacamodItems.sapphire, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkSapphireWall = new Wall("dark-sapphire-wall"){{
+            requirements(Category.defense, with(JavacamodItems.sapphire, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkSapphireWall = new Wall("large-dark-sapphire-wall"){{
+            requirements(Category.defense, with(JavacamodItems.sapphire, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDarkSapphireWall = new Wall("colossal-dark-sapphire-wall"){{
+            requirements(Category.defense, with(JavacamodItems.sapphire, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        deepSapphireWall = new Wall("deep-sapphire-wall"){{
+            requirements(Category.defense, with(JavacamodItems.sapphire, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDeepSapphireWall = new Wall("large-deep-sapphire-wall"){{
+            requirements(Category.defense, with(JavacamodItems.sapphire, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDeepSapphireWall = new Wall("colossal-deep-sapphire-wall"){{
             requirements(Category.defense, with(JavacamodItems.sapphire, 54));
             health = 80;
             size = 3;
@@ -497,6 +791,48 @@ public class JavacamodBlocks{
             envDisabled |= Env.scorching;
         }};
 
+        darkPurpleWall = new Wall("dark-purple-wall"){{
+            requirements(Category.defense, with(JavacamodItems.purple, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkPurpleWall = new Wall("large-dark-purple-wall"){{
+            requirements(Category.defense, with(JavacamodItems.purple, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDarkPurpleWall = new Wall("colossal-dark-purple-wall"){{
+            requirements(Category.defense, with(JavacamodItems.purple, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        violetWall = new Wall("violet-wall"){{
+            requirements(Category.defense, with(JavacamodItems.purple, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeVioletWall = new Wall("large-violet-wall"){{
+            requirements(Category.defense, with(JavacamodItems.purple, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalVioletWall = new Wall("colossal-violet-wall"){{
+            requirements(Category.defense, with(JavacamodItems.purple, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
         hotpinkWall = new Wall("hotpink-wall"){{
             requirements(Category.defense, with(JavacamodItems.hotpink, 6));
             health = 80;
@@ -512,6 +848,48 @@ public class JavacamodBlocks{
         }};
 
         colossalHotpinkWall = new Wall("colossal-hotpink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.hotpink, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkHotpinkWall = new Wall("dark-hotpink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.hotpink, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkHotpinkWall = new Wall("large-dark-hotpink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.hotpink, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDarkHotpinkWall = new Wall("colossal-dark-hotpink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.hotpink, 54));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        deepHotpinkWall = new Wall("deep-hotpink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.hotpink, 6));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDeepHotpinkWall = new Wall("large-deep-hotpink-wall"){{
+            requirements(Category.defense, with(JavacamodItems.hotpink, 24));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalDeepHotpinkWall = new Wall("colossal-deep-hotpink-wall"){{
             requirements(Category.defense, with(JavacamodItems.hotpink, 54));
             health = 80;
             size = 3;
