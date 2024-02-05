@@ -896,5 +896,359 @@ public class JavacamodBlocks{
             envDisabled |= Env.scorching;
         }};
 
+        largeSorter = new Sorter("large-sorter"){{
+            requirements(Category.distribution, with(Items.copper, 8));
+            health = 80;
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalSorter = new Sorter("colossal-sorter"){{
+            requirements(Category.distribution, with(Items.copper, 18));
+            health = 80;
+            size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeInvertedSorter = new Sorter("large-sorter"){{
+            requirements(Category.distribution, with(Items.copper, 8));
+            health = 80;
+            size = 2;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalInvertedSorter = new Sorter("colossal-sorter"){{
+            requirements(Category.distribution, with(Items.copper, 18));
+            health = 80;
+            size = 3;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeSource = new ItemSource("large-source"){{
+            requirements(Category.distribution, with(Items.copper, 8));
+            health = 80;
+            size = 2;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        colossalSource = new ItemSource("colossal-source"){{
+            requirements(Category.distribution, with(Items.copper, 18));
+            health = 80;
+            size = 3;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        borderlessSorter = new Sorter("borderless-sorter"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter1 = new Sorter("chiseled-sorter-one"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter2 = new Sorter("chiseled-sorter-two"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter3 = new Sorter("chiseled-sorter-three"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter4 = new Sorter("chiseled-sorter-four"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter5 = new Sorter("chiseled-sorter-five"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter6 = new Sorter("chiseled-sorter-six"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter7 = new Sorter("chiseled-sorter-seven"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter8 = new Sorter("chiseled-sorter-eight"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter9 = new Sorter("chiseled-sorter-nine"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter10 = new Sorter("chiseled-sorter-ten"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter11 = new Sorter("chiseled-sorter-eleven"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter13 = new Sorter("chiseled-sorter-thirteen"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter14 = new Sorter("chiseled-sorter-fourteen"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter1 = new Sorter("chiseled-inverted-sorter-one"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter2 = new Sorter("chiseled-inverted-sorter-two"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter3 = new Sorter("chiseled-inverted-sorter-three"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter4 = new Sorter("chiseled-inverted-sorter-four"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter5 = new Sorter("chiseled-inverted-sorter-five"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter6 = new Sorter("chiseled-inverted-sorter-six"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter7 = new Sorter("chiseled-inverted-sorter-seven"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter8 = new Sorter("chiseled-inverted-sorter-eight"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter9 = new Sorter("chiseled-inverted-sorter-nine"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter10 = new Sorter("chiseled-inverted-sorter-ten"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter11 = new Sorter("chiseled-inverted-sorter-eleven"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter12 = new Sorter("chiseled-inverted-sorter-twelve"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter13 = new Sorter("chiseled-inverted-sorter-thirteen"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter14 = new Sorter("chiseled-inverted-sorter-fourteen"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            invert = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource1 = new ItemSource("chiseled-source-one"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource2 = new ItemSource("chiseled-source-two"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource3 = new ItemSource("chiseled-source-three"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource4 = new ItemSource("chiseled-source-four"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource5 = new ItemSource("chiseled-source-five"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource6 = new ItemSource("chiseled-source-six"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource7 = new ItemSource("chiseled-source-seven"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource8 = new ItemSource("chiseled-source-eight"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource9 = new ItemSource("chiseled-source-nine"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource10 = new ItemSource("chiseled-source-ten"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource11 = new ItemSource("chiseled-source-eleven"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource12 = new ItemSource("chiseled-source-twelve"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource13 = new ItemSource("chiseled-source-thirteen"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource14 = new ItemSource("chiseled-source-fourteen"){{
+            requirements(Category.distribution, with(Items.copper, 2));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
     }
 }
