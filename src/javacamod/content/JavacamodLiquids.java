@@ -86,7 +86,23 @@ public class JavacamodLiquids{
           alwaysUnlocked = true;
       }};
 
+      liquidDarkYellow = new Liquid("liquid-dark-yellow", Color.valueOf("777700")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidRunic = new Liquid("liquid-runic", Color.valueOf("303000")){{
+          alwaysUnlocked = true;
+      }};
+
       liquidCyan = new Liquid("liquid-cyan", Color.valueOf("00ffff")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDarkCyan = new Liquid("liquid-dark-cyan", Color.valueOf("007777")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDeepOcean = new Liquid("liquid-deep-ocean", Color.valueOf("003030")){{
           alwaysUnlocked = true;
       }};
 
@@ -94,7 +110,23 @@ public class JavacamodLiquids{
           alwaysUnlocked = true;
       }};
 
+      liquidDarkPink = new Liquid("liquid-dark-pink", Color.valueOf("770077")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDeepPink = new Liquid("liquid-deep-pink", Color.valueOf("300030")){{
+          alwaysUnlocked = true;
+      }};
+
       liquidOrange = new Liquid("liquid-orange", Color.valueOf("ff6600")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDarkOrange = new Liquid("liquid-dark-orange", Color.valueOf("774400")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidBurntOrange = new Liquid("liquid-burnt-orange", Color.valueOf("302200")){{
           alwaysUnlocked = true;
       }};
 
@@ -102,7 +134,23 @@ public class JavacamodLiquids{
           alwaysUnlocked = true;
       }};
 
+      liquidDarkLime = new Liquid("liquid-dark-lime", Color.valueOf("447700")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidFruit = new Liquid("liquid-fruit", Color.valueOf("223000")){{
+          alwaysUnlocked = true;
+      }};
+
       liquidEmerald = new Liquid("liquid-emerald", Color.valueOf("00ff66")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDarkEmerald = new Liquid("liquid-dark-emerald", Color.valueOf("007744")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDeepEmerald = new Liquid("liquid-deep-emerald", Color.valueOf("003022")){{
           alwaysUnlocked = true;
       }};
 
@@ -110,11 +158,35 @@ public class JavacamodLiquids{
           alwaysUnlocked = true;
       }};
 
+      liquidDarkSapphire = new Liquid("liquid-dark-sapphire", Color.valueOf("004477")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDeepSapphire = new Liquid("liquid-deep-sapphire", Color.valueOf("002230")){{
+          alwaysUnlocked = true;
+      }};
+
       venom = new Liquid("venom", Color.valueOf("6600ff")){{
           alwaysUnlocked = true;
       }};
 
+      darkVenom = new Liquid("dark-venom", Color.valueOf("440077")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDeath = new Liquid("liquid-death", Color.valueOf("220030")){{
+          alwaysUnlocked = true;
+      }};
+
       liquidHotpink = new Liquid("liquid-hot-pink", Color.valueOf("ff0066")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDarkHotpink = new Liquid("liquid-dark-hot-pink", Color.valueOf("770044")){{
+          alwaysUnlocked = true;
+      }};
+
+      liquidDeepHotpink = new Liquid("liquid-deep-hot-pink", Color.valueOf("300022")){{
           alwaysUnlocked = true;
       }};
 
