@@ -981,6 +981,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -988,6 +989,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1002,6 +1004,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1009,6 +1012,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1016,6 +1020,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1023,6 +1028,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1030,6 +1036,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1037,6 +1044,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1044,6 +1052,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1051,6 +1060,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1058,6 +1068,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1065,6 +1076,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             invert = true;
             envDisabled |= Env.scorching;
         }};
@@ -1073,6 +1085,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             invert = true;
             envDisabled |= Env.scorching;
         }};
@@ -1081,6 +1094,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
+            rotate = true;
             invert = true;
             envDisabled |= Env.scorching;
         }};
@@ -1098,6 +1112,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1106,6 +1121,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1114,6 +1130,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1122,6 +1139,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1130,6 +1148,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1138,6 +1157,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1146,6 +1166,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1154,6 +1175,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1162,6 +1184,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1170,6 +1193,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             health = 80;
             size = 1;
             invert = true;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1177,6 +1201,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1184,6 +1209,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1191,6 +1217,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1205,6 +1232,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1212,6 +1240,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1219,6 +1248,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1226,6 +1256,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1233,6 +1264,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1240,6 +1272,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1247,6 +1280,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1254,6 +1288,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1261,6 +1296,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1268,6 +1304,7 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
