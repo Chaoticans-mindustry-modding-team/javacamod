@@ -1433,7 +1433,7 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             maxNewLines = 2000;
         }};
 
-        colossaBlueMessage = new MessageBlock("colossal-blue-message"){{
+        colossalBlueMessage = new MessageBlock("colossal-blue-message"){{
             requirements(Category.logic, with());
             maxTextLength = 22000;
             maxNewLines = 2000;
