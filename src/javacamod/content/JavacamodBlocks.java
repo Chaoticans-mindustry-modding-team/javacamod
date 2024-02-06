@@ -1308,5 +1308,708 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
             envDisabled |= Env.scorching;
         }};
 
+        redMessage = new MessageBlock("red-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeRedMessage = new MessageBlock("large-red-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+
+        colossalRedMessage = new MessageBlock("colossal-red-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+
+        darkredMessage = new MessageBlock("darkred-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkredMessage = new MessageBlock("large-darkred-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkredMessage = new MessageBlock("colossal-darkred-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        bloodMessage = new MessageBlock("blood-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeBloodMessage = new MessageBlock("large-blood-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalBloodMessage = new MessageBlock("colossal-blood-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        greenMessage = new MessageBlock("green-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeGreenMessage = new MessageBlock("large-green-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalGreenMessage = new MessageBlock("colossal-green-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        darkgreenMessage = new MessageBlock("darkgreen-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkgreenMessage = new MessageBlock("large-darkgreen-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkgreenMessage = new MessageBlock("colossal-darkgreen-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        poisonMessage = new MessageBlock("poison-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largePoisonMessage = new MessageBlock("large-poison-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalPoisonMessage = new MessageBlock("colossal-poison-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        blueMessage = new MessageBlock("blue-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeBlueMessage = new MessageBlock("large-blue-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossaBlueMessage = new MessageBlock("colossal-blue-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        darkblueMessage = new MessageBlock("darkblue-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkblueMessage = new MessageBlock("large-darkblue-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkblueMessage = new MessageBlock("colossal-darkblue-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        navyMessage = new MessageBlock("navy-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeNavyMessage = new MessageBlock("large-navy-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalNavyMessage = new MessageBlock("colossal-navy-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        whiteMessage = new MessageBlock("white-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeWhiteMessage = new MessageBlock("large-white-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalWhiteMessage = new MessageBlock("colossal-white-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        blankMessage = new MessageBlock("blank-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeBlankMessage = new MessageBlock("large-blank-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalBlankMessage = new MessageBlock("colossal-blank-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        blackMessage = new MessageBlock("black-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeBlackMessage = new MessageBlock("large-black-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalBlackMessage = new MessageBlock("colossal-black-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        yellowMessage = new MessageBlock("yellow-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeYellowMessage = new MessageBlock("large-yellow-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalYellowMessage = new MessageBlock("colossal-yellow-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        darkyellowMessage = new MessageBlock("darkyellow-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkyellowMessage = new MessageBlock("large-darkyellow-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkyellowMessage = new MessageBlock("colossal-darkyellow-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        runicMessage = new MessageBlock("runic-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeRunicMessage = new MessageBlock("large-runic-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalRunicMessage = new MessageBlock("colossal-runic-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        cyanMessage = new MessageBlock("cyan-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+        
+        largeCyanMessage = new MessageBlock("large-cyan-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalCyanMessage = new MessageBlock("colossal-cyan-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        darkcyanMessage = new MessageBlock("darkcyan-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkcyanMessage = new MessageBlock("large-darkcyan-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkcyanMessage = new MessageBlock("colossal-darkcyan-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        deepOceanMessage = new MessageBlock("deep-ocean-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDeepOceanMessage = new MessageBlock("large-deep-ocean-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDeepOceanMessage = new MessageBlock("colossal-deep-ocean-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        pinkMessage = new MessageBlock("pink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largePinkMessage = new MessageBlock("large-pink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalPinkMessage = new MessageBlock("colossal-pink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+        
+        darkpinkMessage = new MessageBlock("darkpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkpinkMessage = new MessageBlock("large-darkpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkpinkMessage = new MessageBlock("colossal-darkpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        deeppinkMessage = new MessageBlock("deeppink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDeeppinkMessage = new MessageBlock("large-deeppink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDeeppinkMessage = new MessageBlock("colossal-+deeppink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        orangeMessage = new MessageBlock("orange-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeOrangeMessage = new MessageBlock("large-orange-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalOrangeMessage = new MessageBlock("colossal-orange-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        darkorangeMessage = new MessageBlock("darkorange-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkorangeMessage = new MessageBlock("large-darkorange-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkorangeMessage = new MessageBlock("colossal-darkorange-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        burntorangeMessage = new MessageBlock("burntorange-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeBurntorangeMessage = new MessageBlock("large-burntorange-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalBurntorangeMessage = new MessageBlock("colossal-burntorange-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        limeMessage = new MessageBlock("lime-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeLimeMessage = new MessageBlock("large-lime-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalLimeMessage = new MessageBlock("colossal-lime-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+        
+        darklimeMessage = new MessageBlock("darklime-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarklimeMessage = new MessageBlock("large-darklime-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarklimeMessage = new MessageBlock("colossal-darklime-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        fruitMessage = new MessageBlock("fruit-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeFruitMessage = new MessageBlock("large-fruit-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalFruitMessage = new MessageBlock("colossal-fruit-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        emeraldMessage = new MessageBlock("emerald-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeEmeraldMessage = new MessageBlock("large-emerald-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalEmeraldMessage = new MessageBlock("colossal-emerald-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        darkemeraldMessage = new MessageBlock("darkemerald-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkemeraldMessage = new MessageBlock("large-darkemerald-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkemeraldMessage = new MessageBlock("colossal-darkemerald-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        deepemeraldMessage = new MessageBlock("deepemerald-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDeepemeraldMessage = new MessageBlock("large-deepemerald-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDeepemeraldMessage = new MessageBlock("colossal-deepemerald-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        sapphireMessage = new MessageBlock("sapphire-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeSapphireMessage = new MessageBlock("large-sapphire-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalSapphireMessage = new MessageBlock("colossal-sapphire-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        darksapphireMessage = new MessageBlock("darksapphire-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarksapphireMessage = new MessageBlock("large-darksapphire-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarksapphireMessage = new MessageBlock("colossal-darksapphire-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        deepsapphireMessage = new MessageBlock("deepsapphire-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDeepsapphireMessage = new MessageBlock("large-deepsapphire-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDeepsapphireMessage = new MessageBlock("colossal-deepsapphire-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        purpleMessage = new MessageBlock("purple-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largePurpleMessage = new MessageBlock("large-purple-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalPurpleMessage = new MessageBlock("colossal-purple-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        darkpurpleMessage = new MessageBlock("darkpurple-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkpurpleMessage = new MessageBlock("large-darkpurple-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkpurpleMessage = new MessageBlock("colossal-darkpurple-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        violetMessage = new MessageBlock("violet-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeVioletMessage = new MessageBlock("large-violet-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalVioletMessage = new MessageBlock("colossal-violet-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        hotpinkMessage = new MessageBlock("hotpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeHotpinkMessage = new MessageBlock("large-hotpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalHotpinkMessage = new MessageBlock("colossal-hotpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        darkhotpinkMessage = new MessageBlock("darkhotpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDarkhotpinkMessage = new MessageBlock("large-darkhotpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDarkhotpinkMessage = new MessageBlock("colossal-darkhotpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        deephotpinkMessage = new MessageBlock("deephotpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        largeDeephotpinkMessage = new MessageBlock("large-deephotpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
+
+        colossalDeephotpinkMessage = new MessageBlock("colossal-deephotpink-message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+            maxNewLines = 2000;
+        }};
     }
 }
