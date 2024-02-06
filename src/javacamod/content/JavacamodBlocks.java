@@ -536,7 +536,7 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             envDisabled |= Env.scorching;
         }};
 
-        colossalDeepPinkWall = new Wall("colossal-deep-pink-wall"){{
+        colossalDeeppinkWall = new Wall("colossal-deep-pink-wall"){{
             requirements(Category.defense, with(JavacamodItems.pink, 54));
             health = 80;
             size = 3;
@@ -1318,13 +1318,15 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeRedMessage = new MessageBlock("large-red-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
 
         colossalRedMessage = new MessageBlock("colossal-red-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
 
@@ -1335,12 +1337,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkredMessage = new MessageBlock("large-darkred-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkredMessage = new MessageBlock("colossal-darkred-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         bloodMessage = new MessageBlock("blood-message"){{
@@ -1350,12 +1354,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeBloodMessage = new MessageBlock("large-blood-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalBloodMessage = new MessageBlock("colossal-blood-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         greenMessage = new MessageBlock("green-message"){{
@@ -1365,12 +1371,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeGreenMessage = new MessageBlock("large-green-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalGreenMessage = new MessageBlock("colossal-green-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         darkgreenMessage = new MessageBlock("darkgreen-message"){{
@@ -1380,12 +1388,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkgreenMessage = new MessageBlock("large-darkgreen-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkgreenMessage = new MessageBlock("colossal-darkgreen-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         poisonMessage = new MessageBlock("poison-message"){{
@@ -1395,12 +1405,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largePoisonMessage = new MessageBlock("large-poison-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalPoisonMessage = new MessageBlock("colossal-poison-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         blueMessage = new MessageBlock("blue-message"){{
@@ -1410,12 +1422,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeBlueMessage = new MessageBlock("large-blue-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalBlueMessage = new MessageBlock("colossal-blue-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         darkblueMessage = new MessageBlock("darkblue-message"){{
@@ -1425,12 +1439,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkblueMessage = new MessageBlock("large-darkblue-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkblueMessage = new MessageBlock("colossal-darkblue-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         navyMessage = new MessageBlock("navy-message"){{
@@ -1440,12 +1456,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeNavyMessage = new MessageBlock("large-navy-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalNavyMessage = new MessageBlock("colossal-navy-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         whiteMessage = new MessageBlock("white-message"){{
@@ -1455,12 +1473,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeWhiteMessage = new MessageBlock("large-white-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalWhiteMessage = new MessageBlock("colossal-white-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         blankMessage = new MessageBlock("blank-message"){{
@@ -1470,12 +1490,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeBlankMessage = new MessageBlock("large-blank-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalBlankMessage = new MessageBlock("colossal-blank-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         blackMessage = new MessageBlock("black-message"){{
@@ -1485,12 +1507,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeBlackMessage = new MessageBlock("large-black-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalBlackMessage = new MessageBlock("colossal-black-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         yellowMessage = new MessageBlock("yellow-message"){{
@@ -1500,12 +1524,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeYellowMessage = new MessageBlock("large-yellow-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalYellowMessage = new MessageBlock("colossal-yellow-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         darkyellowMessage = new MessageBlock("darkyellow-message"){{
@@ -1515,12 +1541,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkyellowMessage = new MessageBlock("large-darkyellow-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkyellowMessage = new MessageBlock("colossal-darkyellow-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         runicMessage = new MessageBlock("runic-message"){{
@@ -1530,12 +1558,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeRunicMessage = new MessageBlock("large-runic-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalRunicMessage = new MessageBlock("colossal-runic-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         cyanMessage = new MessageBlock("cyan-message"){{
@@ -1545,12 +1575,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
         
         largeCyanMessage = new MessageBlock("large-cyan-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalCyanMessage = new MessageBlock("colossal-cyan-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         darkcyanMessage = new MessageBlock("darkcyan-message"){{
@@ -1560,12 +1592,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkcyanMessage = new MessageBlock("large-darkcyan-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkcyanMessage = new MessageBlock("colossal-darkcyan-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         deepOceanMessage = new MessageBlock("deep-ocean-message"){{
@@ -1575,12 +1609,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeepOceanMessage = new MessageBlock("large-deep-ocean-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDeepOceanMessage = new MessageBlock("colossal-deep-ocean-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         pinkMessage = new MessageBlock("pink-message"){{
@@ -1590,12 +1626,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largePinkMessage = new MessageBlock("large-pink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalPinkMessage = new MessageBlock("colossal-pink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
         
         darkpinkMessage = new MessageBlock("darkpink-message"){{
@@ -1605,12 +1643,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkpinkMessage = new MessageBlock("large-darkpink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkpinkMessage = new MessageBlock("colossal-darkpink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         deeppinkMessage = new MessageBlock("deeppink-message"){{
@@ -1620,12 +1660,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeeppinkMessage = new MessageBlock("large-deeppink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
-        colossalDeeppinkMessage = new MessageBlock("colossal-+deeppink-message"){{
+        colossalDeeppinkMessage = new MessageBlock("colossal-deeppink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         orangeMessage = new MessageBlock("orange-message"){{
@@ -1635,12 +1677,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeOrangeMessage = new MessageBlock("large-orange-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalOrangeMessage = new MessageBlock("colossal-orange-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         darkorangeMessage = new MessageBlock("darkorange-message"){{
@@ -1650,12 +1694,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkorangeMessage = new MessageBlock("large-darkorange-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkorangeMessage = new MessageBlock("colossal-darkorange-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         burntorangeMessage = new MessageBlock("burntorange-message"){{
@@ -1665,12 +1711,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeBurntorangeMessage = new MessageBlock("large-burntorange-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalBurntorangeMessage = new MessageBlock("colossal-burntorange-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         limeMessage = new MessageBlock("lime-message"){{
@@ -1680,12 +1728,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeLimeMessage = new MessageBlock("large-lime-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalLimeMessage = new MessageBlock("colossal-lime-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
         
         darklimeMessage = new MessageBlock("darklime-message"){{
@@ -1695,12 +1745,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarklimeMessage = new MessageBlock("large-darklime-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarklimeMessage = new MessageBlock("colossal-darklime-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         fruitMessage = new MessageBlock("fruit-message"){{
@@ -1710,12 +1762,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeFruitMessage = new MessageBlock("large-fruit-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalFruitMessage = new MessageBlock("colossal-fruit-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         emeraldMessage = new MessageBlock("emerald-message"){{
@@ -1725,12 +1779,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeEmeraldMessage = new MessageBlock("large-emerald-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalEmeraldMessage = new MessageBlock("colossal-emerald-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         darkemeraldMessage = new MessageBlock("darkemerald-message"){{
@@ -1740,12 +1796,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkemeraldMessage = new MessageBlock("large-darkemerald-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkemeraldMessage = new MessageBlock("colossal-darkemerald-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         deepemeraldMessage = new MessageBlock("deepemerald-message"){{
@@ -1755,12 +1813,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeepemeraldMessage = new MessageBlock("large-deepemerald-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDeepemeraldMessage = new MessageBlock("colossal-deepemerald-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         sapphireMessage = new MessageBlock("sapphire-message"){{
@@ -1770,12 +1830,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeSapphireMessage = new MessageBlock("large-sapphire-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalSapphireMessage = new MessageBlock("colossal-sapphire-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         darksapphireMessage = new MessageBlock("darksapphire-message"){{
@@ -1785,12 +1847,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarksapphireMessage = new MessageBlock("large-darksapphire-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarksapphireMessage = new MessageBlock("colossal-darksapphire-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         deepsapphireMessage = new MessageBlock("deepsapphire-message"){{
@@ -1800,12 +1864,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeepsapphireMessage = new MessageBlock("large-deepsapphire-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDeepsapphireMessage = new MessageBlock("colossal-deepsapphire-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         purpleMessage = new MessageBlock("purple-message"){{
@@ -1815,12 +1881,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largePurpleMessage = new MessageBlock("large-purple-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalPurpleMessage = new MessageBlock("colossal-purple-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         darkpurpleMessage = new MessageBlock("darkpurple-message"){{
@@ -1830,12 +1898,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkpurpleMessage = new MessageBlock("large-darkpurple-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkpurpleMessage = new MessageBlock("colossal-darkpurple-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         violetMessage = new MessageBlock("violet-message"){{
@@ -1845,12 +1915,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeVioletMessage = new MessageBlock("large-violet-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalVioletMessage = new MessageBlock("colossal-violet-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         hotpinkMessage = new MessageBlock("hotpink-message"){{
@@ -1860,12 +1932,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeHotpinkMessage = new MessageBlock("large-hotpink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalHotpinkMessage = new MessageBlock("colossal-hotpink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         darkhotpinkMessage = new MessageBlock("darkhotpink-message"){{
@@ -1875,12 +1949,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkhotpinkMessage = new MessageBlock("large-darkhotpink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDarkhotpinkMessage = new MessageBlock("colossal-darkhotpink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
 
         deephotpinkMessage = new MessageBlock("deephotpink-message"){{
@@ -1890,12 +1966,14 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeephotpinkMessage = new MessageBlock("large-deephotpink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 2;
         }};
 
         colossalDeephotpinkMessage = new MessageBlock("colossal-deephotpink-message"){{
             requirements(Category.logic, with());
-            maxTextLength = 22000;
+            maxTextLength = 22000; 
+            size = 3;
         }};
     }
 }
