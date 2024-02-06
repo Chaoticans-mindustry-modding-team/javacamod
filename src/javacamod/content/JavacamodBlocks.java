@@ -1664,7 +1664,7 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             size = 2;
         }};
 
-        colossalDeeppinkMessage = new MessageBlock("colossal-deeppink-message"){{
+        colossalDeepPinkMessage = new MessageBlock("colossal-deeppink-message"){{
             requirements(Category.logic, with());
             maxTextLength = 22000; 
             size = 3;
