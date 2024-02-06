@@ -536,7 +536,7 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             envDisabled |= Env.scorching;
         }};
 
-        colossalDeeppinkWall = new Wall("colossal-deep-pink-wall"){{
+        colossalDeepPinkWall = new Wall("colossal-deep-pink-wall"){{
             requirements(Category.defense, with(JavacamodItems.pink, 54));
             health = 80;
             size = 3;
@@ -1664,7 +1664,7 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             size = 2;
         }};
 
-        colossalDeepPinkMessage = new MessageBlock("colossal-deeppink-message"){{
+        colossalDeeppinkMessage = new MessageBlock("colossal-deeppink-message"){{
             requirements(Category.logic, with());
             maxTextLength = 22000; 
             size = 3;
