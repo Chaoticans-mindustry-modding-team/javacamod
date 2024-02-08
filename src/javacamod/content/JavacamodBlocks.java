@@ -924,6 +924,456 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             envDisabled |= Env.scorching;
         }};
 
+        redDoor = new Door("red-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeRedDoor = new Door("large-red-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkredDoor = new Door("darkred-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkredDoor = new Door("large-darkred-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        crimsonDoor = new Door("crimson-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeCrimsonDoor = new Door("large-crimson-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        greenDoor = new Door("green-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeGreenDoor = new Door("large-green-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkgreenDoor = new Door("darkgreen-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkgreenDoor = new Door("large-darkgreen-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        poisonDoor = new Door("poison-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largePoisonDoor = new Door("large-poison-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        blueDoor = new Door("blue-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeBlueDoor = new Door("large-blue-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkblueDoor = new Door("darkblue-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkblueDoor = new Door("large-darkblue-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        navyDoor = new Door("navy-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeNavyDoor = new Door("large-navy-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        whiteDoor = new Door("white-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeWhiteDoor = new Door("large-white-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        blackDoor = new Door("black-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        yellowDoor = new Door("yellow-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeYellowDoor = new Door("large-yellow-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkyellowDoor = new Door("darkyellow-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkyellowDoor = new Door("large-darkyellow-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        runicDoor = new Door("runic-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeRunicDoor = new Door("large-runic-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        cyanDoor = new Door("cyan-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeCyanDoor = new Door("large-cyan-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkcyanDoor = new Door("darkcyan-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkcyanDoor = new Door("large-darkcyan-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+        
+        deepOceanDoor = new Door("deep-ocean-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDeepOceanDoor = new Door("large-deep-ocean-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        pinkDoor = new Door("pink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largePinkDoor = new Door("large-pink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkpinkDoor = new Door("darkpink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkpinkDoor = new Door("large-darkpink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        deeppinkDoor = new Door("deeppink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDeeppinkDoor = new Door("large-deeppink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        orangeDoor = new Door("orange-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeOrangeDoor = new Door("large-orange-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkorangeDoor = new Door("darkorange-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkorangeDoor = new Door("large-darkorange-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        burntorangeDoor = new Door("burntorange-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeBurntorangeDoor = new Door("large-burntorange-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        limeDoor = new Door("lime-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeLimeDoor = new Door("large-lime-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darklimeDoor = new Door("darklime-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarklimeDoor = new Door("large-darklime-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        fruitDoor = new Door("fruit-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeFruitDoor = new Door("large-fruit-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        emeraldDoor = new Door("emerald-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeEmeraldDoor = new Door("large-emerald-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkemeraldDoor = new Door("darkemerald-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkemeraldDoor = new Door("large-darkemerald-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        deepemeraldDoor = new Door("deepemerald-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDeepemeraldDoor = new Door("large-deepemerald-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        sapphireDoor = new Door("sapphire-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeSapphireDoor = new Door("large-sapphire-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darksapphireDoor = new Door(darksapphire-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarksapphireDoor = new Door("large-darksapphire-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        deepsapphireDoor = new Door("deepsapphire-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDeepsapphireDoor = new Door("large-deepsapphire-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        purpleDoor = new Door("purple-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largePurpleDoor = new Door("large-purple-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkpurpleDoor = new Door("darkpurple-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkpurpleDoor = new Door("large-darkpurple-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        violetDoor = new Door("violet-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeVioletDoor = new Door("large-violet-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        hotpinkDoor = new Door("hotpink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeHotpinkDoor = new Door("large-hotpink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkhotpinkDoor = new Door("darkhotpink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDarkhotpinkDoor = new Door("large-darkhotpink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        deephotpinkDoor = new Door("deephotpink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeDeephotpinkDoor = new Door("large-deephotpink-door"){{
+            requirements(Category.defense, with());
+            health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
         largeSorter = new Sorter("large-sorter"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
