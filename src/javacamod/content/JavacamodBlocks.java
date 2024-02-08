@@ -935,7 +935,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeRedDoor = new Door("large-red-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -947,7 +948,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkredDoor = new Door("large-darkred-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -959,7 +961,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeCrimsonDoor = new Door("large-crimson-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -971,7 +974,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeGreenDoor = new Door("large-green-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -983,7 +987,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkgreenDoor = new Door("large-darkgreen-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -995,7 +1000,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largePoisonDoor = new Door("large-poison-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1007,7 +1013,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeBlueDoor = new Door("large-blue-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1019,7 +1026,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkblueDoor = new Door("large-darkblue-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1031,7 +1039,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeNavyDoor = new Door("large-navy-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1043,13 +1052,21 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeWhiteDoor = new Door("large-white-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
         blackDoor = new Door("black-door"){{
             requirements(Category.defense, with());
             health = 100;
+            envDisabled |= Env.scorching;
+        }};
+
+        largeBlackDoor = new Door("large-black-door"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1061,7 +1078,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeYellowDoor = new Door("large-yellow-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1073,7 +1091,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkyellowDoor = new Door("large-darkyellow-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1085,7 +1104,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeRunicDoor = new Door("large-runic-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1097,7 +1117,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeCyanDoor = new Door("large-cyan-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1109,7 +1130,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkcyanDoor = new Door("large-darkcyan-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
         
@@ -1121,7 +1143,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeepOceanDoor = new Door("large-deep-ocean-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1133,7 +1156,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largePinkDoor = new Door("large-pink-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1145,7 +1169,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkpinkDoor = new Door("large-darkpink-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1157,7 +1182,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeeppinkDoor = new Door("large-deeppink-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1169,7 +1195,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeOrangeDoor = new Door("large-orange-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1181,7 +1208,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkorangeDoor = new Door("large-darkorange-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1193,7 +1221,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeBurntorangeDoor = new Door("large-burntorange-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1205,7 +1234,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeLimeDoor = new Door("large-lime-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1217,7 +1247,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarklimeDoor = new Door("large-darklime-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1229,7 +1260,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeFruitDoor = new Door("large-fruit-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1241,7 +1273,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeEmeraldDoor = new Door("large-emerald-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1253,7 +1286,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkemeraldDoor = new Door("large-darkemerald-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1265,7 +1299,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeepemeraldDoor = new Door("large-deepemerald-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1277,7 +1312,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeSapphireDoor = new Door("large-sapphire-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1289,7 +1325,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarksapphireDoor = new Door("large-darksapphire-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1301,7 +1338,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeepsapphireDoor = new Door("large-deepsapphire-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1313,7 +1351,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largePurpleDoor = new Door("large-purple-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1325,7 +1364,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkpurpleDoor = new Door("large-darkpurple-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1337,7 +1377,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeVioletDoor = new Door("large-violet-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1349,7 +1390,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeHotpinkDoor = new Door("large-hotpink-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1361,7 +1403,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDarkhotpinkDoor = new Door("large-darkhotpink-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1373,7 +1416,8 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 
         largeDeephotpinkDoor = new Door("large-deephotpink-door"){{
             requirements(Category.defense, with());
-            health = 100;
+            health = 100; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
