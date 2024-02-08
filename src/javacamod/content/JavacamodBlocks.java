@@ -1281,7 +1281,7 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             envDisabled |= Env.scorching;
         }};
 
-        darksapphireDoor = new Door(darksapphire-door"){{
+        darksapphireDoor = new Door("darksapphire-door"){{
             requirements(Category.defense, with());
             health = 100;
             envDisabled |= Env.scorching;
