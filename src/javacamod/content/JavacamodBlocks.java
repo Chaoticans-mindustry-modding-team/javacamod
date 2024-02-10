@@ -1177,19 +1177,19 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             envDisabled |= Env.scorching;
         }};
 
-        plastaniumBlockstackTop = new Wall("plastanium-blockstocktop"){{
+        plastaniumBlockstackTop = new Wall("plastanium-blockstacktop"){{
             requirements(Category.production, with());
             health = 80;
             envDisabled |= Env.scorching;
         }};
 
-        plastaniumBlockstackMid = new Wall("plastanium-blockstockmid"){{
+        plastaniumBlockstackMid = new Wall("plastanium-blockstackmid"){{
             requirements(Category.production, with());
             health = 80;
             envDisabled |= Env.scorching;
         }};
 
-        plastaniumBlockstackBottom = new Wall("plastanium-blockstockbottom"){{
+        plastaniumBlockstackBottom = new Wall("plastanium-blockstackbottom"){{
             requirements(Category.production, with());
             health = 80;
             envDisabled |= Env.scorching;
