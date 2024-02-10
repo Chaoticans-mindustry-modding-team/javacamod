@@ -53,6 +53,9 @@ redWall, largeRedWall, colossalRedWall, darkredWall, largeDarkredWall, colossalD
 //doors
 redDoor, largeRedDoor, darkredDoor, largeDarkredDoor, crimsonDoor, largeCrimsonDoor, greenDoor, largeGreenDoor, darkgreenDoor, largeDarkgreenDoor, poisonDoor, largePoisonDoor, blueDoor, largeBlueDoor, darkblueDoor, largeDarkblueDoor, navyDoor, largeNavyDoor, whiteDoor, largeWhiteDoor, blackDoor, largeBlackDoor, yellowDoor, largeYellowDoor, darkyellowDoor, largeDarkyellowDoor, runicDoor, largeRunicDoor, cyanDoor, largeCyanDoor, darkcyanDoor, largeDarkcyanDoor, deepOceanDoor, largeDeepOceanDoor, pinkDoor, largePinkDoor, darkpinkDoor, largeDarkpinkDoor, deeppinkDoor, largeDeeppinkDoor, orangeDoor, largeOrangeDoor, darkorangeDoor, largeDarkorangeDoor, burntorangeDoor, largeBurntorangeDoor, limeDoor, largeLimeDoor, darklimeDoor, largeDarklimeDoor, fruitDoor, largeFruitDoor, emeraldDoor, largeEmeraldDoor, darkemeraldDoor, largeDarkemeraldDoor, deepemeraldDoor, largeDeepemeraldDoor, sapphireDoor, largeSapphireDoor, darksapphireDoor, largeDarksapphireDoor, deepsapphireDoor, largeDeepsapphireDoor, purpleDoor, largePurpleDoor, darkpurpleDoor, largeDarkpurpleDoor, violetDoor, largeVioletDoor, hotpinkDoor, largeHotpinkDoor, darkhotpinkDoor, largeDarkhotpinkDoor, deephotpinkDoor, largeDeephotpinkDoor,
 
+//Oreblocks
+copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBottom, leadBar, leadBars, leadBarstackTop, leadBarstackMid, leadBarstackBottom, metaglassBlock, metaglassBlocks, metaglassBlockstackTop, metaglassBlockstackMid, metaglassBlockstackBottom, graphiteBlock, graphiteBlocks, graphiteBlockstackTop, graphiteBlockstackMid, graphiteBlockstackBottom, sandPile, smallSandPileOne, smallSandPileTwo, coalPile, titaniumBar, titaniumBars, titaniumBarstackTop, titaniumBarstackMid, titaniumBarstackBottom, thoriumPile, scrapPileOne, scrapPileTwo, scrapPileThree, scrapPileFour, siliconBlock, siliconBlocks, siliconBlockstandTop, siliconBlockstackMid, siliconBlockstackBottom, plastaniumBlock, plastaniumBlocks, plastaniumBlockstackTop, plastaniumBlockstackMid, plastaniumBlockstackBottom, phasePile, surgeAlloyBar, surgeAlloyBars, surgeAlloyBarstackTop, surgeAlloyBarstackMid, surgeAlloyBarstackBottom, sporePodPile, pyratiteBlock, pyratiteBlocks, pyratiteBlockstackTop, pyratiteBlockstackMid, pyratiteBlockstackBottom, blastCompoundBlock, blastCompoundBlocks, blastCompoundBlockstackTop, blastCompoundBlockstackMid, blastCompoundBlockstackBottom, berylliumPile, tungstenPile, oxidePile, carbidePile,
+    
 //distribution
 borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14,
 
@@ -926,6 +929,405 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             size = 3;
             envDisabled |= Env.scorching;
         }};
+
+        copperBar = new Wall("copper-bar"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        copperBars = new Wall("copper-bars"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        copperBarstackTop = new Wall("copper-barstacktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        copperBarstackMiddle = new Wall("copper-barstackmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        copperBarstackBottom = new Wall("copper-barstackbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        leadBar = new Wall("lead-bar"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        leadBars = new Wall("lead-bars"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        leadBarstackTop = new Wall("lead-barstacktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        leadBarstackMid = new Wall("lead-barstackmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+
+        leadBarstackBottom = new Wall("lead-barstackbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        metaglassBlock = new Wall("metaglass-block"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        metaglassBlocks = new Wall("metaglass-blocks"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        metaglassBlockstackTop = new Wall("metaglass-blockstacktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        metaglassBlockstackMid = new Wall("metaglass-blockstackmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        metaglassBlockstackBottom = new Wall("metaglass-blockstackbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        graphiteBlock = new Wall("graphite-block"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        graphiteBlocks = new Wall("graphite-blocks"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        graphiteBlockstackTop = new Wall("graphite-blockstacktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        graphiteBlockstackMid = new Wall("graphite-blockstackmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        graphiteBlockstackBottom = new Wall("graphite-blockstackbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        sandPile = new Wall("sand-pile"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        smallSandPileOne = new Wall("small-sand-pile-one"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        smallSandPileTwo = new Wall("small-sand-pile-two"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        coalPile = new Wall("coal-pile"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        titaniumBar = new Wall("titanium-bar"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        titaniumBars = new Wall("titanium-bars"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        titaniumBarstackTop = new Wall("titanium-barstacktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        titaniumBarstackMid = new Wall("titanium-barstackmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        titaniumBarstackBottom = new Wall("titanium-barstackbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        thoriumPile = new Wall("thorium-pile"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        scrapPileOne = new Wall("scrap-one"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        scrapPileTwo = new Wall("scrap-two"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        scrapPileThree = new Wall("scrap-three"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        scrapPileFour = new Wall("scrap-four"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        siliconBlock = new Wall("silicon-block"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        siliconBlocks = new Wall("silicon-blocks"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        siliconBlockstackTop = new Wall("silicon-blockstacktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        siliconBlockstackMid = new Wall("silicon-blockstackmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        siliconBlockstackBottom = new Wall("silicon-blockstackbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        plastaniumBlock = new Wall("plastaniumBlock"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        plastaniumBlocks = new Wall("plastaniumBlocks"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        plastaniumBlocksstackTop = new Wall("plastaniumBlockstocktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        plastaniumBlocksstackMid = new Wall("plastaniumBlockstockmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        plastaniumBlocksstackBottom = new Wall("plastaniumBlockstockbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        phasePile = new Wall("phase-fabric-pile"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        plastaniumBlocksstackTop = new Wall("plastaniumBlockstocktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        surgeAlloyBar = new Wall("surge-alloy-bar"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        surgeAlloyBars = new Wall("surge-alloy-bars"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        surgeAlloyBarstackTop = new Wall("surge-alloy-barstacktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        surgeAlloyBarstackMid = new Wall("surge-alloy-barstackmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        surgeAlloyBarstackBottom = new Wall("surge-alloy-barstackbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        sporePodPile = new Wall("spore-pod-pile"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        pyratiteBlock = new Wall("pyratite-block"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        pyratiteBlocks = new Wall("pyratite-blocks"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        pyratiteBlockstackTop = new Wall("pyratite-blockstacktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        pyratiteBlockstackMid = new Wall("pyratite-blockstackmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        pyratiteBlockstackBottom = new Wall("pyratite-blockstackbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        blastCompoundBlock = new Wall("blast-compound-block"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        blastCompoundBlocks = new Wall("blast-compound-blocks"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        blastCompoundBlockstackTop = new Wall("blast-compound-blockstacktop"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        blastCompoundBlockstackMid = new Wall("blast-compound-blockstackmid"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        blastCompoundBlockstackBottom = new Wall("blast-compound-blockstackbottom"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        berylliumPile = new Wall("beryllium-pile"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        tungstenPile = new Wall("tungsten-pile"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        oxidePile = new Wall("oxide-pile"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        carbidePile = new Wall("carbide-pile"){{
+            requirements(Category.production, with());
+            health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+
 
         redDoor = new Door("red-door"){{
             requirements(Category.defense, with());
