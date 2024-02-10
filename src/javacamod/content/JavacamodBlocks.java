@@ -1165,31 +1165,31 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             envDisabled |= Env.scorching;
         }};
 
-        plastaniumBlock = new Wall("plastaniumBlock"){{
+        plastaniumBlock = new Wall("plastanium-block"){{
             requirements(Category.production, with());
             health = 80;
             envDisabled |= Env.scorching;
         }};
 
-        plastaniumBlocks = new Wall("plastaniumBlocks"){{
+        plastaniumBlocks = new Wall("plastanium-blocks"){{
             requirements(Category.production, with());
             health = 80;
             envDisabled |= Env.scorching;
         }};
 
-        plastaniumBlockstackTop = new Wall("plastaniumBlockstocktop"){{
+        plastaniumBlockstackTop = new Wall("plastanium-blockstocktop"){{
             requirements(Category.production, with());
             health = 80;
             envDisabled |= Env.scorching;
         }};
 
-        plastaniumBlockstackMid = new Wall("plastaniumBlockstockmid"){{
+        plastaniumBlockstackMid = new Wall("plastanium-blockstockmid"){{
             requirements(Category.production, with());
             health = 80;
             envDisabled |= Env.scorching;
         }};
 
-        plastaniumBlockstackBottom = new Wall("plastaniumBlockstockbottom"){{
+        plastaniumBlockstackBottom = new Wall("plastanium-blockstockbottom"){{
             requirements(Category.production, with());
             health = 80;
             envDisabled |= Env.scorching;
