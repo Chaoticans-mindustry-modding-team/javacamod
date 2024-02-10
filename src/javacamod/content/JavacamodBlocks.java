@@ -1201,12 +1201,6 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             envDisabled |= Env.scorching;
         }};
 
-        plastaniumBlocksstackTop = new Wall("plastaniumBlockstocktop"){{
-            requirements(Category.production, with());
-            health = 80;
-            envDisabled |= Env.scorching;
-        }};
-
         surgeAlloyBar = new Wall("surge-alloy-bar"){{
             requirements(Category.production, with());
             health = 80;
@@ -1326,8 +1320,6 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             health = 80;
             envDisabled |= Env.scorching;
         }};
-
-
 
         redDoor = new Door("red-door"){{
             requirements(Category.defense, with());
