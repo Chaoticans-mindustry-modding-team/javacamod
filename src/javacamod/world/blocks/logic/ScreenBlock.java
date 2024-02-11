@@ -37,9 +37,7 @@ public class ScreenBlock extends Block{
     public void load(){
         corner1=Core.atlas.load(name+"-corner1");
 };
-    public void load(corner2=Core.atlas.load(name+"-corner2");){
-        corner2=Core.atlas.load(name+"-corner2");
-};
+    public void load(corner2=Core.atlas.load(name+"-corner2")){corner2=Core.atlas.load(name+"-corner2");};
 
     protected @Nullable Pixmap previewPixmap;
     protected @Nullable Texture previewTexture;
