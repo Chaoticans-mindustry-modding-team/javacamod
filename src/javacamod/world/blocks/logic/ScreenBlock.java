@@ -27,7 +27,7 @@ public class ScreenBlock extends Block{
     public int bitsPerPixel;
     public IntIntMap colorToIndex = new IntIntMap();
 
-    public Core.atlas.load(side1=Core.atlas.load(name+"-side1") TextureRegion side1;
+    public Core.atlas.load(side1=Core.atlas.load(name+"-side1")) TextureRegion side1;
     public Core.atlas.load("@-side2") TextureRegion side2;
 
     public Core.atlas.load("@-corner1") TextureRegion corner1;
