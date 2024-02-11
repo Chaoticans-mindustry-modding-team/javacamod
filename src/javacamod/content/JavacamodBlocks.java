@@ -63,7 +63,10 @@ borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInve
 liquidBlock, borderlessLiquidSource,
 
 //MSGs
-redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMessage, colossalDarkredMessage, bloodMessage, largeBloodMessage, colossalBloodMessage, greenMessage, largeGreenMessage, colossalGreenMessage, darkgreenMessage, largeDarkgreenMessage, colossalDarkgreenMessage, poisonMessage, largePoisonMessage, colossalPoisonMessage, blueMessage, largeBlueMessage, colossalBlueMessage, darkblueMessage, largeDarkblueMessage, colossalDarkblueMessage, navyMessage, largeNavyMessage, colossalNavyMessage, whiteMessage, largeWhiteMessage, colossalWhiteMessage, blankMessage, largeBlankMessage, colossalBlankMessage, blackMessage, largeBlackMessage, colossalBlackMessage, yellowMessage, largeYellowMessage, colossalYellowMessage, darkyellowMessage, largeDarkyellowMessage, colossalDarkyellowMessage, runicMessage, largeRunicMessage, colossalRunicMessage, cyanMessage, largeCyanMessage, colossalCyanMessage, darkcyanMessage, largeDarkcyanMessage, colossalDarkcyanMessage, deepOceanMessage, largeDeepOceanMessage, colossalDeepOceanMessage, pinkMessage, largePinkMessage, colossalPinkMessage, darkpinkMessage, largeDarkpinkMessage, colossalDarkpinkMessage, deeppinkMessage, largeDeeppinkMessage, colossalDeeppinkMessage, orangeMessage, largeOrangeMessage, colossalOrangeMessage, darkorangeMessage, largeDarkorangeMessage, colossalDarkorangeMessage, burntorangeMessage, largeBurntorangeMessage, colossalBurntorangeMessage, limeMessage, largeLimeMessage, colossalLimeMessage, darklimeMessage, largeDarklimeMessage, colossalDarklimeMessage, fruitMessage, largeFruitMessage, colossalFruitMessage, emeraldMessage, largeEmeraldMessage, colossalEmeraldMessage, darkemeraldMessage, largeDarkemeraldMessage, colossalDarkemeraldMessage, deepemeraldMessage, largeDeepemeraldMessage, colossalDeepemeraldMessage, sapphireMessage, largeSapphireMessage, colossalSapphireMessage, darksapphireMessage, largeDarksapphireMessage, colossalDarksapphireMessage, deepsapphireMessage, largeDeepsapphireMessage, colossalDeepsapphireMessage, purpleMessage, largePurpleMessage, colossalPurpleMessage, darkpurpleMessage, largeDarkpurpleMessage, colossalDarkpurpleMessage, violetMessage, largeVioletMessage, colossalVioletMessage, hotpinkMessage, largeHotpinkMessage, colossalHotpinkMessage, darkhotpinkMessage, largeDarkhotpinkMessage, colossalDarkhotpinkMessage, deephotpinkMessage, largeDeephotpinkMessage, colossalDeephotpinkMessage
+redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMessage, colossalDarkredMessage, bloodMessage, largeBloodMessage, colossalBloodMessage, greenMessage, largeGreenMessage, colossalGreenMessage, darkgreenMessage, largeDarkgreenMessage, colossalDarkgreenMessage, poisonMessage, largePoisonMessage, colossalPoisonMessage, blueMessage, largeBlueMessage, colossalBlueMessage, darkblueMessage, largeDarkblueMessage, colossalDarkblueMessage, navyMessage, largeNavyMessage, colossalNavyMessage, whiteMessage, largeWhiteMessage, colossalWhiteMessage, blankMessage, largeBlankMessage, colossalBlankMessage, blackMessage, largeBlackMessage, colossalBlackMessage, yellowMessage, largeYellowMessage, colossalYellowMessage, darkyellowMessage, largeDarkyellowMessage, colossalDarkyellowMessage, runicMessage, largeRunicMessage, colossalRunicMessage, cyanMessage, largeCyanMessage, colossalCyanMessage, darkcyanMessage, largeDarkcyanMessage, colossalDarkcyanMessage, deepOceanMessage, largeDeepOceanMessage, colossalDeepOceanMessage, pinkMessage, largePinkMessage, colossalPinkMessage, darkpinkMessage, largeDarkpinkMessage, colossalDarkpinkMessage, deeppinkMessage, largeDeeppinkMessage, colossalDeeppinkMessage, orangeMessage, largeOrangeMessage, colossalOrangeMessage, darkorangeMessage, largeDarkorangeMessage, colossalDarkorangeMessage, burntorangeMessage, largeBurntorangeMessage, colossalBurntorangeMessage, limeMessage, largeLimeMessage, colossalLimeMessage, darklimeMessage, largeDarklimeMessage, colossalDarklimeMessage, fruitMessage, largeFruitMessage, colossalFruitMessage, emeraldMessage, largeEmeraldMessage, colossalEmeraldMessage, darkemeraldMessage, largeDarkemeraldMessage, colossalDarkemeraldMessage, deepemeraldMessage, largeDeepemeraldMessage, colossalDeepemeraldMessage, sapphireMessage, largeSapphireMessage, colossalSapphireMessage, darksapphireMessage, largeDarksapphireMessage, colossalDarksapphireMessage, deepsapphireMessage, largeDeepsapphireMessage, colossalDeepsapphireMessage, purpleMessage, largePurpleMessage, colossalPurpleMessage, darkpurpleMessage, largeDarkpurpleMessage, colossalDarkpurpleMessage, violetMessage, largeVioletMessage, colossalVioletMessage, hotpinkMessage, largeHotpinkMessage, colossalHotpinkMessage, darkhotpinkMessage, largeDarkhotpinkMessage, colossalDarkhotpinkMessage, deephotpinkMessage, largeDeephotpinkMessage, colossalDeephotpinkMessage,
+
+//Chiseled MSGs
+chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMessageDiamond, chiseledMessageBar, chiseledMessagePlant, chiseledMessageFactory, chiseledMessageAdmin, chiseledMessageDrill, chiseledMessageTurret, chiseledMessageLogic, chiseledMessageUnit, chiseledMessagePower, chiseledMessageWall, chiseledMessageLiquid, chiseledMessageDistribution, chiseledMessageSkull, chiseledMessageVoid, chiseledMessageOne, chiseledMessageTwo, chiseledMessageThree, chiseledMessageFour, chiseledMessageFive, chiseledMessageSix, chiseledMessageSeven, chiseledMessageEight, chiseledMessageNine, chiseledMessageZero, chiseledMessageHouse, chiseledMessageRules, chiseledMessageCore, chiseledMessageTechtree, chiseledMessageImage, chiseledMessageList, chiseledMessageWaves, chiseledMessageTrashcan, chiseledMessageLandscape, chiseledMessageFloors, chiseledMessagePause, chisledMessagePlay, chiseledMessagePencil, chiseledMessageEraser, chiseledMessageCross, chiseledMessageCrossDiagonal, chiseledMessageHammer, chiseledMessageMap, chiseledMessageBox, chiseledMessageGear, chiseledMessageArrowUp, chiseledMessageArrowDown, chiseledMessageArrowLeft, chiseledMessageArrowRight
 
 
 ;
@@ -2880,5 +2883,266 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
             maxTextLength = 22000; 
             size = 3;
         }};
+
+        chiseledMessageSquare = new MessageBlock("chiseled-message-square"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageCircle = new MessageBlock("chiseled-message-circle"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageRhombus = new MessageBlock("chiseled-message-rhombus"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageDiamond = new MessageBlock("chiseled-message-diamond"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageBar = new MessageBlock("chiseled-message-bar"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessagePlant = new MessageBlock("chiseled-message-plant"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageFactory = new MessageBlock("chiseled-message-factory"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageAdmin = new MessageBlock("chiseled-message-drill"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageDrill = new MessageBlock("chiseled-message-admin"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageTurret = new MessageBlock("chiseled-message-turret"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageLogic = new MessageBlock("chiseled-message-logic"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageUnit = new MessageBlock("chiseled-message-unit"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessagePower = new MessageBlock("chiseled-message-power"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageWall = new MessageBlock("chiseled-message-wall"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageLiquid = new MessageBlock("chiseled-message-liquid"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageDistribution = new MessageBlock("chiseled-message-distribution"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageSkull = new MessageBlock("chiseled-message-skull"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageVoid = new MessageBlock("chiseled-message-void"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageOne = new MessageBlock("chiseled-message-one"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageTwo = new MessageBlock("chiseled-message-two"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageThree = new MessageBlock("chiseled-message-three"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageFour = new MessageBlock("chiseled-message-four"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageFive = new MessageBlock("chiseled-message-five"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageSix = new MessageBlock("chiseled-message-six"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageSeven = new MessageBlock("chiseled-message-seven"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageEight = new MessageBlock("chiseled-message-eight"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageNine = new MessageBlock("chiseled-message-nine"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageZero = new MessageBlock("chiseled-message-zero"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageHouse = new MessageBlock("chiseled-message-house"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageRules = new MessageBlock("chiseled-message-rules"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageCore = new MessageBlock("chiseled-message-core"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageTechtree = new MessageBlock("chiseled-message-techtree"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageImage = new MessageBlock("chiseled-message-image"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageList = new MessageBlock("chiseled-message-list"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageWaves = new MessageBlock("chiseled-message-waves"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageTrashcan = new MessageBlock("chiseled-message-trashcan"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageLandscape = new MessageBlock("chiseled-message-landscape"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageFloors = new MessageBlock("chiseled-message-floors"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessagePause = new MessageBlock("chiseled-message-pause"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessagePlay = new MessageBlock("chiseled-message-play"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessagePencil = new MessageBlock("chiseled-message-pencil"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageEraser = new MessageBlock("chiseled-message-eraser"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageCross = new MessageBlock("chiseled-message-cross"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageCrossDiagonal = new MessageBlock("chiseled-message-cross-diagonal"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageHammer = new MessageBlock("chiseled-message-hammer"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageMap = new MessageBlock("chiseled-message-map"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageBox = new MessageBlock("chiseled-message-box"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageGear = new MessageBlock("chiseled-message-gear"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageArrowUp = new MessageBlock("chiseled-message-arrow-up"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageArrowDown = new MessageBlock("chiseled-message-arrow-down"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageArrowLeft = new MessageBlock("chiseled-message-arrow-left"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
+        chiseledMessageArrowRight = new MessageBlock("chiseled-message-arrow-right"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
     }
 }
