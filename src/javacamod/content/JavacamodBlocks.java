@@ -3144,5 +3144,23 @@ chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMe
             maxTextLength = 22000;
         }};
 
+        ScreenSmall = new ScreenBlock("screen-small"){{
+            requirements(Category.logic, with());
+            size = 1;
+            screenSize = 8;
+        }};
+
+        Screen = new ScreenBlock("screen"){{
+            requirements(Category.logic, with());
+            size = 2;
+            screenSize = 16;
+        }};
+
+        ScreenLarge = new ScreenBlock("screen-large"){{
+            requirements(Category.logic, with());
+            size = 3;
+            screenSize = 24;
+        }};
+
     }
 }
