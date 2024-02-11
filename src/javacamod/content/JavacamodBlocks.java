@@ -66,7 +66,10 @@ liquidBlock, borderlessLiquidSource,
 redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMessage, colossalDarkredMessage, bloodMessage, largeBloodMessage, colossalBloodMessage, greenMessage, largeGreenMessage, colossalGreenMessage, darkgreenMessage, largeDarkgreenMessage, colossalDarkgreenMessage, poisonMessage, largePoisonMessage, colossalPoisonMessage, blueMessage, largeBlueMessage, colossalBlueMessage, darkblueMessage, largeDarkblueMessage, colossalDarkblueMessage, navyMessage, largeNavyMessage, colossalNavyMessage, whiteMessage, largeWhiteMessage, colossalWhiteMessage, blankMessage, largeBlankMessage, colossalBlankMessage, blackMessage, largeBlackMessage, colossalBlackMessage, yellowMessage, largeYellowMessage, colossalYellowMessage, darkyellowMessage, largeDarkyellowMessage, colossalDarkyellowMessage, runicMessage, largeRunicMessage, colossalRunicMessage, cyanMessage, largeCyanMessage, colossalCyanMessage, darkcyanMessage, largeDarkcyanMessage, colossalDarkcyanMessage, deepOceanMessage, largeDeepOceanMessage, colossalDeepOceanMessage, pinkMessage, largePinkMessage, colossalPinkMessage, darkpinkMessage, largeDarkpinkMessage, colossalDarkpinkMessage, deeppinkMessage, largeDeeppinkMessage, colossalDeeppinkMessage, orangeMessage, largeOrangeMessage, colossalOrangeMessage, darkorangeMessage, largeDarkorangeMessage, colossalDarkorangeMessage, burntorangeMessage, largeBurntorangeMessage, colossalBurntorangeMessage, limeMessage, largeLimeMessage, colossalLimeMessage, darklimeMessage, largeDarklimeMessage, colossalDarklimeMessage, fruitMessage, largeFruitMessage, colossalFruitMessage, emeraldMessage, largeEmeraldMessage, colossalEmeraldMessage, darkemeraldMessage, largeDarkemeraldMessage, colossalDarkemeraldMessage, deepemeraldMessage, largeDeepemeraldMessage, colossalDeepemeraldMessage, sapphireMessage, largeSapphireMessage, colossalSapphireMessage, darksapphireMessage, largeDarksapphireMessage, colossalDarksapphireMessage, deepsapphireMessage, largeDeepsapphireMessage, colossalDeepsapphireMessage, purpleMessage, largePurpleMessage, colossalPurpleMessage, darkpurpleMessage, largeDarkpurpleMessage, colossalDarkpurpleMessage, violetMessage, largeVioletMessage, colossalVioletMessage, hotpinkMessage, largeHotpinkMessage, colossalHotpinkMessage, darkhotpinkMessage, largeDarkhotpinkMessage, colossalDarkhotpinkMessage, deephotpinkMessage, largeDeephotpinkMessage, colossalDeephotpinkMessage,
 
 //Chiseled MSGs
-chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMessageDiamond, chiseledMessageBar, chiseledMessagePlant, chiseledMessageFactory, chiseledMessageAdmin, chiseledMessageDrill, chiseledMessageTurret, chiseledMessageLogic, chiseledMessageUnit, chiseledMessagePower, chiseledMessageWall, chiseledMessageLiquid, chiseledMessageDistribution, chiseledMessageSkull, chiseledMessageVoid, chiseledMessageOne, chiseledMessageTwo, chiseledMessageThree, chiseledMessageFour, chiseledMessageFive, chiseledMessageSix, chiseledMessageSeven, chiseledMessageEight, chiseledMessageNine, chiseledMessageZero, chiseledMessageHouse, chiseledMessageRules, chiseledMessageCore, chiseledMessageTechtree, chiseledMessageImage, chiseledMessageList, chiseledMessageWaves, chiseledMessageTrashcan, chiseledMessageLandscape, chiseledMessageFloors, chiseledMessagePause, chiseledMessagePlay, chiseledMessagePencil, chiseledMessageEraser, chiseledMessageCross, chiseledMessageCrossDiagonal, chiseledMessageHammer, chiseledMessageMap, chiseledMessageBox, chiseledMessageGear, chiseledMessageArrowUp, chiseledMessageArrowDown, chiseledMessageArrowLeft, chiseledMessageArrowRight
+chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMessageDiamond, chiseledMessageBar, chiseledMessagePlant, chiseledMessageFactory, chiseledMessageAdmin, chiseledMessageDrill, chiseledMessageTurret, chiseledMessageLogic, chiseledMessageUnit, chiseledMessagePower, chiseledMessageWall, chiseledMessageLiquid, chiseledMessageDistribution, chiseledMessageSkull, chiseledMessageVoid, chiseledMessageOne, chiseledMessageTwo, chiseledMessageThree, chiseledMessageFour, chiseledMessageFive, chiseledMessageSix, chiseledMessageSeven, chiseledMessageEight, chiseledMessageNine, chiseledMessageZero, chiseledMessageHouse, chiseledMessageRules, chiseledMessageCore, chiseledMessageTechtree, chiseledMessageImage, chiseledMessageList, chiseledMessageWaves, chiseledMessageTrashcan, chiseledMessageLandscape, chiseledMessageFloors, chiseledMessagePause, chiseledMessagePlay, chiseledMessagePencil, chiseledMessageEraser, chiseledMessageCross, chiseledMessageCrossDiagonal, chiseledMessageHammer, chiseledMessageMap, chiseledMessageBox, chiseledMessageGear, chiseledMessageArrowUp, chiseledMessageArrowDown, chiseledMessageArrowLeft, chiseledMessageArrowRight,
+
+//Screens
+screenSmall, screen, screenLarge
 
 
 ;
@@ -3144,19 +3147,19 @@ chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMe
             maxTextLength = 22000;
         }};
 
-        ScreenSmall = new ScreenBlock("screen-small"){{
+        screenSmall = new ScreenBlock("screen-small"){{
             requirements(Category.logic, with());
             size = 1;
             screenSize = 8;
         }};
 
-        Screen = new ScreenBlock("screen"){{
+        screen = new ScreenBlock("screen"){{
             requirements(Category.logic, with());
             size = 2;
             screenSize = 16;
         }};
 
-        ScreenLarge = new ScreenBlock("screen-large"){{
+        screenLarge = new ScreenBlock("screen-large"){{
             requirements(Category.logic, with());
             size = 3;
             screenSize = 24;
