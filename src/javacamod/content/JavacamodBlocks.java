@@ -71,7 +71,6 @@ chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMe
 //Screens
 screenSmall, screen, screenLarge
 
-
 ;
     
     public static void load() {
