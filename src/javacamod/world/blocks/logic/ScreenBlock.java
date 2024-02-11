@@ -13,7 +13,6 @@ import arc.scene.ui.layout.*;
 import arc.struct.*;
 import arc.util.*;
 import arc.util.io.*;
-import mindustry.annotations.Annotations.*;
 import mindustry.entities.units.*;
 import mindustry.gen.*;
 import mindustry.ui.*;
@@ -28,11 +27,11 @@ public class ScreenBlock extends Block{
     public int bitsPerPixel;
     public IntIntMap colorToIndex = new IntIntMap();
 
-    public @Load("@-side1") TextureRegion side1;
-    public @Load("@-side2") TextureRegion side2;
+    public Core.atlas.load("@-side1") TextureRegion side1;
+    public Core.atlas.load("@-side2") TextureRegion side2;
 
-    public @Load("@-corner1") TextureRegion corner1;
-    public @Load("@-corner2") TextureRegion corner2;
+    public Core.atlas.load("@-corner1") TextureRegion corner1;
+    public Core.atlas.load("@-corner2") TextureRegion corner2;
 
     protected @Nullable Pixmap previewPixmap;
     protected @Nullable Texture previewTexture;
