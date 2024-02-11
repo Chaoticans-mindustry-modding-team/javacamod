@@ -324,6 +324,17 @@ public class ScreenBlock extends Block{
                         }).size(44).checked(b -> curColor[0] == palette[fi]).get();
                         button.getStyle().imageUpColor = new Color(palette[i]);
                     }
+                if(block != null){
+                    pane.setScrollXForce(block.selectScroll);
+                    pane.update(() -> {
+                        block.selectScroll = pane.getScrollX();
+                    });
+                }
+
+                pane.setOverscroll(false, false);
+                main.add(pane).maxHeight(40 * rows);
+                table.top().add(main);
+    
                 });
 
                 dialog.closeOnBack();
