@@ -18,7 +18,11 @@ import mindustry.entities.units.*;
 import mindustry.gen.*;
 import mindustry.ui.*;
 import mindustry.world.*;
+import mindustry.graphics.*;
+import mindustry.logic.*;
+import mindustry.world.meta.*;
 
+import static arc.Core.*;
 import static mindustry.Vars.*;
 
 public class ScreenBlock extends Block{
