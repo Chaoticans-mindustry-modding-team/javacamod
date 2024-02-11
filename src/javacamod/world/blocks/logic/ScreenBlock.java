@@ -30,11 +30,11 @@ public class ScreenBlock extends Block{
     @Override
     public void load(){
         
-        side1=Core.atlas.load(name+"-side1");
-        side2=Core.atlas.load(name+"-side2");
+        side1=Core.atlas.load(name+"-side1") TextureRegion side1;
+        side2=Core.atlas.load(name+"-side2") TextureRegion side2;
         
-        corner1=Core.atlas.load(name+"-corner1");
-        corner2=Core.atlas.load(name+"-corner2");
+        corner1=Core.atlas.load(name+"-corner1") TextureRegion corner1;
+        corner2=Core.atlas.load(name+"-corner2") TextureRegion corner2;
 }
 
     protected @Nullable Pixmap previewPixmap;
