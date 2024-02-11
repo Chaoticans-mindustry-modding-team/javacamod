@@ -31,14 +31,14 @@ public class ScreenBlock extends Block{
         side1=Core.atlas.load(name+"-side1");
 }
     public void load(){
-        side1=Core.atlas.load(name+"-side2");
+        side2=Core.atlas.load(name+"-side2");
 }
 
     public void load(){
-        side1=Core.atlas.load(name+"-corner1");
+        corner1=Core.atlas.load(name+"-corner1");
 }
     public void load(){
-        side1=Core.atlas.load(name+"-corner2");
+        corner2=Core.atlas.load(name+"-corner2");
 }
 
     protected @Nullable Pixmap previewPixmap;
