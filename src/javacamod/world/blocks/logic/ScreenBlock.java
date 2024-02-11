@@ -329,13 +329,13 @@ public class ScreenBlock extends Block{
                         }).size(44).checked(b -> curColor[0] == palette[fi]).get();
                         button.getStyle().imageUpColor = new Color(palette[i]);
                     }
-                    table.setScrollXForce(block.selectScroll);
+                    setScrollXForce(block.selectScroll);
                     table.update(() -> {
-                        block.selectScroll = table.getScrollX();
+                        block.selectScroll = getScrollX();
                     });
                 
 
-                table.setOverscroll(false, false);
+                setOverscroll(false, false);
     
                 });
 
