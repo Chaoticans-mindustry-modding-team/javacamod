@@ -1,4 +1,4 @@
-package mindustry.world.blocks.logic;
+package javacamod.world.blocks.logic;
 
 import arc.*;
 import arc.graphics.*;
