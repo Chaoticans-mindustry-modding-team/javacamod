@@ -30,10 +30,16 @@ public class ScreenBlock extends Block{
     public void load(){
         side1=Core.atlas.load(name+"-side1");
 }
-    public Core.atlas.load("@-side2") TextureRegion side2;
+    public void load(){
+        side1=Core.atlas.load(name+"-side2");
+}
 
-    public Core.atlas.load("@-corner1") TextureRegion corner1;
-    public Core.atlas.load("@-corner2") TextureRegion corner2;
+    public void load(){
+        side1=Core.atlas.load(name+"-corner1");
+}
+    public void load(){
+        side1=Core.atlas.load(name+"-corner2");
+}
 
     protected @Nullable Pixmap previewPixmap;
     protected @Nullable Texture previewTexture;
