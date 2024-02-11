@@ -61,6 +61,7 @@ public class ScreenBlock extends Block{
 
 		@Override
 		public void load(){
+			        super.load();
 				side1 = Core.atlas.find(name + "-side1");
 				side2 = Core.atlas.find(name + "-side2");
 
