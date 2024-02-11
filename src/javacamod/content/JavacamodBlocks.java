@@ -39,8 +39,8 @@ import mindustry.world.blocks.units.*;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
+import javacamod.world.*;
 
-import static javacamod.Javacamod.*;
 import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
 
