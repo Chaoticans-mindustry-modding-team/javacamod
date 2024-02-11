@@ -27,6 +27,7 @@ public class ScreenBlock extends Block{
     public int bitsPerPixel;
     public IntIntMap colorToIndex = new IntIntMap();
     
+    @Override
     public void load(){
         
         side1=Core.atlas.load(name+"-side1");
