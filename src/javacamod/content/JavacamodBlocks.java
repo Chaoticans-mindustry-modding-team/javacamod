@@ -936,6 +936,27 @@ screenSmall, screen, screenLarge
             envDisabled |= Env.scorching;
         }};
 
+        hexWall = new HexBlock("hex-wall"){{
+            requirements(Category.defense, with());
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+        
+        hexWallLarge = new HexBlock("large-hex-wall"){{
+            requirements(Category.defense, with());
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+        
+        hexWallColossal = new HexBlock("colossal-hex-wall"){{
+            requirements(Category.defense, with());
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
         copperBar = new Wall("copper-bar"){{
             requirements(Category.production, with());
             health = 80;
