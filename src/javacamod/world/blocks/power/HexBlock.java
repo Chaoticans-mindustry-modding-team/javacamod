@@ -31,12 +31,9 @@ import mindustry.world.blocks.*;
 import static mindustry.Vars.*;
 
 public class HexBlock extends Block{
-    public float brightness = 1.0f;
-    public float radius = 200f;
     public TextureRegion top;
     public HexBlock(String name){
         super(name);
-        hasPower = true;
         update = true;
         configurable = true;
         saveConfig = true;
@@ -45,34 +42,13 @@ public class HexBlock extends Block{
 
         config(Integer.class, (HexBuild tile, Integer value) -> tile.color = value);
     }
-
-    @Override
-    public void init(){
-        lightRadius = radius*2.5f;
-        clipSize = Math.max(clipSize, lightRadius * 3f);
-        emitLight = false;
-
-        super.init();
-    }
-		@Override
-		public void load(){
-			        super.load();
-			
-			        top = Core.atlas.find(name + "-top"); 
-                }
-
-            @Override
-    public void drawPlace(int x, int y, int rotation, boolean valid){
-        super.drawPlace(x, y, rotation, valid);
-
-        Drawf.dashCircle(x * tilesize + offset, y * tilesize + offset, radius * 0.75f, Pal.placing);
-    }
-
-    @Override
-    public void changePlacementPath(Seq<Point2> points, int rotation){
-        var placeRadius2 = Mathf.pow(radius * 0.7f / tilesize, 2f) * 3;
-        Placement.calculateNodes(points, this, rotation, (point, other) -> point.dst2(other) <= placeRadius2);
-    }
+	
+	@Override
+	public void load(){
+		super.load();
+	
+		top = Core.atlas.find(name + "-top"); 
+        }
 
     public class HexBuild extends Building{
         public int color = Pal.accent.rgba();
@@ -96,11 +72,9 @@ public class HexBlock extends Block{
         @Override
         public void draw(){
             super.draw();
-            Draw.blend(Blending.additive);
             Draw.color(Tmp.c1.set(color), efficiency * 1.0f);
             Draw.rect(top, x, y);
             Draw.color();
-            Draw.blend();
         }
 
         @Override
@@ -111,7 +85,7 @@ public class HexBlock extends Block{
         @Override
         public void buildConfiguration(Table table){
             table.button(Icon.pencil, Styles.cleari, () -> {
-                ui.picker.show(Tmp.c1.set(color), false, res -> configure(res.rgba()));
+                ui.picker.show(Tmp.c1.set(color), true, res -> configure(res.rgba()));
                 deselect();
             }).size(40f);
         }
