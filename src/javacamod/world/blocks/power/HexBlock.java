@@ -21,7 +21,7 @@ import static mindustry.Vars.*;
 public class HexBlock extends Block{
     public float brightness = 0.9f;
     public float radius = 200f;
-    public TextureRegion topRegion;
+    public TextureRegion top;
     public HexBlock(String name){
         super(name);
         hasPower = true;
@@ -45,7 +45,7 @@ public class HexBlock extends Block{
 		@Override
 		public void load(){
 			        super.load();
-			        topRegion = Core.atlas.find(name + "-top"); 
+			        top = Core.atlas.find(name + "-top"); 
     }
 
             @Override
@@ -85,7 +85,7 @@ public class HexBlock extends Block{
             super.draw();
             Draw.blend(Blending.additive);
             Draw.color(Tmp.c1.set(color), efficiency * 0.3f);
-            Draw.rect(topRegion, x, y);
+            Draw.rect(top, x, y);
             Draw.color();
             Draw.blend();
         }
