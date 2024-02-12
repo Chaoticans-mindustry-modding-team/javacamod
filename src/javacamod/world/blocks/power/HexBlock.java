@@ -45,8 +45,9 @@ public class HexBlock extends Block{
 		@Override
 		public void load(){
 			        super.load();
+			
 			        top = Core.atlas.find(name + "-top"); 
-    }
+                }
 
             @Override
     public void drawPlace(int x, int y, int rotation, boolean valid){
