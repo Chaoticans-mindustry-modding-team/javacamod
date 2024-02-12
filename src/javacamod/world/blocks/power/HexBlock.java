@@ -81,7 +81,7 @@ public class HexBlock extends Block{
         @Override
         public void control(LAccess type, double p1, double p2, double p3, double p4){
             if(type == LAccess.color){
-                color = Tmp.c1.fromDouble(p1).rgba8888();
+                color = Tmp.c1.fromDouble(p1).rgba();
             }
 
             super.control(type, p1, p2, p3, p4);
@@ -111,7 +111,7 @@ public class HexBlock extends Block{
         @Override
         public void buildConfiguration(Table table){
             table.button(Icon.pencil, Styles.cleari, () -> {
-                ui.picker.show(Tmp.c1.set(color).a(1.0f), false, res -> configure(res.rgba()));
+                ui.picker.show(Tmp.c1.set(color), false, res -> configure(res.rgba()));
                 deselect();
             }).size(40f);
         }
