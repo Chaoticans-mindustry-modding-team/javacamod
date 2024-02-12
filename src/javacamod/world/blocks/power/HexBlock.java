@@ -8,7 +8,6 @@ import arc.scene.ui.layout.*;
 import arc.struct.*;
 import arc.util.*;
 import arc.util.io.*;
-import mindustry.annotations.Annotations.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.input.*;
@@ -23,7 +22,6 @@ public class HexBlock extends Block{
     public float brightness = 0.9f;
     public float radius = 200f;
     public TextureRegion topRegion;
-    @Override
     public HexBlock(String name){
         super(name);
         hasPower = true;
@@ -44,13 +42,13 @@ public class HexBlock extends Block{
 
         super.init();
     }
-
-    public void load(){
-		    super.load();
-		    topRegion = Core.atlas.find(name + "-top"); 
+		@Override
+		public void load(){
+			        super.load();
+			        topRegion = Core.atlas.find(name + "-top"); 
     }
 
-    @Override
+            @Override
     public void drawPlace(int x, int y, int rotation, boolean valid){
         super.drawPlace(x, y, rotation, valid);
 
