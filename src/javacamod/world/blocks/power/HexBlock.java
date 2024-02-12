@@ -23,11 +23,7 @@ public class HexBlock extends Block{
     public float brightness = 0.9f;
     public float radius = 200f;
     public TextureRegion topRegion;
-		@Override
-		public void load(){
-			        super.load();
-				topRegion = Core.atlas.find(name + "-top"); 
-    }
+    @Override
     public HexBlock(String name){
         super(name);
         hasPower = true;
@@ -37,7 +33,7 @@ public class HexBlock extends Block{
         envEnabled |= Env.space;
         swapDiagonalPlacement = true;
 
-        config(Integer.class, (LightBuild tile, Integer value) -> tile.color = value);
+        config(Integer.class, (HexBuild tile, Integer value) -> tile.color = value);
     }
 
     @Override
@@ -47,6 +43,11 @@ public class HexBlock extends Block{
         emitLight = false;
 
         super.init();
+    }
+
+    public void load(){
+		    super.load();
+		    topRegion = Core.atlas.find(name + "-top"); 
     }
 
     @Override
@@ -99,7 +100,7 @@ public class HexBlock extends Block{
         @Override
         public void buildConfiguration(Table table){
             table.button(Icon.pencil, Styles.cleari, () -> {
-                ui.picker.show(Tmp.c1.set(color).a(), false, res -> configure(res.rgba()));
+                ui.picker.show(Tmp.c1.set(color).a(1.0f), false, res -> configure(res.rgba()));
                 deselect();
             }).size(40f);
         }
