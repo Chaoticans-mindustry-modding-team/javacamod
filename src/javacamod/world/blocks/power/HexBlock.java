@@ -31,7 +31,7 @@ import mindustry.world.blocks.*;
 import static mindustry.Vars.*;
 
 public class HexBlock extends Block{
-    public float brightness = 0.9f;
+    public float brightness = 1.0f;
     public float radius = 200f;
     public TextureRegion top;
     public HexBlock(String name){
