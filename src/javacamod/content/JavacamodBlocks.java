@@ -947,14 +947,14 @@ screenSmall, screen, screenLarge
         hexWallLarge = new HexBlock("large-hex-wall"){{
             requirements(Category.defense, with());
             health = 80;
-            size = 1;
+            size = 2;
             envDisabled |= Env.scorching;
         }};
         
         hexWallColossal = new HexBlock("colossal-hex-wall"){{
             requirements(Category.defense, with());
             health = 80;
-            size = 1;
+            size = 3;
             envDisabled |= Env.scorching;
         }};
 
