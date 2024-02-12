@@ -1894,24 +1894,24 @@ screenSmall, screen, screenLarge
             envDisabled |= Env.scorching;
         }};
 
-        hexSorter = new Sorter("hex-sorter"){{
+        hexSorter = new HexBlock("hex-sorter"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
             envDisabled |= Env.scorching;
         }};
 
-        largeHexSorter = new Sorter("large-hex-sorter"){{
+        largeHexSorter = new HexBlock("large-hex-sorter"){{
             requirements(Category.distribution, with());
             health = 80;
-            size = 1;
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
-        colossalHexSorter = new Sorter("colossal-hex-sorter"){{
+        colossalHexSorter = new HexBlock("colossal-hex-sorter"){{
             requirements(Category.distribution, with());
             health = 80;
-            size = 1;
+            size = 3;
             envDisabled |= Env.scorching;
         }};
 
