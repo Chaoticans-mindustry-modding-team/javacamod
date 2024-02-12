@@ -326,7 +326,7 @@ public class ScreenBlock extends Block{
 
                         var button = p.button(Tex.whiteui, Styles.squareTogglei, 30, () -> {
                             curColor[0] = palette[fi];
-                        }).size(33).checked(b -> curColor[0] == palette[fi]).get();
+                        }).size(22).checked(b -> curColor[0] == palette[fi]).get();
                         button.getStyle().imageUpColor = new Color(palette[i]);
 		    }
                 });
