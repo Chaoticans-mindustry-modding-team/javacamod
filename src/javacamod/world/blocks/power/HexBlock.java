@@ -97,7 +97,7 @@ public class HexBlock extends Block{
         public void draw(){
             super.draw();
             Draw.blend(Blending.additive);
-            Draw.color(Tmp.c1.set(color), efficiency * 0.3f);
+            Draw.color(Tmp.c1.set(color), efficiency * 1.0f);
             Draw.rect(top, x, y);
             Draw.color();
             Draw.blend();
