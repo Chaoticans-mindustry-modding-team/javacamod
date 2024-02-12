@@ -72,7 +72,7 @@ public class HexBlock extends Block{
         @Override
         public void draw(){
             super.draw();
-            Draw.color(Tmp.c1.set(color), efficiency * 1.0f);
+            Draw.color(Tmp.c1.set(color));
             Draw.rect(top, x, y);
             Draw.color();
         }
