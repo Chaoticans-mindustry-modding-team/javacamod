@@ -51,7 +51,7 @@ public class JavacamodBlocks{
     public static Block 
 
 redWall, largeRedWall, colossalRedWall, darkredWall, largeDarkredWall, colossalDarkredWall, crimsonWall, largeCrimsonWall, colossalCrimsonWall, greenWall, largeGreenWall, colossalGreenWall, darkgreenWall, largeDarkgreenWall, colossalDarkgreenWall, poisonWall, largePoisonWall, colossalPoisonWall, blueWall, largeBlueWall, colossalBlueWall, darkblueWall, largeDarkblueWall, colossalDarkblueWall, navyWall, largeNavyWall,colossalNavyWall, whiteWall, largeWhiteWall, colossalWhiteWall, lightgrayWall, largeLightgrayWall, colossalLightgrayWall, blackishwhiteWall, largeBlackishwhiteWall, colossalBlackishwhiteWall, darkgrayWall, largeDarkgrayWall, colossalDarkgrayWall, blackWall, largeBlackWall, colossalBlackWall, yellowWall, largeYellowWall, colossalYellowWall, darkYellowWall, largeDarkYellowWall, colossalDarkYellowWall, runicWall, largeRunicWall, colossalRunicWall, cyanWall, largeCyanWall, colossalCyanWall, darkCyanWall, largeDarkCyanWall, colossalDarkCyanWall, deepOceanWall, largeDeepOceanWall, colossalDeepOceanWall, pinkWall, largePinkWall, colossalPinkWall, darkPinkWall, largeDarkPinkWall, colossalDarkPinkWall, deepPinkWall, largeDeepPinkWall, colossalDeepPinkWall, orangeWall, largeOrangeWall, colossalOrangeWall, darkOrangeWall, largeDarkOrangeWall, colossalDarkOrangeWall, burntOrangeWall, largeBurntOrangeWall, colossalBurntOrangeWall, limeWall, largeLimeWall, colossalLimeWall, darkLimeWall, largeDarkLimeWall, colossalDarkLimeWall, fruitWall, largeFruitWall, colossalFruitWall, emeraldWall, largeEmeraldWall, colossalEmeraldWall, darkEmeraldWall, largeDarkEmeraldWall, colossalDarkEmeraldWall, deepEmeraldWall, largeDeepEmeraldWall, colossalDeepEmeraldWall, sapphireWall, largeSapphireWall, colossalSapphireWall, darkSapphireWall, largeDarkSapphireWall, colossalDarkSapphireWall, deepSapphireWall, largeDeepSapphireWall, colossalDeepSapphireWall, purpleWall, largePurpleWall, colossalPurpleWall, darkPurpleWall, largeDarkPurpleWall, colossalDarkPurpleWall, violetWall, largeVioletWall, colossalVioletWall, hotpinkWall, largeHotpinkWall, colossalHotpinkWall, darkHotpinkWall, largeDarkHotpinkWall, colossalDarkHotpinkWall, deepHotpinkWall, largeDeepHotpinkWall, colossalDeepHotpinkWall,
-hexWall, hexWallLarge, hexWallColossal,
+//hexWall, hexWallLarge, hexWallColossal, will be uncommented once HexBlock type is functional
 
 //doors
 redDoor, largeRedDoor, darkredDoor, largeDarkredDoor, crimsonDoor, largeCrimsonDoor, greenDoor, largeGreenDoor, darkgreenDoor, largeDarkgreenDoor, poisonDoor, largePoisonDoor, blueDoor, largeBlueDoor, darkblueDoor, largeDarkblueDoor, navyDoor, largeNavyDoor, whiteDoor, largeWhiteDoor, blackDoor, largeBlackDoor, yellowDoor, largeYellowDoor, darkyellowDoor, largeDarkyellowDoor, runicDoor, largeRunicDoor, cyanDoor, largeCyanDoor, darkcyanDoor, largeDarkcyanDoor, deepOceanDoor, largeDeepOceanDoor, pinkDoor, largePinkDoor, darkpinkDoor, largeDarkpinkDoor, deeppinkDoor, largeDeeppinkDoor, orangeDoor, largeOrangeDoor, darkorangeDoor, largeDarkorangeDoor, burntorangeDoor, largeBurntorangeDoor, limeDoor, largeLimeDoor, darklimeDoor, largeDarklimeDoor, fruitDoor, largeFruitDoor, emeraldDoor, largeEmeraldDoor, darkemeraldDoor, largeDarkemeraldDoor, deepemeraldDoor, largeDeepemeraldDoor, sapphireDoor, largeSapphireDoor, darksapphireDoor, largeDarksapphireDoor, deepsapphireDoor, largeDeepsapphireDoor, purpleDoor, largePurpleDoor, darkpurpleDoor, largeDarkpurpleDoor, violetDoor, largeVioletDoor, hotpinkDoor, largeHotpinkDoor, darkhotpinkDoor, largeDarkhotpinkDoor, deephotpinkDoor, largeDeephotpinkDoor,
@@ -937,27 +937,27 @@ screenSmall, screen, screenLarge
             size = 3;
             envDisabled |= Env.scorching;
         }};
-
-        hexWall = new HexBlock("hex-wall"){{
-            requirements(Category.defense, with());
-            health = 80;
-            size = 1;
-            envDisabled |= Env.scorching;
-        }};
+        //Will be uncommented once the HexBlock block type is functional
+        //hexWall = new HexBlock("hex-wall"){{
+        //    requirements(Category.defense, with());
+        //    health = 80;
+        //    size = 1;
+        //    envDisabled |= Env.scorching;
+        //}};
         
-        hexWallLarge = new HexBlock("large-hex-wall"){{
-            requirements(Category.defense, with());
-            health = 80;
-            size = 2;
-            envDisabled |= Env.scorching;
-        }};
+        //hexWallLarge = new HexBlock("large-hex-wall"){{
+        //    requirements(Category.defense, with());
+        //    health = 80;
+        //    size = 2;
+        //    envDisabled |= Env.scorching;
+        //}};
         
-        hexWallColossal = new HexBlock("colossal-hex-wall"){{
-            requirements(Category.defense, with());
-            health = 80;
-            size = 3;
-            envDisabled |= Env.scorching;
-        }};
+        //hexWallColossal = new HexBlock("colossal-hex-wall"){{
+        //    requirements(Category.defense, with());
+        //   health = 80;
+        //    size = 3;
+        //    envDisabled |= Env.scorching;
+        //}};
 
         copperBar = new Wall("copper-bar"){{
             requirements(Category.production, with());
