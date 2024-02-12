@@ -936,7 +936,7 @@ screenSmall, screen, screenLarge
             size = 3;
             envDisabled |= Env.scorching;
         }};
-        Will be uncommented once the HexBlock block type is functional
+    
         hexWall = new HexBlock("hex-wall"){{
             requirements(Category.defense, with());
             health = 80;
