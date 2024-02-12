@@ -40,6 +40,7 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import javacamod.world.blocks.logic.*;
+import javacamod.world.blocks.power.*;
 
 import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
