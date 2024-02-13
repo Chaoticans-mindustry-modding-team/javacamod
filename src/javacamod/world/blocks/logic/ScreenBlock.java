@@ -28,7 +28,7 @@ import static mindustry.Vars.*;
 public class ScreenBlock extends Block{
     public float padding = 0f;
     public int screenSize = 8;
-    public int[] palette = {0x000000_00, 0xff0000_ff, 0x770000_ff, 0x300000_ff, 0x00ff00_ff, 0x007700_ff, 0x003000_ff, 0x0000ff_ff, 0x000077_ff, 0x000030_ff, 0xffff00_ff, 0x777700_ff, 0x303000_ff, 0x00ffff_ff, 0x007777_ff, 0x003030_ff, 0xff00ff_ff, 0x770077_ff, 0x300030_ff, 0xff6600_ff, 0x774400_ff, 0x302200_ff, 0x66ff00_ff, 0x447700_ff, 0x223000_ff, 0x00ff66_ff, 0x007744_ff, 0x003022_ff, 0x0066ff_ff, 0x004477_ff, 0x002230_ff, 0x6600ff_ff, 0x440077_ff, 0x220030_ff, 0xff0066_ff, 0x770044_ff, 0x300022_ff, 0x000000_ff, 0x808080_ff, 0xffffff_ff};
+    public int[] palette = {0x000000_00,  0xff0000_ff, 0x800000_ff, 0x400000_ff,  0x00ff00_ff, 0x008000_ff, 0x004000_ff,  0x0000ff_ff, 0x000080_ff, 0x000040_ff,  0xffff00_ff, 0x808000_ff, 0x404000_ff,  0x00ffff_ff, 0x008080_ff, 0x004040_ff,  0xff00ff_ff, 0x800080_ff, 0x400040_ff,  0xff8000_ff, 0x804000_ff, 0x402000_ff,  0x80ff00_ff, 0x408000_ff, 0x204000_ff,  0x00ff80_ff, 0x008040_ff, 0x004020_ff,  0x0080ff_ff, 0x004080_ff, 0x002040_ff,  0x8000ff_ff, 0x400080_ff, 0x200040_ff,  0xff0080_ff, 0x800040_ff, 0x400020_ff,  0xffffff_ff, 0xc0c0c0_ff,  0x808080_ff, 0x404040_ff, 0x000000_ff};
     public int bitsPerPixel;
     public IntIntMap colorToIndex = new IntIntMap();
 
@@ -324,9 +324,9 @@ public class ScreenBlock extends Block{
                     for(int i = 0; i < palette.length; i++){
                         int fi = i;
 
-                        var button = p.button(Tex.whiteui, Styles.squareTogglei, 30, () -> {
+                        var button = p.button(Tex.whiteui, Styles.squareTogglei, 40, () -> {
                             curColor[0] = palette[fi];
-                        }).size(22).checked(b -> curColor[0] == palette[fi]).get();
+                        }).size(20).checked(b -> curColor[0] == palette[fi]).get();
                         button.getStyle().imageUpColor = new Color(palette[i]);
 		    }
                 });
