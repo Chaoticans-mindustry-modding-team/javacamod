@@ -32,6 +32,7 @@ import static mindustry.Vars.*;
 
 public class HexBlock extends Block{
     public TextureRegion top;
+	public boolean showMinimapColor = true
     public HexBlock(String name){
         super(name);
         update = true;
@@ -46,7 +47,7 @@ public class HexBlock extends Block{
 	@Override
 	public int minimapColor(Tile tile){
 		var build = (HexBuild)tile.build;
-		return build == null ? 0 : build.color.rgba();
+		return build == null ? 0 || !showMinimapColor : build.color.rgba();
 	}
 	@Override
 	
