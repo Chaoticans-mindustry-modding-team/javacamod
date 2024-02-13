@@ -71,7 +71,7 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMessageDiamond, chiseledMessageBar, chiseledMessagePlant, chiseledMessageFactory, chiseledMessageAdmin, chiseledMessageDrill, chiseledMessageTurret, chiseledMessageLogic, chiseledMessageUnit, chiseledMessagePower, chiseledMessageWall, chiseledMessageLiquid, chiseledMessageDistribution, chiseledMessageSkull, chiseledMessageVoid, chiseledMessageOne, chiseledMessageTwo, chiseledMessageThree, chiseledMessageFour, chiseledMessageFive, chiseledMessageSix, chiseledMessageSeven, chiseledMessageEight, chiseledMessageNine, chiseledMessageZero, chiseledMessageHouse, chiseledMessageRules, chiseledMessageCore, chiseledMessageTechtree, chiseledMessageImage, chiseledMessageList, chiseledMessageWaves, chiseledMessageTrashcan, chiseledMessageLandscape, chiseledMessageFloors, chiseledMessagePause, chiseledMessagePlay, chiseledMessagePencil, chiseledMessageEraser, chiseledMessageCross, chiseledMessageCrossDiagonal, chiseledMessageHammer, chiseledMessageMap, chiseledMessageBox, chiseledMessageGear, chiseledMessageArrowUp, chiseledMessageArrowDown, chiseledMessageArrowLeft, chiseledMessageArrowRight,
 
 //Screens
-screenSmall, screen, screenLarge
+screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borderlessScreenLarge
 
 ;
     
@@ -2002,6 +2002,14 @@ screenSmall, screen, screenLarge
             envDisabled |= Env.scorching;
         }};
 
+        chiseledSorter12 = new Sorter("chiseled-sorter-twelve"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
         chiseledSorter13 = new Sorter("chiseled-sorter-thirteen"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
@@ -3203,6 +3211,24 @@ screenSmall, screen, screenLarge
         }};
 
         screenLarge = new ScreenBlock("screen-large"){{
+            requirements(Category.logic, with());
+            size = 3;
+            screenSize = 24;
+        }};
+
+        borderlessScreenSmall = new ScreenBlock("borderless-screen-small"){{
+            requirements(Category.logic, with());
+            size = 1;
+            screenSize = 8;
+        }};
+
+        borderlessScreen = new ScreenBlock("borderless-screen"){{
+            requirements(Category.logic, with());
+            size = 2;
+            screenSize = 16;
+        }};
+
+        borderlessScreenLarge = new ScreenBlock("borderless-screen-large"){{
             requirements(Category.logic, with());
             size = 3;
             screenSize = 24;
