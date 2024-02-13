@@ -44,6 +44,12 @@ public class HexBlock extends Block{
     }
 	
 	@Override
+	public int minimapColor(Tile tile){
+		var build = (HexBuild)tile.build;
+		return build == null ? 0 : build.color.rgba();
+	}
+	@Override
+	
 	public void load(){
 		super.load();
 	
@@ -51,7 +57,7 @@ public class HexBlock extends Block{
         }
 
     public class HexBuild extends Building{
-        public int color = Pal.accent.rgba();
+        public int color = 0x000000_00;
         public float smoothTime = 1f;
 
         @Override
