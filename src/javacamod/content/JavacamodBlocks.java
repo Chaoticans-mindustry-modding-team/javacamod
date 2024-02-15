@@ -54,6 +54,8 @@ redWall, largeRedWall, colossalRedWall, darkredWall, largeDarkredWall, colossalD
 hexWall, hexWallLarge, hexWallColossal,
 //doors
 redDoor, largeRedDoor, darkredDoor, largeDarkredDoor, crimsonDoor, largeCrimsonDoor, greenDoor, largeGreenDoor, darkgreenDoor, largeDarkgreenDoor, poisonDoor, largePoisonDoor, blueDoor, largeBlueDoor, darkblueDoor, largeDarkblueDoor, navyDoor, largeNavyDoor, whiteDoor, largeWhiteDoor, blackDoor, largeBlackDoor, yellowDoor, largeYellowDoor, darkyellowDoor, largeDarkyellowDoor, runicDoor, largeRunicDoor, cyanDoor, largeCyanDoor, darkcyanDoor, largeDarkcyanDoor, deepOceanDoor, largeDeepOceanDoor, pinkDoor, largePinkDoor, darkpinkDoor, largeDarkpinkDoor, deeppinkDoor, largeDeeppinkDoor, orangeDoor, largeOrangeDoor, darkorangeDoor, largeDarkorangeDoor, burntorangeDoor, largeBurntorangeDoor, limeDoor, largeLimeDoor, darklimeDoor, largeDarklimeDoor, fruitDoor, largeFruitDoor, emeraldDoor, largeEmeraldDoor, darkemeraldDoor, largeDarkemeraldDoor, deepemeraldDoor, largeDeepemeraldDoor, sapphireDoor, largeSapphireDoor, darksapphireDoor, largeDarksapphireDoor, deepsapphireDoor, largeDeepsapphireDoor, purpleDoor, largePurpleDoor, darkpurpleDoor, largeDarkpurpleDoor, violetDoor, largeVioletDoor, hotpinkDoor, largeHotpinkDoor, darkhotpinkDoor, largeDarkhotpinkDoor, deephotpinkDoor, largeDeephotpinkDoor,
+//Slope Slab Stair
+hexStair, hexStairRotatedOne, hexStairRotatedTwo, hexStairRotatedThree, hexSlope, hexSlopeRotatedOne, hexSlopeRotatedTwo, hexSlopeRotatedThree, hexSlab, hexSlabRotatedOne, hexSlabRotatedTwo, hexSlabRotatedThree,
 
 //Oreblocks
 copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBottom, leadBar, leadBars, leadBarstackTop, leadBarstackMid, leadBarstackBottom, metaglassBlock, metaglassBlocks, metaglassBlockstackTop, metaglassBlockstackMid, metaglassBlockstackBottom, graphiteBlock, graphiteBlocks, graphiteBlockstackTop, graphiteBlockstackMid, graphiteBlockstackBottom, sandPile, smallSandPileOne, smallSandPileTwo, coalPile, titaniumBar, titaniumBars, titaniumBarstackTop, titaniumBarstackMid, titaniumBarstackBottom, thoriumPile, scrapPileOne, scrapPileTwo, scrapPileThree, scrapPileFour, siliconBlock, siliconBlocks, siliconBlockstackTop, siliconBlockstackMid, siliconBlockstackBottom, plastaniumBlock, plastaniumBlocks, plastaniumBlockstackTop, plastaniumBlockstackMid, plastaniumBlockstackBottom, phasePile, surgeAlloyBar, surgeAlloyBars, surgeAlloyBarstackTop, surgeAlloyBarstackMid, surgeAlloyBarstackBottom, sporePodPile, pyratiteBlock, pyratiteBlocks, pyratiteBlockstackTop, pyratiteBlockstackMid, pyratiteBlockstackBottom, blastCompoundBlock, blastCompoundBlocks, blastCompoundBlockstackTop, blastCompoundBlockstackMid, blastCompoundBlockstackBottom, berylliumPile, tungstenPile, oxidePile, carbidePile,
@@ -71,7 +73,7 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMessageDiamond, chiseledMessageBar, chiseledMessagePlant, chiseledMessageFactory, chiseledMessageAdmin, chiseledMessageDrill, chiseledMessageTurret, chiseledMessageLogic, chiseledMessageUnit, chiseledMessagePower, chiseledMessageWall, chiseledMessageLiquid, chiseledMessageDistribution, chiseledMessageSkull, chiseledMessageVoid, chiseledMessageOne, chiseledMessageTwo, chiseledMessageThree, chiseledMessageFour, chiseledMessageFive, chiseledMessageSix, chiseledMessageSeven, chiseledMessageEight, chiseledMessageNine, chiseledMessageZero, chiseledMessageHouse, chiseledMessageRules, chiseledMessageCore, chiseledMessageTechtree, chiseledMessageImage, chiseledMessageList, chiseledMessageWaves, chiseledMessageTrashcan, chiseledMessageLandscape, chiseledMessageFloors, chiseledMessagePause, chiseledMessagePlay, chiseledMessagePencil, chiseledMessageEraser, chiseledMessageCross, chiseledMessageCrossDiagonal, chiseledMessageHammer, chiseledMessageMap, chiseledMessageBox, chiseledMessageGear, chiseledMessageArrowUp, chiseledMessageArrowDown, chiseledMessageArrowLeft, chiseledMessageArrowRight,
 
 //Screens
-screenSmall, screen, screenLarge
+screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borderlessScreenLarge
 
 ;
     
@@ -1843,6 +1845,102 @@ screenSmall, screen, screenLarge
             envDisabled |= Env.scorching;
         }};
 
+        hexStair = new HexBlock("hex-stair"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexStairRotatedOne = new HexBlock("hex-stair-one"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexStairRotatedTwo = new HexBlock("hex-stair-two"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexStairRotatedThree = new HexBlock("hex-stair-three"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlope = new HexBlock("hex-slope"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlopeRotatedOne = new HexBlock("hex-slope-one"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlopeRotatedTwo = new HexBlock("hex-slope-two"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlopeRotatedThree = new HexBlock("hex-slope-three"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlab = new HexBlock("hex-slab"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlabRotatedOne = new HexBlock("hex-slab-one"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlabRotatedTwo = new HexBlock("hex-slab-two"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlabRotatedThree = new HexBlock("hex-slab-three"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
         largeSorter = new Sorter("large-sorter"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
@@ -1995,6 +2093,14 @@ screenSmall, screen, screenLarge
         }};
 
         chiseledSorter11 = new Sorter("chiseled-sorter-eleven"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter12 = new Sorter("chiseled-sorter-twelve"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
@@ -3193,18 +3299,42 @@ screenSmall, screen, screenLarge
         screenSmall = new ScreenBlock("screen-small"){{
             requirements(Category.logic, with());
             size = 1;
+            hasShadow = false;
             screenSize = 8;
         }};
 
         screen = new ScreenBlock("screen"){{
             requirements(Category.logic, with());
             size = 2;
+            hasShadow = false;
             screenSize = 16;
         }};
 
         screenLarge = new ScreenBlock("screen-large"){{
             requirements(Category.logic, with());
             size = 3;
+            hasShadow = false;
+            screenSize = 24;
+        }};
+
+        borderlessScreenSmall = new ScreenBlock("borderless-screen-small"){{
+            requirements(Category.logic, with());
+            size = 1;
+            hasShadow = false;
+            screenSize = 8;
+        }};
+
+        borderlessScreen = new ScreenBlock("borderless-screen"){{
+            requirements(Category.logic, with());
+            size = 2;
+            hasShadow = false;
+            screenSize = 16;
+        }};
+
+        borderlessScreenLarge = new ScreenBlock("borderless-screen-large"){{
+            requirements(Category.logic, with());
+            size = 3;
+            hasShadow = false;
             screenSize = 24;
         }};
 
