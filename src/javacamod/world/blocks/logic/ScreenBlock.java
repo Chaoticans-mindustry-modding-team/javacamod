@@ -22,6 +22,7 @@ import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
+import mindustry.world.blocks.logic.*;
 
 import static mindustry.Vars.*;
 
@@ -174,12 +175,9 @@ public class ScreenBlock extends Block{
         @Override
         public void control(LAccess type, double p1, double p2, double p3, double p4){
             if(type == LAccess.color){
-		inCol = new Color();
+		Color inCol = new Color();
                 inCol.rgba8888((int)p1);
-		x = (int)((inCol.r*255) % screenSize);
-		y = (int)((inCol.g*255) % screenSize);
-		index = (int)((inCol.b*255) % palette.length);
-		setByte(data, + y * screenSize,index);
+		setByte(data, ((int)((inCol.r*255) % screenSize)) + ((int)((inCol.g*255) % screenSize)) * screenSize, (int)((inCol.b*255) % palette.length));
             }
 
             super.control(type, p1, p2, p3, p4);
