@@ -3224,36 +3224,42 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
         screenSmall = new ScreenBlock("screen-small"){{
             requirements(Category.logic, with());
             size = 1;
+            hasShadow = false;
             screenSize = 8;
         }};
 
         screen = new ScreenBlock("screen"){{
             requirements(Category.logic, with());
             size = 2;
+            hasShadow = false;
             screenSize = 16;
         }};
 
         screenLarge = new ScreenBlock("screen-large"){{
             requirements(Category.logic, with());
             size = 3;
+            hasShadow = false;
             screenSize = 24;
         }};
 
         borderlessScreenSmall = new ScreenBlock("borderless-screen-small"){{
             requirements(Category.logic, with());
             size = 1;
+            hasShadow = false;
             screenSize = 8;
         }};
 
         borderlessScreen = new ScreenBlock("borderless-screen"){{
             requirements(Category.logic, with());
             size = 2;
+            hasShadow = false;
             screenSize = 16;
         }};
 
         borderlessScreenLarge = new ScreenBlock("borderless-screen-large"){{
             requirements(Category.logic, with());
             size = 3;
+            hasShadow = false;
             screenSize = 24;
         }};
 
