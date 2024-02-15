@@ -32,7 +32,7 @@ import static mindustry.Vars.*;
 
 public class HexBlock extends Block{
     public TextureRegion top;
-	public boolean showMinimapColor = true
+	public boolean showMinimapColor = true;
     public HexBlock(String name){
         super(name);
         update = true;
