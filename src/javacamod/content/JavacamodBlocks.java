@@ -1853,6 +1853,30 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             envDisabled |= Env.scorching;
         }};
 
+        hexStairRotatedOne = new HexBlock("hex-stair-one"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexStairRotatedTwo = new HexBlock("hex-stair-two"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexStairRotatedThree = new HexBlock("hex-stair-three"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
         hexSlope = new HexBlock("hex-slope"){{
             requirements(Category.defense, with());
             health = 100; 
@@ -1861,7 +1885,55 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             envDisabled |= Env.scorching;
         }};
 
+        hexSlopeRotatedOne = new HexBlock("hex-slope-one"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlopeRotatedTwo = new HexBlock("hex-slope-two"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlopeRotatedThree = new HexBlock("hex-slope-three"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
         hexSlab = new HexBlock("hex-slab"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlabRotatedOne = new HexBlock("hex-slab-one"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlabRotatedTwo = new HexBlock("hex-slab-two"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexSlabRotatedThree = new HexBlock("hex-slab-three"){{
             requirements(Category.defense, with());
             health = 100; 
             size = 1;
