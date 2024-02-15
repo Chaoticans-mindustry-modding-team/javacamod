@@ -171,6 +171,20 @@ public class ScreenBlock extends Block{
             }
         }
 
+        @Override
+        public void control(LAccess type, double p1, double p2, double p3, double p4){
+            if(type == LAccess.color){
+		inCol = new Color();
+                inCol.rgba8888((int)p1);
+		x = (int)((inCol.r*255) % screenSize);
+		y = (int)((inCol.g*255) % screenSize);
+		index = (int)((inCol.b*255) % palette.length);
+		setByte(data, + y * screenSize,index);
+            }
+
+            super.control(type, p1, p2, p3, p4);
+        }
+
         public byte[] packPixmap(Pixmap pixmap){
             byte[] bytes = new byte[data.length];
             int pixels = screenSize * screenSize;
