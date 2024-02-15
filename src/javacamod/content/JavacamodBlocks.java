@@ -1849,6 +1849,7 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             requirements(Category.defense, with());
             health = 100; 
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1856,6 +1857,7 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             requirements(Category.defense, with());
             health = 100; 
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1863,6 +1865,7 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             requirements(Category.defense, with());
             health = 100; 
             size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
