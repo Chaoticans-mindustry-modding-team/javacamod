@@ -47,7 +47,7 @@ public class HexBlock extends Block{
 	@Override
 	public int minimapColor(Tile tile){
 		var build = (HexBuild)tile.build;
-		return build == null ? 0 || !showMinimapColor : build.color.rgba();
+		return build == null || !showMinimapColor ? 0 : build.color;
 	}
 	@Override
 	
