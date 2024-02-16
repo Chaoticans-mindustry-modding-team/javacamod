@@ -83,7 +83,12 @@ public class HexBlock extends Block{
         public void draw(){
             super.draw();
             Draw.color(Tmp.c1.set(color));
-            Draw.rect(top, x, y, rotation*90);
+		switch(rotation){
+			case 0: Draw.rect(top, x, y); break;
+			case 1: Draw.rect(top1, x, y); break;
+			case 2: Draw.rect(top2, x, y); break;
+			case 3: Draw.rect(top3, x, y); break;
+		}
             Draw.color();
         }
 
