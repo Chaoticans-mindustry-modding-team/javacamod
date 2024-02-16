@@ -31,7 +31,10 @@ import mindustry.world.blocks.*;
 import static mindustry.Vars.*;
 
 public class HexBlock extends Block{
-    public TextureRegion top;
+    public TextureRegion top0;
+    public TextureRegion top1;
+    public TextureRegion top2;
+    public TextureRegion top3;
 	public boolean showMinimapColor = true;
 
 	@Override
@@ -57,7 +60,10 @@ public class HexBlock extends Block{
 	public void load(){
 		super.load();
 	
-		top = Core.atlas.find(name + "-top"); 
+		top0 = Core.atlas.find(name + "-top0"); 
+		top1 = Core.atlas.find(name + "-top1"); 
+		top2 = Core.atlas.find(name + "-top2"); 
+		top3 = Core.atlas.find(name + "-top3"); 
         }
 
     public class HexBuild extends Building{
@@ -84,7 +90,7 @@ public class HexBlock extends Block{
             super.draw();
             Draw.color(Tmp.c1.set(color));
 		switch(rotation){
-			case 0: Draw.rect(top, x, y); break;
+			case 0: Draw.rect(top0, x, y); break;
 			case 1: Draw.rect(top1, x, y); break;
 			case 2: Draw.rect(top2, x, y); break;
 			case 3: Draw.rect(top3, x, y); break;
