@@ -55,7 +55,7 @@ hexWall, hexWallLarge, hexWallColossal,
 //doors
 redDoor, largeRedDoor, darkredDoor, largeDarkredDoor, crimsonDoor, largeCrimsonDoor, greenDoor, largeGreenDoor, darkgreenDoor, largeDarkgreenDoor, poisonDoor, largePoisonDoor, blueDoor, largeBlueDoor, darkblueDoor, largeDarkblueDoor, navyDoor, largeNavyDoor, whiteDoor, largeWhiteDoor, blackDoor, largeBlackDoor, yellowDoor, largeYellowDoor, darkyellowDoor, largeDarkyellowDoor, runicDoor, largeRunicDoor, cyanDoor, largeCyanDoor, darkcyanDoor, largeDarkcyanDoor, deepOceanDoor, largeDeepOceanDoor, pinkDoor, largePinkDoor, darkpinkDoor, largeDarkpinkDoor, deeppinkDoor, largeDeeppinkDoor, orangeDoor, largeOrangeDoor, darkorangeDoor, largeDarkorangeDoor, burntorangeDoor, largeBurntorangeDoor, limeDoor, largeLimeDoor, darklimeDoor, largeDarklimeDoor, fruitDoor, largeFruitDoor, emeraldDoor, largeEmeraldDoor, darkemeraldDoor, largeDarkemeraldDoor, deepemeraldDoor, largeDeepemeraldDoor, sapphireDoor, largeSapphireDoor, darksapphireDoor, largeDarksapphireDoor, deepsapphireDoor, largeDeepsapphireDoor, purpleDoor, largePurpleDoor, darkpurpleDoor, largeDarkpurpleDoor, violetDoor, largeVioletDoor, hotpinkDoor, largeHotpinkDoor, darkhotpinkDoor, largeDarkhotpinkDoor, deephotpinkDoor, largeDeephotpinkDoor,
 //Slope Slab Stair
-hexStair, hexStairRotatedOne, hexStairRotatedTwo, hexStairRotatedThree, hexSlope, hexSlopeRotatedOne, hexSlopeRotatedTwo, hexSlopeRotatedThree, hexSlab, hexSlabRotatedOne, hexSlabRotatedTwo, hexSlabRotatedThree,
+hexStair, hexSlope, hexSlab,
 
 //Oreblocks
 copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBottom, leadBar, leadBars, leadBarstackTop, leadBarstackMid, leadBarstackBottom, metaglassBlock, metaglassBlocks, metaglassBlockstackTop, metaglassBlockstackMid, metaglassBlockstackBottom, graphiteBlock, graphiteBlocks, graphiteBlockstackTop, graphiteBlockstackMid, graphiteBlockstackBottom, sandPile, smallSandPileOne, smallSandPileTwo, coalPile, titaniumBar, titaniumBars, titaniumBarstackTop, titaniumBarstackMid, titaniumBarstackBottom, thoriumPile, scrapPileOne, scrapPileTwo, scrapPileThree, scrapPileFour, siliconBlock, siliconBlocks, siliconBlockstackTop, siliconBlockstackMid, siliconBlockstackBottom, plastaniumBlock, plastaniumBlocks, plastaniumBlockstackTop, plastaniumBlockstackMid, plastaniumBlockstackBottom, phasePile, surgeAlloyBar, surgeAlloyBars, surgeAlloyBarstackTop, surgeAlloyBarstackMid, surgeAlloyBarstackBottom, sporePodPile, pyratiteBlock, pyratiteBlocks, pyratiteBlockstackTop, pyratiteBlockstackMid, pyratiteBlockstackBottom, blastCompoundBlock, blastCompoundBlocks, blastCompoundBlockstackTop, blastCompoundBlockstackMid, blastCompoundBlockstackBottom, berylliumPile, tungstenPile, oxidePile, carbidePile,
@@ -1853,30 +1853,6 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             envDisabled |= Env.scorching;
         }};
 
-        hexStairRotatedOne = new HexBlock("hex-stair-one"){{
-            requirements(Category.defense, with());
-            health = 100; 
-            size = 1;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
-        hexStairRotatedTwo = new HexBlock("hex-stair-two"){{
-            requirements(Category.defense, with());
-            health = 100; 
-            size = 1;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
-        hexStairRotatedThree = new HexBlock("hex-stair-three"){{
-            requirements(Category.defense, with());
-            health = 100; 
-            size = 1;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
         hexSlope = new HexBlock("hex-slope"){{
             requirements(Category.defense, with());
             health = 100; 
@@ -1885,55 +1861,7 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             envDisabled |= Env.scorching;
         }};
 
-        hexSlopeRotatedOne = new HexBlock("hex-slope-one"){{
-            requirements(Category.defense, with());
-            health = 100; 
-            size = 1;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
-        hexSlopeRotatedTwo = new HexBlock("hex-slope-two"){{
-            requirements(Category.defense, with());
-            health = 100; 
-            size = 1;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
-        hexSlopeRotatedThree = new HexBlock("hex-slope-three"){{
-            requirements(Category.defense, with());
-            health = 100; 
-            size = 1;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
         hexSlab = new HexBlock("hex-slab"){{
-            requirements(Category.defense, with());
-            health = 100; 
-            size = 1;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
-        hexSlabRotatedOne = new HexBlock("hex-slab-one"){{
-            requirements(Category.defense, with());
-            health = 100; 
-            size = 1;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
-        hexSlabRotatedTwo = new HexBlock("hex-slab-two"){{
-            requirements(Category.defense, with());
-            health = 100; 
-            size = 1;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
-        hexSlabRotatedThree = new HexBlock("hex-slab-three"){{
             requirements(Category.defense, with());
             health = 100; 
             size = 1;
