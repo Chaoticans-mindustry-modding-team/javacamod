@@ -59,6 +59,9 @@ hexStair, hexStairRotatedOne, hexStairRotatedTwo, hexStairRotatedThree, hexSlope
 
 //Oreblocks
 copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBottom, leadBar, leadBars, leadBarstackTop, leadBarstackMid, leadBarstackBottom, metaglassBlock, metaglassBlocks, metaglassBlockstackTop, metaglassBlockstackMid, metaglassBlockstackBottom, graphiteBlock, graphiteBlocks, graphiteBlockstackTop, graphiteBlockstackMid, graphiteBlockstackBottom, sandPile, smallSandPileOne, smallSandPileTwo, coalPile, titaniumBar, titaniumBars, titaniumBarstackTop, titaniumBarstackMid, titaniumBarstackBottom, thoriumPile, scrapPileOne, scrapPileTwo, scrapPileThree, scrapPileFour, siliconBlock, siliconBlocks, siliconBlockstackTop, siliconBlockstackMid, siliconBlockstackBottom, plastaniumBlock, plastaniumBlocks, plastaniumBlockstackTop, plastaniumBlockstackMid, plastaniumBlockstackBottom, phasePile, surgeAlloyBar, surgeAlloyBars, surgeAlloyBarstackTop, surgeAlloyBarstackMid, surgeAlloyBarstackBottom, sporePodPile, pyratiteBlock, pyratiteBlocks, pyratiteBlockstackTop, pyratiteBlockstackMid, pyratiteBlockstackBottom, blastCompoundBlock, blastCompoundBlocks, blastCompoundBlockstackTop, blastCompoundBlockstackMid, blastCompoundBlockstackBottom, berylliumPile, tungstenPile, oxidePile, carbidePile,
+
+//natualwalls
+darkMetal, darkMetalLarge, dirtWall, dirtWallLarge, duneWall, duneWallLarge, plantWall, plantWallLarge, grassWall, grassWallLarge, iceWall, iceWallLarge, snowWall, snowWallLarge, woodWall, woodWallLarge, sandWall, sandWallLarge, coalWall, coalWallLarge,
     
 //distribution
 borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14,
@@ -1348,6 +1351,146 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
         carbidePile = new Wall("carbide-pile"){{
             requirements(Category.production, with());
             health = 80;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkMetal = new Wall("dark-metal"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkMetalLarge = new Wall("dark-metal-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+         dirtWall = new Wall("dirt-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        dirtWallLarge = new Wall("dirt-wall-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        duneWall = new Wall("dune-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        duneWallLarge = new Wall("dune-wall-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        plantWall = new Wall("plant-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        plantWallLarge = new Wall("plant-wall-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        iceWall = new Wall("ice-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        iceWallLarge = new Wall("ice-wall-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        snowWall = new Wall("snow-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        snowWallLarge = new Wall("snow-wall-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        stoneWall = new Wall("stone-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        stoneWallLarge = new Wall("stone-wall-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        woodWall = new Wall("wood-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        woodWallLarge = new Wall("wood-wall-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        sandWall = new Wall("sand-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        sandWallLarge = new Wall("sand-wall-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        coalWall = new Wall("coal-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        coalWallLarge = new Wall("coal-wall-large"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
             envDisabled |= Env.scorching;
         }};
 
