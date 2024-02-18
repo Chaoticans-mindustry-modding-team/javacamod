@@ -45,7 +45,7 @@ public class HexBlock extends Block{
 	}
 
 	public static boolean canRotate(){
-		return rotate
+		return rotate;
 	}
 
 	public HexBlock(String name){
