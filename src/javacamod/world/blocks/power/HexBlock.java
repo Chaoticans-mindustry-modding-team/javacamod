@@ -80,13 +80,12 @@ public class HexBlock extends Block{
 	
 	public void load(){
 		super.load();
-			top0 = Core.atlas.find(name + "-top0");
-			top1 = Core.atlas.find(name + "-top1");
-			top2 = Core.atlas.find(name + "-top2");
-			top3 = Core.atlas.find(name + "-top3");
-            top = Core.atlas.find(name + "-top");
-        }
-	}
+        top = Core.atlas.find(name + "-top");
+		top0 = Core.atlas.find(name + "-top0");
+		top1 = Core.atlas.find(name + "-top1");
+		top2 = Core.atlas.find(name + "-top2");
+		top3 = Core.atlas.find(name + "-top3");
+    }
 
 	public class HexBuild extends Building{
 		public int color = 0x000000_00;
