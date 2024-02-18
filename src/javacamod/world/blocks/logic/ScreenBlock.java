@@ -65,15 +65,15 @@ public class ScreenBlock extends Block{
         bitsPerPixel = Mathf.log2(Mathf.nextPowerOfTwo(palette.length));
     }
 
-		@Override
-		public void load(){
-			        super.load();
-				side1 = Core.atlas.find(name + "-side1");
-				side2 = Core.atlas.find(name + "-side2");
+	@Override
+	public void load(){
+		super.load();
+		side1 = Core.atlas.find(name + "-side1");
+		side2 = Core.atlas.find(name + "-side2");
 
-				corner1 = Core.atlas.find(name + "-corner1");
-				corner2 = Core.atlas.find(name + "-corner2");
-		}
+		corner1 = Core.atlas.find(name + "-corner1");
+		corner2 = Core.atlas.find(name + "-corner2");
+	}
 
     @Override
     public void drawPlanRegion(BuildPlan plan, Eachable<BuildPlan> list){
@@ -180,6 +180,7 @@ public class ScreenBlock extends Block{
 		setByte(data, (((int)((inCol.r*255) % screenSize)) + ((int)((inCol.g*255) % screenSize)) * screenSize) * bitsPerPixel, (int)((inCol.b*255) % palette.length));
             }
 
+            draw()
             super.control(type, p1, p2, p3, p4);
         }
 
