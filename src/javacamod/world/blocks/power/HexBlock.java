@@ -93,7 +93,7 @@ public class HexBlock extends Block{
 		public void draw(){
 			super.draw();
 			Draw.color(Tmp.c1.set(color));
-			if (HexBlock.rotatedOutput()) {
+			if (HexBlock.rotatedOutput(0,0)) {
 				switch(rotation){
 					case 0: Draw.rect(top0, x, y); break;
 					case 1: Draw.rect(top1, x, y); break;
