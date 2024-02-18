@@ -46,6 +46,11 @@ public class HexBlock extends Block{
 		return build != null && showMinimapColor ? 0 : build.color;
 	}
 
+	@Override
+    public void flipRotation(BuildPlan req, boolean x){
+        req.rotation = planRotation(req.rotation ^ ((x ^ invert) ? 1 : 3));
+    }
+
 	public HexBlock(String name){
 		super(name);
 		update = true;
