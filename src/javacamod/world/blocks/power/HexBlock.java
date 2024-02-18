@@ -38,14 +38,12 @@ public class HexBlock extends Block{
 	public TextureRegion top3;
 	public boolean showMinimapColor = true;
 
+	public static boolean rotateBUTSTATIC;
+
 	@Override
 	public int minimapColor(Tile tile){
 		var build = (HexBuild)tile.build;
 		return build != null && showMinimapColor ? 0 : build.color;
-	}
-
-	public static boolean canRotate(){
-		return rotate;
 	}
 
 	public HexBlock(String name){
@@ -59,6 +57,22 @@ public class HexBlock extends Block{
 		config(Integer.class, (HexBuild tile, Integer value) -> tile.color = value);
 	}
 	
+	@Override
+	public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
+		super.drawPlanConfig(plan, list);
+		Draw.color(Tmp.c1.set(color));
+		if (HexBlock.rotateBUTSTATIC) {
+			switch(plan.rotation){
+				case 0: Draw.rect(top0, plan.drawx(), plan.drawy()); break;
+				case 1: Draw.rect(top1, plan.drawx(), plan.drawy()); break;
+				case 2: Draw.rect(top2, plan.drawx(), plan.drawy()); break;
+				case 3: Draw.rect(top3, plan.drawx(), plan.drawy()); break;
+			}
+        } else {
+            Draw.rect(top, plan.drawx(), plan.drawy());
+        }
+		Draw.color();
+    }
 
 	@Override
 	
@@ -97,7 +111,7 @@ public class HexBlock extends Block{
 		public void draw(){
 			super.draw();
 			Draw.color(Tmp.c1.set(color));
-			if (HexBlock.canRotate()) {
+			if (HexBlock.rotateBUTSTATIC) {
 				switch(rotation){
 					case 0: Draw.rect(top0, x, y); break;
 					case 1: Draw.rect(top1, x, y); break;

@@ -1850,6 +1850,7 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             health = 100; 
             size = 1;
             rotate = true;
+            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1858,14 +1859,16 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             health = 100; 
             size = 1;
             rotate = true;
+            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
         hexSlab = new HexBlock("hex-slab"){{
             requirements(Category.defense, with());
-            health = 100; 
+            health = 100;
             size = 1;
             rotate = true;
+            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
