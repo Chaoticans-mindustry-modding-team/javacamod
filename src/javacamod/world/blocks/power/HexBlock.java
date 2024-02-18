@@ -60,7 +60,7 @@ public class HexBlock extends Block{
 	@Override
 	public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
 		super.drawPlanConfig(plan, list);
-		Draw.color(plan.config == null ? new Color() : (Color.rgba8888(plan.config)));
+		Draw.color(plan.config == null ? new Color(0xffffff_ff) : (plan.config instanceof Color c ? c : new Color(0xffffff_ff)));
 
 		if (HexBlock.rotateBUTSTATIC) {
 			switch(plan.rotation){
@@ -88,7 +88,7 @@ public class HexBlock extends Block{
     }
 
 	public class HexBuild extends Building{
-		public int color = 0x000000_00;
+		public int color = 0xffffff_ff;
 		public float smoothTime = 1f;
 
 		@Override
