@@ -61,14 +61,16 @@ public class HexBlock extends Block{
 	public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
 		super.drawPlanConfig(plan, list);
 		Draw.color(plan.config == null ? new Color() : ((Color)plan.config));
+
 		if (HexBlock.rotateBUTSTATIC) {
 			switch(plan.rotation){
-				case 0: Draw.rect(top0, plan.drawx(), plan.drawy()); break;
-				case 1: Draw.rect(top1, plan.drawx(), plan.drawy()); break;
-				case 2: Draw.rect(top2, plan.drawx(), plan.drawy()); break;
-				case 3: Draw.rect(top3, plan.drawx(), plan.drawy()); break;
+				case 0: TextureRegion top0 = Core.atlas.find(name + "-top0"); Draw.rect(top0, plan.drawx(), plan.drawy()); break;
+				case 1: TextureRegion top1 = Core.atlas.find(name + "-top1"); Draw.rect(top1, plan.drawx(), plan.drawy()); break;
+				case 2: TextureRegion top2 = Core.atlas.find(name + "-top2"); Draw.rect(top2, plan.drawx(), plan.drawy()); break;
+				case 3: TextureRegion top3 = Core.atlas.find(name + "-top3"); Draw.rect(top3, plan.drawx(), plan.drawy()); break;
 			}
         } else {
+            top = Core.atlas.find(name + "-top"); 
             Draw.rect(top, plan.drawx(), plan.drawy());
         }
 		Draw.color();
