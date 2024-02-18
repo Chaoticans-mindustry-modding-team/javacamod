@@ -109,17 +109,16 @@ public class HexBlock extends Block{
 		@Override
 		public void draw(){
 			super.draw();
-			if (top == null || top0 == null || top1 == null || top2 == null || top3 == null) {load();};
 			Draw.color(Tmp.c1.set(color));
 			if (HexBlock.rotateBUTSTATIC) {
 				switch(rotation){
-					case 0: Draw.rect(top0, x, y); break;
-					case 1: Draw.rect(top1, x, y); break;
-					case 2: Draw.rect(top2, x, y); break;
-					case 3: Draw.rect(top3, x, y); break;
+					case 0: Draw.rect(top0 == null ? Core.atlas.find(name + "top0") : top0, x, y); break;
+					case 1: Draw.rect(top1 == null ? Core.atlas.find(name + "top1") : top1, x, y); break;
+					case 2: Draw.rect(top2 == null ? Core.atlas.find(name + "top2") : top2, x, y); break;
+					case 3: Draw.rect(top3 == null ? Core.atlas.find(name + "top3") : top3, x, y); break;
 				}
         	} else {
-                Draw.rect(top, x, y);
+				Draw.rect(top == null ? Core.atlas.find(name + "top") : top, x, y); break;
             }
 			Draw.color();
 		}
