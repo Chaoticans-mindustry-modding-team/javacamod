@@ -51,7 +51,7 @@ public class HexBlock extends Block{
 	@Override
     public void flipRotation(BuildPlan req, boolean x){
 		if (diagonalSymmetryAxis) {
-        	req.rotation = planRotation(req.rotation ^ ((x ^ invert) ? 1 : 3));
+        	req.rotation = planRotation(req.rotation ^ ((x ^ invertFlip) ? 1 : 3));
 		} else if ((x == (req.rotation % 2 == 0)) != invertFlip) {
             req.rotation = planRotation(Mathf.mod(req.rotation + 2, 4));
         }
