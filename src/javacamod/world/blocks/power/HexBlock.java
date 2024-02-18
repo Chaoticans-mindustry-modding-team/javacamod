@@ -60,7 +60,7 @@ public class HexBlock extends Block{
 	
 	public void load(){
 		super.load();
-		if (rotatedOutput(0,0)) {
+		if (rotate) {
 			top0 = Core.atlas.find(name + "-top0"); 
 			top1 = Core.atlas.find(name + "-top1"); 
 			top2 = Core.atlas.find(name + "-top2"); 
@@ -93,7 +93,7 @@ public class HexBlock extends Block{
 		public void draw(){
 			super.draw();
 			Draw.color(Tmp.c1.set(color));
-			if (HexBlock.rotate) {
+			if (HexBlock.rotatedOutput()) {
 				switch(rotation){
 					case 0: Draw.rect(top0, x, y); break;
 					case 1: Draw.rect(top1, x, y); break;
