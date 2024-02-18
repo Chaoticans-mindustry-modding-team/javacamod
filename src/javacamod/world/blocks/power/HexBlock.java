@@ -60,7 +60,7 @@ public class HexBlock extends Block{
 	@Override
 	public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
 		super.drawPlanConfig(plan, list);
-		Draw.color(plan.config.color);
+		Draw.color((Color)plan.config);
 		if (HexBlock.rotateBUTSTATIC) {
 			switch(plan.rotation){
 				case 0: Draw.rect(top0, plan.drawx(), plan.drawy()); break;
