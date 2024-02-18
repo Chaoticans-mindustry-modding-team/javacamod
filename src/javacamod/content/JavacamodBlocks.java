@@ -1410,6 +1410,20 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             envDisabled |= Env.scorching;
         }};
 
+        grassWall = new Wall("grass-wall"){{
+            requirements(Category.production, with());
+            health = 80;
+            variants = 2;
+            envDisabled |= Env.scorching;
+        }};
+
+        grassWallLarge = new Wall("grass-wall-large"){{
+            requirements(Category.production, with());
+            health = 80; 
+            size = 2;
+            envDisabled |= Env.scorching;
+        }};
+
         iceWall = new Wall("ice-wall"){{
             requirements(Category.production, with());
             health = 80;
