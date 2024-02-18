@@ -38,6 +38,8 @@ public class HexBlock extends Block{
 	public TextureRegion top3;
 	public boolean showMinimapColor = true;
 
+	public boolean diagonalSymmetryAxis = false;
+
 	public static boolean rotateBUTSTATIC = false;
 
 	@Override
@@ -48,7 +50,11 @@ public class HexBlock extends Block{
 
 	@Override
     public void flipRotation(BuildPlan req, boolean x){
-        req.rotation = planRotation(req.rotation ^ ((x ^ invert) ? 1 : 3));
+		if (diagonalSymmetryAxis) {
+        	req.rotation = planRotation(req.rotation ^ ((x ^ invert) ? 1 : 3));
+		} else if ((x == (req.rotation % 2 == 0)) != invertFlip) {
+            req.rotation = planRotation(Mathf.mod(req.rotation + 2, 4));
+        }
     }
 
 	public HexBlock(String name){

@@ -1851,6 +1851,7 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
+            diagonalSymmetryAxis = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -1860,6 +1861,7 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
+            diagonalSymmetryAxis = true;
             envDisabled |= Env.scorching;
         }};
 
