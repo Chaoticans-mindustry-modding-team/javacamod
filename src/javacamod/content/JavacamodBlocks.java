@@ -1363,8 +1363,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         darkMetalLarge = new Wall("dark-metal-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 1;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1377,8 +1377,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         dirtWallLarge = new Wall("dirt-wall-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 1;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1391,8 +1391,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         duneWallLarge = new Wall("dune-wall-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 1;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1405,8 +1405,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         plantWallLarge = new Wall("plant-wall-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 1;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1419,8 +1419,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         iceWallLarge = new Wall("ice-wall-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 1;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1433,8 +1433,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         snowWallLarge = new Wall("snow-wall-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 1;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1447,8 +1447,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         stoneWallLarge = new Wall("stone-wall-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 1;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1461,8 +1461,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         woodWallLarge = new Wall("wood-wall-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 1;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1475,8 +1475,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         sandWallLarge = new Wall("sand-wall-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 2;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
@@ -1489,8 +1489,8 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 
         coalWallLarge = new Wall("coal-wall-large"){{
             requirements(Category.production, with());
-            health = 80;
-            variants = 2;
+            health = 80; 
+            size = 2;
             envDisabled |= Env.scorching;
         }};
 
