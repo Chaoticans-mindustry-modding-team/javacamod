@@ -38,7 +38,7 @@ public class HexBlock extends Block{
 	public TextureRegion top3;
 	public boolean showMinimapColor = true;
 
-	public static boolean rotateBUTSTATIC;
+	public static boolean rotateBUTSTATIC = false;
 
 	@Override
 	public int minimapColor(Tile tile){
