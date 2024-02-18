@@ -118,7 +118,7 @@ public class HexBlock extends Block{
 					case 3: Draw.rect(top3 == null ? Core.atlas.find(name + "top3") : top3, x, y); break;
 				}
         	} else {
-				Draw.rect(top == null ? Core.atlas.find(name + "top") : top, x, y); break;
+				Draw.rect(top == null ? Core.atlas.find(name + "top") : top, x, y);
             }
 			Draw.color();
 		}
