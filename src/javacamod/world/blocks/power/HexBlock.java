@@ -109,7 +109,7 @@ public class HexBlock extends Block{
 		@Override
 		public void draw(){
 			super.draw();
-			if top == null || top0 == null || top1 == null || top2 == null || top3 == null {load();};
+			if (top == null || top0 == null || top1 == null || top2 == null || top3 == null) {load();};
 			Draw.color(Tmp.c1.set(color));
 			if (HexBlock.rotateBUTSTATIC) {
 				switch(rotation){
