@@ -108,6 +108,8 @@ public class HexBlock extends Block{
 				color = Tmp.c1.fromDouble(p1).rgba();
 			}
 
+			renderer.minimap.update(tile);
+
 			super.control(type, p1, p2, p3, p4);
 		}
 
