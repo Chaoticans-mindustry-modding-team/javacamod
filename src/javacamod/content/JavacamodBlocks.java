@@ -3495,5 +3495,19 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             screenSize = 24;
         }};
 
+        runicMicroProcessor = new LogicBlock("runicMicroProcessor"){{
+            requirements(Category.logic, with());
+            size = 1;
+            range = 2000;
+            instructionsPerTick = 500;
+        }};
+
+        ultraMicroProcessor = new LogicBlock("ultraMicroProcessor"){{
+            requirements(Category.logic, with());
+            size = 1;
+            range = 2000;
+            instructionsPerTick = 500;
+        }};
+
     }
 }
