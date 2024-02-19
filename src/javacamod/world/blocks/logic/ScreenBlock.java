@@ -175,9 +175,9 @@ public class ScreenBlock extends Block{
         @Override
         public void control(LAccess type, double p1, double p2, double p3, double p4){
             if(type == LAccess.color){
-		Color inCol = new Color();
-                inCol.rgba8888((int)(p1 * Math.pow(2f, 1074f)));
-		setByte(data, (((int)((inCol.r*255) % screenSize)) + ((int)((inCol.g*255) % screenSize)) * screenSize) * bitsPerPixel, (int)((inCol.b*255) % palette.length));
+		        Color inCol = new Color();
+                inCol.rgba8888((int)(doubleToRawLongBits(p1)));
+		        setByte(data, (((int)((inCol.r*255) % screenSize)) + ((int)((inCol.g*255) % screenSize)) * screenSize) * bitsPerPixel, (int)((inCol.b*255) % palette.length));
             }
 
             draw();
