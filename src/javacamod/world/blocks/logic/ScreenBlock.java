@@ -180,7 +180,7 @@ public class ScreenBlock extends Block{
 		        setByte(data, (((int)((inCol.r*255) % screenSize)) + ((int)((inCol.g*255) % screenSize)) * screenSize) * bitsPerPixel, (int)((inCol.b*255) % palette.length));
             }
 
-            draw();
+            updateTexture();
 
             super.control(type, p1, p2, p3, p4);
         }
