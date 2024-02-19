@@ -177,10 +177,10 @@ public class ScreenBlock extends Block{
             if(type == LAccess.color){
 		        Color inCol = new Color();
                 inCol.rgba8888((int)(Double.doubleToRawLongBits(p1)));
-		        setByte(data, (((int)((inCol.r*255) % screenSize)) + ((int)((inCol.g*255) % screenSize)) * screenSize) * bitsPerPixel, (int)((inCol.b*255) % palette.length));
+		        pix.set(((int)((inCol.r*255) % screenSize)), ((int)((inCol.g*255) % screenSize)), palette[(int)((inCol.b*255) % palette.length)]);
             }
 
-            draw();
+            updateTexture();
 
             super.control(type, p1, p2, p3, p4);
         }
