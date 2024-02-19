@@ -79,10 +79,10 @@ chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMe
 screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borderlessScreenLarge,
 
 //Processors
-runicMicroProcessor, ultraMicroProcessor,
+yellowMicroProcessor, cyanMicroProcessor,
 
 //Memory
-runicMemoryCell, ultraMemoryCell,
+yellowMemoryCell, cyanMemoryCell,
 
 ;
     
@@ -3501,27 +3501,27 @@ runicMemoryCell, ultraMemoryCell,
             screenSize = 24;
         }};
 
-        runicMicroProcessor = new LogicBlock("runic-micro-processor"){{
+        yellowMicroProcessor = new LogicBlock("yellow-micro-processor"){{
             requirements(Category.logic, with());
             size = 1;
             range = 2000;
             instructionsPerTick = 500;
         }};
 
-        ultraMicroProcessor = new LogicBlock("ultra-micro-processor"){{
+        cyanMicroProcessor = new LogicBlock("cyan-micro-processor"){{
             requirements(Category.logic, with());
             size = 1;
             range = 2000;
             instructionsPerTick = 500;
         }};
 
-        runicMemoryCell = new MemoryBlock("runic-memory-cell"){{
+        yellowMemoryCell = new MemoryBlock("yellow-memory-cell"){{
             requirements(Category.logic, with());
             size = 1;
             memoryCapacity = 2048;
         }};
 
-        ultraMemoryCell = new MemoryBlock("ultra-memory-cell"){{
+        cyanMemoryCell = new MemoryBlock("cyan-memory-cell"){{
             requirements(Category.logic, with());
             size = 1;
             memoryCapacity = 2048;
