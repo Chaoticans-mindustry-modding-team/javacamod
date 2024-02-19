@@ -3501,27 +3501,27 @@ runicMemoryCell, ultraMemoryCell,
             screenSize = 24;
         }};
 
-        runicMicroProcessor = new LogicBlock("runicMicroProcessor"){{
+        runicMicroProcessor = new LogicBlock("runic-micro-processor"){{
             requirements(Category.logic, with());
             size = 1;
             range = 2000;
             instructionsPerTick = 500;
         }};
 
-        ultraMicroProcessor = new LogicBlock("ultraMicroProcessor"){{
+        ultraMicroProcessor = new LogicBlock("ultra-micro-processor"){{
             requirements(Category.logic, with());
             size = 1;
             range = 2000;
             instructionsPerTick = 500;
         }};
 
-        runicMemoryCell = new MemoryBlock("runicMemoryCell"){{
+        runicMemoryCell = new MemoryBlock("runic-memory-cell"){{
             requirements(Category.logic, with());
             size = 1;
             memoryCapacity = 2048;
         }};
 
-        ultraMemoryCell = new MemoryBlock("ultraMemoryCell"){{
+        ultraMemoryCell = new MemoryBlock("ultra-memory-cell"){{
             requirements(Category.logic, with());
             size = 1;
             memoryCapacity = 2048;
