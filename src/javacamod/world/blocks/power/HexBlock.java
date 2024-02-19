@@ -111,6 +111,15 @@ public class HexBlock extends Block{
 			super.control(type, p1, p2, p3, p4);
 		}
 
+        @Override
+        public void configured(Unit player, Object value){
+            super.configured(player, value);
+
+            if(!headless){
+                renderer.minimap.update(tile);
+            }
+        }
+
 		@Override
 		public double sense(LAccess sensor){
 			if(sensor == LAccess.color) return Tmp.c1.set(color).toDoubleBits();
