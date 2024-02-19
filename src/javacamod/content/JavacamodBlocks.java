@@ -82,7 +82,7 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 yellowMicroProcessor, cyanMicroProcessor,
 
 //Memory
-yellowMemoryCell, cyanMemoryCell,
+yellowMemoryCell, cyanMemoryCell
 
 ;
     
