@@ -76,7 +76,13 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMessageDiamond, chiseledMessageBar, chiseledMessagePlant, chiseledMessageFactory, chiseledMessageAdmin, chiseledMessageDrill, chiseledMessageTurret, chiseledMessageLogic, chiseledMessageUnit, chiseledMessagePower, chiseledMessageWall, chiseledMessageLiquid, chiseledMessageDistribution, chiseledMessageSkull, chiseledMessageVoid, chiseledMessageOne, chiseledMessageTwo, chiseledMessageThree, chiseledMessageFour, chiseledMessageFive, chiseledMessageSix, chiseledMessageSeven, chiseledMessageEight, chiseledMessageNine, chiseledMessageZero, chiseledMessageHouse, chiseledMessageRules, chiseledMessageCore, chiseledMessageTechtree, chiseledMessageImage, chiseledMessageList, chiseledMessageWaves, chiseledMessageTrashcan, chiseledMessageLandscape, chiseledMessageFloors, chiseledMessagePause, chiseledMessagePlay, chiseledMessagePencil, chiseledMessageEraser, chiseledMessageCross, chiseledMessageCrossDiagonal, chiseledMessageHammer, chiseledMessageMap, chiseledMessageBox, chiseledMessageGear, chiseledMessageArrowUp, chiseledMessageArrowDown, chiseledMessageArrowLeft, chiseledMessageArrowRight,
 
 //Screens
-screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borderlessScreenLarge
+screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borderlessScreenLarge,
+
+//Processors
+runicMicroProcessor, ultraMicroProcessor,
+
+//Memory
+runicMemoryCell, ultraMemoryCell,
 
 ;
     
@@ -3507,6 +3513,18 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
             size = 1;
             range = 2000;
             instructionsPerTick = 500;
+        }};
+
+        runicMemoryCell = new MemoryBlock("runicMemoryCell"){{
+            requirements(Category.logic, with());
+            size = 1;
+            memoryCapacity = 2048;
+        }};
+
+        ultraMemoryCell = new MemoryBlock("ultraMemoryCell"){{
+            requirements(Category.logic, with());
+            size = 1;
+            memoryCapacity = 2048;
         }};
 
     }
