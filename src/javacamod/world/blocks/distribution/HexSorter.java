@@ -6,14 +6,13 @@ import arc.math.*;
 import arc.scene.ui.layout.*;
 import arc.util.*;
 import arc.util.io.*;
-import mindustry.annotations.Annotations.*;
 import mindustry.entities.units.*;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
 import mindustry.world.meta.*;
-import javacamod.world.blocks.power.HexBlock;
+import javacamod.world.blocks.decoration.HexBlock;
 
 import static mindustry.Vars.*;
 
@@ -32,7 +31,7 @@ public class HexSorter extends HexBlock{
         saveConfig = true;
         clearOnDoubleTap = true;
 
-        configClear((HexSorterBuild tile) -> tile.color = null);
+        configClear((HexSorterBuild tile) -> tile.color = 0);
     }
 
     @Override
@@ -63,7 +62,7 @@ public class HexSorter extends HexBlock{
             if(dir == -1) return null;
             Building to;
 
-            if(((item.color == color) ^ invert) == enabled){
+            if(((item.color == Color.rgba8888(color)) ^ invert) == enabled){
                 //prevent 3-chains
                 if(isSame(source) && isSame(nearby(dir))){
                     return null;

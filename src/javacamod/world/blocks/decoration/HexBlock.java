@@ -1,4 +1,4 @@
-package javacamod.world.blocks.power;
+package javacamod.world.blocks.decoration;
 
 import arc.graphics.*;
 import arc.graphics.g2d.*;
