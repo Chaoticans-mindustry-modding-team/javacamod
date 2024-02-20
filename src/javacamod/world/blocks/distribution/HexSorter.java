@@ -1,6 +1,7 @@
 package javacamod.world.blocks.distribution;
 
 import arc.*;
+import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.scene.ui.layout.*;
