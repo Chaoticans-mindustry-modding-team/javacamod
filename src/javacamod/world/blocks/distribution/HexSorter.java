@@ -13,6 +13,7 @@ import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
 import mindustry.world.meta.*;
+import javacamod.world.blocks.power.HexBlock;
 
 import static mindustry.Vars.*;
 
@@ -97,15 +98,8 @@ public class HexSorter extends HexBlock{
         }
 
         @Override
-        public void write(Writes write){
-            super.write(write);
-            write.s(sortItem == null ? -1 : sortItem.id);
-        }
-
-        @Override
         public void read(Reads read, byte revision){
             super.read(read, revision);
-            sortItem = content.item(read.s());
 
             if(revision == 1){
                 new DirectionalItemBuffer(20).read(read);
