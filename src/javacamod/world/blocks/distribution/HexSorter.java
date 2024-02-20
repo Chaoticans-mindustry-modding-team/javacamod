@@ -63,7 +63,7 @@ public class HexSorter extends HexBlock{
             if(dir == -1) return null;
             Building to;
 
-            if(((item.color == Color.rgba8888(color)) ^ invert) == enabled){
+            if(((item.color == colorButColor) ^ invert) == enabled){
                 //prevent 3-chains
                 if(isSame(source) && isSame(nearby(dir))){
                     return null;

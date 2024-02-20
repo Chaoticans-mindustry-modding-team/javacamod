@@ -100,12 +100,14 @@ public class HexBlock extends Block{
 
 	public class HexBuild extends Building{
 		public int color = 0xffffff_ff;
+		public Color colorButColor = new Color(0xffffff_ff);
 		public float smoothTime = 1f;
 
 		@Override
 		public void control(LAccess type, double p1, double p2, double p3, double p4){
 			if(type == LAccess.color){
 				color = Tmp.c1.fromDouble(p1).rgba();
+				colorButColor = Color.rgba8888(color)
 			}
 
 			renderer.minimap.update(tile);
@@ -184,6 +186,7 @@ public class HexBlock extends Block{
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			color = read.i();
+			colorButColor = Color.rgba8888(color)
 		}
 	}
 }
