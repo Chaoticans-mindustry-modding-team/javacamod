@@ -64,7 +64,7 @@ public class HexSorter extends HexBlock{
             Building to;
 
             Color col = new Color();
-            col.rgba8888(color);
+            col.rgba8888(((HexSorterBuild)tile.build).color);
 
             if(((item.color == col) ^ invert) == enabled){
                 //prevent 3-chains
