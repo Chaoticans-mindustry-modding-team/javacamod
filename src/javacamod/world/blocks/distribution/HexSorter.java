@@ -65,9 +65,10 @@ public class HexSorter extends HexBlock{
 
             Color col = new Color();
             col.rgba8888(((HexSorterBuild)tile.build).color);
-
-            if(((item.color == col) ^ invert) == enabled){
+            System.out.println(color + " " + item.color + " " + item.color)
+            if(((item.color == col) != invert) == enabled){
                 //prevent 3-chains
+                System.out.println("Color identical.")
                 if(isSame(source) && isSame(nearby(dir))){
                     return null;
                 }
