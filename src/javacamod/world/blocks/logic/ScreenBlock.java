@@ -65,15 +65,15 @@ public class ScreenBlock extends Block{
         bitsPerPixel = Mathf.log2(Mathf.nextPowerOfTwo(palette.length));
     }
 
-		@Override
-		public void load(){
-			        super.load();
-				side1 = Core.atlas.find(name + "-side1");
-				side2 = Core.atlas.find(name + "-side2");
+	@Override
+	public void load(){
+		super.load();
+		side1 = Core.atlas.find(name + "-side1");
+		side2 = Core.atlas.find(name + "-side2");
 
-				corner1 = Core.atlas.find(name + "-corner1");
-				corner2 = Core.atlas.find(name + "-corner2");
-		}
+		corner1 = Core.atlas.find(name + "-corner1");
+		corner2 = Core.atlas.find(name + "-corner2");
+	}
 
     @Override
     public void drawPlanRegion(BuildPlan plan, Eachable<BuildPlan> list){
@@ -175,10 +175,12 @@ public class ScreenBlock extends Block{
         @Override
         public void control(LAccess type, double p1, double p2, double p3, double p4){
             if(type == LAccess.color){
-		Color inCol = new Color();
-                inCol.rgba8888((int)p1);
-		setByte(data, (((int)((inCol.r*255) % screenSize)) + ((int)((inCol.g*255) % screenSize)) * screenSize) * bitsPerPixel, (int)((inCol.b*255) % palette.length));
+		        Color inCol = new Color();
+                inCol.rgba8888((int)(Double.doubleToRawLongBits(p1)));
+		        setByte(data, (((int)((inCol.r*255) % screenSize)) + ((int)((inCol.g*255) % screenSize)) * screenSize) * bitsPerPixel, (int)((inCol.b*255) % palette.length));
             }
+
+            updateTexture();
 
             super.control(type, p1, p2, p3, p4);
         }
