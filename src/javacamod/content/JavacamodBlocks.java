@@ -83,7 +83,10 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 yellowMicroProcessor, cyanMicroProcessor,
 
 //Memory
-yellowMemoryCell, cyanMemoryCell
+yellowMemoryCell, cyanMemoryCell,
+
+//Lightsource
+lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge
 
 ;
     
@@ -3459,6 +3462,41 @@ yellowMemoryCell, cyanMemoryCell
             requirements(Category.logic, with());
             size = 1;
             memoryCapacity = 2048;
+        }};
+
+        lightSourceTiny = new LightBlock("tiny-light-source"){{
+            requirements(Category.logic, with());
+            size = 1;
+            radius = 50;
+            brightness = 100;
+        }};
+
+        lightSourceSmall = new LightBlock("small-light-source"){{
+            requirements(Category.logic, with());
+            size = 1;
+            radius = 100;
+            brightness = 100;
+        }};
+
+        lightSource = new LightBlock("light-source"){{
+            requirements(Category.logic, with());
+            size = 1;
+            radius = 200;
+            brightness = 100;
+        }};
+
+        lightSourceLarge = new LightBlock("large-light-source"){{
+            requirements(Category.logic, with());
+            size = 1;
+            radius = 300;
+            brightness = 100;
+        }};
+
+        lightSourceHuge = new LightBlock("huge-light-source"){{
+            requirements(Category.logic, with());
+            size = 1;
+            radius = 400;
+            brightness = 100;
         }};
 
     }
