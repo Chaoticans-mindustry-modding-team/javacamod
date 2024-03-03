@@ -1,6 +1,7 @@
 package javacamod.content;
 
 import mindustry.*;
+import mindustry.content.blocks;
 import mindustry.entities.*;
 import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;
@@ -40,6 +41,6 @@ import static mindustry.Vars.*;
 
 public class JavacamodBlocksOverride{
   public static void init(){
-    mindustry-Blocks.message.maxTextLength = 22000;
+    Blocks.message.maxTextLength = 22000;
   }
 }
