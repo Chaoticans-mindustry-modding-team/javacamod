@@ -2480,6 +2480,11 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             requirements(Category.liquid, with());
         }};
 
+        message = new MessageBlock("message"){{
+            requirements(Category.logic, with());
+            maxTextLength = 22000;
+        }};
+
         redMessage = new MessageBlock("red-message"){{
             requirements(Category.logic, with());
             maxTextLength = 22000;
