@@ -1,7 +1,7 @@
 package javacamod.content;
 
 import mindustry.*;
-import mindustry.content.blocks;
+import mindustry.content.blocks.*;
 import mindustry.entities.*;
 import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;
