@@ -89,6 +89,7 @@ yellowMemoryCell, cyanMemoryCell,
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge
 
 ;
+Blocks.messageBlock.maxTextLength = 22000;
     
     public static void load() {
         redWall = new Wall("red-wall"){{
