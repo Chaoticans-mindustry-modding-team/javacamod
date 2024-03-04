@@ -38,7 +38,6 @@ import javacamod.world.blocks.decoration.*;
 import javacamod.world.blocks.distribution.*;
 
 import static mindustry.Vars.*;
-import static mindustry.world.blocks.logic.messageBlock.*;
 
 public class JavacamodBlocksOverride{
   public static void init(){
