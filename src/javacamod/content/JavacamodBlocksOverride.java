@@ -33,9 +33,6 @@ import mindustry.world.blocks.units.*;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
-import javacamod.world.blocks.logic.*;
-import javacamod.world.blocks.decoration.*;
-import javacamod.world.blocks.distribution.*;
 
 import static mindustry.Vars.*;
 
