@@ -36,6 +36,7 @@ public class JavacamodJavaMod extends Mod{
         JavacamodItems.load();
         JavacamodLiquids.load();
         JavacamodBlocksOverride.init();
+        JavacamodUnitTypesOverride.init();
         Log.info("Loadin");
     }
 
