@@ -45,6 +45,6 @@ import static mindustry.Vars.*;
 
 public class JavacamodBlocksOverride{
   public static void init(){
-    Blocks.message.maxNewLines = 500;
+    Blocks.message.maxTextLength = 22000;
   }
 }
