@@ -46,7 +46,7 @@ import static mindustry.Vars.*;
 public class JavacamodUnitTypesOverride{
   public static void init(){
 
-    ((Units)UnitTypes.dagger).canBuild = true;
+    ((UnitType)UnitTypes.dagger).canBuild = true;
     UnitTypes.dagger.buildSpeed = 1;
 
   }
