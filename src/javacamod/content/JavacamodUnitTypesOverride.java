@@ -43,7 +43,7 @@ import mindustry.world.meta.*;
 
 import static mindustry.Vars.*;
 
-public class JavacamodBlocksOverride{
+public class JavacamodUnitTypesOverride{
   public static void init(){
 
     UnitTypes.dagger.canBuild = true;
