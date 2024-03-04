@@ -1,5 +1,12 @@
 package javacamod.content;
 
+import arc.graphics.*;
+import arc.graphics.g2d.*;
+import arc.struct.*;
+import arc.util.*;
+import arc.graphics.*;
+import arc.math.*;
+import arc.struct.*;
 import mindustry.*;
 import mindustry.content.*;
 import mindustry.entities.*;
