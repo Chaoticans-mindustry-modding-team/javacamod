@@ -2536,7 +2536,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter1 = new ItemSource("hex-chiseled-sorter-one"){{
+        hexChiseledSorter1 = new HexBlock("hex-chiseled-sorter-one"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2545,7 +2545,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter2 = new ItemSource("hex-chiseled-sorter-two"){{
+        hexChiseledSorter2 = new HexBlock("hex-chiseled-sorter-two"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2554,7 +2554,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter3 = new ItemSource("hex-chiseled-sorter-three"){{
+        hexChiseledSorter3 = new HexBlock("hex-chiseled-sorter-three"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2563,7 +2563,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter4 = new ItemSource("hex-chiseled-sorter-four"){{
+        hexChiseledSorter4 = new HexBlock("hex-chiseled-sorter-four"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2572,7 +2572,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter5 = new ItemSource("hex-chiseled-sorter-five"){{
+        hexChiseledSorter5 = new HexBlock("hex-chiseled-sorter-five"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2581,7 +2581,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter6 = new ItemSource("hex-chiseled-sorter-six"){{
+        hexChiseledSorter6 = new HexBlock("hex-chiseled-sorter-six"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2590,7 +2590,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter7 = new ItemSource("hex-chiseled-sorter-seven"){{
+        hexChiseledSorter7 = new HexBlock("hex-chiseled-sorter-seven"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2599,7 +2599,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter8 = new ItemSource("hex-chiseled-sorter-eight"){{
+        hexChiseledSorter8 = new HexBlock("hex-chiseled-sorter-eight"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2608,7 +2608,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter9 = new ItemSource("hex-chiseled-sorter-nine"){{
+        hexChiseledSorter9 = new HexBlock("hex-chiseled-sorter-nine"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2617,7 +2617,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter10 = new ItemSource("hex-chiseled-sorter-ten"){{
+        hexChiseledSorter10 = new HexBlock("hex-chiseled-sorter-ten"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2626,7 +2626,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter11 = new ItemSource("hex-chiseled-sorter-eleven"){{
+        hexChiseledSorter11 = new HexBlock("hex-chiseled-sorter-eleven"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2635,7 +2635,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter12 = new ItemSource("hex-chiseled-sorter-twelve"){{
+        hexChiseledSorter12 = new HexBlock("hex-chiseled-sorter-twelve"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2644,7 +2644,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter13 = new ItemSource("hex-chiseled-sorter-thirteen"){{
+        hexChiseledSorter13 = new HexBlock("hex-chiseled-sorter-thirteen"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2653,7 +2653,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexChiseledSorter14 = new ItemSource("hex-chiseled-sorter-fourteen"){{
+        hexChiseledSorter14 = new HexBlock("hex-chiseled-sorter-fourteen"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
