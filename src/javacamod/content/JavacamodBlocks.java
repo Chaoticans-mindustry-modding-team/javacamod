@@ -2062,7 +2062,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexLongSlopeFour = new HexBlock("hex-long-slope-Four"){{
+        hexLongSlopeFour = new HexBlock("hex-long-slope-four"){{
             requirements(Category.defense, with());
             health = 100; 
             size = 1;
