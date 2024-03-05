@@ -2052,6 +2052,26 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
+        hexLongSlopeThree = new HexBlock("hex-long-slope-three"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            diagonalSymmetryAxis = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexLongSlopeFour = new HexBlock("hex-long-slope-Four"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            diagonalSymmetryAxis = true;
+            envDisabled |= Env.scorching;
+        }};
+
         hexSlab = new HexBlock("hex-slab"){{
             requirements(Category.defense, with());
             health = 100;
