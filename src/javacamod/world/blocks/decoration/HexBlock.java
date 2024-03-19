@@ -38,7 +38,8 @@ public class HexBlock extends Block{
 	public TextureRegion top3;
 	public boolean showMinimapColor = true;
 
-	public boolean diagonalSymmetryAxis = false;
+	public boolean diagonalSymmetry = false;
+	public boolean noSymmetry = false;
 
 	public static boolean rotateBUTSTATIC = false;
 
@@ -48,12 +49,14 @@ public class HexBlock extends Block{
 		return build != null && showMinimapColor ? build.color : 0;
 	}
 
-	@Override
-    public void flipRotation(BuildPlan req, boolean x){
-		if (diagonalSymmetryAxis) {
-        	req.rotation = planRotation(req.rotation ^ ((x ^ invertFlip) ? 3 : 1));
-		} else if ((x == (req.rotation % 2 == 0)) != invertFlip) {
-            req.rotation = planRotation(Mathf.mod(req.rotation + 2, 4));
+    public void flipRotation(BuildPlan req, boolean flipHorizontally){
+		if (diagonalSymmetry) {
+        	req.rotation = planRotation(req.rotation ^ ((flipHorizontally ^ invertFlip) ? 1 : 3));
+		} else if (noSymmetry) {
+			flipped = !flipped;
+			rep.rotaton = planRotation(req.rotation ^ ((flipHorizontally ^ invertFlip) ? 0 : 2));
+		} else if ((flipHorizontally ^ invertFlip) == ((req.rotation & 1) == 0)) {
+            req.rotation = planRotation(req.rotation ^ 2);
         }
     }
 
@@ -66,15 +69,17 @@ public class HexBlock extends Block{
 		swapDiagonalPlacement = true;
 
 		config(Integer.class, (HexBuild tile, Integer value) -> tile.color = value);
+		config(boolean.class, (HexBuild tile, boolean value) -> tile.flipped = value);
 	}
 	
 	@Override
 	public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
 		super.drawPlanConfig(plan, list);
-		Draw.color(plan.config == null ? new Color(0xffffff_ff) : (plan.config instanceof Color c ? c : new Color(0xffffff_ff)));
+		Draw.color(plan.config == null ? new Color(0xffffff_ff) : (plan.config.color instanceof Color c ? c : new Color(0xffffff_ff)));
 
 		if (HexBlock.rotateBUTSTATIC) {
-			switch(plan.rotation){
+			switch(plan.rotation + (plan.config.flipped ? -1 : 0)){
+				case -1: TextureRegion top3 = Core.atlas.find(name + "-top3"); Draw.rect(top3, plan.drawx(), plan.drawy()); break;
 				case 0: TextureRegion top0 = Core.atlas.find(name + "-top0"); Draw.rect(top0, plan.drawx(), plan.drawy()); break;
 				case 1: TextureRegion top1 = Core.atlas.find(name + "-top1"); Draw.rect(top1, plan.drawx(), plan.drawy()); break;
 				case 2: TextureRegion top2 = Core.atlas.find(name + "-top2"); Draw.rect(top2, plan.drawx(), plan.drawy()); break;
@@ -100,6 +105,7 @@ public class HexBlock extends Block{
 
 	public class HexBuild extends Building{
 		public int color = 0xffffff_ff;
+		public boolean flipped = false
 		public float smoothTime = 1f;
 
 		@Override
@@ -134,11 +140,12 @@ public class HexBlock extends Block{
 			if (top == null || top0 == null || top1 == null || top2 == null || top3 == null) {load();};
 			Draw.color(Tmp.c1.set(color));
 			if (HexBlock.rotateBUTSTATIC) {
-				switch(rotation){
-					case 0: Draw.rect(top0, x, y); break;
-					case 1: Draw.rect(top1, x, y); break;
-					case 2: Draw.rect(top2, x, y); break;
-					case 3: Draw.rect(top3, x, y); break;
+				switch(rotation + (flipped ? -1 : 0)){
+					case -1: Draw.rect(top3, x, y, flipped ? 90 : 0); break;
+					case 0: Draw.rect(top0, x, y, flipped ? 90 : 0); break;
+					case 1: Draw.rect(top1, x, y, flipped ? 90 : 0); break;
+					case 2: Draw.rect(top2, x, y, flipped ? 90 : 0); break;
+					case 3: Draw.rect(top3, x, y, flipped ? 90 : 0); break;
 				}
         	} else {
                 Draw.rect(top, x, y);
@@ -178,16 +185,18 @@ public class HexBlock extends Block{
 		public void write(Writes write){
 			super.write(write);
 			write.i(color);
+			write.bool(flipped);
 		}
 
 		@Override
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			color = read.i();
+			flipped = read.bool();
 		}
 
 		public boolean isSame(Building other){
-                        return other != null && other.block.instantTransfer;
-                }
+            return other != null && other.block.instantTransfer;
+        }
 	}
 }
