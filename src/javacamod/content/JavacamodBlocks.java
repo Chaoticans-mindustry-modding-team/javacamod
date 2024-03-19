@@ -56,7 +56,7 @@ hexWall, hexWallLarge, hexWallColossal,
 //doors
 redDoor, largeRedDoor, darkredDoor, largeDarkredDoor, crimsonDoor, largeCrimsonDoor, greenDoor, largeGreenDoor, darkgreenDoor, largeDarkgreenDoor, poisonDoor, largePoisonDoor, blueDoor, largeBlueDoor, darkblueDoor, largeDarkblueDoor, navyDoor, largeNavyDoor, whiteDoor, largeWhiteDoor, blackDoor, largeBlackDoor, yellowDoor, largeYellowDoor, darkyellowDoor, largeDarkyellowDoor, runicDoor, largeRunicDoor, cyanDoor, largeCyanDoor, darkcyanDoor, largeDarkcyanDoor, deepOceanDoor, largeDeepOceanDoor, pinkDoor, largePinkDoor, darkpinkDoor, largeDarkpinkDoor, deeppinkDoor, largeDeeppinkDoor, orangeDoor, largeOrangeDoor, darkorangeDoor, largeDarkorangeDoor, burntorangeDoor, largeBurntorangeDoor, limeDoor, largeLimeDoor, darklimeDoor, largeDarklimeDoor, fruitDoor, largeFruitDoor, emeraldDoor, largeEmeraldDoor, darkemeraldDoor, largeDarkemeraldDoor, deepemeraldDoor, largeDeepemeraldDoor, sapphireDoor, largeSapphireDoor, darksapphireDoor, largeDarksapphireDoor, deepsapphireDoor, largeDeepsapphireDoor, purpleDoor, largePurpleDoor, darkpurpleDoor, largeDarkpurpleDoor, violetDoor, largeVioletDoor, hotpinkDoor, largeHotpinkDoor, darkhotpinkDoor, largeDarkhotpinkDoor, deephotpinkDoor, largeDeephotpinkDoor,
 //Slope Slab Stair
-hexStair, hexSlope, hexSlab,
+hexStair, hexSlope, hexLongSlopeOne, hexLongSlopeTwo, hexLongSlopeThree, hexLongSlopeFour, hexSlab, hexPillar, hexChunk, hexCenterChunk, hexMiddleChunk,
 
 //Oreblocks
 copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBottom, leadBar, leadBars, leadBarstackTop, leadBarstackMid, leadBarstackBottom, metaglassBlock, metaglassBlocks, metaglassBlockstackTop, metaglassBlockstackMid, metaglassBlockstackBottom, graphiteBlock, graphiteBlocks, graphiteBlockstackTop, graphiteBlockstackMid, graphiteBlockstackBottom, sandPile, smallSandPileOne, smallSandPileTwo, coalPile, titaniumBar, titaniumBars, titaniumBarstackTop, titaniumBarstackMid, titaniumBarstackBottom, thoriumPile, scrapPileOne, scrapPileTwo, scrapPileThree, scrapPileFour, siliconBlock, siliconBlocks, siliconBlockstackTop, siliconBlockstackMid, siliconBlockstackBottom, plastaniumBlock, plastaniumBlocks, plastaniumBlockstackTop, plastaniumBlockstackMid, plastaniumBlockstackBottom, phasePile, surgeAlloyBar, surgeAlloyBars, surgeAlloyBarstackTop, surgeAlloyBarstackMid, surgeAlloyBarstackBottom, sporePodPile, pyratiteBlock, pyratiteBlocks, pyratiteBlockstackTop, pyratiteBlockstackMid, pyratiteBlockstackBottom, blastCompoundBlock, blastCompoundBlocks, blastCompoundBlockstackTop, blastCompoundBlockstackMid, blastCompoundBlockstackBottom, berylliumPile, tungstenPile, oxidePile, carbidePile,
@@ -65,7 +65,7 @@ copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBotto
 darkMetal, darkMetalLarge, dirtWall, dirtWallLarge, duneWall, duneWallLarge, plantWall, plantWallLarge, grassWall, grassWallLarge, iceWall, iceWallLarge, snowWall, snowWallLarge, stoneWall, stoneWallLarge, woodWall, woodWallLarge, sandWall, sandWallLarge, coalWall, coalWallLarge,
     
 //distribution
-borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14,
+borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14, hexChiseledSorter1, hexChiseledSorter2, hexChiseledSorter3, hexChiseledSorter4, hexChiseledSorter5, hexChiseledSorter6, hexChiseledSorter7, hexChiseledSorter8, hexChiseledSorter9, hexChiseledSorter10, hexChiseledSorter11, hexChiseledSorter12, hexChiseledSorter13, hexChiseledSorter14,
 
 //liquid
 liquidBlock, borderlessLiquidSource,
@@ -86,7 +86,10 @@ yellowMicroProcessor, cyanMicroProcessor,
 yellowMemoryCell, cyanMemoryCell,
 
 //Performance blocks
-textureImitator
+textureImitator,
+
+//Lightsource
+lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge
 
 ;
     
@@ -2032,7 +2035,83 @@ textureImitator
             envDisabled |= Env.scorching;
         }};
 
+        hexLongSlopeOne = new HexBlock("hex-long-slope-one"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            diagonalSymmetryAxis = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexLongSlopeTwo = new HexBlock("hex-long-slope-two"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            diagonalSymmetryAxis = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexLongSlopeThree = new HexBlock("hex-long-slope-three"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            diagonalSymmetryAxis = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexLongSlopeFour = new HexBlock("hex-long-slope-four"){{
+            requirements(Category.defense, with());
+            health = 100; 
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            diagonalSymmetryAxis = true;
+            envDisabled |= Env.scorching;
+        }};
+
         hexSlab = new HexBlock("hex-slab"){{
+            requirements(Category.defense, with());
+            health = 100;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexPillar = new HexBlock("hex-pillar"){{
+            requirements(Category.defense, with());
+            health = 100;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChunk = new HexBlock("hex-chunk"){{
+            requirements(Category.defense, with());
+            health = 100;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexCenterChunk = new HexBlock("hex-center-chunk"){{
+            requirements(Category.defense, with());
+            health = 100;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexMiddleChunk = new HexBlock("hex-middle-chunk"){{
             requirements(Category.defense, with());
             health = 100;
             size = 1;
@@ -2457,6 +2536,132 @@ textureImitator
             health = 80;
             size = 1;
             rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter1 = new HexBlock("hex-chiseled-sorter-one"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter2 = new HexBlock("hex-chiseled-sorter-two"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter3 = new HexBlock("hex-chiseled-sorter-three"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter4 = new HexBlock("hex-chiseled-sorter-four"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter5 = new HexBlock("hex-chiseled-sorter-five"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter6 = new HexBlock("hex-chiseled-sorter-six"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter7 = new HexBlock("hex-chiseled-sorter-seven"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter8 = new HexBlock("hex-chiseled-sorter-eight"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter9 = new HexBlock("hex-chiseled-sorter-nine"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter10 = new HexBlock("hex-chiseled-sorter-ten"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter11 = new HexBlock("hex-chiseled-sorter-eleven"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter12 = new HexBlock("hex-chiseled-sorter-twelve"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter13 = new HexBlock("hex-chiseled-sorter-thirteen"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter14 = new HexBlock("hex-chiseled-sorter-fourteen"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -3468,6 +3673,41 @@ textureImitator
             requirements(Category.walls, with());
             size = 4
         }}
+        
+        lightSourceTiny = new LightBlock("tiny-light-source"){{
+            requirements(Category.power, with());
+            size = 1;
+            radius = 50;
+            brightness = 100;
+        }};
+
+        lightSourceSmall = new LightBlock("small-light-source"){{
+            requirements(Category.power, with());
+            size = 1;
+            radius = 100;
+            brightness = 100;
+        }};
+
+        lightSource = new LightBlock("light-source"){{
+            requirements(Category.power, with());
+            size = 1;
+            radius = 200;
+            brightness = 100;
+        }};
+
+        lightSourceLarge = new LightBlock("large-light-source"){{
+            requirements(Category.power, with());
+            size = 1;
+            radius = 300;
+            brightness = 100;
+        }};
+
+        lightSourceHuge = new LightBlock("huge-light-source"){{
+            requirements(Category.power, with());
+            size = 1;
+            radius = 400;
+            brightness = 100;
+        }};
 
     }
 }

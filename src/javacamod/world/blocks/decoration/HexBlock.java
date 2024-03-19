@@ -185,5 +185,9 @@ public class HexBlock extends Block{
 			super.read(read, revision);
 			color = read.i();
 		}
+
+		public boolean isSame(Building other){
+                        return other != null && other.block.instantTransfer;
+                }
 	}
 }
