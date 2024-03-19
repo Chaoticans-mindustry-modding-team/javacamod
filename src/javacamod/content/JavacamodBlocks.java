@@ -3671,8 +3671,8 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
 
         textureImitator = new TextureImitator("texture-imitator"){{
             requirements(Category.walls, with());
-            size = 4
-        }}
+            size = 4;
+        }};
         
         lightSourceTiny = new LightBlock("tiny-light-source"){{
             requirements(Category.power, with());
