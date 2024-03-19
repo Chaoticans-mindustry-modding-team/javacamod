@@ -109,6 +109,7 @@ public class TextureBlock extends Block {
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			regionName = read.str();
+			region = Core.atlas.find(regionName);
 		}
 	}
 }
