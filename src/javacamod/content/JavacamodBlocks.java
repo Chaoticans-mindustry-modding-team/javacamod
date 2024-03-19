@@ -3669,13 +3669,18 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             memoryCapacity = 2048;
         }};
 
-        textureImitator = new TextureImitator("texture-imitator"){{
+        textureBlock = new TextureBlock("texture-block"){{
+            requirements(Category.defense, with());
+        }};
+
+        textureImitator = new TextureBlock("texture-imitator"){{
             requirements(Category.defense, with());
             size = 4;
         }};
 
-        textureBlock = new TextureImitator("texture-block"){{
+        textureGrid = new TextureBlock("texture-grid"){{
             requirements(Category.defense, with());
+            size = 16;
         }};
         
         lightSourceTiny = new LightBlock("tiny-light-source"){{
