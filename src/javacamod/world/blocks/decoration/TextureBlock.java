@@ -32,7 +32,7 @@ import static mindustry.Vars.*;
 
 public class TextureBlock extends Block {
     
-    public TextureImitator(String name){
+    public TextureBlock(String name){
 		super(name);
 		update = true;
 		configurable = true;
@@ -40,7 +40,7 @@ public class TextureBlock extends Block {
 		envEnabled |= Env.space;
 		swapDiagonalPlacement = true;
 
-		config(String.class, (TextureImitatorBuild tile, String value) -> tile.regionName = value);
+		config(String.class, (TextureBuild tile, String value) -> tile.regionName = value);
 	};
 
 	public class TextureBuild extends Building{
@@ -52,9 +52,9 @@ public class TextureBlock extends Block {
 			super.draw();
             for (int i = x - size*4; i < x + size*4; i += region.width) {
                 for (int j = y - size*4; j < y + size*4; j += region.height) {
-                    Draw.rect(region, i, j, rotation*90)
-                }
-            }
+                    Draw.rect(region, i, j, rotation*90);
+                };
+            };
 		}
 
         @Override
