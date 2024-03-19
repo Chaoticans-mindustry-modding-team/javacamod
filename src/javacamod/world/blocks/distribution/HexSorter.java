@@ -32,7 +32,7 @@ public class HexSorter extends HexBlock{
         saveConfig = true;
         clearOnDoubleTap = true;
 
-        configClear((HexSorterBuild tile) -> tile.color = 0);
+        configClear((HexSorterBuild tile) -> tile.color_flipped.intComponent = 0);
     }
 
     @Override
@@ -64,11 +64,11 @@ public class HexSorter extends HexBlock{
             Building to;
 
             Color col = new Color();
-            col.rgba8888(((HexSorterBuild)tile.build).color);
-            System.out.println(color + " " + item.color + " " + item.color);
+            col.rgba8888(((HexSorterBuild)tile.build).color_flipped.intComponent);
+            System.out.println(color_flipped.intComponent + " " + item.color + " " + item.color);
             if(((item.color == col) != invert) == enabled){
                 //prevent 3-chains
-                System.out.println("Color identical.");
+                Log.info("Color identical.");
                 if(isSame(source) && isSame(nearby(dir))){
                     return null;
                 }

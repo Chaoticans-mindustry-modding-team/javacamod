@@ -47,9 +47,9 @@ public class TextureBlock extends Block {
 		public String regionName = "copper-wall";
         public TextureRegion region = Core.atlas.find(regionName);
 
-		@Override
+		//@Override
 		public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
-			super.drawPlanConfig(plan, list);
+			//super.drawPlanConfig(plan, list);
 			float drawOffsetX = plan.drawx() - size*4;
 			float drawOffsetY = plan.drawy() - size*4;
 			float drawSize = size*8;

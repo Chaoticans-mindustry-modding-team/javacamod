@@ -56,13 +56,13 @@ hexWall, hexWallLarge, hexWallColossal,
 //doors
 redDoor, largeRedDoor, darkredDoor, largeDarkredDoor, crimsonDoor, largeCrimsonDoor, greenDoor, largeGreenDoor, darkgreenDoor, largeDarkgreenDoor, poisonDoor, largePoisonDoor, blueDoor, largeBlueDoor, darkblueDoor, largeDarkblueDoor, navyDoor, largeNavyDoor, whiteDoor, largeWhiteDoor, blackDoor, largeBlackDoor, yellowDoor, largeYellowDoor, darkyellowDoor, largeDarkyellowDoor, runicDoor, largeRunicDoor, cyanDoor, largeCyanDoor, darkcyanDoor, largeDarkcyanDoor, deepOceanDoor, largeDeepOceanDoor, pinkDoor, largePinkDoor, darkpinkDoor, largeDarkpinkDoor, deeppinkDoor, largeDeeppinkDoor, orangeDoor, largeOrangeDoor, darkorangeDoor, largeDarkorangeDoor, burntorangeDoor, largeBurntorangeDoor, limeDoor, largeLimeDoor, darklimeDoor, largeDarklimeDoor, fruitDoor, largeFruitDoor, emeraldDoor, largeEmeraldDoor, darkemeraldDoor, largeDarkemeraldDoor, deepemeraldDoor, largeDeepemeraldDoor, sapphireDoor, largeSapphireDoor, darksapphireDoor, largeDarksapphireDoor, deepsapphireDoor, largeDeepsapphireDoor, purpleDoor, largePurpleDoor, darkpurpleDoor, largeDarkpurpleDoor, violetDoor, largeVioletDoor, hotpinkDoor, largeHotpinkDoor, darkhotpinkDoor, largeDarkhotpinkDoor, deephotpinkDoor, largeDeephotpinkDoor,
 //Slope Slab Stair
-hexStair, hexSlope, hexLongSlope0, hexLongSlope2, hexLongSlope3, hexLongSlope4, hexSlab, hexPillar, hexChunk, hexCenterChunk, hexMiddleChunk,
+hexStair, hexSlope, hexLongSlope1, hexLongSlope2, hexLongSlope3, hexLongSlope4, hexSlab, hexPillar, hexChunk, hexCenterChunk, hexMiddleChunk,
 
 //Oreblocks
 copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBottom, leadBar, leadBars, leadBarstackTop, leadBarstackMid, leadBarstackBottom, metaglassBlock, metaglassBlocks, metaglassBlockstackTop, metaglassBlockstackMid, metaglassBlockstackBottom, graphiteBlock, graphiteBlocks, graphiteBlockstackTop, graphiteBlockstackMid, graphiteBlockstackBottom, sandPile, smallSandPile0, smallSandPile2, coalPile, titaniumBar, titaniumBars, titaniumBarstackTop, titaniumBarstackMid, titaniumBarstackBottom, thoriumPile, scrapPile0, scrapPile2, scrapPile3, scrapPile4, siliconBlock, siliconBlocks, siliconBlockstackTop, siliconBlockstackMid, siliconBlockstackBottom, plastaniumBlock, plastaniumBlocks, plastaniumBlockstackTop, plastaniumBlockstackMid, plastaniumBlockstackBottom, phasePile, surgeAlloyBar, surgeAlloyBars, surgeAlloyBarstackTop, surgeAlloyBarstackMid, surgeAlloyBarstackBottom, sporePodPile, pyratiteBlock, pyratiteBlocks, pyratiteBlockstackTop, pyratiteBlockstackMid, pyratiteBlockstackBottom, blastCompoundBlock, blastCompoundBlocks, blastCompoundBlockstackTop, blastCompoundBlockstackMid, blastCompoundBlockstackBottom, berylliumPile, tungstenPile, oxidePile, carbidePile,
 
 //Imitation terrain walls
-darkMetal, darkMetalLarge, dirtWall, dirtWallLarge, duneWall, duneWallLarge, plantWall, plantWallLarge, grassWall, grassWallLarge, iceWall, iceWallLarge, snowWall, snowWallLarge, st0Wall, st0WallLarge, woodWall, woodWallLarge, sandWall, sandWallLarge, coalWall, coalWallLarge,
+darkMetal, darkMetalLarge, dirtWall, dirtWallLarge, duneWall, duneWallLarge, plantWall, plantWallLarge, grassWall, grassWallLarge, iceWall, iceWallLarge, snowWall, snowWallLarge, stoneWall, stoneWallLarge, woodWall, woodWallLarge, sandWall, sandWallLarge, coalWall, coalWallLarge,
     
 //distribution
 borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14, hexChiseledSorter1, hexChiseledSorter2, hexChiseledSorter3, hexChiseledSorter4, hexChiseledSorter5, hexChiseledSorter6, hexChiseledSorter7, hexChiseledSorter8, hexChiseledSorter9, hexChiseledSorter10, hexChiseledSorter11, hexChiseledSorter12, hexChiseledSorter13, hexChiseledSorter14,
@@ -1465,14 +1465,14 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        st0Wall = new Wall("st0-wall"){{
+        stoneWall = new Wall("stone-wall"){{
             requirements(Category.production, with());
             health = 80;
             variants = 2;
             envDisabled |= Env.scorching;
         }};
 
-        st0WallLarge = new Wall("st0-wall-large"){{
+        stoneWallLarge = new Wall("stone-wall-large"){{
             requirements(Category.production, with());
             health = 80; 
             size = 2;
@@ -2035,7 +2035,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             envDisabled |= Env.scorching;
         }};
 
-        hexLongSlope0 = new HexBlock("hex-long-slope1"){{
+        hexLongSlope1 = new HexBlock("hex-long-slope1"){{
             requirements(Category.defense, with());
             health = 100; 
             size = 1;
