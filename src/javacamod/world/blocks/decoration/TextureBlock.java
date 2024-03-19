@@ -48,7 +48,7 @@ public class TextureBlock extends Block {
         public TextureRegion region = Core.atlas.find(regionName);
 		private float drawOffsetX = x - size*4;
 		private float drawOffsetY = y - size*4;
-		private float drawSize = size*8
+		private float drawSize = size*8;
 
 		@Override
 		public void draw(){
