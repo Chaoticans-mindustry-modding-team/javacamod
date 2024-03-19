@@ -50,8 +50,8 @@ public class TextureBlock extends Block {
 		@Override
 		public void draw(){
 			super.draw();
-            for (int i = x - size*4; i < x + size*4; i += region.width) {
-                for (int j = y - size*4; j < y + size*4; j += region.height) {
+            for (float i = x - size*4; i < x + size*4; i += region.width/4) {
+                for (float j = y - size*4; j < y + size*4; j += region.height/4) {
                     Draw.rect(region, i, j, rotation*90);
                 };
             };

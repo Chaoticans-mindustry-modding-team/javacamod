@@ -85,8 +85,8 @@ yellowMicroProcessor, cyanMicroProcessor,
 //Memory
 yellowMemoryCell, cyanMemoryCell,
 
-//Performance blocks
-textureImitator,
+//Texture blocks
+textureBlock, textureImitator, textureGrid,
 
 //Lightsource
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge
