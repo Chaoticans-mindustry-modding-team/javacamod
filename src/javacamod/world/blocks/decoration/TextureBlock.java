@@ -48,6 +48,19 @@ public class TextureBlock extends Block {
         public TextureRegion region = Core.atlas.find(regionName);
 
 		@Override
+		public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
+			super.drawPlanConfig(plan, list);
+			float drawOffsetX = plan.drawx() - size*4;
+			float drawOffsetY = plan.drawy() - size*4;
+			float drawSize = size*8;
+            for (float i = 0; i < drawSize; i += region.width/4) {
+                for (float j = 0; j < drawSize; j += region.height/4) {
+                    Draw.rect(region, i + region.width/8 + drawOffsetX, j + region.height/8 + drawOffsetY, rotation*90);
+                };
+            };
+		}
+
+		@Override
 		public void draw(){
 			super.draw();
 			float drawOffsetX = x - size*4;
