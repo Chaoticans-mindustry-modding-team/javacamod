@@ -3670,7 +3670,7 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
         }};
 
         textureImitator = new TextureImitator("texture-imitator"){{
-            requirements(Category.walls, with());
+            requirements(Category.defense, with());
             size = 4;
         }};
         
