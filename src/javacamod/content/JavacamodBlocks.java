@@ -3669,15 +3669,18 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
 
         textureBlock = new TextureBlock("texture-block"){{
             requirements(Category.defense, with());
+            rotate = true;
         }};
 
         textureImitator = new TextureBlock("texture-imitator"){{
             requirements(Category.defense, with());
+            rotate = true;
             size = 4;
         }};
 
         textureGrid = new TextureBlock("texture-grid"){{
             requirements(Category.defense, with());
+            rotate = true;
             size = 16;
         }};
         

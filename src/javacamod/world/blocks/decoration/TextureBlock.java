@@ -45,7 +45,6 @@ public class TextureBlock extends Block {
 
 	public class TextureBuild extends Building{
 		public String regionName = "copper-wall";
-        public TextureRegion region = Core.atlas.find(regionName);
 
 		//@Override
 		public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
@@ -53,9 +52,10 @@ public class TextureBlock extends Block {
 			float drawOffsetX = plan.drawx() - size*4;
 			float drawOffsetY = plan.drawy() - size*4;
 			float drawSize = size*8;
+			region = Core.atlas.find(plan.config instanceof String s ? s : "copper-wall");
             for (float i = 0; i < drawSize; i += region.width/4) {
                 for (float j = 0; j < drawSize; j += region.height/4) {
-                    Draw.rect(region, i + region.width/8 + drawOffsetX, j + region.height/8 + drawOffsetY, rotation*90);
+                    Draw.rect(region, i + region.width/8 + drawOffsetX, j + region.height/8 + drawOffsetY, plan.rotation*90);
                 };
             };
 		}
@@ -66,6 +66,7 @@ public class TextureBlock extends Block {
 			float drawOffsetX = x - size*4;
 			float drawOffsetY = y - size*4;
 			float drawSize = size*8;
+            region = Core.atlas.find(regionName);
             for (float i = 0; i < drawSize; i += region.width/4) {
                 for (float j = 0; j < drawSize; j += region.height/4) {
                     Draw.rect(region, i + region.width/8 + drawOffsetX, j + region.height/8 + drawOffsetY, rotation*90);
@@ -79,7 +80,6 @@ public class TextureBlock extends Block {
                 t.margin(6f);
                 t.field(regionName, text -> {
                     configure(text);
-                    region = Core.atlas.find(regionName);
                 }).width(240).get();
             });
         }
@@ -109,7 +109,6 @@ public class TextureBlock extends Block {
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			regionName = read.str();
-			region = Core.atlas.find(regionName);
 		}
 	}
 }
