@@ -61,7 +61,7 @@ hexStair, hexSlope, hexSlab,
 //Oreblocks
 copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBottom, leadBar, leadBars, leadBarstackTop, leadBarstackMid, leadBarstackBottom, metaglassBlock, metaglassBlocks, metaglassBlockstackTop, metaglassBlockstackMid, metaglassBlockstackBottom, graphiteBlock, graphiteBlocks, graphiteBlockstackTop, graphiteBlockstackMid, graphiteBlockstackBottom, sandPile, smallSandPileOne, smallSandPileTwo, coalPile, titaniumBar, titaniumBars, titaniumBarstackTop, titaniumBarstackMid, titaniumBarstackBottom, thoriumPile, scrapPileOne, scrapPileTwo, scrapPileThree, scrapPileFour, siliconBlock, siliconBlocks, siliconBlockstackTop, siliconBlockstackMid, siliconBlockstackBottom, plastaniumBlock, plastaniumBlocks, plastaniumBlockstackTop, plastaniumBlockstackMid, plastaniumBlockstackBottom, phasePile, surgeAlloyBar, surgeAlloyBars, surgeAlloyBarstackTop, surgeAlloyBarstackMid, surgeAlloyBarstackBottom, sporePodPile, pyratiteBlock, pyratiteBlocks, pyratiteBlockstackTop, pyratiteBlockstackMid, pyratiteBlockstackBottom, blastCompoundBlock, blastCompoundBlocks, blastCompoundBlockstackTop, blastCompoundBlockstackMid, blastCompoundBlockstackBottom, berylliumPile, tungstenPile, oxidePile, carbidePile,
 
-//natualwalls
+//Imitation terrain walls
 darkMetal, darkMetalLarge, dirtWall, dirtWallLarge, duneWall, duneWallLarge, plantWall, plantWallLarge, grassWall, grassWallLarge, iceWall, iceWallLarge, snowWall, snowWallLarge, stoneWall, stoneWallLarge, woodWall, woodWallLarge, sandWall, sandWallLarge, coalWall, coalWallLarge,
     
 //distribution
@@ -83,7 +83,10 @@ screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borde
 yellowMicroProcessor, cyanMicroProcessor,
 
 //Memory
-yellowMemoryCell, cyanMemoryCell
+yellowMemoryCell, cyanMemoryCell,
+
+//Performance blocks
+textureImitator
 
 ;
     
@@ -3460,6 +3463,11 @@ yellowMemoryCell, cyanMemoryCell
             size = 1;
             memoryCapacity = 2048;
         }};
+
+        textureImitator = new TextureImitator("texture-imitator"){{
+            requirements(Category.walls, with());
+            size = 4
+        }}
 
     }
 }
