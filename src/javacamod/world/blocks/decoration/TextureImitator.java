@@ -81,13 +81,13 @@ public class TextureImitator extends Block {
 		@Override
 		public void write(Writes write){
 			super.write(write);
-			write.i(regionName);
+			write.str(regionName);
 		}
 
 		@Override
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
-			regionName = read.i();
+			regionName = read.str();
 		}
 	}
 }
