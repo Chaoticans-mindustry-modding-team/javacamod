@@ -41,11 +41,11 @@ public class TextureImitator extends Block {
 		swapDiagonalPlacement = true;
 
 		config(String.class, (TextureImitatorBuild tile, String value) -> tile.regionName = value);
-	}
+	};
 
 	public class TextureImitatorBuild extends Building{
 		public String regionName = "copper-wall";
-        public TextureRegion region = 
+        public TextureRegion region;
 
 		@Override
 		public void draw(){
