@@ -46,13 +46,16 @@ public class TextureBlock extends Block {
 	public class TextureBuild extends Building{
 		public String regionName = "copper-wall";
         public TextureRegion region = Core.atlas.find(regionName);
+		private float drawOffsetX = x - size*4;
+		private float drawOffsetY = y - size*4;
+		private float drawSize = size*8
 
 		@Override
 		public void draw(){
 			super.draw();
-            for (float i = x - size*4; i < x + size*4; i += region.width/4) {
-                for (float j = y - size*4; j < y + size*4; j += region.height/4) {
-                    Draw.rect(region, i, j, rotation*90);
+            for (float i = 0; i < drawSize; i += region.width/4) {
+                for (float j = 0; j < drawSize; j += region.height/4) {
+                    Draw.rect(region, i + region.width/8 + drawOffsetX, j + region.height/8 + drawOffsetY, rotation*90);
                 };
             };
 		}
