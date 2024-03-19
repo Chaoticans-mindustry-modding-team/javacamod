@@ -3673,6 +3673,10 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             requirements(Category.defense, with());
             size = 4;
         }};
+
+        textureBlock = new TextureImitator("texture-block"){{
+            requirements(Category.defense, with());
+        }};
         
         lightSourceTiny = new LightBlock("tiny-light-source"){{
             requirements(Category.power, with());

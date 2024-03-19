@@ -30,7 +30,7 @@ import mindustry.world.blocks.*;
 
 import static mindustry.Vars.*;
 
-public class TextureImitator extends Block {
+public class TextureBlock extends Block {
     
     public TextureImitator(String name){
 		super(name);
@@ -43,14 +43,18 @@ public class TextureImitator extends Block {
 		config(String.class, (TextureImitatorBuild tile, String value) -> tile.regionName = value);
 	};
 
-	public class TextureImitatorBuild extends Building{
+	public class TextureBuild extends Building{
 		public String regionName = "copper-wall";
-        public TextureRegion region;
+        public TextureRegion region = Core.atlas.find(regionName);
 
 		@Override
 		public void draw(){
 			super.draw();
-			Draw.color();
+            for (int i = x - size*4; i < x + size*4; i += region.width) {
+                for (int j = y - size*4; j < y + size*4; j += region.height) {
+                    Draw.rect(region, i, j, rotation*90)
+                }
+            }
 		}
 
         @Override
@@ -59,6 +63,7 @@ public class TextureImitator extends Block {
                 t.margin(6f);
                 t.field(regionName, text -> {
                     configure(text);
+                    region = Core.atlas.find(regionName);
                 }).width(240).get();
             });
         }
