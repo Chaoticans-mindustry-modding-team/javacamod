@@ -3741,7 +3741,7 @@ vial, hexVial
             requirements(Category.power, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true
+            rotateBUTSTATIC = true;
         }};
 
 
