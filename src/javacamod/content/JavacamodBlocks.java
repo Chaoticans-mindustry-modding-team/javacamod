@@ -89,7 +89,10 @@ yellowMemoryCell, cyanMemoryCell,
 textureBlock, textureImitator, textureGrid,
 
 //Lightsource
-lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge
+lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
+
+//Decor
+vial, hexVial
 
 ;
     
@@ -3727,6 +3730,20 @@ lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHug
             radius = 400;
             brightness = 100;
         }};
+
+        vial = new Sorter("vial"){{
+            requirements(Category.power, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        hexVial = new HexBlock("hex-vial"){{
+            requirements(Category.power, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true
+        }};
+
 
     }
 }
