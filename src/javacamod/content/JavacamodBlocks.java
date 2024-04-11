@@ -3744,6 +3744,26 @@ vial, hexVial
             rotateBUTSTATIC = true;
         }};
 
+        chain = new HexBlock("chain"){{
+            requirements(Category.power, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        chainTurn = new HexBlock("chain-turn"){{
+            requirements(Category.power, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        chainT = new HexBlock("chain-t"){{
+            requirements(Category.power, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
 
     }
 }
