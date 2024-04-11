@@ -92,7 +92,7 @@ textureBlock, textureImitator, textureGrid,
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
 
 //Decor
-vial, hexVial
+vial, hexVial, chain, chainTurn, chainT
 
 ;
     
