@@ -3732,34 +3732,34 @@ vial, hexVial
         }};
 
         vial = new Sorter("vial"){{
-            requirements(Category.power, with());
+            requirements(Category.effect, with());
             size = 1;
             rotate = true;
         }};
 
         hexVial = new HexBlock("hex-vial"){{
-            requirements(Category.power, with());
+            requirements(Category.effect, with());
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
         }};
 
         chain = new HexBlock("chain"){{
-            requirements(Category.power, with());
+            requirements(Category.effect, with());
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
         }};
 
         chainTurn = new HexBlock("chain-turn"){{
-            requirements(Category.power, with());
+            requirements(Category.effect, with());
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
         }};
 
         chainT = new HexBlock("chain-t"){{
-            requirements(Category.power, with());
+            requirements(Category.effect, with());
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
