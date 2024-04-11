@@ -92,7 +92,7 @@ textureBlock, textureImitator, textureGrid,
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
 
 //Decor
-vial, hexVial, chain, chainTurn, chainT
+vial, hexVial, chain, chainTurn, chainT, chainX
 
 ;
     
@@ -3759,6 +3759,13 @@ vial, hexVial, chain, chainTurn, chainT
         }};
 
         chainT = new HexBlock("chain-t"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        chainX = new HexBlock("chain-x"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
