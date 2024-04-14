@@ -92,7 +92,7 @@ textureBlock, textureImitator, textureGrid,
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
 
 //Decor
-vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chainDx, deChain, deChainL, deChainT, deChainX, deChainD, deChainDl, deChainDt, deChainDx
+vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chainDx, deChain, deChainL, deChainT, deChainX, deChainD, deChainDl, deChainDt, deChainDx, jointOne, jointTwo, jointThree, jointFour, jointFive, jointSix, jointSeven, jointAOne, jointATwo, jointAThree, jointAFour, jointAFive, jointSOne, jointSTwo, jointSThree, jointSFour
 
 ;
     
@@ -3843,6 +3843,102 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         }};
 
         deChainDx = new Wall("de-chain-dx"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointOne = new Wall("joint-one"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointTwo = new Wall("joint-two"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+        
+        jointThree = new Wall("joint-three"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+        
+        jointFour = new Wall("joint-four"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointFive = new Wall("joint-five"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointSix = new Wall("joint-six"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointSeven = new Wall("joint-seven"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointAOne = new Wall("joint-a-one"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointATwo = new Wall("joint-a-two"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointAThree = new Wall("joint-a-three"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointAFour = new Wall("joint-a-four"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointAFive = new Wall("joint-a-five"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointSOne = new Wall("joint-s-one"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointSTwo = new Wall("joint-s-two"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointSThree = new Wall("joint-s-three"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        jointSFour = new Wall("joint-s-four"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
