@@ -92,7 +92,7 @@ textureBlock, textureImitator, textureGrid,
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
 
 //Decor
-vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chainDx
+vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chainDx, deChain, deChainL, deChainT, deChainX, deChainD, deChainDl, deChainDt, deChainDx
 
 ;
     
@@ -3794,6 +3794,62 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         }};
 
         chainDx = new HexBlock("chain-dx"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        deChain = new HexBlock("de-chain"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        deChainL = new HexBlock("de-chain-l"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        deChainT = new HexBlock("de-chain-t"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        deChainX = new HexBlock("de-chain-x"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        deChainD = new HexBlock("de-chain-d"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        deChainDl = new HexBlock("de-chain-dl"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        deChainDt = new HexBlock("de-chain-dt"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+        }};
+
+        deChainDx = new HexBlock("de-chain-dx"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
