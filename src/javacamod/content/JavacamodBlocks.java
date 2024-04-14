@@ -3800,60 +3800,52 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             rotateBUTSTATIC = true;
         }};
 
-        deChain = new HexBlock("de-chain"){{
+        deChain = new Wall("de-chain"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
-        deChainL = new HexBlock("de-chain-l"){{
+        deChainL = new Wall("de-chain-l"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
-        deChainT = new HexBlock("de-chain-t"){{
+        deChainT = new Wall("de-chain-t"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
-        deChainX = new HexBlock("de-chain-x"){{
+        deChainX = new Wall("de-chain-x"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
-        deChainD = new HexBlock("de-chain-d"){{
+        deChainD = new Wall("de-chain-d"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
-        deChainDl = new HexBlock("de-chain-dl"){{
+        deChainDl = new Wall("de-chain-dl"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
-        deChainDt = new HexBlock("de-chain-dt"){{
+        deChainDt = new Wall("de-chain-dt"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
-        deChainDx = new HexBlock("de-chain-dx"){{
+        deChainDx = new Wall("de-chain-dx"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
     }
