@@ -26,6 +26,7 @@ import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
+import javacamod.IntBoolCombination;
 
 
 import static mindustry.Vars.*;
@@ -38,22 +39,28 @@ public class HexBlock extends Block{
 	public TextureRegion top3;
 	public boolean showMinimapColor = true;
 
-	public boolean diagonalSymmetryAxis = false;
+	public boolean diagonalSymmetry = false;
+	public boolean asymmetrical = false;
 
 	public static boolean rotateBUTSTATIC = false;
 
 	@Override
 	public int minimapColor(Tile tile){
 		var build = (HexBuild)tile.build;
-		return build != null && showMinimapColor ? build.color : 0;
+		return build != null && showMinimapColor ? build.color_flipped.intComponent : 0;
 	}
 
-	@Override
-    public void flipRotation(BuildPlan req, boolean x){
-		if (diagonalSymmetryAxis) {
-        	req.rotation = planRotation(req.rotation ^ ((x ^ invertFlip) ? 3 : 1));
-		} else if ((x == (req.rotation % 2 == 0)) != invertFlip) {
-            req.rotation = planRotation(Mathf.mod(req.rotation + 2, 4));
+    public void flipRotation(BuildPlan req, boolean flipHorizontally){
+		if (diagonalSymmetry) {
+        	req.rotation = planRotation(req.rotation ^ ((flipHorizontally ^ invertFlip) ? 1 : 3));
+		} else if (asymmetrical) {
+			if (req.config instanceof IntBoolCombination ibc) {
+				req.rotation = planRotation(req.rotation ^ ((flipHorizontally ^ invertFlip) ? 0 : 2));
+				ibc.booleanComponent = !ibc.booleanComponent;
+				req.config = ibc;
+			}
+		} else if ((flipHorizontally ^ invertFlip) == ((req.rotation & 1) == 0)) {
+            req.rotation = planRotation(req.rotation ^ 2);
         }
     }
 
@@ -65,20 +72,26 @@ public class HexBlock extends Block{
 		envEnabled |= Env.space;
 		swapDiagonalPlacement = true;
 
-		config(Integer.class, (HexBuild tile, Integer value) -> tile.color = value);
+		config(IntBoolCombination.class, (HexBuild tile, IntBoolCombination value) -> tile.color_flipped = value);
 	}
 	
 	@Override
 	public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
 		super.drawPlanConfig(plan, list);
-		Draw.color(plan.config == null ? new Color(0xffffff_ff) : (plan.config instanceof Color c ? c : new Color(0xffffff_ff)));
+		Draw.color(plan.config == null ? new Color(0xffffff_ff) : (plan.config instanceof IntBoolCombination ibc ? new Color(ibc.intComponent) : new Color(0xffffff_ff)));
+		
+		boolean flipped = false;
 
+		if (plan.config != null) {
+			flipped = (plan.config instanceof IntBoolCombination ibc ? ibc.booleanComponent : false);
+		}
+		
 		if (HexBlock.rotateBUTSTATIC) {
-			switch(plan.rotation){
-				case 0: TextureRegion top0 = Core.atlas.find(name + "-top0"); Draw.rect(top0, plan.drawx(), plan.drawy()); break;
-				case 1: TextureRegion top1 = Core.atlas.find(name + "-top1"); Draw.rect(top1, plan.drawx(), plan.drawy()); break;
-				case 2: TextureRegion top2 = Core.atlas.find(name + "-top2"); Draw.rect(top2, plan.drawx(), plan.drawy()); break;
-				case 3: TextureRegion top3 = Core.atlas.find(name + "-top3"); Draw.rect(top3, plan.drawx(), plan.drawy()); break;
+			switch((plan.rotation + (flipped ? 3 : 0)) & 3){
+				case 0: TextureRegion top0 = Core.atlas.find(name + "-top0"); Draw.rect(top0, plan.drawx(), plan.drawy(), top0.width/4, flipped ? -top0.height : top0.height/4, flipped ? 90 : 0); break;
+				case 1: TextureRegion top1 = Core.atlas.find(name + "-top1"); Draw.rect(top1, plan.drawx(), plan.drawy(), top1.width/4, flipped ? -top1.height : top1.height/4, flipped ? 90 : 0); break;
+				case 2: TextureRegion top2 = Core.atlas.find(name + "-top2"); Draw.rect(top2, plan.drawx(), plan.drawy(), top2.width/4, flipped ? -top2.height : top2.height/4, flipped ? 90 : 0); break;
+				case 3: TextureRegion top3 = Core.atlas.find(name + "-top3"); Draw.rect(top3, plan.drawx(), plan.drawy(), top3.width/4, flipped ? -top3.height : top3.height/4, flipped ? 90 : 0); break;
 			}
         } else {
             top = Core.atlas.find(name + "-top"); 
@@ -99,13 +112,12 @@ public class HexBlock extends Block{
     }
 
 	public class HexBuild extends Building{
-		public int color = 0xffffff_ff;
-		public float smoothTime = 1f;
+		public IntBoolCombination color_flipped = new IntBoolCombination(0xffffff_ff,false);
 
 		@Override
 		public void control(LAccess type, double p1, double p2, double p3, double p4){
 			if(type == LAccess.color){
-				color = Tmp.c1.fromDouble(p1).rgba();
+				color_flipped.intComponent = Tmp.c1.fromDouble(p1).rgba();
 			}
 
 			renderer.minimap.update(tile);
@@ -117,14 +129,14 @@ public class HexBlock extends Block{
         public void configured(Unit player, Object value){
             super.configured(player, value);
 
-            if(!headless){
+            if(!Vars.headless){
                 renderer.minimap.update(tile);
             }
         }
 
 		@Override
 		public double sense(LAccess sensor){
-			if(sensor == LAccess.color) return Tmp.c1.set(color).toDoubleBits();
+			if(sensor == LAccess.color) return Tmp.c1.set(color_flipped.intComponent).toDoubleBits();
 			return super.sense(sensor);
 		}
 
@@ -132,13 +144,14 @@ public class HexBlock extends Block{
 		public void draw(){
 			super.draw();
 			if (top == null || top0 == null || top1 == null || top2 == null || top3 == null) {load();};
-			Draw.color(Tmp.c1.set(color));
+			Draw.color(Tmp.c1.set(color_flipped.intComponent));
 			if (HexBlock.rotateBUTSTATIC) {
-				switch(rotation){
-					case 0: Draw.rect(top0, x, y); break;
-					case 1: Draw.rect(top1, x, y); break;
-					case 2: Draw.rect(top2, x, y); break;
-					case 3: Draw.rect(top3, x, y); break;
+				boolean flipped = color_flipped.booleanComponent;
+				switch((rotation + (flipped ? -1 : 0)) & 3){
+					case 0: Draw.rect(top0, x, y, top0.width/4, flipped ? -top0.height : top0.height/4, flipped ? 90 : 0); break;
+					case 1: Draw.rect(top1, x, y, top1.width/4, flipped ? -top2.height : top2.height/4, flipped ? 90 : 0); break;
+					case 2: Draw.rect(top2, x, y, top2.width/4, flipped ? -top1.height : top1.height/4, flipped ? 90 : 0); break;
+					case 3: Draw.rect(top3, x, y, top3.width/4, flipped ? -top3.height : top3.height/4, flipped ? 90 : 0); break;
 				}
         	} else {
                 Draw.rect(top, x, y);
@@ -147,14 +160,9 @@ public class HexBlock extends Block{
 		}
 
 		@Override
-		public void updateTile(){
-			smoothTime = Mathf.lerpDelta(smoothTime, timeScale, 0.1f);
-		}
-
-		@Override
 		public void buildConfiguration(Table table){
 			table.button(Icon.pencil, Styles.cleari, () -> {
-				ui.picker.show(Tmp.c1.set(color), true, res -> configure(res.rgba()));
+				ui.picker.show(Tmp.c1.set(color_flipped.intComponent), true, res -> configure(new IntBoolCombination(res.rgba(), color_flipped.booleanComponent)));
 				deselect();
 			}).size(40f);
 		}
@@ -171,19 +179,25 @@ public class HexBlock extends Block{
 
 		@Override
 		public Integer config(){
-			return color;
+			return color_flipped.intComponent;
 		}
 
 		@Override
 		public void write(Writes write){
 			super.write(write);
-			write.i(color);
+			write.i(color_flipped.intComponent);
+			write.bool(color_flipped.booleanComponent);
 		}
 
 		@Override
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
-			color = read.i();
+			color_flipped.intComponent = read.i();
+			color_flipped.booleanComponent = read.bool();
 		}
+
+		public boolean isSame(Building other){
+            return other != null && other.block.instantTransfer;
+        }
 	}
 }
