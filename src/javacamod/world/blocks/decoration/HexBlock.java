@@ -129,7 +129,7 @@ public class HexBlock extends Block{
         public void configured(Unit player, Object value){
             super.configured(player, value);
 
-            if(!Vars.headless){
+            if(!headless){
                 renderer.minimap.update(tile);
             }
         }
