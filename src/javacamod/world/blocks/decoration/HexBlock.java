@@ -127,14 +127,14 @@ public class HexBlock extends Block{
 			super.control(type, p1, p2, p3, p4);
 		}
 
-                @Override
-                public void configured(Unit player, Object value){
-                    super.configured(player, value);
+         //       @Override
+         //       public void configured(Unit player, Object value){
+         //           super.configured(player, value);
  
-                        if(!headless){
-                            renderer.minimap.update(tile);
-                        }
-                }
+         //               if(!headless){
+         //                   renderer.minimap.update(tile);
+         //               }
+         //       }
 
 		@Override
 		public double sense(LAccess sensor){
