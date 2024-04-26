@@ -130,7 +130,12 @@ public class HexBlock extends Block{
                 @Override
                 public void configured(Unit player, Object value){
                     super.configured(player, value);
- 
+
+			// Ensures that headless is not null. If it is, then return out of the function. This
+			// prevents a runtime error. 
+			if (headless == null) {
+				return;
+			}
                         if(!headless){
                             renderer.minimap.update(tile);
                         }
