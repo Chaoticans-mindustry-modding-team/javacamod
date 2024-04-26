@@ -112,7 +112,7 @@ public class HexBlock extends Block{
     }
 
 	public class HexBuild extends Building{
-//		public IntBoolCombination color_flipped = new IntBoolCombination(0xffffff_ff,false);
+		public IntBoolCombination color_flipped = new IntBoolCombination(0xffffff_ff,false);
 
 //		@Override
 //		public void control(LAccess type, double p1, double p2, double p3, double p4){
