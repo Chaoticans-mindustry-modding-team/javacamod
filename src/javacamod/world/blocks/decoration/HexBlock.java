@@ -114,18 +114,18 @@ public class HexBlock extends Block{
 	public class HexBuild extends Building{
 		public IntBoolCombination color_flipped = new IntBoolCombination(0xffffff_ff,false);
 
-		@Override
-		public void control(LAccess type, double p1, double p2, double p3, double p4){
-			if(type == LAccess.color){
-				color_flipped.intComponent = Tmp.c1.fromDouble(p1).rgba();
-			}
-
-		if(!headless){
-                    renderer.minimap.update(tile);
-                }
-
-			super.control(type, p1, p2, p3, p4);
-		}
+//		@Override
+//		public void control(LAccess type, double p1, double p2, double p3, double p4){
+//			if(type == LAccess.color){
+//				color_flipped.intComponent = Tmp.c1.fromDouble(p1).rgba();
+//			}
+//
+//		if(!headless){
+//                  renderer.minimap.update(tile);
+//              }
+//
+//			super.control(type, p1, p2, p3, p4);
+//		}
 
         @Override
         public void configured(Unit player, Object value){
