@@ -18,7 +18,7 @@ jobs:
     - name: bug fix
       run: chmod +x gradlew
     - name: Info
-      run: --info\
+      run: --info
     - name: Scan
       run: --scan
     - name: Build mod jar
