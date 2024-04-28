@@ -17,7 +17,9 @@ jobs:
         java-version: 17
     - name: bug fix
       run: chmod +x gradlew
-      run: --info
+    - name: Info
+      run: --info\
+    - name: Scan
       run: --scan
     - name: Build mod jar
       run: ./gradlew deploy
