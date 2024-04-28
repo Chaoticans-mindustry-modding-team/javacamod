@@ -17,12 +17,13 @@ jobs:
         java-version: 17
     - name: bug fix
       run: chmod +x gradlew
+    
+    - name: Build mod jar
+      run: ./gradlew deploy
     - name: Info
       run: --info
     - name: Scan
       run: --scan
-    - name: Build mod jar
-      run: ./gradlew deploy
     - name: Upload built jar file
       uses: actions/upload-artifact@v2
       with:
