@@ -20,10 +20,8 @@ jobs:
     
     - name: Build mod jar
       run: ./gradlew deploy
-    - name: Info
-      run: --info
-    - name: Scan
-      run: --scan
+      with: --info
+      with: --scan
     - name: Upload built jar file
       uses: actions/upload-artifact@v2
       with:
