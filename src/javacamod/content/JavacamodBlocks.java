@@ -2175,21 +2175,21 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        hexSorter = new HexSorter("hex-sorter"){{
+        hexSorter = new HexBlock("hex-sorter"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
             envDisabled |= Env.scorching;
         }};
 
-        largeHexSorter = new HexSorter("large-hex-sorter"){{
+        largeHexSorter = new HexBlock("large-hex-sorter"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 2;
             envDisabled |= Env.scorching;
         }};
 
-        colossalHexSorter = new HexSorter("colossal-hex-sorter"){{
+        colossalHexSorter = new HexBlock("colossal-hex-sorter"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 3;
