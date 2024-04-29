@@ -2042,7 +2042,6 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
-            asymmetrical = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2052,7 +2051,6 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
-            asymmetrical = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2062,7 +2060,6 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
-            asymmetrical = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2072,7 +2069,6 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
-            asymmetrical = true;
             envDisabled |= Env.scorching;
         }};
 
