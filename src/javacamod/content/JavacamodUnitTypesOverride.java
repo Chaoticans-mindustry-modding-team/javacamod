@@ -100,6 +100,7 @@ public class JavacamodUnitTypesOverride{
     UnitTypes.renale.hidden = false;
     UnitTypes.latum.buildSpeed = 1;
     UnitTypes.latum.hidden = false;
+    UnitTypes.emanate.speed = 15f;
 
   }
 }
