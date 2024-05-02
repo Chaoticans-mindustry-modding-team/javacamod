@@ -2199,7 +2199,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         shadowlessSorter = new Sorter("shadowless-sorter"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
-            size = 2; 
+            size = 1; 
             hasShadow = false;
             envDisabled |= Env.scorching;
         }};
