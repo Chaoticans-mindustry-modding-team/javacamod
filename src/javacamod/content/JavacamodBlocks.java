@@ -2331,7 +2331,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter1 = new Sorter("shadowless-chiseled-sorter1"){{
+        shadowlessChiseledSorter1 = new Sorter("shadowless-chiseled-sorter-one"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2340,7 +2340,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter2 = new Sorter("shadowless-chiseled-sorter2"){{
+        shadowlessChiseledSorter2 = new Sorter("shadowless-chiseled-sorter-two"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2349,7 +2349,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter3 = new Sorter("shadowless-chiseled-sorter3"){{
+        shadowlessChiseledSorter3 = new Sorter("shadowless-chiseled-sorter-three"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2358,7 +2358,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter4 = new Sorter("shadowless-chiseled-sorter4"){{
+        shadowlessChiseledSorter4 = new Sorter("shadowless-chiseled-sorter-four"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2366,16 +2366,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter5 = new Sorter("shadowless-chiseled-sorter5"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
-            health = 80;
-            size = 1; 
-            hasShadow = false;
-            rotate = true;
-            envDisabled |= Env.scorching;
-        }};
-
-        shadowlessChiseledSorter6 = new Sorter("shadowless-chiseled-sorter6"){{
+        shadowlessChiseledSorter5 = new Sorter("shadowless-chiseled-sorter-five"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2384,7 +2375,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter7 = new Sorter("shadowless-chiseled-sorter7"){{
+        shadowlessChiseledSorter6 = new Sorter("shadowless-chiseled-sorter-six"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2393,7 +2384,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter8 = new Sorter("shadowless-chiseled-sorter8"){{
+        shadowlessChiseledSorter7 = new Sorter("shadowless-chiseled-sorter-seven"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2402,7 +2393,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter9 = new Sorter("shadowless-chiseled-sorter9"){{
+        shadowlessChiseledSorter8 = new Sorter("shadowless-chiseled-sorter-eight"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2411,7 +2402,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter10 = new Sorter("shadowless-chiseled-sorter10"){{
+        shadowlessChiseledSorter9 = new Sorter("shadowless-chiseled-sorter-nine"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2420,7 +2411,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter11 = new Sorter("shadowless-chiseled-sorter11"){{
+        shadowlessChiseledSorter10 = new Sorter("shadowless-chiseled-sorter-ten"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2429,7 +2420,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter12 = new Sorter("shadowless-chiseled-sorter12"){{
+        shadowlessChiseledSorter11 = new Sorter("shadowless-chiseled-sorter-eleven"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2438,7 +2429,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter13 = new Sorter("shadowless-chiseled-sorter13"){{
+        shadowlessChiseledSorter12 = new Sorter("shadowless-chiseled-sorter-twelve"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2447,7 +2438,16 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        shadowlessChiseledSorter14 = new Sorter("shadowless-chiseled-sorter14"){{
+        shadowlessChiseledSorter13 = new Sorter("shadowless-chiseled-sorter-thirteen"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1; 
+            hasShadow = false;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        shadowlessChiseledSorter14 = new Sorter("shadowless-chiseled-sorter-fourteen"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
