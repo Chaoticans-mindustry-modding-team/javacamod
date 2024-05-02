@@ -77,7 +77,7 @@ redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMes
 chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMessageDiamond, chiseledMessageBar, chiseledMessagePlant, chiseledMessageFactory, chiseledMessageAdmin, chiseledMessageDrill, chiseledMessageTurret, chiseledMessageLogic, chiseledMessageUnit, chiseledMessagePower, chiseledMessageWall, chiseledMessageLiquid, chiseledMessageDistribution, chiseledMessageSkull, chiseledMessageVoid, chiseledMessage0, chiseledMessage1, chiseledMessage2, chiseledMessage3, chiseledMessage4, chiseledMessage5, chiseledMessage6, chiseledMessage7, chiseledMessage8, chiseledMessage9, chiseledMessageHouse, chiseledMessageRules, chiseledMessageCore, chiseledMessageTechtree, chiseledMessageImage, chiseledMessageList, chiseledMessageWaves, chiseledMessageTrashcan, chiseledMessageLandscape, chiseledMessageFloors, chiseledMessagePause, chiseledMessagePlay, chiseledMessagePencil, chiseledMessageEraser, chiseledMessageCross, chiseledMessageCrossDiagonal, chiseledMessageHammer, chiseledMessageMap, chiseledMessageBox, chiseledMessageGear, chiseledMessageArrowUp, chiseledMessageArrowDown, chiseledMessageArrowLeft, chiseledMessageArrowRight,
 
 //Screens
-screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borderlessScreenLarge,
+screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borderlessScreenLarge, hDScreenSmall, hDScreen, hDScreenLarge, hDBorderlessScreenSmall, hDBorderlessScreen, hDBorderlessScreenLarge,
 
 //Processors
 yellowMicroProcessor, cyanMicroProcessor,
@@ -3794,6 +3794,48 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             size = 3;
             hasShadow = false;
             screenSize = 24;
+        }};
+
+        hDScreenSmall = new ScreenBlock("hd-screen-small"){{
+            requirements(Category.logic, with());
+            size = 1;
+            hasShadow = false;
+            screenSize = 16;
+        }};
+
+        hDScreen = new ScreenBlock("hd-screen"){{
+            requirements(Category.logic, with());
+            size = 2;
+            hasShadow = false;
+            screenSize = 32;
+        }};
+
+        hDScreenLarge = new ScreenBlock("hd-screen-large"){{
+            requirements(Category.logic, with());
+            size = 3;
+            hasShadow = false;
+            screenSize = 48;
+        }};
+
+        hDBorderlessScreenSmall = new ScreenBlock("hd-borderless-screen-small"){{
+            requirements(Category.logic, with());
+            size = 1;
+            hasShadow = false;
+            screenSize = 16;
+        }};
+
+        hDBorderlessScreen = new ScreenBlock("hd-borderless-screen"){{
+            requirements(Category.logic, with());
+            size = 2;
+            hasShadow = false;
+            screenSize = 32;
+        }};
+
+        hDBorderlessScreenLarge = new ScreenBlock("hd-borderless-screen-large"){{
+            requirements(Category.logic, with());
+            size = 3;
+            hasShadow = false;
+            screenSize = 48;
         }};
 
         yellowMicroProcessor = new LogicBlock("yellow-micro-processor"){{
