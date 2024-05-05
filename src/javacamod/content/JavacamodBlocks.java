@@ -3878,7 +3878,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             displaySize = 96;
         }};
 
-        hologramDisplay = new LogicDisplay("-hologram-display"){{
+        hologramDisplay = new LogicDisplay("hologram-display"){{
             requirements(Category.logic, with());
             size = 1;
             displaySize = 160;
