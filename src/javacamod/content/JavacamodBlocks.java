@@ -85,6 +85,9 @@ yellowMicroProcessor, cyanMicroProcessor,
 //Memory
 yellowMemoryCell, cyanMemoryCell,
 
+//Hologram displays
+smallHologramDisplay, hologramDisplay, largeHologramDisplay, colossalHologramDisplay, massiveHologramDisplay,
+
 //Texture blocks
 textureBlock, textureImitator, textureGrid,
 
@@ -3867,6 +3870,36 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         textureBlock = new TextureBlock("texture-block"){{
             requirements(Category.defense, with());
             rotate = true;
+        }};
+
+        smallHologramDisplay = new LogicDisplay("small-hologram-display"){{
+            requirements(Category.logic, with());
+            size = 1;
+            displaySize = 96;
+        }};
+
+        hologramDisplay = new LogicDisplay("-hologram-display"){{
+            requirements(Category.logic, with());
+            size = 1;
+            displaySize = 160;
+        }};
+
+        largeHologramDisplay = new LogicDisplay("large-hologram-display"){{
+            requirements(Category.logic, with());
+            size = 1;
+            displaySize = 224;
+        }};
+
+        colossalHologramDisplay = new LogicDisplay("colossal-hologram-display"){{
+            requirements(Category.logic, with());
+            size = 1;
+            displaySize = 288;
+        }};
+
+        massiveHologramDisplay = new LogicDisplay("massive-hologram-display"){{
+            requirements(Category.logic, with());
+            size = 1;
+            displaySize = 352;
         }};
 
         textureImitator = new TextureBlock("texture-imitator"){{
