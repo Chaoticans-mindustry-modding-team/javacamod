@@ -1387,7 +1387,63 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-         dirtWall = new Wall("dirt-wall"){{
+        darkMetalStair = new Wall("dark-metal"){{
+            requirements(Category.production, with());
+            health = 80;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkMetalStair = new Wall("dark-metal-stair"){{
+            requirements(Category.production, with());
+            health = 80;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkMetalSlope = new Wall("dark-metal-slope"){{
+            requirements(Category.production, with());
+            health = 80;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkMetalSlab = new Wall("dark-metal-slab"){{
+            requirements(Category.production, with());
+            health = 80;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkMetalSlabCenter = new Wall("dark-metal-slab-center"){{
+            requirements(Category.production, with());
+            health = 80;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkMetalChunk = new Wall("dark-metal-chunk"){{
+            requirements(Category.production, with());
+            health = 80;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkMetalChunkCenter = new Wall("dark-metal-chunk-center"){{
+            requirements(Category.production, with());
+            health = 80;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        darkMetalChunkMiddle = new Wall("dark-metal-chunk-middle"){{
+            requirements(Category.production, with());
+            health = 80;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        dirtWall = new Wall("dirt-wall"){{
             requirements(Category.production, with());
             health = 80;
             variants = 2;
