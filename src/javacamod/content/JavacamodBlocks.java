@@ -89,7 +89,7 @@ yellowMemoryCell, cyanMemoryCell,
 smallHologramDisplay, hologramDisplay, largeHologramDisplay, massiveHologramDisplay, colossalHologramDisplay,
 
 //Texture blocks
-textureBlock, textureImitator, textureGrid,
+textureBlock, textureImitator, textureGrid, textureBlockShadowless, textureImitatorShadowless, textureGridShadowless,
 
 //Lightsource
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
@@ -3923,11 +3923,6 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             memoryCapacity = 2048;
         }};
 
-        textureBlock = new TextureBlock("texture-block"){{
-            requirements(Category.defense, with());
-            rotate = true;
-        }};
-
         smallHologramDisplay = new LogicDisplay("small-hologram-display"){{
             requirements(Category.logic, with());
             size = 1;
@@ -3958,6 +3953,11 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             displaySize = 352;
         }};
 
+        textureBlock = new TextureBlock("texture-block"){{
+            requirements(Category.defense, with());
+            rotate = true;
+        }};
+
         textureImitator = new TextureBlock("texture-imitator"){{
             requirements(Category.defense, with());
             rotate = true;
@@ -3967,6 +3967,26 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         textureGrid = new TextureBlock("texture-grid"){{
             requirements(Category.defense, with());
             rotate = true;
+            size = 16;
+        }};
+
+        textureBlockShadowless = new TextureBlock("texture-block-shadowless"){{
+            requirements(Category.defense, with());
+            rotate = true;
+            hasShadow = false;
+        }};
+
+        textureImitatorShadowless = new TextureBlock("texture-imitator-shadowless"){{
+            requirements(Category.defense, with());
+            rotate = true;
+            hasShadow = false;
+            size = 4;
+        }};
+
+        textureGridShadowless = new TextureBlock("texture-grid-shadowless"){{
+            requirements(Category.defense, with());
+            rotate = true;
+            hasShadow = false;
             size = 16;
         }};
         
