@@ -7,11 +7,6 @@ import arc.math.geom.*;
 import arc.struct.*;
 import arc.util.*;
 import arc.util.io.*;
-import mindustry.gen.*;
-import mindustry.graphics.*;
-import mindustry.input.*;
-import mindustry.logic.*;
-import mindustry.world.meta.*;
 import arc.*;
 import arc.func.*;
 import arc.input.*;
@@ -20,6 +15,15 @@ import arc.scene.event.*;
 import arc.scene.ui.*;
 import arc.scene.style.*;
 import arc.scene.ui.layout.*;
+import arc.Graphics.*;
+import arc.Graphics.Cursor.*;
+import arc.Input.*;
+import arc.util.pooling.*;
+import mindustry.gen.*;
+import mindustry.graphics.*;
+import mindustry.input.*;
+import mindustry.logic.*;
+import mindustry.world.meta.*;
 import mindustry.entities.units.*;
 import mindustry.ctype.*;
 import mindustry.type.*;
@@ -27,7 +31,7 @@ import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
 import mindustry.world.blocks.logic.*;
-
+import mindustry.ui.dialogs.*;
 
 import static mindustry.Vars.*;
 
