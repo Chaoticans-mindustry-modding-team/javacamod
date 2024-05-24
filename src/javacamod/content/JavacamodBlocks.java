@@ -89,7 +89,7 @@ yellowMemoryCell, cyanMemoryCell,
 smallHologramDisplay, hologramDisplay, largeHologramDisplay, massiveHologramDisplay, colossalHologramDisplay,
 
 //Texture blocks
-textureBlock, textureImitator, textureGrid, textureBlockShadowless, textureImitatorShadowless, textureGridShadowless, textureMessageBlock, textureMessageImitator, textureMessageGrid, textureMessageBlockShadowless, textureMessageImitatorShadowless, textureMessageGridShadowless,
+textureBlock, textureImitator, textureGrid, textureBlockShadowless, textureImitatorShadowless, textureGridShadowless, /*textureMessageBlock, textureMessageImitator, textureMessageGrid, textureMessageBlockShadowless, textureMessageImitatorShadowless, textureMessageGridShadowless,*/
 
 //Lightsource
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
