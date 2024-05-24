@@ -89,7 +89,7 @@ yellowMemoryCell, cyanMemoryCell,
 smallHologramDisplay, hologramDisplay, largeHologramDisplay, massiveHologramDisplay, colossalHologramDisplay,
 
 //Texture blocks
-textureBlock, textureImitator, textureGrid, textureBlockShadowless, textureImitatorShadowless, textureGridShadowless, textureMessageBlock, textureMessageImitator, textureMessageGrid, textureMessageBlockShadowless, textureMessageImitatorShadowless, textureMessageGridShadowless,
+textureBlock, textureImitator, textureGrid, textureBlockShadowless, textureImitatorShadowless, textureGridShadowless, textureMessageBlock, textureMessageBlockShadowless,
 
 //Lightsource
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
@@ -3939,36 +3939,10 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             rotate = true;
         }};
 
-        textureMessageImitator = new TextureMessageBlock("texture-message-imitator"){{
-            requirements(Category.logic, with());
-            rotate = true;
-            size = 4;
-        }};
-
-        textureMessageGrid = new TextureMessageBlock("texture-message-grid"){{
-            requirements(Category.logic, with());
-            rotate = true;
-            size = 16;
-        }};
-
         textureMessageBlockShadowless = new TextureMessageBlock("texture-message-block-shadowless"){{
             requirements(Category.logic, with());
             rotate = true;
             hasShadow = false;
-        }};
-
-        textureMessageImitatorShadowless = new TextureMessageBlock("texture-message-imitator-shadowless"){{
-            requirements(Category.logic, with());
-            rotate = true;
-            hasShadow = false;
-            size = 4;
-        }};
-
-        textureMessageGridShadowless = new TextureMessageBlock("texture-message-grid-shadowless"){{
-            requirements(Category.logic, with());
-            rotate = true;
-            hasShadow = false;
-            size = 16;
         }};
         
         lightSourceTiny = new LightBlock("tiny-light-source"){{
