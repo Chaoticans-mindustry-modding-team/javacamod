@@ -52,10 +52,10 @@ public class TextureBlock extends Block {
 			float drawOffsetX = plan.drawx() - size*4;
 			float drawOffsetY = plan.drawy() - size*4;
 			float drawSize = size*8;
-			region = Core.atlas.find(plan.config instanceof String s ? s : "copper-wall");
-            for (float i = 0; i < drawSize; i += region.width/4) {
-                for (float j = 0; j < drawSize; j += region.height/4) {
-                    Draw.rect(region, i + region.width/8 + drawOffsetX, j + region.height/8 + drawOffsetY, plan.rotation*90);
+			TextureRegion tileRegion = Core.atlas.find(plan.config instanceof String s ? s : "copper-wall");
+            for (float i = 0; i < drawSize; i += tileRegion.width/4) {
+                for (float j = 0; j < drawSize; j += tileRegion.height/4) {
+                    Draw.rect(tileRegion, i + tileRegion.width/8 + drawOffsetX, j + tileRegion.height/8 + drawOffsetY, plan.rotation*90);
                 };
             };
 		}
@@ -66,10 +66,10 @@ public class TextureBlock extends Block {
 			float drawOffsetX = x - size*4;
 			float drawOffsetY = y - size*4;
 			float drawSize = size*8;
-            region = Core.atlas.find(regionName);
-            for (float i = 0; i < drawSize; i += region.width/4) {
-                for (float j = 0; j < drawSize; j += region.height/4) {
-                    Draw.rect(region, i + region.width/8 + drawOffsetX, j + region.height/8 + drawOffsetY, rotation*90);
+            TextureRegion tileRegion = Core.atlas.find(regionName);
+            for (float i = 0; i < drawSize; i += tileRegion.width/4) {
+                for (float j = 0; j < drawSize; j += tileRegion.height/4) {
+                    Draw.rect(tileRegion, i + tileRegion.width/8 + drawOffsetX, j + tileRegion.height/8 + drawOffsetY, rotation*90);
                 };
             };
 		}
