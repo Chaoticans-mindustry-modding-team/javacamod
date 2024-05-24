@@ -77,7 +77,51 @@ public class TextureMessageBlock extends MessageBlock {
 
         @Override
         public void buildConfiguration(Table table){
-            table.table(Styles.black5, t -> {
+            table.button(Icon.pencil, Styles.cleari, () -> {
+                if(mobile){
+                    var contents = this.message.toString();
+                    Core.input.getTextInput(new TextInput(){{
+                        text = contents;
+                        multiline = true;
+                        maxLength = maxTextLength;
+                        accepted = str -> {
+                            if(!str.equals(text)) configure(str);
+                        };
+                    }});
+                }else{
+                    BaseDialog dialog = new BaseDialog("@editmessage");
+                    dialog.setFillParent(false);
+                    TextArea a = dialog.cont.add(new TextArea(message.toString().replace("\r", "\n"))).size(380f, 160f).get();
+                    a.setFilter((textField, c) -> {
+                        if(c == '\n'){
+                            int count = 0;
+                            for(int i = 0; i < textField.getText().length(); i++){
+                                if(textField.getText().charAt(i) == '\n'){
+                                    count++;
+                                }
+                            }
+                            return count < maxNewlines;
+                        }
+                        return true;
+                    });
+                    a.setMaxLength(maxTextLength);
+                    dialog.cont.row();
+                    dialog.cont.label(() -> a.getText().length() + " / " + maxTextLength).color(Color.lightGray);
+                    dialog.buttons.button("@ok", () -> {
+                        if(!a.getText().equals(message.toString())) configure(a.getText());
+                        dialog.hide();
+                    }).size(130f, 60f);
+                    dialog.update(() -> {
+                        if(tile.build != this){
+                            dialog.hide();
+                        }
+                    });
+                    dialog.closeOnBack();
+                    dialog.show();
+                }
+                deselect();
+            }).size(40f);
+		table.table(Styles.black5, t -> {
                 t.margin(6f);
                 t.field(regionName, text -> {
                     configure(text);
