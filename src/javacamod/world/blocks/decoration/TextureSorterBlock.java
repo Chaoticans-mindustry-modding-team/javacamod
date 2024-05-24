@@ -33,7 +33,7 @@ import static mindustry.Vars.*;
 
 public class TextureSorterBlock extends Sorter {
     
-    public TextureBlock(String name){
+    public TextureSorterBlock(String name){
 		super(name);
 		update = true;
 		configurable = true;
