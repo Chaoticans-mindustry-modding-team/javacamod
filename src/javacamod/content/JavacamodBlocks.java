@@ -3935,40 +3935,40 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         }};
 
         textureMessageBlock = new TextureMessageBlock("texture-message-block"){{
-            requirements(Category.defense, with());
+            requirements(Category.logic, with());
             rotate = true;
             hasShadow = false;
         }};
 
         textureMessageImitator = new TextureMessageBlock("texture-message-imitator"){{
-            requirements(Category.defense, with());
+            requirements(Category.logic, with());
             rotate = true;
             hasShadow = false;
             size = 4;
         }};
 
         textureMessageGrid = new TextureMessageBlock("texture-message-grid"){{
-            requirements(Category.defense, with());
+            requirements(Category.logic, with());
             rotate = true;
             hasShadow = false;
             size = 16;
         }};
 
         textureMessageBlockShadowless = new TextureMessageBlock("texture-message-block-shadowless"){{
-            requirements(Category.defense, with());
+            requirements(Category.logic, with());
             rotate = true;
             hasShadow = false;
         }};
 
         textureMessageImitatorShadowless = new TextureMessageBlock("texture-message-imitator-shadowless"){{
-            requirements(Category.defense, with());
+            requirements(Category.logic, with());
             rotate = true;
             hasShadow = false;
             size = 4;
         }};
 
         textureMessageGridShadowless = new TextureMessageBlock("texture-message-grid-shadowless"){{
-            requirements(Category.defense, with());
+            requirements(Category.logic, with());
             rotate = true;
             hasShadow = false;
             size = 16;
