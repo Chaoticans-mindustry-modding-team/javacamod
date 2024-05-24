@@ -3937,20 +3937,17 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         textureMessageBlock = new TextureMessageBlock("texture-message-block"){{
             requirements(Category.logic, with());
             rotate = true;
-            hasShadow = false;
         }};
 
         textureMessageImitator = new TextureMessageBlock("texture-message-imitator"){{
             requirements(Category.logic, with());
             rotate = true;
-            hasShadow = false;
             size = 4;
         }};
 
         textureMessageGrid = new TextureMessageBlock("texture-message-grid"){{
             requirements(Category.logic, with());
             rotate = true;
-            hasShadow = false;
             size = 16;
         }};
 
