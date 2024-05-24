@@ -30,7 +30,7 @@ import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
-import mindustry.world.blocks.logic.*;
+import mindustry.world.blocks.distribution.*;
 import mindustry.ui.dialogs.*;
 
 import static mindustry.Vars.*;
