@@ -3934,7 +3934,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             size = 16;
         }};
 
-        textureMessageBlock = new TextureMessageBlock("texture-message-block"){{
+        /*textureMessageBlock = new TextureMessageBlock("texture-message-block"){{
             requirements(Category.logic, with());
             rotate = true;
         }};
@@ -3969,7 +3969,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             rotate = true;
             hasShadow = false;
             size = 16;
-        }};
+        }};*/
         
         lightSourceTiny = new LightBlock("tiny-light-source"){{
             requirements(Category.power, with());
