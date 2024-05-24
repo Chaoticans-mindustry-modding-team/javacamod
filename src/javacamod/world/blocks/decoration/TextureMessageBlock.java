@@ -48,7 +48,7 @@ public class TextureMessageBlock extends MessageBlock {
 		config(String.class, (TextureBuild tile, String value) -> tile.regionName = value);
 	};
 
-	public class TextureBuild extends MessageBuild{
+	public class TextureMessageBuild extends MessageBuild{
 		public String regionName = "copper-wall";
 
 		//@Override
