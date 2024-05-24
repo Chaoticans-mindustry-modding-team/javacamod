@@ -26,6 +26,7 @@ import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
+import mindustry.world.blocks.logic.*;
 
 
 import static mindustry.Vars.*;
