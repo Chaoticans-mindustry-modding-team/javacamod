@@ -1121,7 +1121,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        Pile = new Wall("coal-pile"){{
+        coalPile = new Wall("coal-pile"){{
             requirements(Category.production, with());
             health = 80;
             envDisabled |= Env.scorching;
