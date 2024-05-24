@@ -45,7 +45,7 @@ public class TextureMessageBlock extends MessageBlock {
 		envEnabled |= Env.space;
 		swapDiagonalPlacement = true;
 
-		config(String.class, (TextureBuild tile, String value) -> tile.regionName = value);
+		config(String.class, (TextureMessageBuild tile, String value) -> tile.regionName = value);
 	};
 
 	public class TextureMessageBuild extends MessageBuild{
