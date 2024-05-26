@@ -37,7 +37,7 @@ public class SizeBlock extends Block{
 		Log.info(this);
 		Log.info(this.size);
 		Log.info(size);
-		Log.info(zPressed);
+		Log.info(x);
 	        if (x) {
 			this.size = ((this.size + 14) & 15) + 1;
 		} else {
