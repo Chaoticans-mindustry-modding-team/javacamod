@@ -35,9 +35,9 @@ public class SizeBlock extends Block{
 	@Override
     public void flipRotation(BuildPlan req, boolean zPressed){
         if (zPressed) {
-            size = (size + 16) % 17;
+            size = ((size + 14) & 15) + 1;
         } else {
-            size = (size + 1) % 17;
+            size = (size & 15) + 1;
         }
     }
 
@@ -47,7 +47,6 @@ public class SizeBlock extends Block{
 		configurable = true;
 		saveConfig = true;
 		envEnabled |= Env.space;
-		swapDiagonalPlacement = true;
 	}
   
 	public class SizeBuild extends Building{
