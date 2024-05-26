@@ -36,6 +36,7 @@ public class SizeBlock extends Block{
     public void flipRotation(BuildPlan req, boolean zPressed){
 	Log.info(this);
 	Log.info(this.size);
+	Log.info(size);
 	Log.info(zPressed);
         if (zPressed) {
             this.size = ((this.size + 14) & 15) + 1;
