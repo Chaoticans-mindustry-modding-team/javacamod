@@ -1,8 +1,8 @@
 #the mod name as displayed in-game
-displayName: "Javacamod"
+displayName: "Javacamod Testing"
 
 #the internal name of your mod
-name: "javacamod"
+name: "javacamodtest"
 
 #your name
 author: "The chaoticans"
