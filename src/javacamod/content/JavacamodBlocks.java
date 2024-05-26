@@ -41,6 +41,7 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import javacamod.world.blocks.logic.*;
 import javacamod.world.blocks.decoration.*;
+import javacamod.world.blocks.testing.*;
 //import javacamod.world.blocks.distribution.*;
 
 import static mindustry.Vars.*;
@@ -95,8 +96,10 @@ textureBlock, textureImitator, textureGrid, textureBlockShadowless, textureImita
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
 
 //Decor
-vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chainDx, deChain, deChainL, deChainT, deChainX, deChainD, deChainDl, deChainDt, deChainDx, jointOne, jointTwo, jointThree, jointFour, jointFive, jointSix, jointSeven, jointAOne, jointATwo, jointAThree, jointAFour, jointAFive, jointSOne, jointSTwo, jointSThree, jointSFour
+vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chainDx, deChain, deChainL, deChainT, deChainX, deChainD, deChainDl, deChainDt, deChainDx, jointOne, jointTwo, jointThree, jointFour, jointFive, jointSix, jointSeven, jointAOne, jointATwo, jointAThree, jointAFour, jointAFive, jointSOne, jointSTwo, jointSThree, jointSFour,
 
+//Testing
+sizeBlock
 ;
     
     public static void load() {
@@ -4188,6 +4191,12 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         }};
 
         jointSFour = new Wall("joint-s-four"){{
+            requirements(Category.effect, with());
+            size = 1;
+            rotate = true;
+        }};
+
+        sizeBlock = new SizeBlock("size-block"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
