@@ -34,9 +34,6 @@ public class SizeBlock extends Block{
 	
 	public SizeBlock(String name){
 		super(name);
-		update = true;
-		configurable = true;
-		saveConfig = true;
 		envEnabled |= Env.space;
 	}
 	
