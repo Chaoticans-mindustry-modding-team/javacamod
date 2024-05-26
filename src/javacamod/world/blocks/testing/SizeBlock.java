@@ -32,6 +32,14 @@ import static mindustry.Vars.*;
 
 public class SizeBlock extends Block{
 	
+	public SizeBlock(String name){
+		super(name);
+		update = true;
+		configurable = true;
+		saveConfig = true;
+		envEnabled |= Env.space;
+	}
+	
 	@Override
 	public void flipRotation(BuildPlan req, boolean x){
 		Log.info(this);
@@ -44,13 +52,5 @@ public class SizeBlock extends Block{
 			this.size = (this.size & 15) + 1;
 		}
 		throw new NullPointerException("yippee");
-	}
-	
-	public SizeBlock(String name){
-		super(name);
-		update = true;
-		configurable = true;
-		saveConfig = true;
-		envEnabled |= Env.space;
 	}
 }
