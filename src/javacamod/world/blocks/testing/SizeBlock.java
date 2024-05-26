@@ -47,5 +47,6 @@ public class SizeBlock extends Block{
 		} else {
 			this.size = (this.size & 15) + 1;
 		}
+		this.offset = 4 - this.offset
 	}
 }
