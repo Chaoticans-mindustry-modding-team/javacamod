@@ -31,21 +31,21 @@ import mindustry.world.blocks.*;
 import static mindustry.Vars.*;
 
 public class SizeBlock extends Block{
-
+	
 	@Override
-    public void flipRotation(BuildPlan req, boolean zPressed){
-	Log.info(this);
-	Log.info(this.size);
-	Log.info(size);
-	Log.info(zPressed);
-        if (zPressed) {
-            this.size = ((this.size + 14) & 15) + 1;
-        } else {
-            this.size = (this.size & 15) + 1;
-        }
-	throw new NullPointerException("yippee");
-    }
-
+	public void flipRotation(BuildPlan req, boolean x){
+		Log.info(this);
+		Log.info(this.size);
+		Log.info(size);
+		Log.info(zPressed);
+	        if (x) {
+			this.size = ((this.size + 14) & 15) + 1;
+		} else {
+			this.size = (this.size & 15) + 1;
+		}
+		throw new NullPointerException("yippee");
+	}
+	
 	public SizeBlock(String name){
 		super(name);
 		update = true;
@@ -53,7 +53,7 @@ public class SizeBlock extends Block{
 		saveConfig = true;
 		envEnabled |= Env.space;
 	}
-  
+	
 	public class SizeBuild extends Building{
 	}
 }
