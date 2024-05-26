@@ -38,12 +38,12 @@ public class SizeBlock extends Block{
 	Log.info(this.size);
 	Log.info(size);
 	Log.info(zPressed);
-	throw new NullPointerException("yippee");
         if (zPressed) {
             this.size = ((this.size + 14) & 15) + 1;
         } else {
             this.size = (this.size & 15) + 1;
         }
+	throw new NullPointerException("yippee");
     }
 
 	public SizeBlock(String name){
