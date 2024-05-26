@@ -53,7 +53,4 @@ public class SizeBlock extends Block{
 		saveConfig = true;
 		envEnabled |= Env.space;
 	}
-	
-	public class SizeBuild extends Building{
-	}
 }
