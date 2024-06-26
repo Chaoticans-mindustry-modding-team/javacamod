@@ -65,7 +65,7 @@ copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBotto
 darkMetal, darkMetalLarge, dirtWall, dirtWallLarge, duneWall, duneWallLarge, plantWall, plantWallLarge, grassWall, grassWallLarge, iceWall, iceWallLarge, snowWall, snowWallLarge, stoneWall, stoneWallLarge, woodWall, woodWallLarge, sandWall, sandWallLarge, coalWall, coalWallLarge,
     
 //distribution
-borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, shadowlessSorter, shadowlessLargeSorter, shadowlessColossalSorter, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, shadowlessChiseledSorter1, shadowlessChiseledSorter2, shadowlessChiseledSorter3, shadowlessChiseledSorter4, shadowlessChiseledSorter5, shadowlessChiseledSorter6, shadowlessChiseledSorter7, shadowlessChiseledSorter8, shadowlessChiseledSorter9, shadowlessChiseledSorter10, shadowlessChiseledSorter11, shadowlessChiseledSorter12, shadowlessChiseledSorter13, shadowlessChiseledSorter14, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14, hexChiseledSorter1, hexChiseledSorter2, hexChiseledSorter3, hexChiseledSorter4, hexChiseledSorter5, hexChiseledSorter6, hexChiseledSorter7, hexChiseledSorter8, hexChiseledSorter9, hexChiseledSorter10, hexChiseledSorter11, hexChiseledSorter12, hexChiseledSorter13, hexChiseledSorter14,
+borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, shadowlessSorter, shadowlessLargeSorter, shadowlessColossalSorter, bezeledSorter, bezeledLargeSorter, bezeledColossalSorter, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledSorter15, chiseledSorter16, chiseledSorter17, shadowlessChiseledSorter1, shadowlessChiseledSorter2, shadowlessChiseledSorter3, shadowlessChiseledSorter4, shadowlessChiseledSorter5, shadowlessChiseledSorter6, shadowlessChiseledSorter7, shadowlessChiseledSorter8, shadowlessChiseledSorter9, shadowlessChiseledSorter10, shadowlessChiseledSorter11, shadowlessChiseledSorter12, shadowlessChiseledSorter13, shadowlessChiseledSorter14, shadowlessChiseledSorter15, shadowlessChiseledSorter16, shadowlessChiseledSorter17, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledInvertedSorter15, chiseledInvertedSorter16, chiseledInvertedSorter17, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14, chiseledSource15, chiseledSource16, chiseledSource17, hexChiseledSorter1, hexChiseledSorter2, hexChiseledSorter3, hexChiseledSorter4, hexChiseledSorter5, hexChiseledSorter6, hexChiseledSorter7, hexChiseledSorter8, hexChiseledSorter9, hexChiseledSorter10, hexChiseledSorter11, hexChiseledSorter12, hexChiseledSorter13, hexChiseledSorter14, hexChiseledSorter15, hexChiseledSorter16, hexChiseledSorter17, bezeledChiseledSorter1, bezeledChiseledSorter2, bezeledChiseledSorter3, bezeledChiseledSorter4, bezeledChiseledSorter5, bezeledChiseledSorter6, bezeledChiseledSorter7, bezeledChiseledSorter8, bezeledChiseledSorter9, bezeledChiseledSorter10, bezeledChiseledSorter11, bezeledChiseledSorter12, bezeledChiseledSorter13, bezeledChiseledSorter14, bezeledChiseledSorter15, bezeledChiseledSorter16, bezeledChiseledSorter17,
 
 //liquid
 liquidBlock, borderlessLiquidSource,
@@ -2223,6 +2223,30 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
+        bezeledSorter = new Sorter("bezeled-sorter"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledLargeSorter = new Sorter("bezeled-large-sorter"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 2;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledColossalSorter = new Sorter("bezeled-colossal-sorter"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 3;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
         chiseledSorter1 = new Sorter("chiseled-sorter1"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
@@ -2327,6 +2351,30 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         }};
 
         chiseledSorter14 = new Sorter("chiseled-sorter14"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter15 = new Sorter("chiseled-sorter15"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter16 = new Sorter("chiseled-sorter16"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSorter17 = new Sorter("chiseled-sorter17"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1;
@@ -2451,6 +2499,33 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         }};
 
         shadowlessChiseledSorter14 = new Sorter("shadowless-chiseled-sorter-fourteen"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1; 
+            hasShadow = false;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        shadowlessChiseledSorter15 = new Sorter("shadowless-chiseled-sorter-fifteen"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1; 
+            hasShadow = false;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        shadowlessChiseledSorter16 = new Sorter("shadowless-chiseled-sorter-sixteen"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1; 
+            hasShadow = false;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        shadowlessChiseledSorter17 = new Sorter("shadowless-chiseled-sorter-seventeen"){{
             requirements(Category.distribution, with(JavacamodItems.orange, 12));
             health = 80;
             size = 1; 
@@ -2584,6 +2659,33 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
+        chiseledInvertedSorter15 = new Sorter("chiseled-inverted-sorter15"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1;
+            invert = true;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter16 = new Sorter("chiseled-inverted-sorter16"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1;
+            invert = true;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledInvertedSorter17 = new Sorter("chiseled-inverted-sorter17"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1;
+            invert = true;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
         chiseledSource1 = new ItemSource("chiseled-source1"){{
             requirements(Category.distribution, with());
             health = 80;
@@ -2688,6 +2790,30 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
         }};
 
         chiseledSource14 = new ItemSource("chiseled-source14"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource15 = new ItemSource("chiseled-source15"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource16 = new ItemSource("chiseled-source16"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        chiseledSource17 = new ItemSource("chiseled-source17"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -2818,6 +2944,169 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             size = 1;
             rotate = true;
             rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter15 = new HexBlock("hex-chiseled-sorter15"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter16 = new HexBlock("hex-chiseled-sorter16"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        hexChiseledSorter17 = new HexBlock("hex-chiseled-sorter17"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            rotateBUTSTATIC = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter1 = new Sorter("bezeled-chiseled-sorter-1"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter2 = new Sorter("bezeled-chiseled-sorter-2"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter3 = new Sorter("bezeled-chiseled-sorter-3"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter4 = new Sorter("bezeled-chiseled-sorter-4"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter5 = new Sorter("bezeled-chiseled-sorter-5"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter6 = new Sorter("bezeled-chiseled-sorter-6"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter7 = new Sorter("bezeled-chiseled-sorter-7"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter8 = new Sorter("bezeled-chiseled-sorter-8"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter9 = new Sorter("bezeled-chiseled-sorter-9"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter10 = new Sorter("bezeled-chiseled-sorter-10"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter11 = new Sorter("bezeled-chiseled-sorter-11"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter12 = new Sorter("bezeled-chiseled-sorter-12"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter13 = new Sorter("bezeled-chiseled-sorter-13"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter14 = new Sorter("bezeled-chiseled-sorter-14"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter15 = new Sorter("bezeled-chiseled-sorter-15"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter16 = new Sorter("bezeled-chiseled-sorter-16"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
+            envDisabled |= Env.scorching;
+        }};
+
+        bezeledChiseledSorter17 = new Sorter("bezeled-chiseled-sorter-17"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
