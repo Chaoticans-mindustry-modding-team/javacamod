@@ -65,7 +65,7 @@ copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBotto
 darkMetal, darkMetalLarge, dirtWall, dirtWallLarge, duneWall, duneWallLarge, plantWall, plantWallLarge, grassWall, grassWallLarge, iceWall, iceWallLarge, snowWall, snowWallLarge, stoneWall, stoneWallLarge, woodWall, woodWallLarge, sandWall, sandWallLarge, coalWall, coalWallLarge,
     
 //distribution
-borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, shadowlessSorter, shadowlessLargeSorter, shadowlessColossalSorter, bezeledSorter, bezeledLargeSorter, bezeledColossalSorter, spectralSorter, spectralLargeSorter, spectralColossalSorter, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledSorter15, chiseledSorter16, chiseledSorter17, shadowlessChiseledSorter1, shadowlessChiseledSorter2, shadowlessChiseledSorter3, shadowlessChiseledSorter4, shadowlessChiseledSorter5, shadowlessChiseledSorter6, shadowlessChiseledSorter7, shadowlessChiseledSorter8, shadowlessChiseledSorter9, shadowlessChiseledSorter10, shadowlessChiseledSorter11, shadowlessChiseledSorter12, shadowlessChiseledSorter13, shadowlessChiseledSorter14, shadowlessChiseledSorter15, shadowlessChiseledSorter16, shadowlessChiseledSorter17, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledInvertedSorter15, chiseledInvertedSorter16, chiseledInvertedSorter17, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14, chiseledSource15, chiseledSource16, chiseledSource17, hexChiseledSorter1, hexChiseledSorter2, hexChiseledSorter3, hexChiseledSorter4, hexChiseledSorter5, hexChiseledSorter6, hexChiseledSorter7, hexChiseledSorter8, hexChiseledSorter9, hexChiseledSorter10, hexChiseledSorter11, hexChiseledSorter12, hexChiseledSorter13, hexChiseledSorter14, hexChiseledSorter15, hexChiseledSorter16, hexChiseledSorter17, bezeledChiseledSorter1, bezeledChiseledSorter2, bezeledChiseledSorter3, bezeledChiseledSorter4, bezeledChiseledSorter5, bezeledChiseledSorter6, bezeledChiseledSorter7, bezeledChiseledSorter8, bezeledChiseledSorter9, bezeledChiseledSorter10, bezeledChiseledSorter11, bezeledChiseledSorter12, bezeledChiseledSorter13, bezeledChiseledSorter14, bezeledChiseledSorter15, bezeledChiseledSorter16, bezeledChiseledSorter17, spectralChiseledSorter1, spectralChiseledSorter2, spectralChiseledSorter3, spectralChiseledSorter4, spectralChiseledSorter5, spectralChiseledSorter6, spectralChiseledSorter7, spectralChiseledSorter8, spectralChiseledSorter9, spectralChiseledSorter10, spectralChiseledSorter11, spectralChiseledSorter12, spectralChiseledSorter13, spectralChiseledSorter14, spectralChiseledSorter15, spectralChiseledSorter16, spectralChiseledSorter17, spectralChiseledSorter18, chiseledDuctRouter1, chiseledDuctRouter2, chiseledDuctRouter3, chiseledDuctRouter4, chiseledDuctRouter5, chiseledDuctRouter6, chiseledDuctRouter7, chiseledDuctRouter8, chiseledDuctRouter9, chiseledDuctRouter10, chiseledDuctRouter11, chiseledDuctRouter12, chiseledDuctRouter13, chiseledDuctRouter14, chiseledDuctRouter15, chiseledDuctRouter16, chiseledDuctRouter17, chiseledDuctRouter18,
+borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, shadowlessSorter, shadowlessLargeSorter, shadowlessColossalSorter, bezeledSorter, bezeledLargeSorter, bezeledColossalSorter, spectralSorter, spectralLargeSorter, spectralColossalSorter, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledSorter15, chiseledSorter16, chiseledSorter17, shadowlessChiseledSorter1, shadowlessChiseledSorter2, shadowlessChiseledSorter3, shadowlessChiseledSorter4, shadowlessChiseledSorter5, shadowlessChiseledSorter6, shadowlessChiseledSorter7, shadowlessChiseledSorter8, shadowlessChiseledSorter9, shadowlessChiseledSorter10, shadowlessChiseledSorter11, shadowlessChiseledSorter12, shadowlessChiseledSorter13, shadowlessChiseledSorter14, shadowlessChiseledSorter15, shadowlessChiseledSorter16, shadowlessChiseledSorter17, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledInvertedSorter15, chiseledInvertedSorter16, chiseledInvertedSorter17, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14, chiseledSource15, chiseledSource16, chiseledSource17, hexChiseledSorter1, hexChiseledSorter2, hexChiseledSorter3, hexChiseledSorter4, hexChiseledSorter5, hexChiseledSorter6, hexChiseledSorter7, hexChiseledSorter8, hexChiseledSorter9, hexChiseledSorter10, hexChiseledSorter11, hexChiseledSorter12, hexChiseledSorter13, hexChiseledSorter14, hexChiseledSorter15, hexChiseledSorter16, hexChiseledSorter17, bezeledChiseledSorter1, bezeledChiseledSorter2, bezeledChiseledSorter3, bezeledChiseledSorter4, bezeledChiseledSorter5, bezeledChiseledSorter6, bezeledChiseledSorter7, bezeledChiseledSorter8, bezeledChiseledSorter9, bezeledChiseledSorter10, bezeledChiseledSorter11, bezeledChiseledSorter12, bezeledChiseledSorter13, bezeledChiseledSorter14, bezeledChiseledSorter15, bezeledChiseledSorter16, bezeledChiseledSorter17, chiseledSpectralSorter1, chiseledSpectralSorter2, chiseledSpectralSorter3, chiseledSpectralSorter4, chiseledSpectralSorter5, chiseledSpectralSorter6, chiseledSpectralSorter7, chiseledSpectralSorter8, chiseledSpectralSorter9, chiseledSpectralSorter10, chiseledSpectralSorter11, chiseledSpectralSorter12, chiseledSpectralSorter13, chiseledSpectralSorter14, chiseledSpectralSorter15, chiseledSpectralSorter16, chiseledSpectralSorter17, chiseledSpectralSorter18, chiseledDuctRouter1, chiseledDuctRouter2, chiseledDuctRouter3, chiseledDuctRouter4, chiseledDuctRouter5, chiseledDuctRouter6, chiseledDuctRouter7, chiseledDuctRouter8, chiseledDuctRouter9, chiseledDuctRouter10, chiseledDuctRouter11, chiseledDuctRouter12, chiseledDuctRouter13, chiseledDuctRouter14, chiseledDuctRouter15, chiseledDuctRouter16, chiseledDuctRouter17, chiseledDuctRouter18,
 
 //liquid
 liquidBlock, borderlessLiquidSource,
@@ -3134,7 +3134,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter1 = new Sorter("spectral-chiseled-sorter-1"){{
+        chiseledSpectralSorter1 = new Sorter("chiseled-spectral-sorter-1"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3142,7 +3142,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter2 = new Sorter("spectral-chiseled-sorter-2"){{
+        chiseledSpectralSorter2 = new Sorter("chiseled-spectral-sorter-2"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3150,7 +3150,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter3 = new Sorter("spectral-chiseled-sorter-3"){{
+        chiseledSpectralSorter3 = new Sorter("chiseled-spectral-sorter-3"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3158,7 +3158,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter4 = new Sorter("spectral-chiseled-sorter-4"){{
+        chiseledSpectralSorter4 = new Sorter("chiseled-spectral-sorter-4"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3166,7 +3166,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter5 = new Sorter("spectral-chiseled-sorter-5"){{
+        chiseledSpectralSorter5 = new Sorter("chiseled-spectral-sorter-5"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3174,7 +3174,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter6 = new Sorter("spectral-chiseled-sorter-6"){{
+        chiseledSpectralSorter6 = new Sorter("chiseled-spectral-sorter-6"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3182,7 +3182,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter7 = new Sorter("spectral-chiseled-sorter-7"){{
+        chiseledSpectralSorter7 = new Sorter("chiseled-spectral-sorter-7"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3190,7 +3190,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter8 = new Sorter("spectral-chiseled-sorter-8"){{
+        chiseledSpectralSorter8 = new Sorter("chiseled-spectral-sorter-8"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3198,7 +3198,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter9 = new Sorter("spectral-chiseled-sorter-9"){{
+        chiseledSpectralSorter9 = new Sorter("chiseled-spectral-sorter-9"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3206,7 +3206,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter10 = new Sorter("spectral-chiseled-sorter-10"){{
+        chiseledSpectralSorter10 = new Sorter("chiseled-spectral-sorter-10"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3214,7 +3214,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter11 = new Sorter("spectral-chiseled-sorter-11"){{
+        chiseledSpectralSorter11 = new Sorter("chiseled-spectral-sorter-11"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3222,7 +3222,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter12 = new Sorter("spectral-chiseled-sorter-12"){{
+        chiseledSpectralSorter12 = new Sorter("chiseled-spectral-sorter-12"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3230,7 +3230,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter13 = new Sorter("spectral-chiseled-sorter-13"){{
+        chiseledSpectralSorter13 = new Sorter("chiseled-spectral-sorter-13"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3238,7 +3238,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter14 = new Sorter("spectral-chiseled-sorter-14"){{
+        chiseledSpectralSorter14 = new Sorter("chiseled-spectral-sorter-14"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3246,7 +3246,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter15 = new Sorter("spectral-chiseled-sorter-15"){{
+        chiseledSpectralSorter15 = new Sorter("chiseled-spectral-sorter-15"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3254,7 +3254,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter16 = new Sorter("spectral-chiseled-sorter-16"){{
+        chiseledSpectralSorter16 = new Sorter("chiseled-spectral-sorter-16"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3262,7 +3262,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter17 = new Sorter("spectral-chiseled-sorter-17"){{
+        chiseledSpectralSorter17 = new Sorter("chiseled-spectral-sorter-17"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
@@ -3270,7 +3270,7 @@ vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chain
             envDisabled |= Env.scorching;
         }};
 
-        spectralChiseledSorter18 = new Sorter("spectral-chiseled-sorter-18"){{
+        chiseledSpectralSorter18 = new Sorter("chiseled-spectral-sorter-18"){{
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
