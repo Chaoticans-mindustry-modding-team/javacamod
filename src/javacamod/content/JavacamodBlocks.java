@@ -4695,7 +4695,7 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             brightness = 100;
         }};
 
-        darkerUnloader = new Sorter("darker-unloader"){{
+        darkerUnloader = new Unloader("darker-unloader"){{
             requirements(Category.effect, with());
             size = 1;
         }};
