@@ -79,6 +79,9 @@ chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMe
 //Screens
 screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borderlessScreenLarge, hDScreenSmall, hDScreen, hDScreenLarge, hDBorderlessScreenSmall, hDBorderlessScreen, hDBorderlessScreenLarge,
 
+//Switches
+invisSwitch,
+
 //Processors
 yellowMicroProcessor, cyanMicroProcessor, snailInvisProcessor, slowInvisProcessor, normalInvisProcessor, fastInvisProcessor, hyperInvisProcessor,
 
@@ -4483,6 +4486,10 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             size = 3;
             hasShadow = false;
             screenSize = 48;
+        }};
+
+        invisSwitch = new SwitchBlock("invis-switch"){{
+            requirements(Category.logic, with());
         }};
 
         yellowMicroProcessor = new LogicBlock("yellow-micro-processor"){{
