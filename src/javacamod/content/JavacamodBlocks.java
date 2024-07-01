@@ -2230,7 +2230,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
-            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2238,7 +2237,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             requirements(Category.distribution, with());
             health = 80;
             size = 2;
-            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2246,7 +2244,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             requirements(Category.distribution, with());
             health = 80;
             size = 3;
-            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2254,7 +2251,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             requirements(Category.distribution, with());
             health = 80;
             size = 1;
-            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2262,7 +2258,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             requirements(Category.distribution, with());
             health = 80;
             size = 2;
-            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2270,7 +2265,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             requirements(Category.distribution, with());
             health = 80;
             size = 3;
-            rotate = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -4669,7 +4663,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
         darkerUnloader = new Sorter("darker-unloader"){{
             requirements(Category.effect, with());
             size = 1;
-            rotate = true;
         }};
 
         vial = new Sorter("vial"){{
