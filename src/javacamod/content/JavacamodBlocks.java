@@ -80,7 +80,7 @@ chiseledMessageSquare, chiseledMessageCircle, chiseledMessageRhombus, chiseledMe
 screenSmall, screen, screenLarge, borderlessScreenSmall, borderlessScreen, borderlessScreenLarge, hDScreenSmall, hDScreen, hDScreenLarge, hDBorderlessScreenSmall, hDBorderlessScreen, hDBorderlessScreenLarge,
 
 //Processors
-yellowMicroProcessor, cyanMicroProcessor,
+yellowMicroProcessor, cyanMicroProcessor, snailInvisProcessor, slowInvisProcessor, normalInvisProcessor, fastInvisProcessor, hyperInvisProcessor,
 
 //Memory
 yellowMemoryCell, cyanMemoryCell,
@@ -4493,6 +4493,41 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
         }};
 
         cyanMicroProcessor = new LogicBlock("cyan-micro-processor"){{
+            requirements(Category.logic, with());
+            size = 1;
+            range = 2000;
+            instructionsPerTick = 500;
+        }};
+
+        snailInvisProcessor = new LogicBlock("snail-invis-processor"){{
+            requirements(Category.logic, with());
+            size = 1;
+            range = 2000;
+            instructionsPerTick = 25;
+        }};
+
+        slowInvisProcessor = new LogicBlock("slow-invis-processor"){{
+            requirements(Category.logic, with());
+            size = 1;
+            range = 2000;
+            instructionsPerTick = 50;
+        }};
+
+        normalInvisProcessor = new LogicBlock("normal-invis-processor"){{
+            requirements(Category.logic, with());
+            size = 1;
+            range = 2000;
+            instructionsPerTick = 100;
+        }};
+
+        fastInvisProcessor = new LogicBlock("fast-invis-processor"){{
+            requirements(Category.logic, with());
+            size = 1;
+            range = 2000;
+            instructionsPerTick = 250;
+        }};
+
+        hyperInvisProcessor = new LogicBlock("hyper-invis-processor"){{
             requirements(Category.logic, with());
             size = 1;
             range = 2000;
