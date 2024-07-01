@@ -65,10 +65,10 @@ copperBar, copperBars, copperBarstackTop, copperBarstackMid, copperBarstackBotto
 darkMetal, darkMetalLarge, dirtWall, dirtWallLarge, duneWall, duneWallLarge, plantWall, plantWallLarge, grassWall, grassWallLarge, iceWall, iceWallLarge, snowWall, snowWallLarge, stoneWall, stoneWallLarge, woodWall, woodWallLarge, sandWall, sandWallLarge, coalWall, coalWallLarge,
     
 //distribution
-borderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, shadowlessSorter, shadowlessLargeSorter, shadowlessColossalSorter, bezeledSorter, bezeledLargeSorter, bezeledColossalSorter, spectralSorter, spectralLargeSorter, spectralColossalSorter, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledSorter15, chiseledSorter16, chiseledSorter17, chiseledSorter18, shadowlessChiseledSorter1, shadowlessChiseledSorter2, shadowlessChiseledSorter3, shadowlessChiseledSorter4, shadowlessChiseledSorter5, shadowlessChiseledSorter6, shadowlessChiseledSorter7, shadowlessChiseledSorter8, shadowlessChiseledSorter9, shadowlessChiseledSorter10, shadowlessChiseledSorter11, shadowlessChiseledSorter12, shadowlessChiseledSorter13, shadowlessChiseledSorter14, shadowlessChiseledSorter15, shadowlessChiseledSorter16, shadowlessChiseledSorter17, shadowlessChiseledSorter18, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledInvertedSorter15, chiseledInvertedSorter16, chiseledInvertedSorter17, chiseledInvertedSorter18, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14, chiseledSource15, chiseledSource16, chiseledSource17, chiseledSource18, hexChiseledSorter1, hexChiseledSorter2, hexChiseledSorter3, hexChiseledSorter4, hexChiseledSorter5, hexChiseledSorter6, hexChiseledSorter7, hexChiseledSorter8, hexChiseledSorter9, hexChiseledSorter10, hexChiseledSorter11, hexChiseledSorter12, hexChiseledSorter13, hexChiseledSorter14, hexChiseledSorter15, hexChiseledSorter16, hexChiseledSorter17, hexChiseledSorter18, bezeledChiseledSorter1, bezeledChiseledSorter2, bezeledChiseledSorter3, bezeledChiseledSorter4, bezeledChiseledSorter5, bezeledChiseledSorter6, bezeledChiseledSorter7, bezeledChiseledSorter8, bezeledChiseledSorter9, bezeledChiseledSorter10, bezeledChiseledSorter11, bezeledChiseledSorter12, bezeledChiseledSorter13, bezeledChiseledSorter14, bezeledChiseledSorter15, bezeledChiseledSorter16, bezeledChiseledSorter17, bezeledChiseledSorter18, chiseledSpectralSorter1, chiseledSpectralSorter2, chiseledSpectralSorter3, chiseledSpectralSorter4, chiseledSpectralSorter5, chiseledSpectralSorter6, chiseledSpectralSorter7, chiseledSpectralSorter8, chiseledSpectralSorter9, chiseledSpectralSorter10, chiseledSpectralSorter11, chiseledSpectralSorter12, chiseledSpectralSorter13, chiseledSpectralSorter14, chiseledSpectralSorter15, chiseledSpectralSorter16, chiseledSpectralSorter17, chiseledSpectralSorter18, chiseledDuctRouter1, chiseledDuctRouter2, chiseledDuctRouter3, chiseledDuctRouter4, chiseledDuctRouter5, chiseledDuctRouter6, chiseledDuctRouter7, chiseledDuctRouter8, chiseledDuctRouter9, chiseledDuctRouter10, chiseledDuctRouter11, chiseledDuctRouter12, chiseledDuctRouter13, chiseledDuctRouter14, chiseledDuctRouter15, chiseledDuctRouter16, chiseledDuctRouter17, chiseledDuctRouter18,
+borderlessSorter, darkBorderlessSorter, largeSorter, colossalSorter, largeInvertedSorter, colossalInvertedSorter, largeSource, colossalSource, hexSorter, largeHexSorter, colossalHexSorter, shadowlessSorter, shadowlessLargeSorter, shadowlessColossalSorter, bezeledSorter, bezeledLargeSorter, bezeledColossalSorter, spectralSorter, spectralLargeSorter, spectralColossalSorter, swappedSource, swappedVoid, chiseledSorter1, chiseledSorter2, chiseledSorter3, chiseledSorter4, chiseledSorter5, chiseledSorter6, chiseledSorter7, chiseledSorter8, chiseledSorter9, chiseledSorter10, chiseledSorter11, chiseledSorter12, chiseledSorter13, chiseledSorter14, chiseledSorter15, chiseledSorter16, chiseledSorter17, chiseledSorter18, shadowlessChiseledSorter1, shadowlessChiseledSorter2, shadowlessChiseledSorter3, shadowlessChiseledSorter4, shadowlessChiseledSorter5, shadowlessChiseledSorter6, shadowlessChiseledSorter7, shadowlessChiseledSorter8, shadowlessChiseledSorter9, shadowlessChiseledSorter10, shadowlessChiseledSorter11, shadowlessChiseledSorter12, shadowlessChiseledSorter13, shadowlessChiseledSorter14, shadowlessChiseledSorter15, shadowlessChiseledSorter16, shadowlessChiseledSorter17, shadowlessChiseledSorter18, chiseledInvertedSorter1, chiseledInvertedSorter2, chiseledInvertedSorter3, chiseledInvertedSorter4, chiseledInvertedSorter5, chiseledInvertedSorter6, chiseledInvertedSorter7, chiseledInvertedSorter8, chiseledInvertedSorter9, chiseledInvertedSorter10, chiseledInvertedSorter11, chiseledInvertedSorter12, chiseledInvertedSorter13, chiseledInvertedSorter14, chiseledInvertedSorter15, chiseledInvertedSorter16, chiseledInvertedSorter17, chiseledInvertedSorter18, chiseledSource1, chiseledSource2, chiseledSource3, chiseledSource4, chiseledSource5, chiseledSource6, chiseledSource7, chiseledSource8, chiseledSource9, chiseledSource10, chiseledSource11, chiseledSource12, chiseledSource13, chiseledSource14, chiseledSource15, chiseledSource16, chiseledSource17, chiseledSource18, hexChiseledSorter1, hexChiseledSorter2, hexChiseledSorter3, hexChiseledSorter4, hexChiseledSorter5, hexChiseledSorter6, hexChiseledSorter7, hexChiseledSorter8, hexChiseledSorter9, hexChiseledSorter10, hexChiseledSorter11, hexChiseledSorter12, hexChiseledSorter13, hexChiseledSorter14, hexChiseledSorter15, hexChiseledSorter16, hexChiseledSorter17, hexChiseledSorter18, bezeledChiseledSorter1, bezeledChiseledSorter2, bezeledChiseledSorter3, bezeledChiseledSorter4, bezeledChiseledSorter5, bezeledChiseledSorter6, bezeledChiseledSorter7, bezeledChiseledSorter8, bezeledChiseledSorter9, bezeledChiseledSorter10, bezeledChiseledSorter11, bezeledChiseledSorter12, bezeledChiseledSorter13, bezeledChiseledSorter14, bezeledChiseledSorter15, bezeledChiseledSorter16, bezeledChiseledSorter17, bezeledChiseledSorter18, chiseledSpectralSorter1, chiseledSpectralSorter2, chiseledSpectralSorter3, chiseledSpectralSorter4, chiseledSpectralSorter5, chiseledSpectralSorter6, chiseledSpectralSorter7, chiseledSpectralSorter8, chiseledSpectralSorter9, chiseledSpectralSorter10, chiseledSpectralSorter11, chiseledSpectralSorter12, chiseledSpectralSorter13, chiseledSpectralSorter14, chiseledSpectralSorter15, chiseledSpectralSorter16, chiseledSpectralSorter17, chiseledSpectralSorter18, chiseledDuctRouter1, chiseledDuctRouter2, chiseledDuctRouter3, chiseledDuctRouter4, chiseledDuctRouter5, chiseledDuctRouter6, chiseledDuctRouter7, chiseledDuctRouter8, chiseledDuctRouter9, chiseledDuctRouter10, chiseledDuctRouter11, chiseledDuctRouter12, chiseledDuctRouter13, chiseledDuctRouter14, chiseledDuctRouter15, chiseledDuctRouter16, chiseledDuctRouter17, chiseledDuctRouter18,
 
 //liquid
-liquidBlock, borderlessLiquidSource,
+liquidBlock, borderlessLiquidSource, swappedLiquidSource, swappedLiquidVoid,
 
 //MSGs
 redMessage, largeRedMessage, colossalRedMessage, darkredMessage, largeDarkredMessage, colossalDarkredMessage, bloodMessage, largeBloodMessage, colossalBloodMessage, greenMessage, largeGreenMessage, colossalGreenMessage, darkgreenMessage, largeDarkgreenMessage, colossalDarkgreenMessage, poisonMessage, largePoisonMessage, colossalPoisonMessage, blueMessage, largeBlueMessage, colossalBlueMessage, darkblueMessage, largeDarkblueMessage, colossalDarkblueMessage, navyMessage, largeNavyMessage, colossalNavyMessage, whiteMessage, largeWhiteMessage, colossalWhiteMessage, blankMessage, largeBlankMessage, colossalBlankMessage, blackMessage, largeBlackMessage, colossalBlackMessage, yellowMessage, largeYellowMessage, colossalYellowMessage, darkyellowMessage, largeDarkyellowMessage, colossalDarkyellowMessage, runicMessage, largeRunicMessage, colossalRunicMessage, cyanMessage, largeCyanMessage, colossalCyanMessage, darkcyanMessage, largeDarkcyanMessage, colossalDarkcyanMessage, deepOceanMessage, largeDeepOceanMessage, colossalDeepOceanMessage, pinkMessage, largePinkMessage, colossalPinkMessage, darkpinkMessage, largeDarkpinkMessage, colossalDarkpinkMessage, deeppinkMessage, largeDeeppinkMessage, colossalDeeppinkMessage, orangeMessage, largeOrangeMessage, colossalOrangeMessage, darkorangeMessage, largeDarkorangeMessage, colossalDarkorangeMessage, burntorangeMessage, largeBurntorangeMessage, colossalBurntorangeMessage, limeMessage, largeLimeMessage, colossalLimeMessage, darklimeMessage, largeDarklimeMessage, colossalDarklimeMessage, fruitMessage, largeFruitMessage, colossalFruitMessage, emeraldMessage, largeEmeraldMessage, colossalEmeraldMessage, darkemeraldMessage, largeDarkemeraldMessage, colossalDarkemeraldMessage, deepemeraldMessage, largeDeepemeraldMessage, colossalDeepemeraldMessage, sapphireMessage, largeSapphireMessage, colossalSapphireMessage, darksapphireMessage, largeDarksapphireMessage, colossalDarksapphireMessage, deepsapphireMessage, largeDeepsapphireMessage, colossalDeepsapphireMessage, purpleMessage, largePurpleMessage, colossalPurpleMessage, darkpurpleMessage, largeDarkpurpleMessage, colossalDarkpurpleMessage, violetMessage, largeVioletMessage, colossalVioletMessage, hotpinkMessage, largeHotpinkMessage, colossalHotpinkMessage, darkhotpinkMessage, largeDarkhotpinkMessage, colossalDarkhotpinkMessage, deephotpinkMessage, largeDeephotpinkMessage, colossalDeephotpinkMessage,
@@ -2181,6 +2181,13 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             envDisabled |= Env.scorching;
         }};
 
+        darkBorderlessSorter = new Unloader("dark-borderless-sorter"){{
+            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
         hexSorter = new HexBlock("hex-sorter"){{
             requirements(Category.distribution, with());
             health = 80;
@@ -2265,6 +2272,34 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             requirements(Category.distribution, with());
             health = 80;
             size = 3;
+            envDisabled |= Env.scorching;
+        }};
+
+        swappedSource = new ItemVoid("swapped-source"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        swappedVoid = new ItemSource("swapped-void"){{
+            requirements(Category.distribution, with());
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        swappedLiquidSource = new LiquidVoid("swapped-liquid-source"){{
+            requirements(Category.liquid, with());
+            health = 80;
+            size = 1;
+            envDisabled |= Env.scorching;
+        }};
+
+        swappedLiquidVoid = new LiquidSource("swapped-liquid-void"){{
+            requirements(Category.liquid, with());
+            health = 80;
+            size = 1;
             envDisabled |= Env.scorching;
         }};
 
