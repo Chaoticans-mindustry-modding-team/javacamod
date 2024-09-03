@@ -4922,7 +4922,7 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             memoryCapacity = 64;
         }};
 
-        permanentMemoryBank = new DataBlock("permanentMemoryCell"){{
+        permanentMemoryBank = new DataBlock("permanentMemoryBank"){{
             requirements(Category.logic, with());
             size = 2;
             memoryCapacity = 512;
