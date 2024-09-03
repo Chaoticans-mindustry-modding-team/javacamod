@@ -4,6 +4,7 @@ import arc.util.io.*;
 import mindustry.gen.*;
 import mindustry.world.*;
 import mindustry.world.meta.*;
+import mindustry.world.blocks.logic.*;
 
 import static mindustry.Vars.*;
 
