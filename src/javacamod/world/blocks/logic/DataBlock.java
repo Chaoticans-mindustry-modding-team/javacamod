@@ -19,11 +19,11 @@ public class DataBlock extends MemoryBlock{
         envEnabled = Env.any;
         canOverdrive = false;
 
-        config(Double[].class, (DataBuild entity, Double[] Ds) -> entity.memory = Ds);
+        config(Double[].class, (DataBuild entity, double[] Ds) -> entity.memory = Ds);
     }
    public class DataBuild extends MemoryBuild{
         @Override
-        public Double[] config(){
+        public double[] config(){
             return memory;
         }
    }
