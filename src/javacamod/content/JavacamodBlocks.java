@@ -88,6 +88,9 @@ yellowMicroProcessor, cyanMicroProcessor, snailInvisProcessor, slowInvisProcesso
 //Memory
 yellowMemoryCell, cyanMemoryCell,
 
+//Permanent memory
+permanentMemoryCell, permanentMemoryBank,
+
 //Hologram displays
 smallHologramDisplay, hologramDisplay, largeHologramDisplay, massiveHologramDisplay, colossalHologramDisplay,
 
@@ -4911,6 +4914,18 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
+        }};
+
+        permanentMemoryCell = new DataBlock("permanentMemoryCell"){{
+            requirements(Category.logic, with());
+            size = 1;
+            memoryCapacity = 64;
+        }};
+
+        permanentMemoryBank = new DataBlock("permanentMemoryCell"){{
+            requirements(Category.logic, with());
+            size = 2;
+            memoryCapacity = 512;
         }};
 
     }
