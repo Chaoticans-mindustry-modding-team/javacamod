@@ -4916,13 +4916,13 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             rotate = true;
         }};
 
-        permanentMemoryCell = new DataBlock("permanentMemoryCell"){{
+        permanentMemoryCell = new DataBlock("permanent-memory-cell"){{
             requirements(Category.logic, with());
             size = 1;
             memoryCapacity = 64;
         }};
 
-        permanentMemoryBank = new DataBlock("permanentMemoryBank"){{
+        permanentMemoryBank = new DataBlock("permanent-memory-bank"){{
             requirements(Category.logic, with());
             size = 2;
             memoryCapacity = 512;
