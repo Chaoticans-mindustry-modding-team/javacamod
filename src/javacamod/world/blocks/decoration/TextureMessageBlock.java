@@ -33,6 +33,8 @@ import mindustry.world.blocks.*;
 import mindustry.world.blocks.logic.*;
 import mindustry.ui.dialogs.*;
 
+import javacamod.*;
+
 import static mindustry.Vars.*;
 
 public class TextureMessageBlock extends MessageBlock {
@@ -45,7 +47,28 @@ public class TextureMessageBlock extends MessageBlock {
 		envEnabled |= Env.space;
 		swapDiagonalPlacement = true;
 
-		config(String.class, (TextureMessageBuild tile, String value) -> tile.regionName = value);
+		config(StringTwice.class, (TextureMessageBuild tile, StringTwice value) -> {
+		tile.regionName = value.string1;
+            if(value.string2.length() > maxTextLength || !accessible()){
+                return; //no.
+            }
+
+            tile.message.ensureCapacity(value.string2.length());
+            tile.message.setLength(0);
+
+            value.string2 = value.string2.trim();
+            int count = 0;
+            for(int i = 0; i < value.string2.length(); i++){
+                char c = value.string2.charAt(i);
+                if(c == '\n'){
+                    if(count++ <= maxNewlines){
+                        tile.message.append('\n');
+                    }
+                }else{
+                    tile.message.append(c);
+                }
+            }
+        });
 	};
 
 	public class TextureMessageBuild extends MessageBuild{
@@ -145,7 +168,7 @@ public class TextureMessageBlock extends MessageBlock {
 
 		@Override
 		public String config(){
-			return regionName;
+			return new StringTwice(regionName, message);
 		}
 
 		@Override
