@@ -2908,7 +2908,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2917,7 +2916,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2926,7 +2924,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2935,7 +2932,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2944,7 +2940,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2953,7 +2948,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2962,7 +2956,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2971,7 +2964,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2980,7 +2972,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2989,7 +2980,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2998,7 +2988,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -3007,7 +2996,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -3016,7 +3004,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -3025,7 +3012,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -3034,7 +3020,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -3043,7 +3028,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -3052,7 +3036,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -3061,7 +3044,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 80;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -4702,63 +4684,54 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
         chain = new HexBlock("chain"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
         chainTurn = new HexBlock("chain-turn"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
         chainT = new HexBlock("chain-t"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
         chainX = new HexBlock("chain-x"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
         chainD = new HexBlock("chain-d"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
         chainDl = new HexBlock("chain-dl"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
         chainDt = new HexBlock("chain-dt"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
         chainDx = new HexBlock("chain-dx"){{
             requirements(Category.effect, with());
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
         }};
 
         deChain = new Wall("de-chain"){{
