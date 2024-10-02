@@ -2032,7 +2032,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100; 
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2041,7 +2040,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100; 
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2050,7 +2048,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100; 
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2059,7 +2056,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100; 
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2068,7 +2064,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100; 
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2077,7 +2072,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100; 
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2086,7 +2080,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2095,7 +2088,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2104,7 +2096,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2113,7 +2104,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
@@ -2129,7 +2119,6 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             health = 100;
             size = 1;
             rotate = true;
-            rotateBUTSTATIC = true;
             envDisabled |= Env.scorching;
         }};
 
