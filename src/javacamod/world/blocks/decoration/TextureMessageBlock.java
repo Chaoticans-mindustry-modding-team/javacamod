@@ -167,7 +167,7 @@ public class TextureMessageBlock extends MessageBlock {
 		}
 
 		@Override
-		public String config(){
+		public StringTwice config(){
 			return new StringTwice(regionName, message.toString());
 		}
 
