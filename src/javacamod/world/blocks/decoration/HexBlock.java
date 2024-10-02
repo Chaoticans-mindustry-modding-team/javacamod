@@ -40,8 +40,6 @@ public class HexBlock extends Block{
 
 	public boolean diagonalSymmetryAxis = false;
 
-	public static boolean rotateBUTSTATIC = false;
-
 	@Override
 	public int minimapColor(Tile tile){
 		var build = (HexBuild)tile.build;
@@ -73,7 +71,7 @@ public class HexBlock extends Block{
 		super.drawPlanConfig(plan, list);
 		Draw.color(plan.config == null ? new Color(0xffffff_ff) : (plan.config instanceof Color c ? c : new Color(0xffffff_ff)));
 
-		if (HexBlock.rotateBUTSTATIC) {
+		if (this.rotate) {
 			switch(plan.rotation){
 				case 0: TextureRegion top0 = Core.atlas.find(name + "-top0"); Draw.rect(top0, plan.drawx(), plan.drawy()); break;
 				case 1: TextureRegion top1 = Core.atlas.find(name + "-top1"); Draw.rect(top1, plan.drawx(), plan.drawy()); break;
@@ -133,7 +131,7 @@ public class HexBlock extends Block{
 			super.draw();
 			if (top == null || top0 == null || top1 == null || top2 == null || top3 == null) {load();};
 			Draw.color(Tmp.c1.set(color));
-			if (HexBlock.rotateBUTSTATIC) {
+			if (this.rotate) {
 				switch(rotation){
 					case 0: Draw.rect(top0, x, y); break;
 					case 1: Draw.rect(top1, x, y); break;
