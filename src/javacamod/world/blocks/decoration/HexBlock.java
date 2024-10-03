@@ -131,7 +131,7 @@ public class HexBlock extends Block{
 			super.draw();
 			if (top == null || top0 == null || top1 == null || top2 == null || top3 == null) {load();};
 			Draw.color(Tmp.c1.set(color));
-			if (this.rotate) {
+			if (this.block.rotate) {
 				switch(rotation){
 					case 0: Draw.rect(top0, x, y); break;
 					case 1: Draw.rect(top1, x, y); break;
