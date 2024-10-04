@@ -112,7 +112,7 @@ public class TextureMessageBlock extends MessageBlock {
                         multiline = true;
                         maxLength = maxTextLength;
                         accepted = str -> {
-                            if(!str.equals(text)) configure(str);
+                            if(!str.equals(text)) configure(regionName + ";" + str);
                         };
                     }});
                 }else{
@@ -135,7 +135,7 @@ public class TextureMessageBlock extends MessageBlock {
                     dialog.cont.row();
                     dialog.cont.label(() -> a.getText().length() + " / " + maxTextLength).color(Color.lightGray);
                     dialog.buttons.button("@ok", () -> {
-                        if(!a.getText().equals(message.toString())) configure(a.getText());
+                        if(!a.getText().equals(message.toString())) configure(regionName + ";" + a.getText());
                         dialog.hide();
                     }).size(130f, 60f);
                     dialog.update(() -> {
@@ -151,7 +151,7 @@ public class TextureMessageBlock extends MessageBlock {
 		table.table(Styles.black5, t -> {
                 t.margin(6f);
                 t.field(regionName, text -> {
-                    configure(text);
+                    configure(text + ";" + message.toString());
                 }).width(240).get();
             });
         }
