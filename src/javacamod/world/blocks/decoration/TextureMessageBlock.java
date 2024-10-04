@@ -33,8 +33,6 @@ import mindustry.world.blocks.*;
 import mindustry.world.blocks.logic.*;
 import mindustry.ui.dialogs.*;
 
-import javacamod.*;
-
 import static mindustry.Vars.*;
 
 public class TextureMessageBlock extends MessageBlock {
@@ -48,9 +46,9 @@ public class TextureMessageBlock extends MessageBlock {
 		swapDiagonalPlacement = true;
 
 		config(String.class, (TextureMessageBuild tile, String value) -> {
-		int split = value.indexOf(';')
+		int split = value.indexOf(';');
 		tile.regionName = value.substring(0, split);
-		String text = value.subString(split + 1)
+		String text = value.subString(split + 1);
             if(text.length() > maxTextLength || !accessible()){
                 return; //no.
             }
