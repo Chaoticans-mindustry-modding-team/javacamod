@@ -48,7 +48,7 @@ public class TextureMessageBlock extends MessageBlock {
 		config(String.class, (TextureMessageBuild tile, String value) -> {
 		int split = value.indexOf(';');
 		tile.regionName = value.substring(0, split);
-		String text = value.subString(split + 1);
+		String text = value.substring(split + 1);
             if(text.length() > maxTextLength || !accessible()){
                 return; //no.
             }
@@ -174,14 +174,14 @@ public class TextureMessageBlock extends MessageBlock {
 		public void write(Writes write){
 			super.write(write);
 			write.str(regionName);
-			write.str(message);
+			write.str(message.toString);
 		}
 
 		@Override
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			regionName = read.str();
-			message = read.str();
+			message = new StringBuilder(read.str());
 		}
 	}
 }
