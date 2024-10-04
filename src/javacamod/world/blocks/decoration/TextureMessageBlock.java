@@ -174,7 +174,7 @@ public class TextureMessageBlock extends MessageBlock {
 		public void write(Writes write){
 			super.write(write);
 			write.str(regionName);
-			write.str(message.toString);
+			write.str(message.toString());
 		}
 
 		@Override
