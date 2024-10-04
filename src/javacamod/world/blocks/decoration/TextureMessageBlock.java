@@ -47,19 +47,21 @@ public class TextureMessageBlock extends MessageBlock {
 		envEnabled |= Env.space;
 		swapDiagonalPlacement = true;
 
-		config(StringTwice.class, (TextureMessageBuild tile, StringTwice value) -> {
-		tile.regionName = value.string1;
-            if(value.string2.length() > maxTextLength || !accessible()){
+		config(String.class, (TextureMessageBuild tile, String value) -> {
+		int split = value.indexOf(';')
+		tile.regionName = value.substring(0, split);
+		String text = value.subString(split + 1)
+            if(text.length() > maxTextLength || !accessible()){
                 return; //no.
             }
 
-            tile.message.ensureCapacity(value.string2.length());
+            tile.message.ensureCapacity(text.length());
             tile.message.setLength(0);
 
-            value.string2 = value.string2.trim();
+            text = text.trim();
             int count = 0;
-            for(int i = 0; i < value.string2.length(); i++){
-                char c = value.string2.charAt(i);
+            for(int i = 0; i < text.length(); i++){
+                char c = text.charAt(i);
                 if(c == '\n'){
                     if(count++ <= maxNewlines){
                         tile.message.append('\n');
@@ -166,20 +168,22 @@ public class TextureMessageBlock extends MessageBlock {
 			return true;
 		}
 
-		public StringTwice config(){
-			return new StringTwice(regionName, message.toString());
+		public String config(){
+			return regionName + ";" + message.toString();
 		}
 
 		@Override
 		public void write(Writes write){
 			super.write(write);
 			write.str(regionName);
+			write.str(message);
 		}
 
 		@Override
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			regionName = read.str();
+			message = read.str();
 		}
 	}
 }
