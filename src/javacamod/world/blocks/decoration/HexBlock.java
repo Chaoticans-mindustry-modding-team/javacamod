@@ -63,7 +63,7 @@ public class HexBlock extends Block{
 		envEnabled |= Env.space;
 		swapDiagonalPlacement = true;
 
-		fullIcon = top1;
+		fullIcon = Core.atlas.find(name + "-top1");
 
 		config(Integer.class, (HexBuild tile, Integer value) -> tile.color = value);
 	}
