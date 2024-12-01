@@ -95,6 +95,7 @@ public class HexBlock extends Block{
 		top2 = Core.atlas.find(name + "-top2");
 		top3 = Core.atlas.find(name + "-top3");
 		fullIcon = top1;
+		uiIcon = top1;
     }
 
 	public class HexBuild extends Building{
