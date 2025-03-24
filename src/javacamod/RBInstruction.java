@@ -1,3 +1,5 @@
+package javacamod.RBInstruction;
+
 public class RBInstruction {
 
   public String instruction;
