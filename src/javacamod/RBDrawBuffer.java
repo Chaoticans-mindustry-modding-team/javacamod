@@ -1,4 +1,4 @@
-package javacamod.RBDrawBuffer;
+package javacamod;
 
 public class RBDrawBuffer {
   
