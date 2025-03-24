@@ -55,6 +55,7 @@ public class RenderBlock extends Block {
 		public void draw(){
 			super.draw();
 			instructions = RBInstruction.parse(codeInput);
+			String error = exec.run(instructions);
 			//waiting on the rendering part
 		}
 
