@@ -28,8 +28,8 @@ import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
 
-import javacamod.RBDrawBuffer;
-import javacamod.RBInstruction;
+import javacamod.*;
+
 
 import static mindustry.Vars.*;
 
