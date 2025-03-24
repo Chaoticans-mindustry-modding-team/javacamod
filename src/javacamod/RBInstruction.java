@@ -1,4 +1,4 @@
-package javacamod.RBInstruction;
+package javacamod;
 
 public class RBInstruction {
 
