@@ -28,6 +28,7 @@ import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
 
+import javacamod.*;
 
 import static mindustry.Vars.*;
 
@@ -46,19 +47,15 @@ public class RenderBlock extends Block {
 
 	public class RenderBuild extends Building{
 		public String codeInput = "";
+		public RBInstruction[] instructions;
+		public RBDrawBuffer buffer = new RBDrawBuffer(4096);
+		public RBExecutor exec = new RBExecutor(buffer);
 
 		@Override
 		public void draw(){
 			super.draw();
-			float drawOffsetX = x - size*4;
-			float drawOffsetY = y - size*4;
-			float drawSize = size*8;
-            TextureRegion tileRegion = Core.atlas.find(codeInput);
-            for (float i = 0; i < drawSize; i += tileRegion.width/4) {
-                for (float j = 0; j < drawSize; j += tileRegion.height/4) {
-                    Draw.rect(tileRegion, i + tileRegion.width/8 + drawOffsetX, j + tileRegion.height/8 + drawOffsetY, rotation*90);
-                };
-            };
+			instructions = RBInstruction.parse(codeInput);
+			//waiting on the rendering part
 		}
 
         @Override
