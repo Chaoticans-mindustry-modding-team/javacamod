@@ -1,3 +1,5 @@
+package javacamod.RBDrawBuffer;
+
 public class RBDrawBuffer {
   
   public String[] drawType;
