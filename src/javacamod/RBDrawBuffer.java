@@ -5,6 +5,6 @@ public class RBDrawBuffer {
   
   public RBDrawBuffer(int limit) {
     drawType = new String[limit];
-    drawArgs = new Object[][limit];
+    drawArgs = new Object[limit][];
   }
 }
