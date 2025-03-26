@@ -244,7 +244,7 @@ public class RBExecutor {
             }
             break;
           case "JMP":
-            if (args.length == 1 || (!args[1].equals(BigDecimal.ZERO))) counter = parsePointer(args[0]);
+            if (args.length == 1 || (!args[1].equals(BigDecimal.ZERO))) counter = getMem(parsePointer(args[0]));
             break;
           case "RST":
             memory = new Object[256];
