@@ -54,6 +54,7 @@ public class RBExecutor {
     }
 
     // actually run the code
+    counter = 0
     int runLength = 0;
     Object interm0;
     while (counter < instructions.length) {
@@ -252,6 +253,7 @@ public class RBExecutor {
       
         runLength++;
         counter++;
+        if (runLength >= runLengthLimit) return "CODE TOO LONG, >" + runLengthLimit + " -- INSTRUCTION " + counter;
       } catch (RuntimeException e) {
         if (e instanceof ArrayIndexOutOfBoundsException) return "NOT ENOUGH ARGUMENTS -- INSTRUCTION " + counter;
         if (e instanceof NumberFormatException) return "BAD NUMBER/POINTER -- INSTRUCTION " + counter;
