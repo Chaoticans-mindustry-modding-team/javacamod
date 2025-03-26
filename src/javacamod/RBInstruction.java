@@ -10,15 +10,15 @@ public class RBInstruction {
   public String error = "";
 
   // instructions with subinstructions
-  public static String[] complexInstructions = {"COL","CON","OPR"};
-  public static String[] validInstructions = {"COL","CON","OPR"};
+  public static String[] complexInstructions = {"DRW","CON","OPR","JMP"};
+  public static String[] validInstructions = {"DRW","CON","OPR","JMP","RST"};
   
   public RBInstruction(String line) {
     if (line.length() < 3) {
       error = "NO INSTRUCTION FOUND";
       return;
     }
-    instruction = line.substring(0,3);
+    instruction = line.substring(0,3).toUpperCase();
     boolean isInvalidInstruction = true;
     for (String inst : validInstructions) {
       if (instruction.equals(inst)) {
@@ -35,7 +35,7 @@ public class RBInstruction {
       error = "NO SUBINSTRUCTION FOUND";
       return;
     }
-    subInstruction = hasSubInst ? line.substring (4,7) : "";
+    subInstruction = hasSubInst ? line.substring (4,7).toUpperCase() : "";
     if (line.length() >= (hasSubInst ? 8 : 4)) {
       args = line.substring(hasSubInst ? 8 : 4).split("(?<!\\\\),\s*");
       for (int i = 0; i < args.length; i++) {
