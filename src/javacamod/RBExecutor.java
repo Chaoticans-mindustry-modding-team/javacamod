@@ -63,10 +63,14 @@ public class RBExecutor {
         String[] args = instructions[counter].args;
         switch (instructions[counter].instruction) {
           case "DRW":
+            if (buffer.currentSize >= buffer.sizeLimit) break;
             switch (subInstruction) {
               case "CLR":
                 buffer.currentSize = 0;
-              ////
+              case "COL":
+                if (getMem(parsePointer(args[0])) instanceof Color n) buffer.append("color",{n});
+              case "SRK":
+                if (getMem(parsePointer(args[0])) instanceof BigDecimal n) buffer.append("stroke",{n});
             }
             break;
           case "CON":
@@ -84,6 +88,7 @@ public class RBExecutor {
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal x && getMem(parsePointer(args[2])) instanceof BigDecimal y && getMem(parsePointer(args[3])) instanceof BigDecimal z) setMem(parsePointer(args[0]), new Vec3(x.floatValue(), y.floatValue(), z.floatValue()));
                 break;
               case "COL":
+                if (args.length == 2) setMem(parsePointer(args[0]), new Color(args[1]));
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal r && getMem(parsePointer(args[2])) instanceof BigDecimal g && getMem(parsePointer(args[3])) instanceof BigDecimal b && getMem(parsePointer(args[4])) instanceof BigDecimal a) setMem(parsePointer(args[0]), new Color(r.floatValue(), g.floatValue(), b.floatValue(), a.floatValue()));
                 break;
             }
@@ -240,6 +245,31 @@ public class RBExecutor {
                 interm0 = getMem(parsePointer(args[1]));
                 if (interm0 instanceof BigDecimal m) interm0 = new BigDecimal(m.signum());
                 setMem(parsePointer(args[0]), interm0);
+                break;
+              case "GET":
+                interm0 = getMem(parsePointer(args[0]));
+                if (interm0 instanceof Vec2 n) {
+                  setMem(parsePointer(args[1]), n.x);
+                  setMem(parsePointer(args[2]), n.y);
+                  break;
+                }
+                if (interm0 instanceof Vec3 n) {
+                  setMem(parsePointer(args[1]), n.x);
+                  setMem(parsePointer(args[2]), n.y);
+                  setMem(parsePointer(args[3]), n.z);
+                  break;
+                }
+                if (interm0 instanceof Color n) {
+                  setMem(parsePointer(args[1]), n.r);
+                  setMem(parsePointer(args[2]), n.g);
+                  setMem(parsePointer(args[3]), n.b);
+                  setMem(parsePointer(args[4]), n.a);
+                  break;
+                }
+                if (interm0 instanceof String n && getMem(parsePointer(args[2])) instanceof BigDecimal m && getMem(parsePointer(args[3])) instanceof BigDecimal o) {
+                  setMem(parsePointer(args[1]), n.substring(m.intValue(), o.intValue()));
+                  break;
+                }
                 break;
             }
             break;
