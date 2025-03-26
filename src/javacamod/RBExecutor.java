@@ -90,10 +90,10 @@ public class RBExecutor {
           case "OPR":
             switch (subInstruction) {
               case "SET":
-                setMem(parsePointer(args[0]),getMem(parsePointer(args[1])))
+                setMem(parsePointer(args[0]),getMem(parsePointer(args[1])));
                 break;
               case "CLN":
-                setMem(parsePointer(args[0]),getMem(parsePointer(args[1])).clone())
+                setMem(parsePointer(args[0]),getMem(parsePointer(args[1])).clone());
                 break;
               case "SUM":
                 interm0 = getMem(parsePointer(args[1]));
@@ -153,7 +153,7 @@ public class RBExecutor {
                 break;
               case "NEG":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal)) interm0 = interm0.negate();
+                if (interm0 instanceof BigDecimal) interm0 = interm0.negate();
                 if (interm0 instanceof Color) interm0.inv();
                 setMem(parsePointer(args[0]), interm0);
                 break;
@@ -170,7 +170,7 @@ public class RBExecutor {
                 break;
               case "ABS":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal)) interm0 = interm0.abs();
+                if (interm0 instanceof BigDecimal) interm0 = interm0.abs();
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "MIN":
@@ -201,7 +201,7 @@ public class RBExecutor {
               case "MOD":
                 interm0 = getMem(parsePointer(args[1]));
                 if (interm0 instanceof BigDecimal && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
-                  if n.equals(BigDecimal.ZERO) {
+                  if (n.equals(BigDecimal.ZERO)) {
                     setMem(parsePointer(args[0]), BigDecimal.ZERO);
                     break;
                   }
@@ -234,7 +234,7 @@ public class RBExecutor {
                 break;
               case "SGN":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal)) interm0 = BigDecimal(interm0.signum());
+                if (interm0 instanceof BigDecimal) interm0 = BigDecimal(interm0.signum());
                 setMem(parsePointer(args[0]), interm0);
                 break;
             }
@@ -249,7 +249,7 @@ public class RBExecutor {
             setMem(parsePointer(args[0]), counter);
             break;
           case "RTN":
-            return getMem(parsePointer(args[0])).toString()
+            return getMem(parsePointer(args[0])).toString();
             break;
         }
       
