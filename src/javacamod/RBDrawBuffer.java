@@ -5,7 +5,7 @@ public class RBDrawBuffer {
   public String[] drawType;
   public Object[][] drawArgs;
   public int currentSize = 0;
-  public int sizeLimit
+  public int sizeLimit;
   
   public RBDrawBuffer(int limit) {
     sizeLimit = limit;
