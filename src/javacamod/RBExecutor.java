@@ -54,7 +54,7 @@ public class RBExecutor {
     }
 
     // actually run the code
-    counter = 0
+    counter = 0;
     int runLength = 0;
     Object interm0;
     while (counter < instructions.length) {
