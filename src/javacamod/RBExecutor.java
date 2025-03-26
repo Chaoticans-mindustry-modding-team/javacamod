@@ -1,6 +1,7 @@
 package javacamod;
 
-import java.util.BigDecimal;
+import java.math.BigDecimal;
+
 import arc.math.geom.*;
 import arc.graphics.Color;
 
