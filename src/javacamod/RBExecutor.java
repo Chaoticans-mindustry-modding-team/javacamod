@@ -56,7 +56,6 @@ public class RBExecutor {
     // actually run the code
     int runLength = 0;
     Object interm0;
-    Object[] intermArr;
     while (counter < instructions.length) {
       try {
         String subInstruction = instructions[counter].subInstruction;
@@ -215,14 +214,6 @@ public class RBExecutor {
                 }
                 setMem(parsePointer(args[0]), interm0);
                 break;
-              case "DVR":
-                interm0 = getMem(parsePointer(args[2]));
-                try {
-                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[3])) instanceof BigDecimal n) intermArr = m.divideAndRemainder(n);
-                } catch (ArithmeticException e) {}
-                setMem(parsePointer(args[0]), intermArr[0]);
-                setMem(parsePointer(args[1]), intermArr[1]);
-                break;
               case "EQL":
                 interm0 = getMem(parsePointer(args[1]));
                 for (int i = 2; i < args.length; i++) {
@@ -255,7 +246,7 @@ public class RBExecutor {
             setMem(parsePointer(args[0]), counter);
             break;
           case "RTN":
-            return getMem(parsePointer(args[0])).toString();
+            if (true) return getMem(parsePointer(args[0])).toString();
             break;
         }
       
