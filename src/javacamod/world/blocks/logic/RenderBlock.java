@@ -64,9 +64,9 @@ public class RenderBlock extends Block {
 			instructions = RBInstruction.parse(codeInput);
 			String error = exec.run(instructions);
 			if (!error.equals("")) {
-				Draw.color(0xff0000_ff)
+				Draw.color(0xff0000_ff);
 				WorldLabel.drawAt(error,x,y-6, Layer.overlayUI+1, WorldLabel.flagOutline, 0.8f);
-				Draw.color()
+				Draw.color();
 				return;
 			}
 			//waiting on the rendering part
