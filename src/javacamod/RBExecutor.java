@@ -193,7 +193,7 @@ public class RBExecutor {
                   for (int i = 2; i < args.length; i++) {
                     if (getMem(parsePointer(args[i])) instanceof BigDecimal n) m = m.max(n);
                   }
-                  interm0 = m
+                  interm0 = m;
                 }
                 setMem(parsePointer(args[0]), interm0);
                 break;
