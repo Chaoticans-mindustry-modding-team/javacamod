@@ -46,7 +46,7 @@ public class RenderBlock extends Block {
 		config(String.class, (RenderBuild tile, String value) -> {
 			int split = value.indexOf(';');
 			tile.configColor = Integer.parseInt(value.substring(0, split));
-			tile.codeInput = value.substring(split + 1)
+			tile.codeInput = value.substring(split + 1);
 		});
 	};
 
