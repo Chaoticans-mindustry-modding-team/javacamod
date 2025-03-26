@@ -47,6 +47,12 @@ public class RBExecutor {
     return memory[index];
   }
 
+  public <T>[] args(Object arg) {
+    Object[] args = new Object[1];
+    args[0] = arg;
+    return args
+  }
+  
   public String run(RBInstruction[] instructions) {
     // check for compiler errors
     for (int i = 0; i < instructions.length; i++) {
@@ -68,7 +74,7 @@ public class RBExecutor {
               case "CLR":
                 buffer.currentSize = 0;
               case "COL":
-                if (getMem(parsePointer(args[0])) instanceof Color n) buffer.append("color",{n});
+                if (getMem(parsePointer(args[0])) instanceof Color n) buffer.append("color",args(n});
               case "SRK":
                 if (getMem(parsePointer(args[0])) instanceof BigDecimal n) buffer.append("stroke",{n});
             }
