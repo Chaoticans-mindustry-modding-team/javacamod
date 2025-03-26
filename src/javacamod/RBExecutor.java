@@ -56,6 +56,7 @@ public class RBExecutor {
     // actually run the code
     int runLength = 0;
     Object interm0;
+    Object[] intermArr;
     while (counter < instructions.length) {
       try {
         String subInstruction = instructions[counter].subInstruction;
@@ -92,130 +93,135 @@ public class RBExecutor {
               case "SET":
                 setMem(parsePointer(args[0]),getMem(parsePointer(args[1])));
                 break;
-              case "CLN":
-                setMem(parsePointer(args[0]),getMem(parsePointer(args[1])).clone());
-                break;
               case "SUM":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal) {
+                if (interm0 instanceof BigDecimal m) {
                   for (int i = 2; i < args.length; i++) {
-                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) interm0 = interm0.add(n);
+                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) m = m.add(n);
                   }
+                  interm0 = m;
                 }
-                if (interm0 instanceof Vector) {
+                if (interm0 instanceof Vector m) {
                   for (int i = 2; i < args.length; i++) {
-                    if (getMem(parsePointer(args[i])) instanceof Vector n) interm0.add(n);
+                    if (getMem(parsePointer(args[i])) instanceof Vector n) m.add(n);
                   }
+                  interm0 = m;
                 }
-                if (interm0 instanceof Color) {
+                if (interm0 instanceof Color m) {
                   for (int i = 2; i < args.length; i++) {
-                    if (getMem(parsePointer(args[i])) instanceof Color n) interm0.add(n);
+                    if (getMem(parsePointer(args[i])) instanceof Color n) m.add(n);
                   }
+                  interm0 = m;
                 }
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "PRD":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal) {
+                if (interm0 instanceof BigDecimal m) {
                   for (int i = 2; i < args.length; i++) {
-                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) interm0 = interm0.multiply(n);
+                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) m = m.multiply(n);
                   }
+                  interm0 = m;
                 }
-                if (interm0 instanceof Vector) {
+                if (interm0 instanceof Vector m) {
                   for (int i = 2; i < args.length; i++) {
-                    if (getMem(parsePointer(args[i])) instanceof Vector n) interm0.scl(n);
-                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) interm0.scl(n.floatValue());
+                    if (getMem(parsePointer(args[i])) instanceof Vector n) m.scl(n);
+                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) m.scl(n.floatValue());
                   }
+                  interm0 = m;
                 }
-                if (interm0 instanceof Color) {
+                if (interm0 instanceof Color m) {
                   for (int i = 2; i < args.length; i++) {
-                    if (getMem(parsePointer(args[i])) instanceof Color n) interm0.mul(n);
-                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) interm0.mul(n.floatValue());
+                    if (getMem(parsePointer(args[i])) instanceof Color n) m.mul(n);
+                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) m.mul(n.floatValue());
                   }
+                  interm0 = m;
                 }
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "SUB":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = interm0.subtract(n);
-                if (interm0 instanceof Vector && getMem(parsePointer(args[2])) instanceof Vector n) interm0.sub(n);
-                if (interm0 instanceof Color && getMem(parsePointer(args[2])) instanceof Color n) interm0.sub(n);
+                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = m.subtract(n);
+                if (interm0 instanceof Vector m && getMem(parsePointer(args[2])) instanceof Vector n) interm0 = m.sub(n);
+                if (interm0 instanceof Color m && getMem(parsePointer(args[2])) instanceof Color n) interm0 = m.sub(n);
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "DIV":
                 interm0 = getMem(parsePointer(args[1]));
                 try {
-                if (interm0 instanceof BigDecimal && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = interm0.divide(n,RoundingMode.HALF_UP);
-                if (interm0 instanceof Vector && getMem(parsePointer(args[2])) instanceof Vector n) interm0.div(n);
-                if (interm0 instanceof Vector && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0.scl(BigDecimal.ONE.divide(n).floatValue());
+                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = m.divide(n,RoundingMode.HALF_UP);
+                if (interm0 instanceof Vector m && getMem(parsePointer(args[2])) instanceof Vector n) interm0 = m.div(n);
+                if (interm0 instanceof Vector m && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = m.scl(BigDecimal.ONE.divide(n).floatValue());
                 } catch (ArithmeticException e) {}
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "NEG":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal) interm0 = interm0.negate();
-                if (interm0 instanceof Color) interm0.inv();
+                if (interm0 instanceof BigDecimal m) interm0 = m.negate();
+                if (interm0 instanceof Color m) interm0 = m.inv();
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "POW":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
+                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
                   if (n.signum() == -1) {
-                    interm0 = BigDecimal.ONE.divide(interm0.pow(n.abs().intValue()));
+                    interm0 = BigDecimal.ONE.divide(m.pow(n.abs().intValue()));
                   } else {
-                    interm0 = interm0.pow(n.abs().intValue());
+                    interm0 = m.pow(n.abs().intValue());
                   }
                 }
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "ABS":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal) interm0 = interm0.abs();
+                if (interm0 instanceof BigDecimal m) interm0 = m.abs();
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "MIN":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal) {
+                if (interm0 instanceof BigDecimal m) {
                   for (int i = 2; i < args.length; i++) {
-                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) interm0 = interm0.min(n);
+                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) m = m.min(n);
                   }
+                  interm0 = m;
                 }
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "MAX":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal) {
+                if (interm0 instanceof BigDecimal m) {
                   for (int i = 2; i < args.length; i++) {
-                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) interm0 = interm0.max(n);
+                    if (getMem(parsePointer(args[i])) instanceof BigDecimal n) m = m.max(n);
                   }
+                  interm0 = m
                 }
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "IDV":
                 interm0 = getMem(parsePointer(args[1]));
                 try {
-                if (interm0 instanceof BigDecimal && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = interm0.divideToIntegralValue(n);
+                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = m.divideToIntegralValue(n);
                 } catch (ArithmeticException e) {}
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "MOD":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
+                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
                   if (n.equals(BigDecimal.ZERO)) {
                     setMem(parsePointer(args[0]), BigDecimal.ZERO);
                     break;
                   }
-                  interm0 = interm0.remainder(n);
+                  interm0 = m.remainder(n);
                 }
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "DVR":
                 interm0 = getMem(parsePointer(args[2]));
                 try {
-                if (interm0 instanceof BigDecimal && getMem(parsePointer(args[3])) instanceof BigDecimal n) interm0 = interm0.divideAndRemainder(n);
+                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[3])) instanceof BigDecimal n) intermArr = m.divideAndRemainder(n);
                 } catch (ArithmeticException e) {}
-                setMem(parsePointer(args[0]), interm0[0]);
-                setMem(parsePointer(args[1]), interm0[1]);
+                setMem(parsePointer(args[0]), intermArr[0]);
+                setMem(parsePointer(args[1]), intermArr[1]);
                 break;
               case "EQL":
                 interm0 = getMem(parsePointer(args[1]));
@@ -229,12 +235,12 @@ public class RBExecutor {
                 break;
               case "CMP":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = BigDecimal(interm0.compareTo(n));
+                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = BigDecimal(m.compareTo(n));
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "SGN":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal) interm0 = BigDecimal(interm0.signum());
+                if (interm0 instanceof BigDecimal m) interm0 = BigDecimal(m.signum());
                 setMem(parsePointer(args[0]), interm0);
                 break;
             }
