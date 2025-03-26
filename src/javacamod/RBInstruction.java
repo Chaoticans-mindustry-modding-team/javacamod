@@ -11,7 +11,7 @@ public class RBInstruction {
 
   // instructions with subinstructions
   public static String[] complexInstructions = {"DRW","CON","OPR","JMP"};
-  public static String[] validInstructions = {"DRW","CON","OPR","JMP","RST" "LBL"};
+  public static String[] validInstructions = {"DRW","CON","OPR","JMP","RST","LBL"};
   
   public RBInstruction(String line) {
     if (line.length() < 3) {
