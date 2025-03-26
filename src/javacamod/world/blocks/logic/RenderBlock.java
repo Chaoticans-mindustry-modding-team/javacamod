@@ -78,7 +78,7 @@ public class RenderBlock extends Block {
                 t.margin(6f);
                 t.field(codeInput, text -> {
                     configure(configColor + ";" + text);
-                }).width(240).get();
+                }).width(960).get();
             });
 		table.button(Icon.pencil, Styles.cleari, () -> {
 			ui.picker.show(Tmp.c1.set(configColor), true, res -> configure(res.rgba() + ";" + codeInput));
