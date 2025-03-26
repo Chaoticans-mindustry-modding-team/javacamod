@@ -235,12 +235,12 @@ public class RBExecutor {
                 break;
               case "CMP":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = BigDecimal(m.compareTo(n));
+                if (interm0 instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) interm0 = new BigDecimal(m.compareTo(n));
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "SGN":
                 interm0 = getMem(parsePointer(args[1]));
-                if (interm0 instanceof BigDecimal m) interm0 = BigDecimal(m.signum());
+                if (interm0 instanceof BigDecimal m) interm0 = new BigDecimal(m.signum());
                 setMem(parsePointer(args[0]), interm0);
                 break;
             }
