@@ -113,6 +113,12 @@ public class RBExecutor {
                   }
                   interm0 = m;
                 }
+                if (interm0 instanceof String m) {
+                  for (int i = 2; i < args.length; i++) {
+                    m += getMem(parsePointer(args[i])).toString();
+                  }
+                  interm0 = m;
+                }
                 setMem(parsePointer(args[0]), interm0);
                 break;
               case "PRD":
