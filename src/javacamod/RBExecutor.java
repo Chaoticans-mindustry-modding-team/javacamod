@@ -4,7 +4,7 @@ import java.util.BigDecimal;
 import arc.math.geom.*;
 import arc.graphics.Color;
 
-import javacamod.*
+import javacamod.*;
 
 public class RBExecutor {
 
@@ -37,7 +37,7 @@ public class RBExecutor {
 
   public Object getMem(int index) {
     if (index == -1) return new BigDecimal(counter);
-    return memory[index]
+    return memory[index];
   }
 
   public String run(RBInstruction[] instructions) {
@@ -86,7 +86,7 @@ public class RBExecutor {
             memory = new Object[256];
             break;
           case "LBL":
-            setMem(parsePointer(args[0]), counter)
+            setMem(parsePointer(args[0]), counter);
             break;
         }
       
