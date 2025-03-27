@@ -17,6 +17,7 @@ public class RBExecutor {
   
   public RBDrawBuffer buffer;
   public int runLengthLimit;
+  public int configColor;
 
   public BigDecimal tau = new BigDecimal(Mathf.PI2);
   public BigDecimal pi = new BigDecimal(Mathf.PI);
@@ -151,7 +152,7 @@ public class RBExecutor {
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal x && getMem(parsePointer(args[2])) instanceof BigDecimal y && getMem(parsePointer(args[3])) instanceof BigDecimal z) setMem(parsePointer(args[0]), new Vec3(x.floatValue(), y.floatValue(), z.floatValue()));
                 break;
               case "COL":
-                if (args.length == 2) setMem(parsePointer(args[0]), new Color.valueOf(args[1]));
+                if (args.length == 2) setMem(parsePointer(args[0]), Color.valueOf(args[1]));
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal r && getMem(parsePointer(args[2])) instanceof BigDecimal g && getMem(parsePointer(args[3])) instanceof BigDecimal b && getMem(parsePointer(args[4])) instanceof BigDecimal a) setMem(parsePointer(args[0]), new Color(r.floatValue(), g.floatValue(), b.floatValue(), a.floatValue()));
                 break;
             }
@@ -377,8 +378,7 @@ public class RBExecutor {
             setMem(parsePointer(args[0]), counter);
             break;
           case "RTN":
-            if (true) return getMem(parsePointer(args[0])).toString();
-            break;
+            return getMem(parsePointer(args[0])).toString();
           case "GET":
             interm0 = getMem(parsePointer(args[0]));
             if (interm0 instanceof Vec2 n) {
@@ -409,6 +409,9 @@ public class RBExecutor {
               case "TCK":
                 setMem(parsePointer(args[0]), new BigDecimal(Time.time));
                 break;
+              case "CFC":
+                setMem(parsePointer(args[0]), new Color(configColor));
+                break;
               case "TAU":
                 setMem(parsePointer(args[0]), tau);
                 break;
@@ -436,11 +439,12 @@ public class RBExecutor {
       
         runLength++;
         counter++;
-        if (runLength >= runLengthLimit) return "CODE TOO LONG, >" + runLengthLimit + " -- INSTRUCTION " + counter;
+        if (runLength >= runLengthLimit) return "[#ffc]CODE TOOK TOO LONG, >" + runLengthLimit + " -- INSTRUCTION " + counter + "[]";
       } catch (RuntimeException e) {
-        if (e instanceof ArrayIndexOutOfBoundsException) return "NOT ENOUGH ARGUMENTS -- INSTRUCTION " + counter;
-        if (e instanceof NumberFormatException) return "BAD NUMBER/POINTER -- INSTRUCTION " + counter;
-        return e.getClass().getSimpleName() + " -- INSTRUCTION " + counter;
+        if (e instanceof ArrayIndexOutOfBoundsException) return "[#ff]NOT ENOUGH ARGUMENTS -- INSTRUCTION " + counter + "[]";
+        if (e instanceof NumberFormatException) return "[#ff]BAD NUMBER/POINTER -- INSTRUCTION " + counter + "[]";
+        if (e instanceof NullPointerException) return "[#ff]VALUE NOT FOUND -- INSTRUCTION " + counter + "[]";
+        return "[#ff]" + e.getClass().getSimpleName() + " -- INSTRUCTION " + counter + "[]";
       }
     }
     return "";
