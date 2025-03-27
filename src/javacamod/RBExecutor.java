@@ -129,6 +129,16 @@ public class RBExecutor {
                   buffer.append("tri", intermArr);
                 }
                 break;
+              case "QAD":
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof Vec2 m && getMem(parsePointer(args[2])) instanceof Vec2 o && getMem(parsePointer(args[3])) instanceof Vec2 p) {
+                  intermArr = new Object[4];
+                  intermArr[0] = n;
+                  intermArr[1] = m;
+                  intermArr[2] = o;
+                  intermArr[3] = p;
+                  buffer.append("quad", intermArr);
+                }
+                break;
               case "IMG":
                 if (getMem(parsePointer(args[0])) instanceof String n) {
                   intermArr = new Object[1];
