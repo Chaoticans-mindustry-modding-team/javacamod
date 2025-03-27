@@ -82,7 +82,10 @@ public class RenderBlock extends Block {
                 }).width(960).get();
             });
 		table.button(Icon.pencil, Styles.cleari, () -> {
-			ui.picker.show(Tmp.c1.set(configColor), true, res -> {configure(res.rgba() + ";" + codeInput);exec.configColor = res.rgba()});
+			ui.picker.show(Tmp.c1.set(configColor), true, res -> {
+				configure(res.rgba() + ";" + codeInput);
+				exec.configColor = res.rgba();
+			});
 			deselect();
 		}).size(40f);
         }
