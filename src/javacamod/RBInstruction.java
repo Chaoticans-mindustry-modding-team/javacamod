@@ -10,7 +10,7 @@ public class RBInstruction {
   public String error = "";
 
   // instructions with subinstructions
-  public static String[] complexInstructions = {"DRW","CON","OPR"};
+  public static String[] complexInstructions = {"DRW","CON","OPR","CST"};
   public static String[] validInstructions = {"DRW","CON","OPR","JMP","RST","LBL","RTN","GET","CST"};
   
   public RBInstruction(String line) {
