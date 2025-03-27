@@ -315,7 +315,7 @@ public class RBExecutor {
                   setMem(parsePointer(args[0]), new BigDecimal(m.angle()));
                   break;
                 }
-                if (getMem(parsePointer(args[1])) instanceof BigDecimal m && getMem(parsePointer(args[2]) instanceof BigDecimal n) {
+                if (getMem(parsePointer(args[1])) instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
                   if (BigDecimal.ZERO.equals(m)) {
                     switch (n.signum()) {
                       case 1:
