@@ -94,7 +94,7 @@ public class RBExecutor {
                 }
                 break;
               case "LNE":
-                if (getMem(parsePointer(args[0])) instanceof Vector2 n && getMem(parsePointer(args[0])) instanceof Vector2 m) {
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[0])) instanceof Vec2 m) {
                   intermArr = new Object[2];
                   intermArr[0] = n;
                   intermArr[0] = m;
@@ -102,16 +102,17 @@ public class RBExecutor {
                 }
                 break;
               case "RCT":
-                if (getMem(parsePointer(args[0])) instanceof Vector2 n && getMem(parsePointer(args[1])) instanceof Vector2 m && (args.length < 4 || getMem(parsePointer(args[3])) instanceof BigDecimal r)) {
-                  intermArr = new Object[args.length < 3 ? 2 : 3];
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof Vec2 m) {
+                  interm0 = getMem(parsePointer(args[2]));
+                  intermArr = new Object[(args.length < 3 && interm0 instanceof BigDecimal) ? 2 : 3];
                   intermArr[0] = n;
                   intermArr[1] = m;
-                  if (args.length >= 3) intermArr[2] = r;
+                  if (args.length >= 3 && interm0 instanceof BigDecimal r) intermArr[2] = r.floatValue();
                   buffer.append(args.length < 3 ? "rect" : "rectR", intermArr);
                 }
                 break;
               case "TRI":
-                if (getMem(parsePointer(args[0])) instanceof Vector2 n && getMem(parsePointer(args[1])) instanceof Vector2 m && getMem(parsePointer(args[2])) instanceof Vector2 o) {
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof Vec2 m && getMem(parsePointer(args[2])) instanceof Vec2 o) {
                   intermArr = new Object[3];
                   intermArr[0] = n;
                   intermArr[1] = m;
@@ -150,7 +151,7 @@ public class RBExecutor {
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal x && getMem(parsePointer(args[2])) instanceof BigDecimal y && getMem(parsePointer(args[3])) instanceof BigDecimal z) setMem(parsePointer(args[0]), new Vec3(x.floatValue(), y.floatValue(), z.floatValue()));
                 break;
               case "COL":
-                if (args.length == 2) setMem(parsePointer(args[0]), new Color(args[1]));
+                if (args.length == 2) setMem(parsePointer(args[0]), new Color.valueOf(args[1]));
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal r && getMem(parsePointer(args[2])) instanceof BigDecimal g && getMem(parsePointer(args[3])) instanceof BigDecimal b && getMem(parsePointer(args[4])) instanceof BigDecimal a) setMem(parsePointer(args[0]), new Color(r.floatValue(), g.floatValue(), b.floatValue(), a.floatValue()));
                 break;
             }
@@ -406,7 +407,7 @@ public class RBExecutor {
           case "CST":
             switch (subInstruction) {
               case "TCK":
-                setMem(parsePointer(args[0]), new BigDecimal(Time.timeRaw));
+                setMem(parsePointer(args[0]), new BigDecimal(Time.time));
                 break;
               case "TAU":
                 setMem(parsePointer(args[0]), tau);
