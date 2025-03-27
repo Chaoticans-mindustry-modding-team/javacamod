@@ -8,6 +8,8 @@ import arc.graphics.Color;
 import arc.util.Time;
 import arc.math.Mathf;
 
+import mindustry.Vars;
+
 import javacamod.*;
 
 public class RBExecutor {
@@ -425,7 +427,7 @@ public class RBExecutor {
           case "CST":
             switch (subInstruction) {
               case "TCK":
-                setMem(parsePointer(args[0]), new BigDecimal(Time.time));
+                setMem(parsePointer(args[0]), new BigDecimal(Vars.state.tick));
                 break;
               case "CFC":
                 setMem(parsePointer(args[0]), new Color(configColor));
