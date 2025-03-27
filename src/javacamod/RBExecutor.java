@@ -17,7 +17,7 @@ public class RBExecutor {
   
   public RBDrawBuffer buffer;
   public int runLengthLimit;
-  public int configColor;
+  public int configColor = 0xffffff_ff;
 
   public BigDecimal tau = new BigDecimal(Mathf.PI2);
   public BigDecimal pi = new BigDecimal(Mathf.PI);
