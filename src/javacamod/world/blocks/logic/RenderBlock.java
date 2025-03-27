@@ -64,12 +64,61 @@ public class RenderBlock extends Block {
 			instructions = RBInstruction.parse(codeInput);
 			String error = exec.run(instructions);
 			if (!error.equals("")) {
-				Draw.color(0xff0000_ff);
-				WorldLabel.drawAt(error,x,y-6, Layer.overlayUI+1, WorldLabel.flagOutline, 0.8f);
 				Draw.color();
+				WorldLabel.drawAt(error,x,y-6, Layer.overlayUI+1, WorldLabel.flagOutline, 0.8f);
 				return;
 			}
 			Draw.color();
+			Object[] args;
+			TextureRegion region = Core.atlas.find("blank");
+			float color;
+			for (int i = 0; i < buffer.currentSize; i++) {
+				args = buffer[i].drawArgs;
+				switch (buffer[i].drawType) {
+					case "line":
+						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b) Lines.line(region, x + a.x, y + a.y, x + b.x, y + b.y, true);
+						break;
+					case "rect":
+						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y);
+						break;
+					case "linerect":
+						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(x + p.x, y + p.y, x + s.x, y + s.y);
+						break;
+					case "rectR":
+						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s && args[2] instanceof float r) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y, r);
+						break;
+					case "tri":
+						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b && args[2] instanceof Vec2 c) {
+        						color = Core.batch.getPackedColor();
+        						Draw.quad(region, x + a.x, y + a.y, color, x + b.x, y + b.y, color, x + c.x, y + c.y, color, x + c.x, y + c.y, color);
+						}
+						break;
+					case "quad":
+						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b && args[2] instanceof Vec2 c && args[3] instanceof Vec2 d) {
+        						color = Core.batch.getPackedColor();
+        						Draw.quad(region, x + a.x, y + a.y, color, x + b.x, y + b.y, color, x + c.x, y + c.y, color, x + d.x, y + d.y, color);
+						}
+						break;
+					case "print": //// todo
+						break;
+					case "setregion":
+						if (args[0] instanceof String c) {
+							if (c.equals("")) {
+								region = Core.atlas.find("blank");
+								break;
+							}
+							region = Core.atlas.find(c);
+							break;
+						};
+						break;
+					case "color":
+						if (args[0] instanceof Color c) Draw.color(c);
+						break;
+					case "stroke":
+						if (args[0] instanceof float f) Lines.stroke(f);
+						break;
+				}
+			}
 			//waiting on the rendering part
 		}
 
