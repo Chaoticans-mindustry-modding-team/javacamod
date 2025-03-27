@@ -71,10 +71,10 @@ public class RenderBlock extends Block {
 			Draw.color();
 			Object[] args;
 			TextureRegion region = Core.atlas.find("blank");
-			float color;
+			float color = Color.white.toFloatBits();
 			for (int i = 0; i < buffer.currentSize; i++) {
-				args = buffer[i].drawArgs;
-				switch (buffer[i].drawType) {
+				args = buffer.drawArgs[i];
+				switch (buffer.drawType[i]) {
 					case "line":
 						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b) Lines.line(region, x + a.x, y + a.y, x + b.x, y + b.y, true);
 						break;
@@ -82,20 +82,18 @@ public class RenderBlock extends Block {
 						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y);
 						break;
 					case "linerect":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(x + p.x, y + p.y, x + s.x, y + s.y);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y);
 						break;
 					case "rectR":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s && args[2] instanceof float r) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y, r);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s && args[2] instanceof Float r) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y, r);
 						break;
 					case "tri":
 						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b && args[2] instanceof Vec2 c) {
-        						color = Core.batch.getPackedColor();
         						Draw.quad(region, x + a.x, y + a.y, color, x + b.x, y + b.y, color, x + c.x, y + c.y, color, x + c.x, y + c.y, color);
 						}
 						break;
 					case "quad":
 						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b && args[2] instanceof Vec2 c && args[3] instanceof Vec2 d) {
-        						color = Core.batch.getPackedColor();
         						Draw.quad(region, x + a.x, y + a.y, color, x + b.x, y + b.y, color, x + c.x, y + c.y, color, x + d.x, y + d.y, color);
 						}
 						break;
@@ -112,10 +110,13 @@ public class RenderBlock extends Block {
 						};
 						break;
 					case "color":
-						if (args[0] instanceof Color c) Draw.color(c);
+						if (args[0] instanceof Color c) {
+							Draw.color(c);
+							color = c.toFloatBits();
+						}
 						break;
 					case "stroke":
-						if (args[0] instanceof float f) Lines.stroke(f);
+						if (args[0] instanceof Float f) Lines.stroke(f);
 						break;
 				}
 			}
