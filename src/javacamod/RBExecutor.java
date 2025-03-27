@@ -112,6 +112,16 @@ public class RBExecutor {
                   buffer.append(args.length < 3 ? "rect" : "rectR", intermArr);
                 }
                 break;
+              case "LRC":
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof Vec2 m) {
+                  interm0 = getMem(parsePointer(args[2]));
+                  intermArr = new Object[(args.length < 3 && interm0 instanceof BigDecimal) ? 2 : 3];
+                  intermArr[0] = n;
+                  intermArr[1] = m;
+                  if (args.length >= 3 && interm0 instanceof BigDecimal r) intermArr[2] = r.floatValue();
+                  buffer.append(args.length < 3 ? "linerect" : "linerectR", intermArr);
+                }
+                break;
               case "TRI":
                 if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof Vec2 m && getMem(parsePointer(args[2])) instanceof Vec2 o) {
                   intermArr = new Object[3];
