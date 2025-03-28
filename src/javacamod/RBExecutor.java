@@ -210,7 +210,10 @@ public class RBExecutor {
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal x && getMem(parsePointer(args[2])) instanceof BigDecimal y && getMem(parsePointer(args[3])) instanceof BigDecimal z) setMem(parsePointer(args[0]), new Vec3(x.floatValue(), y.floatValue(), z.floatValue()));
                 break;
               case "COL":
-                if (args.length == 2) setMem(parsePointer(args[0]), Color.valueOf(args[1]));
+                if (args.length == 2) {
+                  setMem(parsePointer(args[0]), Color.valueOf(args[1]));
+                  break;
+                }
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal r && getMem(parsePointer(args[2])) instanceof BigDecimal g && getMem(parsePointer(args[3])) instanceof BigDecimal b && getMem(parsePointer(args[4])) instanceof BigDecimal a) setMem(parsePointer(args[0]), new Color(r.floatValue(), g.floatValue(), b.floatValue(), a.floatValue()));
                 break;
             }
