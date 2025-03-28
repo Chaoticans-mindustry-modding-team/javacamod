@@ -89,12 +89,12 @@ public class RenderBlock extends Block {
 						break;
 					case "tri":
 						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b && args[2] instanceof Vec2 c) {
-        						Draw.quad(region, x + a.x, y + a.y, color, x + b.x, y + b.y, color, x + c.x, y + c.y, color, x + c.x, y + c.y, color);
+        						quad(region, x + a.x, y + a.y, color, x + b.x, y + b.y, color, x + c.x, y + c.y, color, x + c.x, y + c.y, color);
 						}
 						break;
 					case "quad":
 						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b && args[2] instanceof Vec2 c && args[3] instanceof Vec2 d) {
-        						Draw.quad(region, x + a.x, y + a.y, color, x + b.x, y + b.y, color, x + c.x, y + c.y, color, x + d.x, y + d.y, color);
+        						quad(region, x + a.x, y + a.y, color, x + b.x, y + b.y, color, x + c.x, y + c.y, color, x + d.x, y + d.y, color);
 						}
 						break;
 					case "print": //// todo
@@ -122,6 +122,44 @@ public class RenderBlock extends Block {
 			}
 			//waiting on the rendering part
 		}
+
+		// method taken from arc.graphics.g2d.Draw because it's too recent
+		public static void quad(TextureRegion region, float x1, float y1, float c1, float x2, float y2, float c2, float x3, float y3, float c3, float x4, float y4, float c4){
+	        float mcolor = Core.batch.getPackedMixColor();
+        	float u = region.u;
+        	float v = region.v2;
+       		float u2 = region.u2;
+        	float v2 = region.v;
+       	 	vertices[0] = x1;
+        	vertices[1] = y1;
+        	vertices[2] = c1;
+        	vertices[3] = u;
+        	vertices[4] = v;
+        	vertices[5] = mcolor;
+
+        	vertices[6] = x2;
+        	vertices[7] = y2;
+        	vertices[8] = c2;
+        	vertices[9] = u;
+        	vertices[10] = v2;
+        	vertices[11] = mcolor;
+	
+        	vertices[12] = x3;
+        	vertices[13] = y3;
+        	vertices[14] = c3;
+        	vertices[15] = u2;
+        	vertices[16] = v2;
+        	vertices[17] = mcolor;
+
+        	vertices[18] = x4;
+        	vertices[19] = y4;
+        	vertices[20] = c4;
+        	vertices[21] = u2;
+        	vertices[22] = v;
+        	vertices[23] = mcolor;
+
+        	Draw.vert(region.texture, vertices, 0, vertices.length);
+    		}
 
         @Override
         public void buildConfiguration(Table table){
