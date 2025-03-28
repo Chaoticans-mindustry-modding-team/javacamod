@@ -63,7 +63,7 @@ public class RBExecutor {
   public String run(RBInstruction[] instructions) {
     // check for compiler errors
     for (int i = 0; i < instructions.length; i++) {
-      if (!instructions[i].error.equals("")) return instructions[i].error + " -- INSTRUCTION " + i;
+      if (!instructions[i].error.equals("")) return "[#ff004]" + instructions[i].error + " -- INSTRUCTION " + i + "[]";
     }
 
     // actually run the code
