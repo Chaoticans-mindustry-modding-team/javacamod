@@ -84,6 +84,24 @@ public class RenderBlock extends Block {
 					case "linerect":
 						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y);
 						break;
+					case "circle":
+						if (args[0] instanceof Vec2 p && args[1] instanceof Float r) Fill.circle(region, x + p.x, y + p.y, r);
+						break;
+					case "linecircle":
+						if (args[0] instanceof Vec2 p && args[1] instanceof Float r) Lines.circle(region, x + p.x, y + p.y, r);
+						break;
+					case "regpoly":
+						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r) Fill.poly(region, x + p.x, y + p.y, s, r);
+						break;
+					case "lineregpoly":
+						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r) Lines.poly(region, x + p.x, y + p.y, s, r);
+						break;
+					case "regpolyR":
+						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r && args[3] instanceof Float a) Fill.poly(region, x + p.x, y + p.y, s, r, a);
+						break;
+					case "lineregpolyR":
+						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r && args[3] instanceof Float a) Lines.poly(region, x + p.x, y + p.y, s, r, a);
+						break;
 					case "rectR":
 						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s && args[2] instanceof Float r) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y, r);
 						break;
