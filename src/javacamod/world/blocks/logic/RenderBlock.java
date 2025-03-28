@@ -79,10 +79,10 @@ public class RenderBlock extends Block {
 						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b) Lines.line(region, x + a.x, y + a.y, x + b.x, y + b.y, true);
 						break;
 					case "rect":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(region, x + p.x, y + p.y, s.x, s.y);
 						break;
 					case "linerect":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(region, x + p.x, y + p.y, s.x, s.y);
 						break;
 					case "circle":
 						if (args[0] instanceof Vec2 p && args[1] instanceof Float r) Fill.circle(x + p.x, y + p.y, r);
@@ -103,7 +103,7 @@ public class RenderBlock extends Block {
 						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r && args[3] instanceof Float a) Lines.poly(x + p.x, y + p.y, s, r, a);
 						break;
 					case "rectR":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s && args[2] instanceof Float r) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y, r);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s && args[2] instanceof Float r) Draw.rect(region, x + p.x, y + p.y, s.x, s.y, r);
 						break;
 					case "tri":
 						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b && args[2] instanceof Vec2 c) {
