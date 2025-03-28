@@ -47,6 +47,7 @@ public class RenderBlock extends Block {
 			int split = value.indexOf(';');
 			tile.configColor = Integer.parseInt(value.substring(0, split));
 			tile.codeInput = value.substring(split + 1);
+			tile.exec.configColor = tile.configColor;
 		});
 	};
 
@@ -201,6 +202,7 @@ public class RenderBlock extends Block {
 		public void control(LAccess type, double p1, double p2, double p3, double p4){
 			if(type == LAccess.color){
 				configColor = Tmp.c1.fromDouble(p1).rgba();
+				exec.configColor = configColor;
 			}
 
 			renderer.minimap.update(tile);
@@ -233,12 +235,15 @@ public class RenderBlock extends Block {
 		public void write(Writes write){
 			super.write(write);
 			write.str(codeInput);
+			write.i(configColor);
 		}
 
 		@Override
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			codeInput = read.str();
+			configColor = read.i();
+			exec.configColor = configColor;
 		}
 	}
 }
