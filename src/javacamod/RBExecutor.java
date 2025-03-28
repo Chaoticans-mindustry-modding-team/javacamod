@@ -131,7 +131,7 @@ public class RBExecutor {
                 }
                 break;
               case "RPG":
-                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal o) {
                   interm0 = getMem(parsePointer(args[2]));
                   intermArr = new Object[(args.length < 4 && interm0 instanceof BigDecimal) ? 3 : 4];
                   intermArr[0] = n;
@@ -142,7 +142,7 @@ public class RBExecutor {
                 }
                 break;
               case "RLP":
-                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal o) {
                   interm0 = getMem(parsePointer(args[2]));
                   intermArr = new Object[(args.length < 4 && interm0 instanceof BigDecimal) ? 3 : 4];
                   intermArr[0] = n;
