@@ -93,13 +93,13 @@ public class RenderBlock extends Block {
 					case "regpoly":
 						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r) Fill.poly(x + p.x, y + p.y, s, r);
 						break;
-					case "lineregpoly":
+					case "reglinepoly":
 						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r) Lines.poly(x + p.x, y + p.y, s, r);
 						break;
 					case "regpolyR":
 						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r && args[3] instanceof Float a) Fill.poly(x + p.x, y + p.y, s, r, a);
 						break;
-					case "lineregpolyR":
+					case "reglinepolyR":
 						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r && args[3] instanceof Float a) Lines.poly(x + p.x, y + p.y, s, r, a);
 						break;
 					case "rectR":
