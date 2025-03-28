@@ -100,8 +100,24 @@ public class RBExecutor {
                 if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[0])) instanceof Vec2 m) {
                   intermArr = new Object[2];
                   intermArr[0] = n;
-                  intermArr[0] = m;
+                  intermArr[1] = m;
                   buffer.append("line", intermArr);
+                }
+                break;
+              case "CCL":
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[0])) instanceof BigDecimal m) {
+                  intermArr = new Object[2];
+                  intermArr[0] = n;
+                  intermArr[1] = m.floatValue();
+                  buffer.append("circle", intermArr);
+                }
+                break;
+              case "LCL":
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[0])) instanceof BigDecimal m) {
+                  intermArr = new Object[2];
+                  intermArr[0] = n;
+                  intermArr[1] = m.floatValue();
+                  buffer.append("linecircle", intermArr);
                 }
                 break;
               case "RCT":
@@ -112,6 +128,28 @@ public class RBExecutor {
                   intermArr[1] = m;
                   if (args.length >= 3 && interm0 instanceof BigDecimal r) intermArr[2] = r.floatValue();
                   buffer.append(args.length < 3 ? "rect" : "rectR", intermArr);
+                }
+                break;
+              case "RPG":
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
+                  interm0 = getMem(parsePointer(args[2]));
+                  intermArr = new Object[(args.length < 4 && interm0 instanceof BigDecimal) ? 3 : 4];
+                  intermArr[0] = n;
+                  intermArr[1] = m.intValue();
+                  intermArr[2] = o.floatValue();
+                  if (args.length >= 4 && interm0 instanceof BigDecimal r) intermArr[3] = r.floatValue();
+                  buffer.append(args.length < 3 ? "regpoly" : "regpolyR", intermArr);
+                }
+                break;
+              case "RLP":
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof BigDecimal m && getMem(parsePointer(args[2])) instanceof BigDecimal n) {
+                  interm0 = getMem(parsePointer(args[2]));
+                  intermArr = new Object[(args.length < 4 && interm0 instanceof BigDecimal) ? 3 : 4];
+                  intermArr[0] = n;
+                  intermArr[1] = m.intValue();
+                  intermArr[2] = o.floatValue();
+                  if (args.length >= 4 && interm0 instanceof BigDecimal r) intermArr[3] = r.floatValue();
+                  buffer.append(args.length < 3 ? "reglinepoly" : "reglinepolyR", intermArr);
                 }
                 break;
               case "LRC":
