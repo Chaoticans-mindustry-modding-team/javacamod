@@ -125,7 +125,7 @@ public class RenderBlock extends Block {
 
 		// method taken from arc.graphics.g2d.Draw because it's too recent
 		public static void quad(TextureRegion region, float x1, float y1, float c1, float x2, float y2, float c2, float x3, float y3, float c3, float x4, float y4, float c4){
-		float[] vertices = new float[24]
+		float[] vertices = new float[24];
 	        float mcolor = Draw.getMixColor().toFloatBits();
         	float u = region.u;
         	float v = region.v2;
