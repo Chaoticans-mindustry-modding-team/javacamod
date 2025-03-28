@@ -85,22 +85,22 @@ public class RenderBlock extends Block {
 						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y);
 						break;
 					case "circle":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Float r) Fill.circle(region, x + p.x, y + p.y, r);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Float r) Fill.circle(x + p.x, y + p.y, r);
 						break;
 					case "linecircle":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Float r) Lines.circle(region, x + p.x, y + p.y, r);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Float r) Lines.circle(x + p.x, y + p.y, r);
 						break;
 					case "regpoly":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r) Fill.poly(region, x + p.x, y + p.y, s, r);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r) Fill.poly(x + p.x, y + p.y, s, r);
 						break;
 					case "lineregpoly":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r) Lines.poly(region, x + p.x, y + p.y, s, r);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r) Lines.poly(x + p.x, y + p.y, s, r);
 						break;
 					case "regpolyR":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r && args[3] instanceof Float a) Fill.poly(region, x + p.x, y + p.y, s, r, a);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r && args[3] instanceof Float a) Fill.poly(x + p.x, y + p.y, s, r, a);
 						break;
 					case "lineregpolyR":
-						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r && args[3] instanceof Float a) Lines.poly(region, x + p.x, y + p.y, s, r, a);
+						if (args[0] instanceof Vec2 p && args[1] instanceof Integer s && args[2] instanceof Float r && args[3] instanceof Float a) Lines.poly(x + p.x, y + p.y, s, r, a);
 						break;
 					case "rectR":
 						if (args[0] instanceof Vec2 p && args[1] instanceof Vec2 s && args[2] instanceof Float r) Draw.rect(region, x + p.x, y + p.y, x + s.x, y + s.y, r);
