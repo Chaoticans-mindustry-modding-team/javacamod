@@ -105,7 +105,7 @@ public class RBExecutor {
                 }
                 break;
               case "CCL":
-                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[0])) instanceof BigDecimal m) {
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof BigDecimal m) {
                   intermArr = new Object[2];
                   intermArr[0] = n;
                   intermArr[1] = m.floatValue();
@@ -113,7 +113,7 @@ public class RBExecutor {
                 }
                 break;
               case "LCL":
-                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[0])) instanceof BigDecimal m) {
+                if (getMem(parsePointer(args[0])) instanceof Vec2 n && getMem(parsePointer(args[1])) instanceof BigDecimal m) {
                   intermArr = new Object[2];
                   intermArr[0] = n;
                   intermArr[1] = m.floatValue();
