@@ -69,7 +69,7 @@ public class RBExecutor {
     // actually run the code
     counter = 0;
     int runLength = 0;
-    Object interm0;
+    Object interm0 = 0;
     Object[] intermArr;
     while (counter < instructions.length) {
       try {
