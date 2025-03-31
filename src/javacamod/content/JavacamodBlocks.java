@@ -101,8 +101,10 @@ textureBlock, textureImitator, textureGrid, textureBlockShadowless, textureImita
 lightSourceTiny, lightSourceSmall, lightSource, lightSourceLarge, lightSourceHuge,
 
 //Decor
-darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chainDx, deChain, deChainL, deChainT, deChainX, deChainD, deChainDl, deChainDt, deChainDx, jointOne, jointTwo, jointThree, jointFour, jointFive, jointSix, jointSeven, jointAOne, jointATwo, jointAThree, jointAFour, jointAFive, jointSOne, jointSTwo, jointSThree, jointSFour
+darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl, chainDt, chainDx, deChain, deChainL, deChainT, deChainX, deChainD, deChainDl, deChainDt, deChainDx, jointOne, jointTwo, jointThree, jointFour, jointFive, jointSix, jointSeven, jointAOne, jointATwo, jointAThree, jointAFour, jointAFive, jointSOne, jointSTwo, jointSThree, jointSFour,
 
+//Render block
+renderBlock
 ;
     
     public static void load() {
@@ -4889,6 +4891,12 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
             size = 2;
             memoryCapacity = 512;
         }};
+
+        renderBlock = new RenderBlock("render-block"){{
+            requirements(Category.logic, with());
+            size = 1;
+        }};
+
 
     }
 }
