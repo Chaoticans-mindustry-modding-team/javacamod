@@ -187,9 +187,11 @@ public class RBExecutor {
                 }
                 break;
               case "TXT":
-                if (getMem(parsePointer(args[0])) instanceof String n) {
-                  intermArr = new Object[1];
-                  intermArr[0] = n;
+                if (getMem(parsePointer(args[0])) instanceof String t && getMem(parsePointer(args[1])) instanceof Vec2 p && getMem(parsePointer(args[2])) instanceof BigDecimal s) {
+                  intermArr = new Object[3];
+                  intermArr[0] = t;
+                  intermArr[1] = p;
+                  intermArr[2] = s.floatValue();
                   buffer.append("print", intermArr);
                 }
                 break;
