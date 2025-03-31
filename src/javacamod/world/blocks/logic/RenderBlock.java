@@ -66,7 +66,7 @@ public class RenderBlock extends Block {
 			String error = exec.run(instructions);
 			if (!error.equals("")) {
 				Draw.color();
-				WorldLabel.drawAt(error,x,y-6, Layer.overlayUI+1, WorldLabel.flagOutline, 0.8f);
+				WorldLabel.drawAt(error,x,y-6, Layer.blockOver-1, WorldLabel.flagOutline, 0.8f);
 				return;
 			}
 			Draw.color();
@@ -116,7 +116,8 @@ public class RenderBlock extends Block {
         						quad(region, x + a.x, y + a.y, color, x + b.x, y + b.y, color, x + c.x, y + c.y, color, x + d.x, y + d.y, color);
 						}
 						break;
-					case "print": //// todo
+					case "print":
+						if (args[0] instanceof String t && args[1] instanceof Vec2 p && args[2] instanceof Float s) WorldLabel.drawAt(t, x + p.x, y + p.y, Layer.block, 0, s);
 						break;
 					case "setregion":
 						if (args[0] instanceof String c) {
