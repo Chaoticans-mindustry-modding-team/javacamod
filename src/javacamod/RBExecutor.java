@@ -187,9 +187,9 @@ public class RBExecutor {
                 }
                 break;
               case "TXT":
-                if (getMem(parsePointer(args[0])) instanceof String t && getMem(parsePointer(args[1])) instanceof Vec2 p && getMem(parsePointer(args[2])) instanceof BigDecimal s) {
+                if (getMem(parsePointer(args[1])) instanceof Vec2 p && getMem(parsePointer(args[2])) instanceof BigDecimal s) {
                   intermArr = new Object[3];
-                  intermArr[0] = t;
+                  intermArr[0] = getMem(parsePointer(args[0])).toString();
                   intermArr[1] = p;
                   intermArr[2] = s.floatValue();
                   buffer.append("print", intermArr);
@@ -231,29 +231,32 @@ public class RBExecutor {
                   for (int i = 2; i < args.length; i++) {
                     if (getMem(parsePointer(args[i])) instanceof BigDecimal n) m = m.add(n);
                   }
-                  interm0 = m;
+                  setMem(parsePointer(args[0]), m);
+                  break;
                 }
                 if (interm0 instanceof Vector m) {
                   m = m.cpy();
                   for (int i = 2; i < args.length; i++) {
                     if (getMem(parsePointer(args[i])) instanceof Vector n) m.add(n);
                   }
-                  interm0 = m;
+                  setMem(parsePointer(args[0]), m);
+                  break;
                 }
                 if (interm0 instanceof Color m) {
                   m = m.cpy();
                   for (int i = 2; i < args.length; i++) {
                     if (getMem(parsePointer(args[i])) instanceof Color n) m.add(n);
                   }
-                  interm0 = m;
+                  setMem(parsePointer(args[0]), m);
+                  break;
                 }
                 if (interm0 instanceof String m) {
                   for (int i = 2; i < args.length; i++) {
                     m += getMem(parsePointer(args[i])).toString();
                   }
-                  interm0 = m;
+                  setMem(parsePointer(args[0]), m);
+                  break;
                 }
-                setMem(parsePointer(args[0]), interm0);
                 break;
               case "PRD":
                 interm0 = getMem(parsePointer(args[1]));
@@ -315,6 +318,13 @@ public class RBExecutor {
                 break;
               case "ABS":
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal m) setMem(parsePointer(args[0]), m.abs());
+                break;
+              case "TSR":
+                if (args.length > 2 && getMem(parsePointer(args[1])) instanceof BigDecimal n && getMem(parsePointer(args[2])) instanceof BigDecimal b) {
+                  setMem(parsePointer(args[0]), Long.toString(n.longValue(), b.intValue()));
+                  break;
+                }
+                setMem(parsePointer(args[0]), getMem(parsePointer(args[1])).toString());
                 break;
               case "MIN":
                 interm0 = getMem(parsePointer(args[1]));
@@ -406,6 +416,10 @@ public class RBExecutor {
                 interm0 = getMem(parsePointer(args[1]));
                 if (interm0 instanceof Vector m) {
                   setMem(parsePointer(args[0]), new BigDecimal(m.len()));
+                  break;
+                }
+                if (interm0 instanceof String m) {
+                  setMem(parsePointer(args[0]), m.length());
                   break;
                 }
                 if (interm0 instanceof BigDecimal m) {
