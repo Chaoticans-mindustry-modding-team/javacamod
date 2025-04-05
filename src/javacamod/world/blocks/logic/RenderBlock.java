@@ -73,6 +73,7 @@ public class RenderBlock extends Block {
 			Object[] args;
 			TextureRegion region = Core.atlas.find("blank");
 			float color = Color.white.toFloatBits();
+			Draw.z(Layer.blockProp + 1);
 			for (int i = 0; i < buffer.currentSize; i++) {
 				args = buffer.drawArgs[i];
 				switch (buffer.drawType[i]) {
@@ -117,7 +118,7 @@ public class RenderBlock extends Block {
 						}
 						break;
 					case "print":
-						if (args[0] instanceof String t && args[1] instanceof Vec2 p && args[2] instanceof Float s) WorldLabel.drawAt(t, x + p.x, y + p.y + 2*s, Layer.block, 0, s);
+						if (args[0] instanceof String t && args[1] instanceof Vec2 p && args[2] instanceof Float s) WorldLabel.drawAt(t, x + p.x, y + p.y + 2*s, Layer.blockProp + 1, 0, s);
 						break;
 					case "setregion":
 						if (args[0] instanceof String c) {
