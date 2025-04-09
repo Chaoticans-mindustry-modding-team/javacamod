@@ -459,6 +459,9 @@ public class RBExecutor {
                   setMem(parsePointer(args[0]), m);
                 }
                 break;
+							case "SHF":
+								if (getMem(parsePointer(args[1])) instanceof Color n && getMem(parsePointer(args[2])) instanceof BigDecimal m) setMem(parsePointer(args[0]), n.shiftHue(m.remainder(BD360).floatValue()));
+								break;
             }
             break;
           case "JMP":
@@ -477,21 +480,29 @@ public class RBExecutor {
           case "GET":
             interm0 = getMem(parsePointer(args[0]));
             if (interm0 instanceof Vec2 n) {
-              setMem(parsePointer(args[1]), n.x);
-              setMem(parsePointer(args[2]), n.y);
+              setMem(parsePointer(args[1]), new BigDecimal(n.x));
+              setMem(parsePointer(args[2]), new BigDecimal(n.y));
               break;
             }
             if (interm0 instanceof Vec3 n) {
-              setMem(parsePointer(args[1]), n.x);
-              setMem(parsePointer(args[2]), n.y);
-              setMem(parsePointer(args[3]), n.z);
+              setMem(parsePointer(args[1]), new BigDecimal(n.x));
+              setMem(parsePointer(args[2]), new BigDecimal(n.y));
+              setMem(parsePointer(args[3]), new BigDecimal(n.z));
               break;
             }
             if (interm0 instanceof Color n) {
-              setMem(parsePointer(args[1]), n.r);
-              setMem(parsePointer(args[2]), n.g);
-              setMem(parsePointer(args[3]), n.b);
-              setMem(parsePointer(args[4]), n.a);
+							if (args.length == 4) {
+								float[] hsv = new float[3];
+								n.toHsv(hsv);
+	              setMem(parsePointer(args[1]), new BigDecimal(hsv[0]));
+  	            setMem(parsePointer(args[2]), new BigDecimal(hsv[1]));
+    	          setMem(parsePointer(args[3]), new BigDecimal(hsv[2]));
+							} else {
+	              setMem(parsePointer(args[1]), new BigDecimal(n.r));
+  	            setMem(parsePointer(args[2]), new BigDecimal(n.g));
+    	          setMem(parsePointer(args[3]), new BigDecimal(n.b));
+      	        setMem(parsePointer(args[4]), new BigDecimal(n.a));
+							}
               break;
             }
             if (interm0 instanceof String n && getMem(parsePointer(args[2])) instanceof BigDecimal m && getMem(parsePointer(args[3])) instanceof BigDecimal o) {
@@ -535,8 +546,18 @@ public class RBExecutor {
             break;
           case "SFX":
 	          if (getMem(parsePointer(args[0])) instanceof String n) {
-              intermArr = new Object[1];
+              intermArr = new Object[3];
               intermArr[0] = n;
+							if (args.length > 1 && getMem(parsePointer(args[1])) instanceof BigDecimal m) {
+								intermArr[1] = m.floatValue();
+							} else  {
+								intermArr[1] = 1f;
+							}
+							if (args.length > 2 && getMem(parsePointer(args[2])) instanceof BigDecimal m) {
+								intermArr[2] = m.floatValue();
+							} else  {
+								intermArr[2] = 1f;
+							}
               buffer.append("sound", intermArr);
             }
             break;
