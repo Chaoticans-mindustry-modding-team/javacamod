@@ -69,6 +69,7 @@ public class RBExecutor {
     // check for compiler errors
     for (int i = 0; i < instructions.length; i++) {
       if (!instructions[i].error.equals("")) return "[#ff004]" + instructions[i].error + " -- INSTRUCTION " + i + "[]";
+	    if (instructions[i].instruction == "LBL") setMem(parsePointer(instructions[i].args[0]),i);
     }
 
     // actually run the code
