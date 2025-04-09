@@ -86,7 +86,7 @@ public class RBExecutor {
                 break;
               case "COL":
                 if (getMem(parsePointer(args[0])) instanceof Color n) {
-                  if (colorStackPos < colorStackPos.length) {
+                  if (colorStackPos < colorStack.length) {
                     colorStack[colorStackPos++] = n;
                   } else {
                     colorStack[0] = colorStack[1];
@@ -191,7 +191,7 @@ public class RBExecutor {
                 break;
               case "IMG":
 								if (args.length = 0) {
-									buffer.append("setregion", "")
+									buffer.append("setregion", "");
 									break;
 								}
                 if (getMem(parsePointer(args[0])) instanceof String n) {
