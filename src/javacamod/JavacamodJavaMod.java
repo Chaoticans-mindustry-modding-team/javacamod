@@ -23,7 +23,7 @@ public class JavacamodJavaMod extends Mod{
                 BaseDialog dialog = new BaseDialog("Java Camod");
                 dialog.cont.add("JCamod").row();
                 //mod sprites are prefixed with the mod name (this mod is called 'example-java-mod' in its config)
-                dialog.cont.image(Core.atlas.find("icon")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("javacamod-icon")).pad(20f).row();
                 dialog.cont.button("I hope you enjoy this mod", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
