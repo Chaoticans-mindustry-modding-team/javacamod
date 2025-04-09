@@ -10,8 +10,8 @@ public class RBInstruction {
   public String error = "";
 
   // instructions with subinstructions
-  public static String[] complexInstructions = {"DRW","CON","OPR","CST"};
-  public static String[] validInstructions = {"DRW","CON","OPR","JMP","RST","LBL","RTN","GET","CST"};
+  public static String[] complexInstructions = {"DRW","CON","OPR","VAL"};
+  public static String[] validInstructions = {"DRW","CON","OPR","JMP","RST","LBL","RTN","GET","VAL","SFX"};
   
   public RBInstruction(String line) {
     if (line.length() < 3) {
