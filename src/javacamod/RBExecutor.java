@@ -4,8 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 import arc.math.geom.*;
-import arc.graphics.Color;
-import arc.util.Time;
+import arc.graphics.*;
 import arc.math.Mathf;
 
 import mindustry.Vars;
@@ -16,6 +15,9 @@ public class RBExecutor {
 
   public Object[] memory = new Object[256];
   public int counter = 0;
+  
+  public Color[] colorStack = new Color[4];
+  public byte colorStackPos = 0;
   
   public RBDrawBuffer buffer;
   public int runLengthLimit;
@@ -84,6 +86,14 @@ public class RBExecutor {
                 break;
               case "COL":
                 if (getMem(parsePointer(args[0])) instanceof Color n) {
+                  if (colorStackPos < colorStackPos.length) {
+                    colorStack[colorStackPos++] = n;
+                  } else {
+                    colorStack[0] = colorStack[1];
+                    colorStack[1] = colorStack[2];
+                    colorStack[2] = colorStack[3];
+                    colorStack[3] = n;
+                  }
                   intermArr = new Object[1];
                   intermArr[0] = n;
                   buffer.append("color", intermArr);
@@ -213,6 +223,8 @@ public class RBExecutor {
                 break;
               case "COL":
                 if (args.length == 2) {
+                  Color nCol = Colors.get(args[1].toUpperCase());
+                  if (nCol != null) setMem(parsePointer(args[0]), nCol);
                   setMem(parsePointer(args[0]), Color.valueOf(args[1]));
                   break;
                 }
@@ -481,13 +493,16 @@ public class RBExecutor {
               break;
             }
             break;
-          case "CST":
+          case "VAL":
             switch (subInstruction) {
               case "TCK":
                 setMem(parsePointer(args[0]), new BigDecimal(Vars.state.tick));
                 break;
               case "CFC":
                 setMem(parsePointer(args[0]), new Color(configColor));
+                break;
+              case "PVC":
+                setMem(parsePointer(args[0]), new Color(colorStack[--colorStackPos]));
                 break;
               case "TAU":
                 setMem(parsePointer(args[0]), tau);
@@ -510,6 +525,13 @@ public class RBExecutor {
               case "SR3":
                 setMem(parsePointer(args[0]), sr3);
                 break;
+            }
+            break;
+          case "SFX":
+	          if (getMem(parsePointer(args[0])) instanceof String n) {
+              intermArr = new Object[1];
+              intermArr[0] = n;
+              buffer.append("sound", intermArr);
             }
             break;
         }
