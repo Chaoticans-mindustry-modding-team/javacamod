@@ -23,6 +23,8 @@ public class RBExecutor {
   public int runLengthLimit;
   public int configColor = 0xffffff_ff;
 
+	public String lastIndex;
+
   public BigDecimal tau = new BigDecimal(Mathf.PI2);
   public BigDecimal pi = new BigDecimal(Mathf.PI);
   public BigDecimal e = new BigDecimal(Mathf.E);
@@ -40,6 +42,7 @@ public class RBExecutor {
   }
 
   public int parsePointer(String pointer) {
+	  lastIndex = pointer;
     if (pointer.length() > 2) throw new NumberFormatException("RBExecutor pointer too long");
     if (pointer.equals("PC")) return -1;
     if (pointer.equals("NL")) return -2;
@@ -569,7 +572,7 @@ public class RBExecutor {
       } catch (RuntimeException e) {
         if (e instanceof ArrayIndexOutOfBoundsException) return "[#ff]NOT ENOUGH ARGUMENTS -- INSTRUCTION " + counter + "[]";
         if (e instanceof NumberFormatException) return "[#ff]BAD NUMBER/POINTER -- INSTRUCTION " + counter + "[]";
-        if (e instanceof NullPointerException) return "[#ff]VALUE NOT FOUND -- INSTRUCTION " + counter + "[]";
+        if (e instanceof NullPointerException) return "[#ff]VALUE NOT FOUND -- INDEX " + lastIndex + " -- INSTRUCTION " + counter + "[]";
         return "[#ff]" + e.getClass().getSimpleName() + " -- INSTRUCTION " + counter + "[]";
       }
     }
