@@ -14,7 +14,7 @@ main: "javacamod.JavacamodJavaMod"
 description: "Finally."
 
 #the mod version
-version: 1.17
+version: 1.18
 
 #the minimum game build required to run this mod
 minGameVersion: 146
