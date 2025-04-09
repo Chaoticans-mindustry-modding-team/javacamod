@@ -141,7 +141,7 @@ public class RenderBlock extends Block {
 						if (args[0] instanceof Float f) Lines.stroke(f);
 						break;
 					case "sound":
-						if (args[0] instanceof String n && args[1] instanceof Floar p && args[2] instanceof Float v) FileTree.loadSound(n).at(x,y,p,v);
+						if (args[0] instanceof String n && args[1] instanceof Float p && args[2] instanceof Float v) tree.loadSound(n).at(x,y,p,v);
 						break;
 				}
 			}
