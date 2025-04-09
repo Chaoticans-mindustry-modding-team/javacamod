@@ -27,6 +27,7 @@ import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
+import mindustry.core.*;
 
 import javacamod.*;
 
@@ -138,6 +139,9 @@ public class RenderBlock extends Block {
 						break;
 					case "stroke":
 						if (args[0] instanceof Float f) Lines.stroke(f);
+						break;
+					case "sound":
+						if (args[0] instanceof String n && args[1] instanceof Floar p && args[2] instanceof Float v) FileTree.loadSound(n).at(x,y,p,v);
 						break;
 				}
 			}
