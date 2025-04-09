@@ -190,6 +190,10 @@ public class RBExecutor {
                 }
                 break;
               case "IMG":
+								if (args.length = 0) {
+									buffer.append("setregion", "")
+									break;
+								}
                 if (getMem(parsePointer(args[0])) instanceof String n) {
                   intermArr = new Object[1];
                   intermArr[0] = n;
