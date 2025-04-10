@@ -553,7 +553,7 @@ public class RBExecutor {
               intermArr = new Object[3];
               intermArr[0] = n;
 							if (args.length > 1 && getMem(parsePointer(args[1])) instanceof BigDecimal m) {
-								intermArr[1] = m.floatValue();
+								intermArr[1] = Math.min(m.floatValue(),256f);
 							} else  {
 								intermArr[1] = 1f;
 							}
