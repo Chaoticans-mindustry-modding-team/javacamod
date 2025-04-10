@@ -152,6 +152,13 @@ public class RenderBlock extends Block {
 									if (!f.exists()) break;
 								}
 							}
+							Log.info(new Sound(f));
+							Log.info(f);
+							Log.info(f.exists());
+							Log.info(x);
+							Log.info(y);
+							Log.info(p);
+							Log.info(v);
 							new Sound(f).at(x,y,p,v);
 						}
 						break;
