@@ -6,6 +6,7 @@ import java.math.RoundingMode;
 import arc.math.geom.*;
 import arc.graphics.*;
 import arc.math.Mathf;
+import arc.Core;
 
 import mindustry.Vars;
 
@@ -525,6 +526,12 @@ public class RBExecutor {
               case "PVC":
                 setMem(parsePointer(args[0]), new Color(colorStack[--colorStackPos]));
                 break;
+							case "CXY":
+								setMem(parsePointer(args[0]), Core.camera.position)
+								break;
+							case "CWH":
+								setMem(parsePointer(args[0]), new Vec2(Core.camera.width, Core.camera.height))
+								break;
               case "TAU":
                 setMem(parsePointer(args[0]), tau);
                 break;
