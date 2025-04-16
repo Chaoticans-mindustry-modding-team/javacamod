@@ -532,7 +532,7 @@ public class RBExecutor {
                 setMem(parsePointer(args[0]), new Color(colorStack[--colorStackPos]));
                 break;
 							case "CXY":
-								setMem(parsePointer(args[0]), Core.camera.position - pos);
+								setMem(parsePointer(args[0]), Core.camera.position.cpy().sub(pos));
 								break;
 							case "CWH":
 								setMem(parsePointer(args[0]), new Vec2(Core.camera.width, Core.camera.height));
