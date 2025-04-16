@@ -37,6 +37,8 @@ public class RBExecutor {
   public BigDecimal BD90 = new BigDecimal(90);
   public BigDecimal BDN90 = new BigDecimal(-90);
 
+	public pos = new Vec2(0,0);
+
   public RBExecutor(RBDrawBuffer bufferIn, int runLengthLimitIn) {
     buffer = bufferIn;
     runLengthLimit = runLengthLimitIn;
@@ -74,6 +76,9 @@ public class RBExecutor {
     }
 
     // actually run the code
+	  pos.x = buffer.context[0];
+	  pos.y = buffer.context[1];
+
     counter = 0;
     int runLength = 0;
     Object interm0 = 0;
@@ -527,7 +532,7 @@ public class RBExecutor {
                 setMem(parsePointer(args[0]), new Color(colorStack[--colorStackPos]));
                 break;
 							case "CXY":
-								setMem(parsePointer(args[0]), Core.camera.position);
+								setMem(parsePointer(args[0]), Core.camera.position - pos));
 								break;
 							case "CWH":
 								setMem(parsePointer(args[0]), new Vec2(Core.camera.width, Core.camera.height));
