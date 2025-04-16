@@ -65,6 +65,8 @@ public class RenderBlock extends Block {
 		@Override
 		public void draw(){
 			super.draw();
+			buffer.context[0] = x;
+			buffer.context[1] = y;
 			instructions = RBInstruction.parse(codeInput);
 			String error = exec.run(instructions);
 			if (!error.equals("")) {
