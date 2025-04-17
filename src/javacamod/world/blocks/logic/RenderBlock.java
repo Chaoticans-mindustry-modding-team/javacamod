@@ -43,8 +43,7 @@ public class RenderBlock extends Block {
 		update = true;
 		configurable = true;
 		saveConfig = true;
-		envEnabled |= Env.space;
-		swapDiagonalPlacement = true;
+		envEnabled = Env.any;
 
 		config(String.class, (RenderBuild tile, String value) -> {
 			int split = value.indexOf(';');
@@ -61,15 +60,19 @@ public class RenderBlock extends Block {
 		public RBInstruction[] instructions;
 		public RBDrawBuffer buffer = new RBDrawBuffer(4096);
 		public RBExecutor exec = new RBExecutor(buffer, 16384);
+
+		public String error = "";
+
+		public void updateTile(){
+			buffer.context[0] = x;
+			buffer.context[1] = y;
+			error = exec.run(instructions);
+		}
 		
 		@Override
 		public void draw(){
-			super.draw();
-			buffer.context[0] = x;
-			buffer.context[1] = y;
-			instructions = RBInstruction.parse(codeInput);
-			String error = exec.run(instructions);
 			if (!error.equals("")) {
+				super.draw();
 				Draw.color();
 				WorldLabel.drawAt(error,x,y-6, Layer.blockOver-1, WorldLabel.flagOutline, 0.8f);
 				return;
@@ -206,6 +209,7 @@ public class RenderBlock extends Block {
                 t.margin(6f);
                 t.field(codeInput, text -> {
                     configure(configColor + ";" + text);
+			instructions = RBInstruction.parse(text);
                 }).width(960).get();
             });
 		table.button(Icon.pencil, Styles.cleari, () -> {
@@ -261,6 +265,7 @@ public class RenderBlock extends Block {
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			codeInput = read.str();
+			instructions = RBInstruction.parse(codeInput);
 			configColor = read.i();
 			exec.configColor = configColor;
 		}
