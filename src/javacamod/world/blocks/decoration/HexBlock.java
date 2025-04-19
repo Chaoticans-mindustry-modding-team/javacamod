@@ -62,7 +62,7 @@ public class HexBlock extends Block{
 		envEnabled = Env.any;
 		swapDiagonalPlacement = true;
 
-		config(Integer.class, (HexBuild tile, int value) -> tile.color = value);
+		config(Integer.class, (HexBuild tile, Integer value) -> tile.color = value);
 	}
 	
 	@Override
