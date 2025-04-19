@@ -50,36 +50,42 @@ public class HexBlock extends Block{
     public void flipRotation(BuildPlan req, boolean x){
 		if (diagonalSymmetryAxis) {
         	req.rotation = planRotation(req.rotation ^ ((x ^ invertFlip) ? 3 : 1));
-		} else if ((x == (req.rotation % 2 == 0)) != invertFlip) {
-            req.rotation = planRotation(Mathf.mod(req.rotation + 2, 4));
+		} else if ((x == (req.rotation & 1 == 0)) != invertFlip) {
+            req.rotation = planRotation((req.rotation + 2) & 3);
         }
     }
 
 	public HexBlock(String name){
 		super(name);
-		update = true;
 		configurable = true;
 		saveConfig = true;
-		envEnabled |= Env.space;
+		envEnabled = Env.any;
 		swapDiagonalPlacement = true;
 
-		config(Integer.class, (HexBuild tile, Integer value) -> tile.color = value);
+		config(Integer.class, (HexBuild tile, int value) -> tile.color = value);
 	}
 	
 	@Override
 	public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
 		super.drawPlanConfig(plan, list);
-		Draw.color(plan.config == null ? new Color(0xffffff_ff) : (plan.config instanceof Color c ? c : new Color(0xffffff_ff)));
+		Draw.color(plan.config == null ? Color.white : (plan.config instanceof Color c ? c : Color.white));
 
 		if (this.rotate) {
 			switch(plan.rotation){
-				case 0: TextureRegion top0 = Core.atlas.find(name + "-top0"); Draw.rect(top0, plan.drawx(), plan.drawy()); break;
-				case 1: TextureRegion top1 = Core.atlas.find(name + "-top1"); Draw.rect(top1, plan.drawx(), plan.drawy()); break;
-				case 2: TextureRegion top2 = Core.atlas.find(name + "-top2"); Draw.rect(top2, plan.drawx(), plan.drawy()); break;
-				case 3: TextureRegion top3 = Core.atlas.find(name + "-top3"); Draw.rect(top3, plan.drawx(), plan.drawy()); break;
+				case 0:
+					Draw.rect(top0, plan.drawx(), plan.drawy());
+					break;
+				case 1:
+					Draw.rect(top1, plan.drawx(), plan.drawy());
+					break;
+				case 2:
+					Draw.rect(top2, plan.drawx(), plan.drawy());
+					break;
+				case 3:
+					Draw.rect(top3, plan.drawx(), plan.drawy());
+					break;
 			}
         } else {
-            top = Core.atlas.find(name + "-top"); 
             Draw.rect(top, plan.drawx(), plan.drawy());
         }
 		Draw.color();
@@ -99,7 +105,6 @@ public class HexBlock extends Block{
 
 	public class HexBuild extends Building{
 		public int color = 0xffffff_ff;
-		public float smoothTime = 1f;
 
 		@Override
 		public void control(LAccess type, double p1, double p2, double p3, double p4){
@@ -107,8 +112,10 @@ public class HexBlock extends Block{
 				color = Tmp.c1.fromDouble(p1).rgba();
 			}
 
-			renderer.minimap.update(tile);
-
+            if(headless != null && !headless){
+                renderer.minimap.update(tile);
+            }
+			
 			super.control(type, p1, p2, p3, p4);
 		}
 
@@ -116,7 +123,7 @@ public class HexBlock extends Block{
         public void configured(Unit player, Object value){
             super.configured(player, value);
 
-            if(!headless){
+            if(headless != null && !headless){
                 renderer.minimap.update(tile);
             }
         }
@@ -130,7 +137,7 @@ public class HexBlock extends Block{
 		@Override
 		public void draw(){
 			super.draw();
-			if (top == null || top0 == null || top1 == null || top2 == null || top3 == null) {load();};
+			if (top == null || top0 == null || top1 == null || top2 == null || top3 == null) load();
 			Draw.color(Tmp.c1.set(color));
 			if (this.block.rotate) {
 				switch(rotation){
@@ -143,11 +150,6 @@ public class HexBlock extends Block{
                 Draw.rect(top, x, y);
             }
 			Draw.color();
-		}
-
-		@Override
-		public void updateTile(){
-			smoothTime = Mathf.lerpDelta(smoothTime, timeScale, 0.1f);
 		}
 
 		@Override
@@ -169,7 +171,7 @@ public class HexBlock extends Block{
 		}
 
 		@Override
-		public Integer config(){
+		public int config(){
 			return color;
 		}
 
@@ -184,9 +186,5 @@ public class HexBlock extends Block{
 			super.read(read, revision);
 			color = read.i();
 		}
-
-		public boolean isSame(Building other){
-                        return other != null && other.block.instantTransfer;
-                }
 	}
 }
