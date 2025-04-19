@@ -112,7 +112,7 @@ public class HexBlock extends Block{
 				color = Tmp.c1.fromDouble(p1).rgba();
 			}
 
-            if(headless != null && !headless){
+            if(!headless){
                 renderer.minimap.update(tile);
             }
 			
@@ -123,7 +123,7 @@ public class HexBlock extends Block{
         public void configured(Unit player, Object value){
             super.configured(player, value);
 
-            if(headless != null && !headless){
+            if(!headless){
                 renderer.minimap.update(tile);
             }
         }
@@ -171,7 +171,7 @@ public class HexBlock extends Block{
 		}
 
 		@Override
-		public int config(){
+		public Integer config(){
 			return color;
 		}
 
