@@ -246,7 +246,7 @@ renderBlock
                 health = 80;
                 variants = 2;
             }};
-            largeTerrains[i] = createInert(terrains[i] + "-large", Category.production, 2)
+            largeTerrains[i] = createInert(terrains[i] + "-large", Category.production, 2);
         }
         
         for (int i = 0; i < doorColors.length; i++) {
