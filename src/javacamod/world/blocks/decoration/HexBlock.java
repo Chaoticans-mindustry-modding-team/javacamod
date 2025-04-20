@@ -48,12 +48,12 @@ public class HexBlock extends Block{
 
 	@Override
     public void flipRotation(BuildPlan req, boolean x){
-		if (diagonalSymmetryAxis) {
-        	req.rotation = planRotation(req.rotation ^ ((x ^ invertFlip) ? 3 : 1));
-		} else if ((x == ((req.rotation & 1) == 0)) != invertFlip) {
-            req.rotation = planRotation((req.rotation + 2) & 3);
-        }
-    }
+			if (diagonalSymmetryAxis) {
+        req.rotation = planRotation(req.rotation ^ ((x ^ invertFlip) ? 3 : 1));
+				return;
+			}
+			super.flipRotation(req, x);
+		}
 
 	public HexBlock(String name){
 		super(name);
