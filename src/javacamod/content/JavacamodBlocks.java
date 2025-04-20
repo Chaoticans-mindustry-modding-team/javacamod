@@ -52,7 +52,7 @@ public class JavacamodBlocks{
     public static String[]
     //color names
     //walls
-    wallColors = {"red", "darkred", "crimson", "green", "darkgreen", "poison", "blue", "darkblue", "navy", "white", "lightgray", "blackishwhite", "darkgray", "black", "yellow", "darkyellow", "runic", "cyan", "darkcyan", "deep-ocean", "pink", "darkpink", "deeppink", "orange", "darkorange", "burntorange", "lime", "darklime", "fruit", "emerald", "darkemerald", "deepemerald", "sapphire", "darksapphire", "deepsapphire", "purple", "darkpurple", "violet", "hotpink", "darkhotpink", "deephotpink"},
+    wallColors = {"red", "darkred", "crimson", "green", "dark-green", "poison", "blue", "dark-blue", "navy", "white", "lightgray", "blackishwhite", "darkgray", "black", "yellow", "dark-yellow", "runic", "cyan", "dark-cyan", "deep-ocean", "pink", "dark-pink", "deep-pink", "orange", "dark-orange", "burntorange", "lime", "dark-lime", "fruit", "emerald", "dark-emerald", "deep-emerald", "sapphire", "dark-sapphire", "deep-sapphire", "purple", "dark-purple", "violet", "hotpink", "dark-hotpink", "deep-hotpink"},
     //doors
     doorColors = {"red", "darkred", "crimson", "green", "darkgreen", "poison", "blue", "darkblue", "navy", "white", "black", "yellow", "darkyellow", "runic", "cyan", "darkcyan", "deep-ocean", "pink", "darkpink", "deeppink", "orange", "darkorange", "burntorange", "lime", "darklime", "fruit", "emerald", "darkemerald", "deepemerald", "sapphire", "darksapphire", "deepsapphire", "purple", "darkpurple", "violet", "hotpink", "darkhotpink", "deephotpink"},
     //messages
@@ -161,9 +161,9 @@ renderBlock
         }};
     }
     
-    public static Block createRotatable(String name, Category category, int sizeI) {
+    public static Block createRotatable(String name, Category categoryI, int sizeI) {
         return new Block(name){{
-            requirements(category, with());
+            requirements(categoryI, with());
             health = 80 * sizeI * sizeI;
             size = sizeI;
             rotate = true;
@@ -257,6 +257,7 @@ renderBlock
             largeDoors[i] = new Door("large-" + doorColors[i] + "-door"){{
                 requirements(Category.defense, with());
                 health = 400;
+                size = 2;
             }};
         }
         
