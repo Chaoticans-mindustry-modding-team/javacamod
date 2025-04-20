@@ -142,7 +142,7 @@ renderBlock
         return new Block(name){{
             requirements(category, with());
             health = 80 * sizeI * sizeI;
-            size = sizeI
+            size = sizeI;
         }};
     }
     
@@ -158,7 +158,7 @@ renderBlock
     
     public static void load() {
 
-        for (int i = 0, i < wallColors.length, i++) {
+        for (int i = 0; i < wallColors.length; i++) {
             smallWalls[i] = createInert(wallColors[i] + "-wall", Category.defense, 1);
             largeWalls[i] = createInert("large-" + wallColors[i] + "-wall", Category.defense, 2);
             hugeWalls[i] = createInert("colossal-" + wallColors[i] + "-wall", Category.defense, 3);
@@ -349,7 +349,7 @@ renderBlock
             size = 2;
         }};
 
-        for (int i = 0, i < doorColors.length, i++) {
+        for (int i = 0; i < doorColors.length; i++) {
             smallDoors[i] = new Door(doorColors[i] + "-door"){{
                 requirements(Category.defense, with());
                 health = 100;
@@ -1641,7 +1641,7 @@ renderBlock
             requirements(Category.liquid, with());
         }};
 
-        for (int i = 0, i < messageColors.length, i++) {
+        for (int i = 0; i < messageColors.length; i++) {
             smallMessages[i] = new MessageBlock(messageColors[i] + "-message"){{
                 requirements(Category.logic, with());
                 maxTextLength = 22000;
