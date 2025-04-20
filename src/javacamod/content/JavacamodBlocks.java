@@ -359,11 +359,6 @@ renderBlock
                 health = 400;
             }};
         }
-        
-        redDoor = new Door("red-door"){{
-            requirements(Category.defense, with());
-            health = 100;
-        }};
 
         hexStair = new HexBlock("hex-stair"){{
             requirements(Category.defense, with());
