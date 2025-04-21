@@ -307,26 +307,26 @@ renderBlock
         }};
 
         largeSorter = new Sorter("large-sorter"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            requirements(Category.distribution, with());
             health = 320;
             size = 2;
         }};
 
         colossalSorter = new Sorter("colossal-sorter"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            requirements(Category.distribution, with());
             health = 720;
             size = 3;
         }};
 
         largeInvertedSorter = new Sorter("large-inverted-sorter"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            requirements(Category.distribution, with());
             health = 80;
             invert = true;
             size = 2;
         }};
 
         colossalInvertedSorter = new Sorter("colossal-inverted-sorter"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            requirements(Category.distribution, with());
             health = 80;
             invert = true;
             size = 3;
@@ -345,12 +345,12 @@ renderBlock
         }};
 
         borderlessSorter = new Sorter("borderless-sorter"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            requirements(Category.distribution, with());
             health = 80;
         }};
 
         darkBorderlessSorter = new Unloader("dark-borderless-sorter"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            requirements(Category.distribution, with());
             health = 80;
         }};
 
@@ -372,20 +372,20 @@ renderBlock
         }};
 
         shadowlessSorter = new Sorter("shadowless-sorter"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            requirements(Category.distribution, with());
             health = 80; 
             hasShadow = false;
         }};
 
         shadowlessLargeSorter = new Sorter("shadowless-large-sorter"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            requirements(Category.distribution, with());
             health = 320;
             size = 2; 
             hasShadow = false;
         }};
 
         shadowlessColossalSorter = new Sorter("shadowless-colossal-sorter"){{
-            requirements(Category.distribution, with(JavacamodItems.orange, 12));
+            requirements(Category.distribution, with());
             health = 720;
             size = 3; 
             hasShadow = false;
