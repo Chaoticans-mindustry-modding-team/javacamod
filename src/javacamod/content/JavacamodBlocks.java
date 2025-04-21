@@ -482,7 +482,7 @@ renderBlock
         }
 
         for (int i = 0; i < shadowlessChiseledSorters.length; i++) {
-            shadowlessChiseledSorters[i] = new Sorter("shadowless-chiseled-sorter" + (i + 1)){{
+            shadowlessChiseledSorters[i] = new Sorter("shadowless-chiseled-sorter-" + (i + 1)){{
                 requirements(Category.distribution, with());
                 health = 80;
                 rotate = true;
