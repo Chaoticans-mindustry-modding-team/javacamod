@@ -153,9 +153,10 @@ darkerUnloader, vial, hexVial, chain, chainTurn, chainT, chainX, chainD, chainDl
 renderBlock
 ;
     
-    public static Block createInert(String name, Category category, int sizeI) {
+    public static Block createInert(String name, Category categoryI, int sizeI) {
         return new Block(name){{
-            requirements(category, with());
+            requirements(categoryI, with());
+            category = categoryI;
             health = 80 * sizeI * sizeI;
             size = sizeI;
         }};
@@ -164,6 +165,7 @@ renderBlock
     public static Block createRotatable(String name, Category categoryI, int sizeI) {
         return new Block(name){{
             requirements(categoryI, with());
+            category = categoryI;
             health = 80 * sizeI * sizeI;
             size = sizeI;
             rotate = true;
