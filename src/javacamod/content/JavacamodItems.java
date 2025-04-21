@@ -10,7 +10,7 @@ public class JavacamodItems{
     public static Item[] items = new Item[itemNames.length];
   
     public static void load(){
-      for (int i = 0, i < items.length, i++) {
+      for (int i = 0; i < items.length; i++) {
         items[i] = new Item(itemNames[i], Color.valueOf(colors[i])){{
           hardness = 1;
           cost = 0.5f;
