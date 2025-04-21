@@ -1,5 +1,6 @@
 package javacamod.content;
 
+import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.defense.*;
 import mindustry.world.blocks.distribution.*;
