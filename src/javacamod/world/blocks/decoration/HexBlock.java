@@ -57,6 +57,7 @@ public class HexBlock extends Block{
 
 	public HexBlock(String name){
 		super(name);
+		destructible = true;
 		configurable = true;
 		saveConfig = true;
 		envEnabled = Env.any;
