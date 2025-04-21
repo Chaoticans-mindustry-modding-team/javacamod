@@ -52,7 +52,7 @@ public class JavacamodBlocks{
     public static String[]
     //color names
     //walls
-    wallColors = {"red", "darkred", "crimson", "green", "dark-green", "poison", "blue", "dark-blue", "navy", "white", "lightgray", "blackishwhite", "darkgray", "black", "yellow", "dark-yellow", "runic", "cyan", "dark-cyan", "deep-ocean", "pink", "dark-pink", "deep-pink", "orange", "dark-orange", "burntorange", "lime", "dark-lime", "fruit", "emerald", "dark-emerald", "deep-emerald", "sapphire", "dark-sapphire", "deep-sapphire", "purple", "dark-purple", "violet", "hotpink", "dark-hotpink", "deep-hotpink"},
+    wallColors = {"red", "darkred", "crimson", "green", "darkgreen", "poison", "blue", "darkblue", "navy", "white", "lightgray", "blackishwhite", "darkgray", "black", "yellow", "dark-yellow", "runic", "cyan", "dark-cyan", "deep-ocean", "pink", "dark-pink", "deep-pink", "orange", "dark-orange", "burnt-orange", "lime", "dark-lime", "fruit", "emerald", "dark-emerald", "deep-emerald", "sapphire", "dark-sapphire", "deep-sapphire", "purple", "dark-purple", "violet", "hotpink", "dark-hotpink", "deep-hotpink"},
     //doors
     doorColors = {"red", "darkred", "crimson", "green", "darkgreen", "poison", "blue", "darkblue", "navy", "white", "black", "yellow", "darkyellow", "runic", "cyan", "darkcyan", "deep-ocean", "pink", "darkpink", "deeppink", "orange", "darkorange", "burntorange", "lime", "darklime", "fruit", "emerald", "darkemerald", "deepemerald", "sapphire", "darksapphire", "deepsapphire", "purple", "darkpurple", "violet", "hotpink", "darkhotpink", "deephotpink"},
     //messages
@@ -157,6 +157,7 @@ renderBlock
         return new Block(name){{
             requirements(categoryI, with());
             category = categoryI;
+		    destructible = true;
             health = 80 * sizeI * sizeI;
             size = sizeI;
         }};
@@ -166,6 +167,7 @@ renderBlock
         return new Block(name){{
             requirements(categoryI, with());
             category = categoryI;
+		    destructible = true;
             health = 80 * sizeI * sizeI;
             size = sizeI;
             rotate = true;
