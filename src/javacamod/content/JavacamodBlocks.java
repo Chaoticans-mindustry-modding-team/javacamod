@@ -8,6 +8,7 @@ import mindustry.world.blocks.liquid.*;
 import mindustry.world.blocks.logic.*;
 import mindustry.world.blocks.power.*;
 import mindustry.world.blocks.sandbox.*;
+import mindustry.world.blocks.storage.*;
 
 import javacamod.world.blocks.logic.*;
 import javacamod.world.blocks.decoration.*;
