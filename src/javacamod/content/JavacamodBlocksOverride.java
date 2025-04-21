@@ -1,6 +1,6 @@
 package javacamod.content;
 
-import mindustry.world.*;
+import mindustry.content.*;
 import mindustry.world.blocks.logic.*;
 
 public class JavacamodBlocksOverride{
