@@ -51,6 +51,10 @@ public class HexSorter extends Block{
         return true;
     }
 
+	public void load(){
+		if (teamRegion != null) teamRegion = Core.atlas.error;
+	}
+	
     @Override
     public int minimapColor(Tile tile){
 		var build = (HexSorterBuild)tile.build;
