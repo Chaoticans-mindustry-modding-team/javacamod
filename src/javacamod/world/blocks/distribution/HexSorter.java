@@ -35,7 +35,7 @@ public class HexSorter extends Block{
 
         config(Integer.class, (HexSorterBuild tile, Integer colorI) -> {
             tile.colorI = colorI;
-            tile.color = Color.set(colorI);
+            tile.color = new Color(colorI);
         });
     }
 
