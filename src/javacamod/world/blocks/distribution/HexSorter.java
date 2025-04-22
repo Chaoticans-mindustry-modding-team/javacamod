@@ -1,4 +1,4 @@
-package mindustry.world.blocks.distribution;
+package javacamod.world.blocks.distribution;
 
 import arc.*;
 import arc.graphics.*;
@@ -7,7 +7,6 @@ import arc.math.*;
 import arc.scene.ui.layout.*;
 import arc.util.*;
 import arc.util.io.*;
-import mindustry.annotations.Annotations.*;
 import mindustry.entities.units.*;
 import mindustry.gen.*;
 import mindustry.logic.*;
@@ -42,7 +41,7 @@ public class HexSorter extends Block{
 
     @Override
     public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
-        Draw.color(Tmp.c1.set(plan.colorI));
+        Draw.color(plan.config == null ? Color.white : (plan.config instanceof Integer i ? Tmp.c1.set(i) : Color.white));
         Draw.rect("center", plan.drawx(), plan.drawy());
         Draw.color();
     }
@@ -54,8 +53,8 @@ public class HexSorter extends Block{
 
     @Override
     public int minimapColor(Tile tile){
-		var build = (HexBuild)tile.build;
-		return build != null && showMinimapColor ? build.colorI : 0;
+		var build = (HexSorterBuild)tile.build;
+		return build != null ? build.colorI : 0;
     }
 
     @Override
@@ -65,7 +64,7 @@ public class HexSorter extends Block{
     
     public class HexSorterBuild extends Building{
         public int colorI = 0xffffff_ff;
-        public Color color = Colors.white;
+        public Color color = Color.white;
 
         @Override
         public void configured(Unit player, Object value){
