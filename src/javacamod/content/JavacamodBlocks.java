@@ -12,7 +12,7 @@ import mindustry.world.blocks.storage.*;
 
 import javacamod.world.blocks.logic.*;
 import javacamod.world.blocks.decoration.*;
-//import javacamod.world.blocks.distribution.*;
+import javacamod.world.blocks.distribution.*;
 
 import static mindustry.type.ItemStack.*;
 
@@ -482,7 +482,7 @@ renderBlock
         }
 
         for (int i = 0; i < hexChiseledSorters.length; i++) {
-            hexChiseledSorters[i] = new HexBlock("hex-chiseled-sorter" + (i + 1)){{
+            hexChiseledSorters[i] = new HexSorter("hex-chiseled-sorter" + (i + 1)){{
                 requirements(Category.distribution, with());
                 health = 80;
                 rotate = true;
