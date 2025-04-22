@@ -19,7 +19,7 @@ import static mindustry.Vars.*;
 public class HexSorter extends Block{
     public boolean invert;
 
-    public Sorter(String name){
+    public HexSorter(String name){
         super(name);
         update = false;
         destructible = true;
@@ -153,7 +153,7 @@ public class HexSorter extends Block{
 		public void control(LAccess type, double p1, double p2, double p3, double p4){
 			if(type == LAccess.color){
 				color = Tmp.c1.fromDouble(p1);
-                colorI = color.rgba()
+                colorI = color.rgba();
 			}
 
             if(!headless){
