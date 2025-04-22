@@ -56,7 +56,7 @@ public class HexBlock extends Block{
 				return;
 			}
 			if (asymmetrical) {
-        req.rotation = planRotation(req.rotation ^ (((x ^ invertFlip ^ ((req.rotation & 1) == 0))) ? 2 : 0));
+        req.rotation = planRotation(req.rotation ^ (((x ^ invertFlip ^ ((req.rotation & 1) == 0))) ? 0 : 2));
 				req.block = mirror;
 				return;
 			}
