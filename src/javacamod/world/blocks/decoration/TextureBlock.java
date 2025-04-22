@@ -53,7 +53,7 @@ public class TextureBlock extends Block {
 	
 	public class TextureBuild extends Building{
 		public String regionName = defaultRegionName;
-		public TextureRegion region = defaultRegion;
+		public TextureRegion drawnRegion = defaultRegion;
 
 		//@Override
 		public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
@@ -82,16 +82,11 @@ public class TextureBlock extends Block {
 			float drawOffsetX = x - size*4;
 			float drawOffsetY = y - size*4;
 			float drawSize = size*8;
-            for (float i = 0; i < drawSize; i += region.width/4) {
-                for (float j = 0; j < drawSize; j += region.height/4) {
-										if ((rotation & 1) == 0) {
-											float x = i + region.width/8 + drawOffsetX;
-											float y = j + region.height/8 + drawOffsetY;
-										} else {
-											float x = i + region.height/8 + drawOffsetX;
-											float y = j + region.width/8 + drawOffsetY;
-										}
-                    Draw.rect(region, x, y, rotation*90);
+			float w = ((rotation & 1) == 0 ? drawnRegion.width : drawnRegion.height)/8;
+			float h = ((rotation & 1) == 0 ? drawnRegion.height : drawnRegion.width)/8;
+            for (float i = 0; i < drawSize; i += drawnRegion.width/4) {
+                for (float j = 0; j < drawSize; j += drawnRegion.height/4) {
+                    Draw.rect(drawnRegion, i + w + drawOffsetX, j + h + drawOffsetY, rotation*90);
                 };
             };
 		}
@@ -102,7 +97,7 @@ public class TextureBlock extends Block {
                 t.margin(6f);
                 t.field(regionName, text -> {
                     configure(text);
-										region = Core.atlas.find(regionName);
+										drawnRegion = Core.atlas.find(regionName);
                 }).width(240).get();
             });
         }
@@ -132,7 +127,7 @@ public class TextureBlock extends Block {
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			regionName = read.str();
-			region = Core.atlas.find(regionName);
+			drawnRegion = Core.atlas.find(regionName);
 		}
 	}
 }
