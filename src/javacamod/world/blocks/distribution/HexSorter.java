@@ -1,6 +1,7 @@
 package mindustry.world.blocks.distribution;
 
 import arc.*;
+import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.scene.ui.layout.*;
@@ -9,7 +10,9 @@ import arc.util.io.*;
 import mindustry.annotations.Annotations.*;
 import mindustry.entities.units.*;
 import mindustry.gen.*;
+import mindustry.logic.*;
 import mindustry.type.*;
+import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
 import mindustry.world.meta.*;
@@ -31,7 +34,7 @@ public class HexSorter extends Block{
         saveConfig = true;
         clearOnDoubleTap = true;
 
-        config(Integer.class, (SorterBuild tile, Integer colorI) -> {
+        config(Integer.class, (HexSorterBuild tile, Integer colorI) -> {
             tile.colorI = colorI;
             tile.color = Tmp.c1.set(colorI);
         });
@@ -39,7 +42,7 @@ public class HexSorter extends Block{
 
     @Override
     public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
-        Draw.color(color);
+        Draw.color(Tmp.c1.set(plan.colorI));
         Draw.rect("center", plan.drawx(), plan.drawy());
         Draw.color();
     }
@@ -51,7 +54,8 @@ public class HexSorter extends Block{
 
     @Override
     public int minimapColor(Tile tile){
-        return colorI;
+		var build = (HexBuild)tile.build;
+		return build != null && showMinimapColor ? build.colorI : 0;
     }
 
     @Override
@@ -82,12 +86,6 @@ public class HexSorter extends Block{
             }
 
             super.draw();
-        }
-
-        @Override
-        public void drawSelect(){
-            super.drawSelect();
-            drawItemSelection(sortItem);
         }
 
         @Override
@@ -161,6 +159,12 @@ public class HexSorter extends Block{
             }
 			
 			super.control(type, p1, p2, p3, p4);
+		}
+	    
+		@Override
+		public double sense(LAccess sensor){
+			if(sensor == LAccess.color) return Tmp.c1.set(color).toDoubleBits();
+			return super.sense(sensor);
 		}
         
         @Override
