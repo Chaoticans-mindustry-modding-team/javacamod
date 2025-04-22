@@ -34,6 +34,7 @@ public class HexSorter extends Block{
         clearOnDoubleTap = true;
 
         config(Integer.class, (HexSorterBuild tile, Integer colorI) -> {
+		Log.info("config")
             tile.colorI = colorI;
             tile.color = Tmp.c1.set(colorI);
         });
@@ -41,6 +42,7 @@ public class HexSorter extends Block{
 
     @Override
     public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
+		Log.info("drawplan")
         Draw.color(plan.config == null ? Color.white : (plan.config instanceof Integer i ? Tmp.c1.set(i) : Color.white));
         Draw.rect("center", plan.drawx(), plan.drawy());
         Draw.color();
@@ -143,6 +145,7 @@ public class HexSorter extends Block{
         
 		@Override
 		public void control(LAccess type, double p1, double p2, double p3, double p4){
+		Log.info("logiccontrol")
 			if(type == LAccess.color){
 				color = Tmp.c1.fromDouble(p1);
                 colorI = color.rgba();
@@ -157,7 +160,7 @@ public class HexSorter extends Block{
 	    
 		@Override
 		public double sense(LAccess sensor){
-			if(sensor == LAccess.color) return Tmp.c1.set(color).toDoubleBits();
+			if(sensor == LAccess.color) return color.toDoubleBits();
 			return super.sense(sensor);
 		}
         
@@ -179,6 +182,7 @@ public class HexSorter extends Block{
 
         @Override
         public void read(Reads read, byte revision){
+		Log.info("worldload")
             super.read(read, revision);
             colorI = read.i();
             color = Tmp.c1.set(colorI);
