@@ -354,18 +354,18 @@ renderBlock
             health = 80;
         }};
 
-        hexSorter = new HexBlock("hex-sorter"){{
+        hexSorter = new HexSorter("hex-sorter"){{
             requirements(Category.distribution, with());
             health = 80;
         }};
 
-        largeHexSorter = new HexBlock("large-hex-sorter"){{
+        largeHexSorter = new HexSorter("large-hex-sorter"){{
             requirements(Category.distribution, with());
             health = 320;
             size = 2;
         }};
 
-        colossalHexSorter = new HexBlock("colossal-hex-sorter"){{
+        colossalHexSorter = new HexSorter("colossal-hex-sorter"){{
             requirements(Category.distribution, with());
             health = 720;
             size = 3;
@@ -482,7 +482,7 @@ renderBlock
         }
 
         for (int i = 0; i < hexChiseledSorters.length; i++) {
-            hexChiseledSorters[i] = new HexBlock("hex-chiseled-sorter" + (i + 1)){{
+            hexChiseledSorters[i] = new HexSorter("hex-chiseled-sorter" + (i + 1)){{
                 requirements(Category.distribution, with());
                 health = 80;
                 rotate = true;
