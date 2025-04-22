@@ -277,10 +277,10 @@ renderBlock
 			asymmetrical = true;
         }};
 
-		(HexBlock)hexLongSlope1.mirror = hexLongSlope3;
-		(HexBlock)hexLongSlope2.mirror = hexLongSlope4;
-		(HexBlock)hexLongSlope3.mirror = hexLongSlope1;
-		(HexBlock)hexLongSlope4.mirror = hexLongSlope2;
+		((HexBlock)hexLongSlope1).mirror = hexLongSlope3;
+		((HexBlock)hexLongSlope2).mirror = hexLongSlope4;
+		((HexBlock)hexLongSlope3).mirror = hexLongSlope1;
+		((HexBlock)hexLongSlope4).mirror = hexLongSlope2;
 
         hexSlab = new HexBlock("hex-slab"){{
             requirements(Category.defense, with());
