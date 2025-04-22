@@ -1,26 +1,25 @@
-package javacamod.world.blocks.distribution;
+package mindustry.world.blocks.distribution;
 
 import arc.*;
-import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.scene.ui.layout.*;
 import arc.util.*;
 import arc.util.io.*;
+import mindustry.annotations.Annotations.*;
 import mindustry.entities.units.*;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
 import mindustry.world.meta.*;
-import javacamod.world.blocks.decoration.HexBlock;
 
 import static mindustry.Vars.*;
 
-public class HexSorter extends HexBlock{
+public class HexSorter extends Block{
     public boolean invert;
 
-    public HexSorter(String name){
+    public Sorter(String name){
         super(name);
         update = false;
         destructible = true;
@@ -32,7 +31,17 @@ public class HexSorter extends HexBlock{
         saveConfig = true;
         clearOnDoubleTap = true;
 
-        configClear((HexSorterBuild tile) -> tile.color_flipped.intComponent = 0);
+        config(Integer.class, (SorterBuild tile, Integer colorI) -> {
+            tile.colorI = colorI;
+            tile.color = Tmp.c1.set(colorI);
+        });
+    }
+
+    @Override
+    public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
+        Draw.color(color);
+        Draw.rect("center", plan.drawx(), plan.drawy());
+        Draw.color();
     }
 
     @Override
@@ -40,7 +49,46 @@ public class HexSorter extends HexBlock{
         return true;
     }
 
-    public class HexSorterBuild extends HexBuild{
+    @Override
+    public int minimapColor(Tile tile){
+        return colorI;
+    }
+
+    @Override
+    protected TextureRegion[] icons(){
+        return new TextureRegion[]{Core.atlas.find("source-bottom"), region};
+    }
+    
+    public class HexSorterBuild extends Building{
+        public int colorI = 0xffffff_ff;
+        public Color color = Colors.white;
+
+        @Override
+        public void configured(Unit player, Object value){
+            super.configured(player, value);
+
+            if(!headless){
+                renderer.minimap.update(tile);
+            }
+        }
+
+        @Override
+        public void draw(){
+
+            {
+                Draw.color(color);
+                Fill.square(x, y, tilesize/2f - 0.00001f);
+                Draw.color();
+            }
+
+            super.draw();
+        }
+
+        @Override
+        public void drawSelect(){
+            super.drawSelect();
+            drawItemSelection(sortItem);
+        }
 
         @Override
         public boolean acceptItem(Building source, Item item){
@@ -63,12 +111,8 @@ public class HexSorter extends HexBlock{
             if(dir == -1) return null;
             Building to;
 
-            Color col = new Color();
-            col.rgba8888(((HexSorterBuild)tile.build).color_flipped.intComponent);
-            System.out.println(color_flipped.intComponent + " " + item.color + " " + item.color);
-            if(((item.color == col) != invert) == enabled){
+            if(((item.color == color) != invert) == enabled){
                 //prevent 3-chains
-                Log.info("Color identical.");
                 if(isSame(source) && isSame(nearby(dir))){
                     return null;
                 }
@@ -97,17 +141,49 @@ public class HexSorter extends HexBlock{
         }
 
         @Override
+        public void buildConfiguration(Table table){
+			table.button(Icon.pencil, Styles.cleari, () -> {
+				ui.picker.show(color, true, res -> configure(res.rgba()));
+				deselect();
+			}).size(40f);
+        }
+
+        
+		@Override
+		public void control(LAccess type, double p1, double p2, double p3, double p4){
+			if(type == LAccess.color){
+				color = Tmp.c1.fromDouble(p1);
+                colorI = color.rgba()
+			}
+
+            if(!headless){
+                renderer.minimap.update(tile);
+            }
+			
+			super.control(type, p1, p2, p3, p4);
+		}
+        
+        @Override
+        public Integer config(){
+            return colorI;
+        }
+
+        @Override
         public byte version(){
-            return 2;
+            return 1;
+        }
+
+        @Override
+        public void write(Writes write){
+            super.write(write);
+            write.i(colorI);
         }
 
         @Override
         public void read(Reads read, byte revision){
             super.read(read, revision);
-
-            if(revision == 1){
-                new DirectionalItemBuffer(20).read(read);
-            }
+            colorI = read.i();
+            color = Tmp.c1.set(colorI);
         }
     }
 }
