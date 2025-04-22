@@ -56,11 +56,11 @@ public class HexBlock extends Block{
 				return;
 			}
 			if (asymmetrical) {
-				req.block = mirror;
         req.rotation = planRotation(req.rotation ^ (((x ^ invertFlip ^ ((req.rotation & 1) == 0))) ? 2 : 0));
+				req.block = mirror;
 				return;
 			}
-			super.flipRotation(req, x);
+	    if (x ^ ((req.rotation & 1) == 1) ^ invertFlip) req.rotation = planRotation(req.rotation ^ 2);
 		}
 
 	public HexBlock(String name){
