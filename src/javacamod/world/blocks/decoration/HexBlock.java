@@ -40,6 +40,9 @@ public class HexBlock extends Block{
 
 	public boolean diagonalSymmetryAxis = false;
 
+	public boolean asymmetrical = false;
+	public Block mirror;
+
 	@Override
 	public int minimapColor(Tile tile){
 		var build = (HexBuild)tile.build;
@@ -50,6 +53,11 @@ public class HexBlock extends Block{
     public void flipRotation(BuildPlan req, boolean x){
 			if (diagonalSymmetryAxis) {
         req.rotation = planRotation(req.rotation ^ ((x ^ invertFlip) ? 3 : 1));
+				return;
+			}
+			if (asymmetrical) {
+				req.block = mirror;
+        req.rotation = planRotation(req.rotation ^ ((x ^ invertFlip ^ ((req.rotation & 1) == 0))) ? 2 : 0));
 				return;
 			}
 			super.flipRotation(req, x);
