@@ -47,6 +47,7 @@ public class TextureBlock extends Block {
 	};
 	
 	public void load() {
+		super.load();
 		defaultRegion = Core.atlas.find(defaultRegionName);
 	}
 	
