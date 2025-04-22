@@ -745,7 +745,7 @@ renderBlock
             hasShadow = false;
             size = 16;
         }};
-
+/*
         textureMessageBlock = new TextureMessageBlock("texture-message-block"){{
             requirements(Category.logic, with());
             rotate = true;
@@ -756,7 +756,7 @@ renderBlock
             rotate = true;
             hasShadow = false;
         }};
-        
+        */
         lightSourceTiny = new LightBlock("tiny-light-source"){{
             requirements(Category.power, with());
             radius = 50;
