@@ -239,37 +239,48 @@ renderBlock
             requirements(Category.defense, with());
             health = 100; 
             rotate = true;
+		diagonalSymmetryAxis = true;
         }};
 
         hexSlope = new HexBlock("hex-slope"){{
             requirements(Category.defense, with());
             health = 100; 
             rotate = true;
+		diagonalSymmetryAxis = true;
         }};
 
         hexLongSlope1 = new HexBlock("hex-long-slope1"){{
             requirements(Category.defense, with());
             health = 100; 
             rotate = true;
+			asymmetrical = true;
         }};
 
         hexLongSlope2 = new HexBlock("hex-long-slope2"){{
             requirements(Category.defense, with());
             health = 100; 
             rotate = true;
+			asymmetrical = true;
         }};
 
         hexLongSlope3 = new HexBlock("hex-long-slope3"){{
             requirements(Category.defense, with());
             health = 100; 
             rotate = true;
+			asymmetrical = true;
         }};
 
         hexLongSlope4 = new HexBlock("hex-long-slope4"){{
             requirements(Category.defense, with());
             health = 100; 
             rotate = true;
+			asymmetrical = true;
         }};
+
+		hexLongSlope1.mirror = hexLongSlope3;
+		hexLongSlope2.mirror = hexLongSlope4;
+		hexLongSlope3.mirror = hexLongSlope1;
+		hexLongSlope4.mirror = hexLongSlope2;
 
         hexSlab = new HexBlock("hex-slab"){{
             requirements(Category.defense, with());
@@ -287,6 +298,7 @@ renderBlock
             requirements(Category.defense, with());
             health = 100;
             rotate = true;
+		diagonalSymmetryAxis = true;
         }};
 
         hexCenterChunk = new HexBlock("hex-center-chunk"){{
