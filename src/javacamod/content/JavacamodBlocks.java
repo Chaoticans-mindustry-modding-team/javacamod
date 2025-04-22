@@ -482,7 +482,7 @@ renderBlock
         }
 
         for (int i = 0; i < hexChiseledSorters.length; i++) {
-            hexChiseledSorters[i] = new HexSorter("hex-chiseled-sorter" + (i + 1)){{
+            hexChiseledSorters[i] = new HexBlock("hex-chiseled-sorter" + (i + 1)){{
                 requirements(Category.distribution, with());
                 health = 80;
                 rotate = true;
