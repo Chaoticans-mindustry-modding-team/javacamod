@@ -56,12 +56,7 @@ public class HexSorter extends Block{
 		var build = (HexSorterBuild)tile.build;
 		return build != null ? build.colorI : 0;
     }
-
-    @Override
-    protected TextureRegion[] icons(){
-        return new TextureRegion[]{Core.atlas.find("source-bottom"), region};
-    }
-    
+	
     public class HexSorterBuild extends Building{
         public int colorI = 0xffffff_ff;
         public Color color = Color.white;
