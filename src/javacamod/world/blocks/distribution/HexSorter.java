@@ -52,7 +52,7 @@ public class HexSorter extends Block{
     }
 
 	public void load(){
-		if (teamRegion != null) teamRegion = Core.atlas.error;
+		if (teamRegion == null) teamRegion = Core.atlas.find("error");
 	}
 	
     @Override
