@@ -31,20 +31,28 @@ import mindustry.world.blocks.*;
 import static mindustry.Vars.*;
 
 public class TextureBlock extends Block {
-    
-    public TextureBlock(String name){
+
+	public String defaultRegionName = "copper-wall";
+	
+  public TextureBlock(String name){
 		super(name);
 		update = true;
 		configurable = true;
 		saveConfig = true;
 		envEnabled |= Env.space;
-		swapDiagonalPlacement = true;
 
 		config(String.class, (TextureBuild tile, String value) -> tile.regionName = value);
 	};
 
+	public TextureRegion defaultRegion;
+	
+	public void load() {
+		defaultRegion = Core.atlas.find(defaultName);
+	}
+	
 	public class TextureBuild extends Building{
-		public String regionName = "copper-wall";
+		public String regionName = defaultRegionName;
+		public TextureRegion region = defaultRegion;
 
 		//@Override
 		public void drawPlanConfig(BuildPlan plan, Eachable<BuildPlan> list){
@@ -52,10 +60,17 @@ public class TextureBlock extends Block {
 			float drawOffsetX = plan.drawx() - size*4;
 			float drawOffsetY = plan.drawy() - size*4;
 			float drawSize = size*8;
-			TextureRegion tileRegion = Core.atlas.find(plan.config instanceof String s ? s : "copper-wall");
+			TextureRegion tileRegion = plan.config instanceof String s ? Core.atlas.find(s) : defaultRegion;
             for (float i = 0; i < drawSize; i += tileRegion.width/4) {
                 for (float j = 0; j < drawSize; j += tileRegion.height/4) {
-                    Draw.rect(tileRegion, i + tileRegion.width/8 + drawOffsetX, j + tileRegion.height/8 + drawOffsetY, plan.rotation*90);
+										if ((plan.rotation & 1) == 0) {
+											float x = i + tileRegion.width/8 + drawOffsetX;
+											float y = j + tileRegion.height/8 + drawOffsetY;
+										} else {
+											float x = i + tileRegion.height/8 + drawOffsetX;
+											float y = j + tileRegion.width/8 + drawOffsetY;
+										}
+                    Draw.rect(tileRegion, x, y, plan.rotation*90);
                 };
             };
 		}
@@ -66,10 +81,16 @@ public class TextureBlock extends Block {
 			float drawOffsetX = x - size*4;
 			float drawOffsetY = y - size*4;
 			float drawSize = size*8;
-            TextureRegion tileRegion = Core.atlas.find(regionName);
-            for (float i = 0; i < drawSize; i += tileRegion.width/4) {
-                for (float j = 0; j < drawSize; j += tileRegion.height/4) {
-                    Draw.rect(tileRegion, i + tileRegion.width/8 + drawOffsetX, j + tileRegion.height/8 + drawOffsetY, rotation*90);
+            for (float i = 0; i < drawSize; i += region.width/4) {
+                for (float j = 0; j < drawSize; j += region.height/4) {
+										if ((plan.rotation & 1) == 0) {
+											float x = i + region.width/8 + drawOffsetX;
+											float y = j + region.height/8 + drawOffsetY;
+										} else {
+											float x = i + region.height/8 + drawOffsetX;
+											float y = j + region.width/8 + drawOffsetY;
+										}
+                    Draw.rect(region, x, y, rotation*90);
                 };
             };
 		}
@@ -80,6 +101,7 @@ public class TextureBlock extends Block {
                 t.margin(6f);
                 t.field(regionName, text -> {
                     configure(text);
+										region = Core.atlas.find(regionName);
                 }).width(240).get();
             });
         }
@@ -109,6 +131,7 @@ public class TextureBlock extends Block {
 		public void read(Reads read, byte revision){
 			super.read(read, revision);
 			regionName = read.str();
+			region = Core.atlas.find(regionName);
 		}
 	}
 }
