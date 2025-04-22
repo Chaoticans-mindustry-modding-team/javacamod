@@ -33,6 +33,8 @@ import static mindustry.Vars.*;
 public class TextureBlock extends Block {
 
 	public String defaultRegionName = "copper-wall";
+
+	public TextureRegion defaultRegion;
 	
   public TextureBlock(String name){
 		super(name);
@@ -43,11 +45,9 @@ public class TextureBlock extends Block {
 
 		config(String.class, (TextureBuild tile, String value) -> tile.regionName = value);
 	};
-
-	public TextureRegion defaultRegion;
 	
 	public void load() {
-		defaultRegion = Core.atlas.find(defaultName);
+		defaultRegion = Core.atlas.find(defaultRegionName);
 	}
 	
 	public class TextureBuild extends Building{
@@ -83,7 +83,7 @@ public class TextureBlock extends Block {
 			float drawSize = size*8;
             for (float i = 0; i < drawSize; i += region.width/4) {
                 for (float j = 0; j < drawSize; j += region.height/4) {
-										if ((plan.rotation & 1) == 0) {
+										if ((rotation & 1) == 0) {
 											float x = i + region.width/8 + drawOffsetX;
 											float y = j + region.height/8 + drawOffsetY;
 										} else {
