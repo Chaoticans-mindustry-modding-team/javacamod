@@ -88,6 +88,7 @@ public class RBExecutor {
     counter = 0;
     int runLength = 0;
     Object interm0 = 0;
+	  int memInd = 0;
     while (counter < instructions.length) {
       try {
         String subInstruction = instructions[counter].subInstruction;
@@ -223,16 +224,16 @@ public class RBExecutor {
                 setMem(parsePointer(args[0]), args[1]);
                 break;
               case "VC2":
-		int memInd = parsePointer(args[0]);
+		memInd = parsePointer(args[0]);
 		if (getMem(memInd) instanceof Vec2 v) {
 			if (getMem(parsePointer(args[1])) instanceof BigDecimal n) v.x = n.floatValue();
 			if (getMem(parsePointer(args[2])) instanceof BigDecimal n) v.y = n.floatValue();
 			break;
 		}
-                if (getMem(parsePointer(args[1])) instanceof BigDecimal x && getMem(parsePointer(args[2])) instanceof BigDecimal y) setMem(memInd, Vec2(x.floatValue(), y.floatValue()));
+                if (getMem(parsePointer(args[1])) instanceof BigDecimal x && getMem(parsePointer(args[2])) instanceof BigDecimal y) setMem(memInd, new Vec2(x.floatValue(), y.floatValue()));
                 break;
               case "VC3":
-		int memInd = parsePointer(args[0]);
+		memInd = parsePointer(args[0]);
 		if (getMem(memInd) instanceof Vec3 v) {
 			if (getMem(parsePointer(args[1])) instanceof BigDecimal n) v.x = n.floatValue();
 			if (getMem(parsePointer(args[2])) instanceof BigDecimal n) v.y = n.floatValue();
@@ -242,10 +243,10 @@ public class RBExecutor {
                 if (getMem(parsePointer(args[1])) instanceof BigDecimal x && getMem(parsePointer(args[2])) instanceof BigDecimal y && getMem(parsePointer(args[3])) instanceof BigDecimal z) setMem(memInd, new Vec3(x.floatValue(), y.floatValue(), z.floatValue()));
                 break;
               case "COL":
-		int memInd = parsePointer(args[0]);
+		memInd = parsePointer(args[0]);
                 if (args.length == 2) {
                   Color nCol = Colors.get(args[1].toUpperCase());
-                  if (nCol != null) setMem(memInf, nCol);
+                  if (nCol != null) setMem(memInd, nCol);
                   setMem(memInd, Color.valueOf(args[1]));
                   break;
                 }
