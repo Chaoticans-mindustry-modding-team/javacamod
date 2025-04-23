@@ -159,7 +159,7 @@ public class RenderBlock extends Block {
 									if (!f.exists()) break;
 								}
 							}
-							tmpSound.load(f)
+							tmpSound.load(f);
 							tmpSound.at(x,y,p,v);
 						}
 						break;
