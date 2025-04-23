@@ -63,6 +63,8 @@ public class RenderBlock extends Block {
 
 		public String error = "";
 
+		public static Sound tmpSound = new Sound();
+
 		public void updateTile(){
 			buffer.context[0] = x;
 			buffer.context[1] = y;
@@ -157,7 +159,8 @@ public class RenderBlock extends Block {
 									if (!f.exists()) break;
 								}
 							}
-							new Sound(f).at(x,y,p,v);
+							tmpSound.load(f)
+							tmpSound.at(x,y,p,v);
 						}
 						break;
 				}
