@@ -63,7 +63,7 @@ public class RenderBlock extends Block {
 
 		public String error = "";
 
-		public static final Sound tmpSound = new Sound();
+		public Sound tmpSound = new Sound();
 
 		public void updateTile(){
 			buffer.context[0] = x;
