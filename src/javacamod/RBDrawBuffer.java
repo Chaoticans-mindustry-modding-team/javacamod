@@ -18,7 +18,11 @@ public class RBDrawBuffer {
   public void append(String type, Object[] args) {
     if (currentSize >= sizeLimit) return;
     drawType[currentSize] = type;
-    drawArgs[currentSize] = args;
+    if (drawArgs[currentSize] == null) drawArgs[currentSize] = new Object[4];
+    drawArgs[currentSize][0] = args[0];
+    drawArgs[currentSize][1] = args[1];
+    drawArgs[currentSize][2] = args[2];
+    drawArgs[currentSize][3] = args[3];
     currentSize++;
   }
 }
