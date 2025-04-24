@@ -57,7 +57,7 @@ public class RenderBlock extends Block {
 		public String codeInput = "";
 		public int configColor = 0xffffff_ff;
 		
-		public RBInstruction[] instructions;
+		public RBInstruction[] instructions = new RBInstruction[0];
 		public RBDrawBuffer buffer = new RBDrawBuffer(4096);
 		public RBExecutor exec = new RBExecutor(buffer, 16384);
 
