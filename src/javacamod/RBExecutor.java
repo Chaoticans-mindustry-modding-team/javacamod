@@ -21,6 +21,7 @@ public class RBExecutor {
   public byte colorStackPos = 0;
   
   public RBDrawBuffer buffer;
+  public RBDrawBuffer bufferOut;
   public int runLengthLimit;
   public int configColor = 0xffffff_ff;
 
@@ -45,7 +46,7 @@ public class RBExecutor {
 	public static float[] hsv = new float[3];
 
   public RBExecutor(RBDrawBuffer bufferIn, int runLengthLimitIn) {
-    buffer = bufferIn;
+    bufferOut = bufferIn;
     runLengthLimit = runLengthLimitIn;
   }
 
@@ -82,8 +83,8 @@ public class RBExecutor {
     }
 
     // actually run the code
-	  pos.x = buffer.context[0];
-	  pos.y = buffer.context[1];
+	  pos.x = bufferOut.context[0];
+	  pos.y = bufferOut.context[1];
 
     counter = 0;
     int runLength = 0;
@@ -98,6 +99,11 @@ public class RBExecutor {
             if (buffer.currentSize >= buffer.sizeLimit) break;
             switch (subInstruction) {
               case "CLR":
+                buffer.currentSize = 0;
+                buffer.append("clear", tmpArr);
+                break;
+              case "FSH":
+                for (int i = 0; i < buffer.currentSize; i++) bufferOut.append(buffer.drawType[i], buffer.drawArgs[i]);
                 buffer.currentSize = 0;
                 break;
               case "COL":
