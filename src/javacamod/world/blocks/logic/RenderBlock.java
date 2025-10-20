@@ -84,9 +84,13 @@ public class RenderBlock extends Block {
 			TextureRegion region = Core.atlas.find("blank");
 			float color = Color.white.toFloatBits();
 			Draw.z(Layer.blockProp + 1);
+			boolean cleared = false;
 			for (int i = 0; i < buffer.currentSize; i++) {
 				args = buffer.drawArgs[i];
 				switch (buffer.drawType[i]) {
+					case "clear":
+						cleared = true
+						break;
 					case "line":
 						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b) Lines.line(region, x + a.x, y + a.y, x + b.x, y + b.y, true);
 						break;
@@ -165,6 +169,7 @@ public class RenderBlock extends Block {
 						break;
 				}
 			}
+			if (cleared) buffer.currentSize = 0;
 		}
 
 		// method taken from arc.graphics.g2d.Draw because it's too recent
