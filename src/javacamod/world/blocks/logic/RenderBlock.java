@@ -89,7 +89,7 @@ public class RenderBlock extends Block {
 				args = buffer.drawArgs[i];
 				switch (buffer.drawType[i]) {
 					case "clear":
-						cleared = true
+						cleared = true;
 						break;
 					case "line":
 						if (args[0] instanceof Vec2 a && args[1] instanceof Vec2 b) Lines.line(region, x + a.x, y + a.y, x + b.x, y + b.y, true);
