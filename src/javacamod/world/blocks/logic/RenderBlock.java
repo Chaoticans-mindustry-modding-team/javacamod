@@ -1,4 +1,4 @@
-# broken at the moment.
+/*
 package javacamod.world.blocks.logic;
 
 import arc.graphics.*;
@@ -271,3 +271,4 @@ public class RenderBlock extends Block {
 		}
 	}
 }
+*/
