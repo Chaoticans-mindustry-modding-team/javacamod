@@ -203,7 +203,7 @@ public class ScreenEditDialog extends BaseDialog{
 
 				var button = p.button(Tex.whiteui, Styles.squareTogglei, 20, () -> {
 					curColor = block.palette[fi];
-				}).size(44).checked(b -> curColor == block.palette[fi]).get();
+				}).size(24).checked(b -> curColor == block.palette[fi]).get();
 				button.getStyle().imageUpColor = new Color(block.palette[i]);
 			}
 		});
