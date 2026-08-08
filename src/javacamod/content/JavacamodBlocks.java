@@ -563,81 +563,81 @@ renderBlock
         screenSmall = new ScreenBlock("screen-small"){{
             requirements(Category.logic, with());
             hasShadow = false;
-            screenSize = 8;
+            canvasSize = 8;
         }};
 
         screen = new ScreenBlock("screen"){{
             requirements(Category.logic, with());
             size = 2;
             hasShadow = false;
-            screenSize = 16;
+            canvasSize = 16;
         }};
 
         screenLarge = new ScreenBlock("screen-large"){{
             requirements(Category.logic, with());
             size = 3;
             hasShadow = false;
-            screenSize = 24;
+            canvasSize = 24;
         }};
 
         borderlessScreenSmall = new ScreenBlock("borderless-screen-small"){{
             requirements(Category.logic, with());
             hasShadow = false;
-            screenSize = 8;
+            canvasSize = 8;
         }};
 
         borderlessScreen = new ScreenBlock("borderless-screen"){{
             requirements(Category.logic, with());
             size = 2;
             hasShadow = false;
-            screenSize = 16;
+            canvasSize = 16;
         }};
 
         borderlessScreenLarge = new ScreenBlock("borderless-screen-large"){{
             requirements(Category.logic, with());
             size = 3;
             hasShadow = false;
-            screenSize = 24;
+            canvasSize = 24;
         }};
 
         hDScreenSmall = new ScreenBlock("hd-screen-small"){{
             requirements(Category.logic, with());
             hasShadow = false;
-            screenSize = 16;
+            canvasSize = 16;
         }};
 
         hDScreen = new ScreenBlock("hd-screen"){{
             requirements(Category.logic, with());
             size = 2;
             hasShadow = false;
-            screenSize = 32;
+            canvasSize = 32;
         }};
 
         hDScreenLarge = new ScreenBlock("hd-screen-large"){{
             requirements(Category.logic, with());
             size = 3;
             hasShadow = false;
-            screenSize = 48;
+            canvasSize = 48;
         }};
 
         hDBorderlessScreenSmall = new ScreenBlock("hd-borderless-screen-small"){{
             requirements(Category.logic, with());
             hasShadow = false;
-            screenSize = 16;
+            canvasSize = 16;
         }};
 
         hDBorderlessScreen = new ScreenBlock("hd-borderless-screen"){{
             requirements(Category.logic, with());
             size = 2;
             hasShadow = false;
-            screenSize = 32;
+            canvasSize = 32;
         }};
 
         hDBorderlessScreenLarge = new ScreenBlock("hd-borderless-screen-large"){{
             requirements(Category.logic, with());
             size = 3;
             hasShadow = false;
-            screenSize = 48;
+            canvasSize = 48;
         }};
 
         invisSwitch = new SwitchBlock("invis-switch"){{
