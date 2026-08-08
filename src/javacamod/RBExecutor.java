@@ -86,13 +86,13 @@ public class RBExecutor {
 		}
 
 		// actually run the code
-		pos.x = bufferOut.context[0];
-		pos.y = bufferOut.context[1];
+		pos.x = build.x;
+		pos.y = build.y;
 
 		counter = 0;
 		int runLength = 0;
 		Object interm0 = 0;
-		int memInd = 0;
+		int memInd;
 		while (counter < instructions.length) {
 			try {
 				String subInstruction = instructions[counter].subInstruction;

@@ -7,8 +7,6 @@ public class RBDrawBuffer {
 	public int currentSize = 0;
 	public int sizeLimit;
 
-	public float[] context = {0,0};
-
 	public RBDrawBuffer(int limit) {
 		sizeLimit = limit;
 		drawType = new String[limit];
