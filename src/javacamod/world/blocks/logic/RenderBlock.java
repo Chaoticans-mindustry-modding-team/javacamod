@@ -59,7 +59,7 @@ public class RenderBlock extends Block {
 		
 		public RBInstruction[] instructions = new RBInstruction[0];
 		public RBDrawBuffer buffer = new RBDrawBuffer(4096);
-		public RBExecutor exec = new RBExecutor(buffer, 16384);
+		public RBExecutor exec = new RBExecutor(buffer, 16384, this);
 
 		public String error = "";
 
