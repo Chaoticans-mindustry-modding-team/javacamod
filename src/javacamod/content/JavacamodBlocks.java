@@ -16,7 +16,6 @@ import javacamod.world.blocks.distribution.*;
 
 import static mindustry.type.ItemStack.*;
 
-@SuppressWarnings("deprecation")
 public class JavacamodBlocks{
 	//namesets
 	public static String[]
