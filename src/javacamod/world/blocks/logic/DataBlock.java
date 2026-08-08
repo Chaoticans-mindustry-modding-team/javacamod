@@ -6,25 +6,17 @@ import mindustry.world.*;
 import mindustry.world.meta.*;
 import mindustry.world.blocks.logic.*;
 
-import static mindustry.Vars.*;
-
 public class DataBlock extends MemoryBlock{
-  
-    public DataBlock(String name){
-        super(name);
-        destructible = true;
-        solid = true;
-        group = BlockGroup.logic;
-        drawDisabled = false;
-        envEnabled = Env.any;
-        canOverdrive = false;
 
-        config(double[].class, (DataBuild entity, double[] Ds) -> entity.memory = Ds);
-    }
-   public class DataBuild extends MemoryBuild{
-        @Override
-        public double[] config(){
-            return memory;
-        }
-   }
+	public DataBlock(String name){
+		super(name);
+
+		config(double[].class, (DataBuild entity, double[] Ds) -> entity.memory = Ds);
+	}
+	public class DataBuild extends MemoryBuild{
+		@Override
+		public double[] config(){
+			return memory;
+		}
+	}
 }
