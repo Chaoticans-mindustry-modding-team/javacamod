@@ -22,7 +22,7 @@ public class RBExecutor {
 	public Color[] colorStack = new Color[4];
 	public byte colorStackPos = 0;
 
-	public RBDrawBuffer buffer;
+	public RBDrawBuffer buffer = new RBDrawBuffer(4096);
 	public RBDrawBuffer bufferOut;
 	public int runLengthLimit;
 	public int configColor = 0xffffff_ff;
@@ -166,7 +166,7 @@ public class RBExecutor {
 									tmpArr[1] = m.intValue();
 									tmpArr[2] = o.floatValue();
 									if (args.length >= 4 && interm0 instanceof BigDecimal r) tmpArr[3] = r.floatValue();
-									buffer.append(args.length < 3 ? "regpoly" : "regpolyR", tmpArr);
+									buffer.append(args.length < 4 ? "regpoly" : "regpolyR", tmpArr);
 								}
 								break;
 							case "RLP":

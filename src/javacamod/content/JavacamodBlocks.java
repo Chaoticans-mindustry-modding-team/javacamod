@@ -911,11 +911,11 @@ public class JavacamodBlocks{
 			size = 2;
 			memoryCapacity = 512;
 		}};
-
+/* just no
 		renderBlock = new RenderBlock("render-block"){{
 			requirements(Category.logic, with());
 		}};
-
+*/
 
 	}
 }
