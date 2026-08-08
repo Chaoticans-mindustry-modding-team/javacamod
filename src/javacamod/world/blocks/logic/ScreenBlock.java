@@ -25,7 +25,7 @@ import mindustry.world.blocks.*;
 import mindustry.logic.*;
 import mindustry.world.blocks.logic.*;
 
-import static mindustry.Vars.*;
+import javacamod.*;
 
 public class ScreenBlock extends CanvasBlock {
 
@@ -49,6 +49,11 @@ public class ScreenBlock extends CanvasBlock {
 			super.control(type, p1, p2, p3, p4);
 		}
 
+		@Override
+		public void buildConfiguration(Table table){
+			table.button(Icon.pencil, Styles.cleari, () -> new ScreenEditDialog(this).show()).size(40f);
+		}
+		/*
 		@Override
 		public void buildConfiguration(Table table){
 			table.button(Icon.pencil, Styles.cleari, () -> {
@@ -140,7 +145,7 @@ public class ScreenBlock extends CanvasBlock {
 
 				dialog.show();
 			}).size(40f);
-		}
+		}*/
 
 	}
 }
