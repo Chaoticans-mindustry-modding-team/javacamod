@@ -197,13 +197,13 @@ public class ScreenEditDialog extends BaseDialog{
 			for(int i = 0; i < block.palette.length; i++){
 				int fi = i;
 
-				if(i % 8 == 0){
+				if(i % 15 == 0){
 					p.row();
 				}
 
 				var button = p.button(Tex.whiteui, Styles.squareTogglei, 20, () -> {
 					curColor = block.palette[fi];
-				}).size(24).checked(b -> curColor == block.palette[fi]).get();
+				}).size(20).checked(b -> curColor == block.palette[fi]).get();
 				button.getStyle().imageUpColor = new Color(block.palette[i]);
 			}
 		});
