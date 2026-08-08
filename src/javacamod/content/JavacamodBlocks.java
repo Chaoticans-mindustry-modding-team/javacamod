@@ -155,20 +155,12 @@ public class JavacamodBlocks{
 	}
 
 	public static int[] screenPalette = {
-		0x000000_00, // transparent
-		0xffffff_ff, 0xc0c0c0_ff, 0x808080_ff, 0x404040_ff, 0x000000_ff, // grayscale
-		0xff0000_ff, 0x800000_ff, 0x400000_ff, // red
-		0x00ff00_ff, 0x008000_ff, 0x004000_ff, // green
-		0x0000ff_ff, 0x000080_ff, 0x000040_ff, // blue
-		0xffff00_ff, 0x808000_ff, 0x404000_ff, // yellow
-		0x00ffff_ff, 0x008080_ff, 0x004040_ff, // cyan
-		0xff00ff_ff, 0x800080_ff, 0x400040_ff, // magenta
-		0xff8000_ff, 0x804000_ff, 0x402000_ff, // orange
-		0x80ff00_ff, 0x408000_ff, 0x204000_ff, // lime
-		0x00ff80_ff, 0x008040_ff, 0x004020_ff, // aqua
-		0x0080ff_ff, 0x004080_ff, 0x002040_ff, // azure
-		0x8000ff_ff, 0x400080_ff, 0x200040_ff, // purple
-		0xff0080_ff, 0x800040_ff, 0x400020_ff, // fucshia
+		0xffffff_00, 0x000000_ff, 0xff0000_ff, 0xff8000_ff, 0xffff00_ff, 0x80ff00_ff, 0x00ff00_ff, 0x00ff80_ff,
+		0xffffff_40, 0x404040_ff, 0x800000_ff, 0x804000_ff, 0x808000_ff, 0x408000_ff, 0x008000_ff, 0x008040_ff,
+		0xffffff_80, 0x808080_ff, 0x400000_ff, 0x402000_ff, 0x404000_ff, 0x204000_ff, 0x004000_ff, 0x004020_ff,
+		0xffffff_c0, 0xc0c0c0_ff, 0x00ffff_ff, 0x0080ff_ff, 0x0000ff_ff, 0x8000ff_ff, 0xff00ff_ff, 0xff0080_ff,
+		0x000000_40, 0xffffff_ff, 0x008080_ff, 0x004080_ff, 0x000080_ff, 0x400080_ff, 0x800080_ff, 0x800040_ff,
+		0x000000_80, 0x000000_c0, 0x004040_ff, 0x002040_ff, 0x000040_ff, 0x200040_ff, 0x400040_ff, 0x400020_ff,
 	};
 
 	public static void load() {
@@ -577,14 +569,14 @@ public class JavacamodBlocks{
 			}};
 		}
 
-		screenSmall = new ScreenBlock("screen-small"){{
+		screenSmall = new CanvasBlock("screen-small"){{
 			requirements(Category.logic, with());
 			hasShadow = false;
 			canvasSize = 8;
 			palette = screenPalette;
 		}};
 
-		screen = new ScreenBlock("screen"){{
+		screen = new CanvasBlock("screen"){{
 			requirements(Category.logic, with());
 			size = 2;
 			hasShadow = false;
@@ -592,7 +584,7 @@ public class JavacamodBlocks{
 			palette = screenPalette;
 		}};
 
-		screenLarge = new ScreenBlock("screen-large"){{
+		screenLarge = new CanvasBlock("screen-large"){{
 			requirements(Category.logic, with());
 			size = 3;
 			hasShadow = false;
@@ -600,14 +592,14 @@ public class JavacamodBlocks{
 			palette = screenPalette;
 		}};
 
-		borderlessScreenSmall = new ScreenBlock("borderless-screen-small"){{
+		borderlessScreenSmall = new CanvasBlock("borderless-screen-small"){{
 			requirements(Category.logic, with());
 			hasShadow = false;
 			canvasSize = 8;
 			palette = screenPalette;
 		}};
 
-		borderlessScreen = new ScreenBlock("borderless-screen"){{
+		borderlessScreen = new CanvasBlock("borderless-screen"){{
 			requirements(Category.logic, with());
 			size = 2;
 			hasShadow = false;
@@ -615,7 +607,7 @@ public class JavacamodBlocks{
 			palette = screenPalette;
 		}};
 
-		borderlessScreenLarge = new ScreenBlock("borderless-screen-large"){{
+		borderlessScreenLarge = new CanvasBlock("borderless-screen-large"){{
 			requirements(Category.logic, with());
 			size = 3;
 			hasShadow = false;
@@ -623,14 +615,14 @@ public class JavacamodBlocks{
 			palette = screenPalette;
 		}};
 
-		hDScreenSmall = new ScreenBlock("hd-screen-small"){{
+		hDScreenSmall = new CanvasBlock("hd-screen-small"){{
 			requirements(Category.logic, with());
 			hasShadow = false;
 			canvasSize = 16;
 			palette = screenPalette;
 		}};
 
-		hDScreen = new ScreenBlock("hd-screen"){{
+		hDScreen = new CanvasBlock("hd-screen"){{
 			requirements(Category.logic, with());
 			size = 2;
 			hasShadow = false;
@@ -638,7 +630,7 @@ public class JavacamodBlocks{
 			palette = screenPalette;
 		}};
 
-		hDScreenLarge = new ScreenBlock("hd-screen-large"){{
+		hDScreenLarge = new CanvasBlock("hd-screen-large"){{
 			requirements(Category.logic, with());
 			size = 3;
 			hasShadow = false;
@@ -646,14 +638,14 @@ public class JavacamodBlocks{
 			palette = screenPalette;
 		}};
 
-		hDBorderlessScreenSmall = new ScreenBlock("hd-borderless-screen-small"){{
+		hDBorderlessScreenSmall = new CanvasBlock("hd-borderless-screen-small"){{
 			requirements(Category.logic, with());
 			hasShadow = false;
 			canvasSize = 16;
 			palette = screenPalette;
 		}};
 
-		hDBorderlessScreen = new ScreenBlock("hd-borderless-screen"){{
+		hDBorderlessScreen = new CanvasBlock("hd-borderless-screen"){{
 			requirements(Category.logic, with());
 			size = 2;
 			hasShadow = false;
@@ -661,7 +653,7 @@ public class JavacamodBlocks{
 			palette = screenPalette;
 		}};
 
-		hDBorderlessScreenLarge = new ScreenBlock("hd-borderless-screen-large"){{
+		hDBorderlessScreenLarge = new CanvasBlock("hd-borderless-screen-large"){{
 			requirements(Category.logic, with());
 			size = 3;
 			hasShadow = false;
